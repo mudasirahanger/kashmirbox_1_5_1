@@ -22,48 +22,21 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer',
-  'layout/tagline',
-  'layout/testimonial-section',
-  'layout/seen-on-section',
-  'layout/header-checkout',
-  'layout/footer-checkout',
-  'layout/checkout-steps';
+  'layout/footer';
 
 // 5. Components
 @import
   'components/button',
-  'components/kbsearch',
-  'components/newsletter-form',
-  'components/social-connect',
-  'components/hero-slider',
-  'components/artisan-collection-slider',
-  'components/masonary-gallery',
-  'components/product-slider',
-  'components/product-category-grid',
-  'components/story-view1',
-  'components/story-view2',
-  'components/testimonial-slider',
-  'components/seen-on-list',
-  'components/mega-menu',
-  'components/category-banner',
   'components/breadcrums',
   'components/selector',
   'components/number-input',
   'components/checkbox-input',
   'components/radio-input',
-  'components/counter-input',
-  'components/giftcard-form',
-  'components/register-login-popup',
-  'components/currency-dropdown';
+  'components/counter-input';
 
 // 6. Page-specific styles
 @import
-  'pages/home',
-  'pages/category',
-  'pages/product',
-  'pages/checkout',
-  'pages/cart';
+  'pages/home';
 
 // 7. Themes
 @import

@@ -1,0 +1,15 @@
+.site-breadcrums {
+  list-style-type: none;
+  li {
+    float: left;
+    letter-spacing: 1px;
+    &:after {
+      content: '/';
+      font-size: rem(13px);
+    }
+    a {
+      font-size: rem(13px);
+      font-weight: 300;
+    }
+  }
+}

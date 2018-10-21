@@ -1,0 +1,26 @@
+//site header
+header
+  //-top navigation 
+  .top_nav
+    .container
+      .row.padding-0
+        ul.col-lg-6.col-md-6.top_nav_row
+          li.top_nav_active        
+            a(href='#') KB
+          li.top_nav_li
+            a(href='#').nav_text Kb cashmere 
+          li.top_nav_li
+            a(href='#').nav_text kb pashmina
+          li.top_nav_li
+            a(href='#').nav_text Kashmirwholesale
+        ul.col-lg-4.col-md-4.top_nav_row
+          li.top_nav_li
+            a(href='#').nav_text Services
+          li.top_nav_li
+            span.divider | 
+          //-currency  
+          include ../components/currency.pug 
+          li.top_nav_li
+            span.divider |
+          //-help
+          include ../components/help.pug

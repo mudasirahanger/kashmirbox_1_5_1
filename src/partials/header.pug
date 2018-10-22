@@ -13,14 +13,32 @@ header
             a(href='#').nav_text kb pashmina
           li.top_nav_li
             a(href='#').nav_text Kashmirwholesale
-        ul.col-lg-4.col-md-4.top_nav_row
+        ul.col-lg-3.col-md-3.col-lg-offset-3.col-md-offset-3.top_nav_row
           li.top_nav_li
-            a(href='#').nav_text Services
-          li.top_nav_li
-            span.divider | 
+            a(href='#').nav_text Services         
+          span.divider | 
           //-currency  
-          include ../components/currency.pug 
-          li.top_nav_li
-            span.divider |
+          include ../components/currency.pug
+          span.divider |
           //-help
           include ../components/help.pug
+  //-Header
+  .container
+     .col-lg-4.col-md-4
+      .search
+        span.fa.fa-search
+        input.search-input(type="search" placeholder="Search the store")
+     .col-lg-4.col-md-4.logo    
+        h1 kashmir box
+     .col-lg-4.col-md-4.login
+        ul
+         li
+           a(data-toggle="modal" data-target="#myModal").nav_login Login  &  Signup
+           span.fa.fa-user-circle.fa-lg
+         li 
+           a(data-toggle="modal" data-target="#myModal") Wishlist
+           span.fa.fa-heart-o.fa-lg     
+         li 
+           a(data-toggle="modal" data-target="#myModal") Cart
+           span.fa.fa-shopping-cart.fa-lg
+           .cart 2        

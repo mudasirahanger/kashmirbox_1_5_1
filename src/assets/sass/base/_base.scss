@@ -48,7 +48,11 @@ a {
 
   @include on-event {
     color: $brand-color;
+<<<<<<< HEAD
     text-decoration: none;
+=======
+    text-decoration: underline;
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
   }
 }
 

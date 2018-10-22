@@ -21,7 +21,7 @@ header a:hover, a:active, a:focus {
  height: rem(36px);
 }
 .top_nav_li{
-  padding-top:rem(3px); 
+  padding-top:rem(4px); 
 }
 .nav_text:hover {
   background-color: $white-color;
@@ -46,8 +46,11 @@ header a:hover, a:active, a:focus {
    color: $white-color;
    font-family: $ff-open-sans;
    font-style:normal;
-   padding: 10px 11px;
-   text-transform:uppercase;
+   padding-top: rem(10px);
+   padding-right: rem(11px);
+   padding-bottom: rem(10px);
+   padding-left: rem(11px);
+   text-transform:capitalize;
    line-height:rem(1px);
 }
 .divider{
@@ -111,8 +114,8 @@ header a:hover, a:active, a:focus {
 .cart{
    border-radius: 50%;
    background-color: $crimson-color;
-   width: 18px;
-   height: 18px;
+   width: rem(22px);
+   height: rem(22px);
    float: right;
    text-align: center;
    color: $white-color;
@@ -121,6 +124,7 @@ header a:hover, a:active, a:focus {
    font-weight: bold;
    margin-top: rem(-11px);
    margin-left: rem(-14px);
+   line-height: rem(23px);
  }
  /*navbar*/
 .navbar-center{

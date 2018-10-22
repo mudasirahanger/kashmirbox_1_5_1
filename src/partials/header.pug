@@ -1,4 +1,44 @@
-// Site Header
-
-
-
+//site header
+header
+  //-top navigation 
+  .top_nav
+    .container
+      .row.padding-0
+        ul.col-lg-6.col-md-6.top_nav_row
+          li.top_nav_active        
+            a(href='#') KB
+          li.top_nav_li
+            a(href='#').nav_text Kb cashmere 
+          li.top_nav_li
+            a(href='#').nav_text kb pashmina
+          li.top_nav_li
+            a(href='#').nav_text Kashmirwholesale
+        ul.col-lg-3.col-md-3.col-lg-offset-3.col-md-offset-3.top_nav_row
+          li.top_nav_li
+            a(href='#').nav_text Services         
+          span.divider | 
+          //-currency  
+          include ../components/currency.pug
+          span.divider |
+          //-help
+          include ../components/help.pug
+  //-Header
+  .container
+     .col-lg-4.col-md-4
+      .search
+        span.fa.fa-search
+        input.search-input(type="search" placeholder="Search the store")
+     .col-lg-4.col-md-4.logo    
+        h1 kashmir box
+     .col-lg-4.col-md-4.login
+        ul
+         li
+           a(data-toggle="modal" data-target="#myModal").nav_login Login  &  Signup
+           span.fa.fa-user-circle.fa-lg
+         li 
+           a(data-toggle="modal" data-target="#myModal") Wishlist
+           span.fa.fa-heart-o.fa-lg     
+         li 
+           a(data-toggle="modal" data-target="#myModal") Cart
+           span.fa.fa-shopping-cart.fa-lg
+           .cart 2

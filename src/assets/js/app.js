@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 window.kb_shop_currency_symbol = '$';
 
 /* popup login form */
@@ -546,6 +548,7 @@ jQuery(document).ready(function($){
     input.trigger('change');
   });
 });
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
 
 // counter input
 jQuery(document).ready(function($){

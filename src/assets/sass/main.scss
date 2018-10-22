@@ -26,18 +26,39 @@
 
 // 5. Components
 @import
+<<<<<<< HEAD
+  'components/breadcrums',
+  'components/button',
+=======
   'components/button',
   'components/breadcrums',
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
   'components/selector',
   'components/number-input',
   'components/checkbox-input',
   'components/radio-input',
+<<<<<<< HEAD
+  'components/counter-input',
+  'components/currency-dropdown';
+=======
   'components/counter-input';
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
 
 // 6. Page-specific styles
 @import
   'pages/home';
+<<<<<<< HEAD
+ // 'pages/category',
+ // 'pages/product',
+ // 'pages/checkout',
+ // 'pages/cart';
 
 // 7. Themes
 @import
   'themes/default';
+=======
+
+// 7. Themes
+@import
+  'themes/default';
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7

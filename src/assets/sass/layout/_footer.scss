@@ -1,6 +1,57 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+<<<<<<< HEAD
+
+
+
+ .about_kashmirbox{
+  padding: rem(24px);
+ }
+ .about_kashmirbox p{
+  font-size: 18px;
+  font-family:$brand-font;
+  color:black !important;/*$brand-color;*/
+  font-weight: bold;
+  line-height: 1.556;
+  text-align: left;
+}
+.kb_box{
+  background-color: rgb(21, 20, 20);
+  width: rem(170px);
+  height: rem(181px);
+}
+.kb_box h2{
+  font-size: 75px;
+  font-family: $brand-font;
+  color: rgb(255, 255, 255);
+  line-height: 0.28;
+  text-align: center;
+}
+.border{
+  border-top: 1px solid rgb(221, 221, 221);
+  padding: 24px 0px 24px 0px;
+ }
+ .payment_partners img{
+  /*display:inline-flex;
+  justify-content: center;*/
+  margin-left:auto;
+  margin-right:auto;
+ }
+.copyright
+{
+  background-color:$brand-color;
+  height:rem(200px);
+  padding: rem(15px);
+}
+.copyright p{
+  font-size: 12px;
+  text-align: center;
+  font-family:$brand-font;
+  color:$white-color;
+  font-weight:bold;
+ }
+=======
 #site-footer-top {
   padding: $unit-layout * 1.25 0;
   background-color: $approx-snow-color;
@@ -96,3 +147,4 @@
     }
   }
 }
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7

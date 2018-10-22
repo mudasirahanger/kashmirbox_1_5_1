@@ -2,6 +2,159 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+<<<<<<< HEAD
+//-default style
+/*top nav*/
+.top_nav
+{
+  background-color: $brand-color;
+  height: rem(36px);
+  width: 100%;
+}
+.top_nav_row {
+ list-style-type: none;
+ display: inline-flex;
+}
+.top_nav_row:nth-of-type(2){
+ float:right;
+ height: rem(36px);
+}
+.top_nav_li{
+  padding-top:rem(3px); 
+}
+.nav_text:hover {
+  background-color: $white-color;
+  height:rem(10px);
+}
+.top_nav_active {
+  background-color: $white-color;
+  width: rem(46px);
+  height: rem(36px);
+  font-size: rem(12px);
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-style:normal;
+  text-align:center;
+  font-weight:bold;
+  padding: rem(8px);
+  text-transform:uppercase;
+}
+.nav_text{
+   text-align:center;
+   font-size: rem(12px);
+   color: $white-color;
+   font-family: $ff-open-sans;
+   font-style:normal;
+   padding: 10px 11px;
+   text-transform:uppercase;
+   line-height:rem(1px);
+}
+.divider{
+   font-size: rem(12px);
+   color: $white-color;
+   font-family: $ff-open-sans;
+   font-style:normal;
+   padding: 5px 0px;
+}
+/*Header*/
+.search{
+    float: left;
+    width: rem(275px);
+    border-bottom: 2px solid $brand-color;
+    margin-top: rem(16px);
+}
+.search-input{
+    width: rem(250px);
+    font-weight: 500;
+    border: aliceblue;
+    font-size: 1em;
+    font-family: $ff-open-sans;
+    font-style:italic;
+    font-weight:normal;
+    padding-left: 8px;
+}
+.logo h1{
+  font-size: rem(40px);
+  font-family: $brand-font;
+  font-style:normal;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top:rem(12px);
+}
+/*ul:nth-of-type(3){
+    float:right;
+}*/
+.login ul{
+  list-style-type: none;
+  display: inline-flex;
+  margin-top:rem(27px);
+  float:right;
+}
+.login ul li
+{
+   font-size: 13px;
+   font-family: $ff-open-sans;
+   font-style:normal;
+   color: $brand-color;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.login ul li{
+  padding:0px 12px;
+}
+.login ul li a{
+  margin-right: rem(3.5px);
+  margin-top: rem(12px);
+}
+.cart{
+   border-radius: 50%;
+   background-color: $crimson-color;
+   width: 18px;
+   height: 18px;
+   float: right;
+   text-align: center;
+   color: $white-color;
+   font-family: $ff-open-sans;
+   font-style:normal;
+   font-weight: bold;
+   margin-top: rem(-11px);
+   margin-left: rem(-14px);
+ }
+ /*navbar*/
+.navbar-center{
+  display: flex!important;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+  margin-top: rem(20px);
+}
+.nav.navbar-nav li{
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  font-style:normal;
+  color: $brand-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+    background-color: transparent;
+}
+/*.navbar-nav>li>a:hover,.navbar-nav>li>a:hover {
+    background: 0 0;
+    border-bottom: 2px solid #2b2b2b;
+}*/
+#sale {
+  color: $crimson-color;
+}    
+=======
 
 // default style
 #site-header {
@@ -366,3 +519,4 @@
     }
   }
 }
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7

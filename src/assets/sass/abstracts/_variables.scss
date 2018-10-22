@@ -8,7 +8,14 @@
 
 /// Regular font family
 /// @type List
+<<<<<<< HEAD
+$text-font-stack: 'Cormorant', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+$brand-font : 'Cormorant';
+
+=======
 $text-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
 
 /// Code (monospace) font family
 /// @type List
@@ -27,7 +34,11 @@ $text-color-dark2: rgb(5, 10, 1) !default;
 
 /// Main brand color
 /// @type Color
+<<<<<<< HEAD
+$brand-color: rgb(21, 20, 20) !default;
+=======
 $brand-color: rgb(58, 170, 150) !default;
+>>>>>>> 4f66d318faeee140467966ba5b938960a49499c7
 
 /// Light grey
 /// @type Color

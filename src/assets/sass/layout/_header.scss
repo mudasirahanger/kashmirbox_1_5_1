@@ -19,6 +19,7 @@ header a:hover, a:active, a:focus {
 .top_nav_row:nth-of-type(2){
  float:right;
  height: rem(36px);
+ margin-right: rem(-10px);
 }
 .top_nav_li{
   padding-top:rem(3px); 
@@ -91,6 +92,7 @@ header a:hover, a:active, a:focus {
   display: inline-flex;
   margin-top:rem(27px);
   float:right;
+  margin-right: rem(-10px);
 }
 .login ul li
 {

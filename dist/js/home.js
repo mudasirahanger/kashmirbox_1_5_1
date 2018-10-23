@@ -1,2 +1,2 @@
-jQuery(document).ready(function(n){function t(e){return 0<=(e=parseInt(e))&&e<=9?"0"+e:e}setInterval(function(){var e;n("#deal-countdown").html((e=new Date)?t(23-e.getHours())+" : "+t(59-e.getMinutes())+" : "+t(59-e.getSeconds()):"")},1e3)});
+jQuery(document).ready(function(e){function t(n){return 0<=(n=parseInt(n))&&n<=9?"0"+n:n}setInterval(function(){var n;e("#deal-countdown").html((n=new Date)?t(23-n.getHours())+" : "+t(59-n.getMinutes())+" : "+t(59-n.getSeconds()):"")},1e3)}),$(".top_nav_li.hover.dropdown").hover(function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(10).fadeIn(500)},function(){$(this).find(".dropdown-menu").stop(!0,!0).delay(10).fadeOut(500)});
 //# sourceMappingURL=home.js.map

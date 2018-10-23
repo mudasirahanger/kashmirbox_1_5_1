@@ -25,3 +25,9 @@ jQuery(document).ready(function($){
   }, 1000);
 
 });
+//-script for help in top nav
+$('.top_nav_li.hover.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(10).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(10).fadeOut(500);
+});

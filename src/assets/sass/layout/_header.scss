@@ -72,7 +72,7 @@ header a:hover, a:active, a:focus {
     width: rem(255px);
     font-weight: 500;
     border: aliceblue;
-    font-size: 1em;
+    font-size: rem(15px);
     font-family: $ff-open-sans;
     font-style:italic;
     font-weight:normal;
@@ -95,7 +95,7 @@ header a:hover, a:active, a:focus {
   display: inline-flex;
   margin-top:rem(27px);
   float:right;
-  margin-right: rem(-10px);
+  margin-right: rem(-15px);
 }
 .login ul li
 {
@@ -110,8 +110,11 @@ header a:hover, a:active, a:focus {
   padding:0px 12px;
 }
 .login ul li a{
-  margin-right: rem(3.5px);
   margin-top: rem(12px);
+  cursor:pointer;
+}
+.login ul li span{
+  margin-left: 5px;
 }
 .cart{
    border-radius: 50%;

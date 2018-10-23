@@ -17,14 +17,14 @@
   margin-right:auto;
 }
 .email{
-  text-align: center;
+  margin-top: rem(50px);
 }
 .emailsearch {
   border-style: solid;
-  border-width: 1px;
+  border-width: rem(1px);
   background-color: $white-color;
-  width: 572px;
-  height: 67px;
+  width: rem(572px);
+  height: rem(67px);
   border-color: $brand-color;
   color:grey;
   position: relative;
@@ -34,8 +34,8 @@
   top:0px;
   right:0px;
   background-color: $brand-color;
-  width: 199px;
-  height: 65px;
+  width: rem(199px);
+  height: rem(65px);
   font-size: rem(14px);
   font-family: $ff-open-sans;
   color: $white-color;

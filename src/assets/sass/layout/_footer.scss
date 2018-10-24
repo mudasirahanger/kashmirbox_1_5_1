@@ -42,6 +42,7 @@
   color: $white-color;
   text-transform: uppercase;
   border:none;
+  border-radius: rem(0px);
 }
 .btn:hover, .btn:focus, .btn.focus {
    color: $white-color;
@@ -103,6 +104,21 @@
 .need_help{
   margin-top:rem(50px);
 }
+/*payment partners*/
+.payment_partners{
+  border-top: 1px solid rgb(221, 221, 221);
+ }
+ .payment_partners img{
+  margin-left:auto;
+  margin-right:auto;
+ }
+ .payment_partners p{
+  font-size: rem(16px);
+  font-family: $brand-font;
+  color: $brand-color;
+  text-align: center;
+}
+/*copyright*/
 .copyright{
   background-color:$brand-color;
   padding: rem(10px);

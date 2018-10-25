@@ -27,8 +27,10 @@
   width: rem(572px);
   height: rem(67px);
   border-color: $brand-color;
-  color:$light-grey;
-  padding-left: 20px;
+  padding-left: rem(20px);
+  font-family:$ff-open-sans;
+  font-style: italic;
+  font-size: rem(15px);
 }
 .btn{
   position: absolute;
@@ -50,7 +52,6 @@
 /*links*/
 .links{
   padding-top: rem(53px);
-  padding-bottom: rem(53px);
 }
 .links ul{
   list-style-type: none;
@@ -64,13 +65,13 @@
 .footer_links, .need_help p{
   font-size: rem(13px);
   font-family:$ff-open-sans;
-  color:$mid-grey;
+  color:$grey;;
   line-height: 2.077;
 }
 .footer_links:hover, .footer_links:focus {
   text-decoration: none;
   background-color:transparent;
-  color:$mid-grey;
+  color:$grey;/*change color #878787*/
 }
 .services{
   display:flex;
@@ -93,7 +94,7 @@
 .descrptn p:nth-of-type(2){
   font-size: rem(13px);
   font-family: $ff-open-sans;
-  color: $mid-grey;
+  color: $grey;
 }
 .socail_logos{
   display: flex;
@@ -104,26 +105,68 @@
 .need_help{
   margin-top:rem(50px);
 }
+.need_help span{
+  font-weight: bold;
+  color: $brand-color;
+}
+/*about kashmirbox*/
+.about_kashmirbox{
+  padding-top: rem(53px);
+  padding-bottom: rem(1px);
+}
+.Your_Convenient_Connection {
+  font-size: rem(18px);
+  font-family: $brand-font;
+  color: $brand-color;
+  font-weight: bold;
+  line-height: 1.556;
+  margin-bottom: rem(20px);
+}
+.about_kashmirbox img{
+  max-width: rem(170px);
+  height: 181px;
+  margin-left:rem(-15px);
+}
+.about_kashmirbox .descptn {
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.571;
+}
+.descptn:nth-of-type(2){
+  margin-top: 20px;
+}
+.descptn span{
+  font-weight: bold;
+  color:$brand-color;
+}
 /*payment partners*/
 .payment_partners{
-  border-top: 1px solid rgb(221, 221, 221);
- }
+  padding-bottom: rem(27px);
+}
  .payment_partners img{
   margin-left:auto;
   margin-right:auto;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
  }
  .payment_partners p{
-  font-size: rem(16px);
+  font-size: rem(18px);
   font-family: $brand-font;
   color: $brand-color;
   text-align: center;
+  font-weight: bold;
+  margin: 0px 0px 25px 0px;
 }
 /*copyright*/
 .copyright{
-  background-color:$brand-color;
-  padding: rem(10px);
+  background-color: $brand-color;
+  height: rem(49px);
+  width: 100%;
+  padding: rem(15px);
  }
- .copyright > p{
+ .copyright p{
   font-size: rem(12px);
   text-align: center;
   font-family:$ff-open-sans;

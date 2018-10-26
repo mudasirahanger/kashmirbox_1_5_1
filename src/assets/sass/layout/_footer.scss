@@ -53,7 +53,7 @@
 @include respond-to(large-1) {
   .btn-subscribe {
     right: 20%;
-}
+  }
 }
 /*links*/
 .links{
@@ -87,9 +87,7 @@
   margin-top:rem(10px);
 }
 .descrptn{
-  max-width: rem(160px);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left:rem(15px);
 }
 .descrptn .heading{
  font-size: rem(13px);
@@ -98,9 +96,9 @@
  font-family: $ff-open-sans;
 }
 .descrptn p:nth-of-type(2){
-  font-size: rem(13px);
-  font-family: $ff-open-sans;
-  color: $grey;
+ font-size: rem(13px);
+ font-family: $ff-open-sans;
+ color: $grey;
 }
 .socail_logos{
   display: flex;
@@ -125,23 +123,19 @@
   font-family: $brand-font;
   color: $brand-color;
   font-weight: bold;
-  line-height: 1.556;
-  margin-bottom: rem(20px);
-}
-.about_kashmirbox img{
-  max-width: rem(170px);
-  height: 181px;
-  margin-left:rem(-15px);
+  margin-bottom: rem(15px);
+  margin-left: rem(15px);
 }
 .about_kashmirbox .descptn {
   font-size: rem(14px);
   font-family: $ff-open-sans;
   color: $grey;
-  line-height: 1.571;
+  line-height: 1.471;
   text-align: justify;
+  max-width: rem(970px);
 }
 .descptn:nth-of-type(2){
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .descptn span{
   font-weight: bold;

@@ -24,7 +24,7 @@ header a:hover, a:active, a:focus {
 .top_nav_li{
   padding-top:rem(4px); 
 }
-.nav_text:hover {
+.nav_text:hover,.nav_text:focus {
   background-color: $white-color;
   height:rem(10px);
 }
@@ -175,7 +175,7 @@ header a:hover, a:active, a:focus {
   margin: rem(0px);
 }
 .currency>li>a:hover, .currency>li>a:focus {
-  background-color: $mid-grey;
+  background-color: $grey;
 }
 .currency a{
    padding: rem(0px);
@@ -195,5 +195,5 @@ header a:hover, a:active, a:focus {
    padding: rem(0px);
 } 
 .help>li>a:hover, .help>li>a:focus {
-  background-color: $mid-grey;
+  background-color: $grey;
 } 

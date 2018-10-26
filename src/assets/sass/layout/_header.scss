@@ -42,18 +42,18 @@ header a:hover, a:active, a:focus {
   text-transform:uppercase;
 }
 .nav_text{
-   cursor: pointer;
-   text-align:center;
-   font-size: rem(12px);
-   color: $white-color;
-   font-family: $ff-open-sans;
-   font-style:normal;
-   padding-top: rem(10px);
-   padding-right: rem(11px);
-   padding-bottom: rem(10px);
-   padding-left: rem(11px);
-   text-transform:capitalize;
-   line-height:rem(1px);
+  cursor: pointer;
+  text-align:center;
+  font-size: rem(12px);
+  color: $white-color;
+  font-family: $ff-open-sans;
+  font-style:normal;
+  padding-top: rem(10px);
+  padding-right: rem(11px);
+  padding-bottom: rem(10px);
+  padding-left: rem(11px);
+  text-transform:capitalize;
+  line-height:rem(1px);
 }
 .divider{
    font-size: rem(12px);
@@ -117,11 +117,6 @@ header a:hover, a:active, a:focus {
 .login ul li span{
   margin-left: 5px;
 }
-@include respond-to(large-1) {
-  .login ul li {
-    padding: 0px 5px;
-}
-}
 .cart{
    border-radius: 50%;
    background-color: $crimson-color;
@@ -170,9 +165,9 @@ header a:hover, a:active, a:focus {
     border-bottom: 2px solid #2b2b2b;
 }*/
 /*currency dropdown styling*/
-.currency,{
+.currency{
   text-align:center;
-  font-size: rem(15px);
+  font-size: rem(12px);
   font-family: $ff-open-sans;
   font-style:normal;
   min-width: rem(80px);
@@ -187,7 +182,7 @@ header a:hover, a:active, a:focus {
 }  
 .help{
   text-align:left;
-  font-size: rem(15px);
+  font-size: rem(12px);
   font-family: $ff-open-sans;
   font-style:normal;
   min-width: rem(80px);

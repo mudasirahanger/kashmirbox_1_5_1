@@ -197,3 +197,18 @@ header a:hover, a:active, a:focus {
 .help>li>a:hover, .help>li>a:focus {
   background-color: $grey;
 } 
+/*menu*/
+.submenulist{
+  /*padding: 20px 0px;
+  width: 100%;*/
+  /* box-shadow: none; */
+  /* -webkit-box-shadow: none; */
+}
+.menulist{
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  font-style: normal;
+  color: $brand-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}

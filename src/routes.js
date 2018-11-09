@@ -1,5 +1,6 @@
 import HomePage from './pages/home.vue';
 import Categories from './pages/category.vue';
+import Products from './pages/product.vue';
 import AboutPage from './pages/about.vue';
 import FormPage from './pages/form.vue';
 import DynamicRoutePage from './pages/dynamic-route.vue';
@@ -28,6 +29,10 @@ export default [
   {
     path: '/category/:pathId',
     component: Categories,
+  },
+  {
+    path: '/product/:productId',
+    component: Products,
   },
   {
     path: '/form/',

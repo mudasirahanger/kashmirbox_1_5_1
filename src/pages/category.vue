@@ -1,14 +1,25 @@
 <template>
-  <f7-page >
-    <f7-navbar v-bind:title=" $f7route.hash " back-link="Back" color="black"></f7-navbar>
-    <f7-block-title>This is category id : {{$f7route.params.pathId}} </f7-block-title>
+  <f7-page>
+    <f7-navbar color="black">
+      <f7-nav-left>
+        <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="left"></f7-link>
+      </f7-nav-left>
+      <f7-nav-title>KB</f7-nav-title>
+      <f7-nav-right>
+        <f7-link icon-if-ios="f7:search" icon-if-md="material:search" ></f7-link>
+        <f7-link icon-if-ios="f7:favorite" icon-if-md="material:favorite" ></f7-link>
+        <f7-link icon-if-ios="f7:shopping_cart" icon-if-md="material:shopping_cart" panel-open="right"></f7-link>
+      </f7-nav-right> 
+    </f7-navbar>
+
+    <f7-block-title> {{ $f7route.hash }} </f7-block-title>
 
       <f7-list media-list v-for="product in products" :key="product.product_id">
           <f7-list-item
-            link="#"
+            v-bind:link="'/product/'+product.product_id"
             v-bind:title="product.name"
             v-bind:after="product.price"
-            subtitle="Ratings : 15"
+            v-bind:subtitle="product.kbcode"
             v-bind:text="product.description"
           >
             <img slot="media"  v-bind:src=" product.thumb " width="80" />

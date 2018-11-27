@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/bootstrap',
+  'vendor/slick.scss',
+  'vendor/slick-theme.scss';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+// @import
+//  'components/breadcrums',
+//  'components/button',
+//  'components/button',
+//  'components/breadcrums',
+//  'components/selector',
+// 'components/number-input',
+// 'components/checkbox-input',
+// 'components/radio-input',
+// 'components/counter-input',
+// 'components/currency-dropdown';
+// 'components/counter-input';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+ // 'pages/category',
+ // 'pages/product',
+ // 'pages/checkout',
+ // 'pages/cart';
+
+// 7. Themes
+@import
+  'themes/default';
+
+// 7. Themes
+@import
+  'themes/default';

@@ -1,0 +1,175 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+/*subscribe*/
+.signup_toget_acces{
+  padding-top: rem(53px);
+  padding-bottom: rem(53px);
+}
+.subscribe {
+  font-size: rem(32px);
+  font-family: $brand-font;
+  color: $brand-color;
+  line-height: 1.406;
+  text-align: center;
+  max-width: rem(575px);
+  margin-left: auto;
+  margin-right:auto;
+}
+.email{
+  margin-top: rem(50px);
+  position: relative;
+}
+.emailsearch {
+  border-style: solid;
+  border-width: rem(1px);
+  background-color: $white-color;
+  width: rem(572px);
+  height: rem(67px);
+  border-color: $brand-color;
+  padding-left: rem(20px);
+  font-family:$ff-open-sans;
+  font-style: italic;
+  font-size: rem(20px);
+  text-transform: lowercase;
+}
+.btn-subscribe{
+  position: absolute;
+  top: 2%;
+  right: 24%;
+  background-color: $brand-color;
+  width: rem(199px);
+  height: rem(65px);
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: $white-color;
+  text-transform: uppercase;
+  border:none;
+  border-radius: rem(0px);
+}
+.btn-subscribe:hover, .btn-subscribe:focus, .btn-subscribe.focus {
+   color: $white-color;
+}
+@include respond-to(large-1) {
+  .btn-subscribe {
+    right: 20%;
+  }
+}
+/*links*/
+.links{
+  padding-top: rem(53px);
+}
+.links ul{
+  list-style-type: none;
+}
+.links ul .active, .social p, .need_help .contact{
+  color: $brand-color;
+  font-family: $brand-font;
+  font-weight: bold;
+  font-size: rem(18px);
+}
+.footer_links, .need_help p{
+  font-size: rem(13px);
+  font-family:$ff-open-sans;
+  color:$grey;;
+  line-height: 2.077;
+}
+.footer_links:hover, .footer_links:focus {
+  text-decoration: none;
+  background-color:transparent;
+  color:$grey;/*change color #878787*/
+}
+.services{
+  display:flex;
+  margin-bottom: rem(20px)
+}
+.icon{
+  margin-top:rem(10px);
+}
+.descrptn{
+  margin-left:rem(15px);
+}
+.descrptn .heading{
+ font-size: rem(13px);
+ color: $brand-color;
+ font-weight: bold;
+ font-family: $ff-open-sans;
+}
+.descrptn p:nth-of-type(2){
+ font-size: rem(13px);
+ font-family: $ff-open-sans;
+ color: $grey;
+}
+.socail_logos{
+  display: flex;
+}
+.socail_logos a{
+  margin-right: auto;
+}
+.need_help{
+  margin-top:rem(50px);
+}
+.need_help span{
+  font-weight: bold;
+  color: $brand-color;
+}
+/*about kashmirbox*/
+.about_kashmirbox{
+  padding-top: rem(53px);
+  padding-bottom: rem(1px);
+}
+.Your_Convenient_Connection {
+  font-size: rem(18px);
+  font-family: $brand-font;
+  color: $brand-color;
+  font-weight: bold;
+  margin-bottom: rem(15px);
+  margin-left: rem(15px);
+}
+.about_kashmirbox .descptn {
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.471;
+  text-align: justify;
+  max-width: rem(970px);
+}
+.descptn:nth-of-type(2){
+  margin-top: 15px;
+}
+.descptn span{
+  font-weight: bold;
+  color:$brand-color;
+}
+/*payment partners*/
+.payment_partners{
+  padding-bottom: rem(27px);
+}
+ .payment_partners img{
+  margin-left:auto;
+  margin-right:auto;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+ }
+ .payment_partners p{
+  font-size: rem(18px);
+  font-family: $brand-font;
+  color: $brand-color;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px 0px 25px 0px;
+}
+/*copyright*/
+.copyright{
+  background-color: $brand-color;
+  height: rem(49px);
+  width: 100%;
+  padding: rem(15px);
+ }
+ .copyright p{
+  font-size: rem(12px);
+  text-align: center;
+  font-family:$ff-open-sans;
+  color:$white-color;
+ }

@@ -147,7 +147,7 @@ header a:hover, a:active, a:focus {
   color: $brand-color;
   text-transform: uppercase;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   padding: 0px 5px 0px 5px;
 }
 #sale {
@@ -196,9 +196,20 @@ header a:hover, a:active, a:focus {
 } 
 .help>li>a:hover, .help>li>a:focus {
   background-color: $grey;
-} 
+}
+/*add menu css in new file*/
 /*menu*/
+.menu{
+  position: static!important;
+}
+.mega-dropdown-menu{
+  padding: 20px 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+}
 .submenulist{
+  border: none;
+  background: $light-grey;
   /*padding: 20px 0px;
   width: 100%;*/
   /* box-shadow: none; */
@@ -206,9 +217,26 @@ header a:hover, a:active, a:focus {
 }
 .menulist{
   font-size: rem(14px);
-  font-family: $ff-open-sans;
+  font-family: $ff-open-sans !important;
   font-style: normal;
   color: $brand-color;
   text-transform: uppercase;
   font-weight: bold;
+}
+.nav>a {
+  display: block;
+  font-family: $ff-open-sans !important;
+  color: $grey!important;
+  padding: 3px 0px;
+  font-size: 13px;
+  text-transform: none;
+  font-weight: normal;
+}
+.menu .menulist:hover,.menulist:active, .menulist:focus {
+  border-bottom: 2px solid $brand-color;
+  padding-bottom: 12px;
+  text-decoration:none !important;
+}
+.dropdown-header{
+  margin-bottom: 10px;
 }

@@ -95,7 +95,9 @@ $breakpoints: (
   'large': (min-width: 992px),
   'large-only' : (max-width: 991px),
   'large-1' : (max-width: 1024px),
+  'large-1-1' : (max-width: 1199px),
   'large-2' : (min-width: 1200px),
+  
 ) !default;
 
 

@@ -101,3 +101,6 @@ p {
   height: 100%;
   z-index: 999;
 }
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+  border-color:$brand-color !important;
+}

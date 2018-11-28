@@ -3,3 +3,140 @@ extends ./layouts/index.pug
 block app_variables
   - var pageTitle = "Kashmir Box";
 block home_content
+  main.home
+    //-slider
+    .container_fluid
+      .row
+        .col-md-12.col-lg-12.padding-0
+          a(href="https://www.kashmirbox.com/christmas-offers-2018/")
+            img(src="images/cashmere-pashmina-store.jpg" alt="Banner").img-responsive                     
+    //-Sale Section
+    .container.sale_container
+      .row
+        .col-lg-12.col-md-12
+          a(href="https://www.kashmirbox.com/new-in-the-box/the-sundry-store")
+            img(src="images/Strip.jpg" alt="saleimage").img-responsive.fullwidth
+            //-img(src="images/Strip_for_mobile.jpg" alt="image").img-responsive.fullwidth.visible-xs
+      .row
+        .col-lg-7.col-md-7.col-sm-7.col-xs-12.firstimage
+          a(href="https://www.kashmirbox.com/last-time-on-sale")
+            img(src="images/Last-Time-On-Sale.jpg" alt="image").img-responsive.fullwidth
+        .col-lg-5.col-md-5.col-sm-5.col-xs-12.secondimage
+          a(href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Natural-Dry-Fruits.jpg" alt="image").img-responsive.imageadjust.fullwidth
+    //--New Arrivals
+    .container.bestseller_container
+      p.Heading New Arrivals
+      p.Heading2 In Luxury Apparel, Food,  Decor, Beauty
+      .row.bestseller_row
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="https://www.kashmirbox.com/new-in-the-box/kehzabar")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+    //-Food
+    .container.food_container
+      p.Heading Trending In Food
+      p.Heading2 Kashmir's Most Natural & Healthy Produce
+      .row.food_row
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Pure-Kashmiri-Saffron.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Pure-Kashmiri-Saffron.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Pure-Kashmiri-Saffron.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Pure-Kashmiri-Saffron.jpg" alt="image").img-responsive
+    //-craft
+    //-slider        
+    .container.craft_container
+      p.Heading Trending in Craft
+      p.Heading2 Luxury Handmade Apparel, Accents & Home Decor
+      .row.craft_row
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Themed-Christmas.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Kani-Cashmere.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Themed-Christmas.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
+            img(src="images/Kani-Cashmere.jpg" alt="image").img-responsive        
+    //-Beauty
+    .container.beauty_container
+      p.Heading Trending in Beauty
+      p.Heading2 Organic Winter Essentials For Skin & Hair Health
+      .row.beauty_row
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a(href="https://www.kashmirbox.com/sc-assorted-base-oils-kb3040")
+            img(src="images/Coco-Lip-Balm.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a(href="https://www.kashmirbox.com/sc-assorted-base-oils-kb3040")
+            img(src="images/Coco-Lip-Balm.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a(href="https://www.kashmirbox.com/sc-assorted-base-oils-kb3040")
+            img(src="images/Coco-Lip-Balm.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6
+          a(href="https://www.kashmirbox.com/sc-assorted-base-oils-kb3040")
+            img(src="images/Coco-Lip-Balm.jpg" alt="image").img-responsive
+    //-Featured
+    .container.everythingelse_container
+      p.Heading Featured Crafts
+      p.Heading2 Revive and Sustain Orginal Artisan Made Crafts
+      .row.everythingelse_row
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/Copperware.jpg" alt="image").img-responsive
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/papermache-heritage-colors.jpg" alt="image").img-responsive
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/Copperware.jpg" alt="image").img-responsive
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/papermache-heritage-colors.jpg" alt="image").img-responsive
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/Copperware.jpg" alt="image").img-responsive
+        .everythingelse_div
+          a(href="https://www.kashmirbox.com/lifestyle/paper-mache-art")
+            img(src="images/papermache-heritage-colors.jpg" alt="image").img-responsive
+    //-Social
+    .container.social_container
+      p.Heading Kashmir Tales
+      p.Heading2 Stories of Kashmiri Crafts, People & More
+      .row.social_row
+        .col-lg-7.col-md-7.col-sm-7.col-xs-12.firstimage
+          a(href="/blog/craft-of-kashmir-the-blog/all-about-kashmiri-pashmina-part-1")
+          .imageborder
+            img(src="images/Blog.jpg" alt="image").img-responsive.greyshade.fullwidth
+        .col-lg-5.col-md-5.col-sm-5.col-xs-12.secondimage
+          a(href="/gi-midnight-black-solid-pashmina-shawl-kb5304")
+                  img(src="images/Talat-aziz.jpg" alt="image").imageadjust.fullwidth
+//- .item
+ a(href="/gi-off-white-border-embroidered-pashmina-shawl-kb5238")
+ img(src="images/Siriwatana.jpg" alt="image").imageadjust.fullwidth
+//- .item
+ a(href="/gi-midnight-black-solid-pashmina-shawl-kb5304")
+ img(src="images/kanchan.-k.jpg" alt="image").imageadjust.fullwidth

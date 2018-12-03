@@ -1,0 +1,105 @@
+extends ./layouts/category.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block category_content
+  main.category
+    //-Product_banner
+    .container_fluid
+      .row
+        .col-md-12.col-lg-12.padding-0.categorybanner
+          img(src="images/product_banner.png" alt="Banner").img-responsive
+          h1 EMBROIDERED ETHNIC KURTIS!
+    //-Productlist and filters
+    .container_fluid
+      .row
+        .col-lg-12.col-md-12
+          .row
+            .col-lg-2.col-md-2.filter_list
+              h3 Filters
+              .panel-group#accordion(role="tablist" aria-multiselectable="true")
+                .panel.panel-default
+                  .panel-heading(role="tab" id="headingOne")
+                    h4.panel-title
+                      a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Color
+                  .panel-collapse.collapse.in#collapseOne(role="tabpanel" aria-labelledby="headingOne")
+                    .panel-body
+                      .checkbox
+                        label
+                          input(type="checkbox" placeholder='title of book')
+                          | Option 1                      
+                      .checkbox
+                        label
+                          input(type="checkbox")
+                          | Option 2                  
+                      .checkbox
+                        label
+                          input(type="checkbox")
+                          |  Option 3
+                .panel.panel-default
+                  .panel-heading(role="tab" id="headingTwo")
+                    h4.panel-title
+                      a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Fabric
+                  .panel-collapse.collapse.in#collapseTwo(role="tabpanel" aria-labelledby="headingTwo")
+                    .panel-body
+                      .checkbox
+                        label
+                          input(type="checkbox")
+                          | Option 1                    
+                      .checkbox
+                        label
+                          input(type="checkbox")
+                          | Option 1                        
+                      .checkbox
+                        label
+                          input(type="checkbox")
+                          | Option 1          
+            .col-lg-10.col-md-10.product_list
+              .col-lg-12.col-md-12
+                select.option_list
+                  option We Recommend
+                  option Newest
+                  option Lowest Price
+                  option Highest Price
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344 
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344 
+              .col-lg-4.col-md-4.column
+                a(href="")
+                  img(src="images/product.png" alt="Kashmir Box").img-responsive
+                  p.product_text Aftab Garden Silk Saree Silk Saree
+                  center
+                    strike Rs. 4,500
+                    span Rs. 3,344

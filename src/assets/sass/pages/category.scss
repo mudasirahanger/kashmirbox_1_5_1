@@ -8,18 +8,36 @@
 	left: 0px;
 	top:45%;
 	font-size: rem(40px);
-    font-family: $brand-font;
-    color: $white-color;
-    text-transform: uppercase;
+  font-family: $brand-font;
+  color: $white-color;
+  text-transform: uppercase;
+}
+/*Bread_crumb*/
+.Bread_crumb {
+  margin: 15px 0;
+}
+.Bread_crumb > .path{
+  float:left !important;
+}
+.Bread_crumb > .path > .productbreadcrumb{
+  background-color: $light-shade !important;
+}
+.Bread_crumb > .path > .productbreadcrumb > li > a{
+  color: $grey;
+  font-family: "Open Sans",sans-serif;
+  font-size: rem(12px);
+}
+.productbreadcrumb > li > a:hover{
+  text-decoration: none;
+}
+.productbreadcrumb > .breadcrumb-item:last-of-type{
+  font-weight: bold;
 }
 /*product_list*/
-.product_list > div{
-  margin: 30px 0;
-}
 .product_list > div > select{
 	width: 25%;
     float: right;
-    border: none;
+    border-color: $grey;
     box-shadow: none;
     border-bottom: 1px solid $grey;
     -webkit-appearance: none;
@@ -31,7 +49,7 @@
     background-size: 12px;
     font-family:  $ff-open-sans;
     color: $brand-color;
-    margin-right: rem(35px);
+    margin-bottom: rem(30px);
 }
 .column > a{
 	text-decoration: none;
@@ -40,28 +58,50 @@
   margin-left: auto;
   margin-right: auto;
 }
+.column{
+  margin-bottom: rem(20px);
+}
 .product_text{
-  font-size: rem(17px);
+  font-size: rem(14px);
   font-family: $ff-open-sans;
   color:  $brand-color;
   line-height: 1.529;
   text-align: center;
-  margin: 30px 0;
-  max-width: 327px;
+  margin: 15px 0 8px;
+  max-width: 219px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.column>a>center strike,span{
-  font-size: rem(15px);
+center{
+  max-width: 219px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column > a > center > .price{
+  font-size: rem(14px);
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-weight:bold;
+  margin-right: rem(5px);
+}
+.column>a>center strike{
+  font-size: rem(13px);
   color: $grey;
   font-family: $ff-open-sans;
+  margin-right: rem(5px);
 }
-strike{
- margin-right: 20px;
+.column>a>center > .discount{
+  font-size: rem(13px);
+  color: $grey;
+  font-family: $ff-open-sans;
+  color:$red-color;
+}
+.column>a>center >.checked {
+  color: $orange;
 }
 /*filter_list*/
 .filter_list h3{
   margin: 0 0 30px;
-  padding-top: rem(85px);
   font-size: rem(16px);
   font-family: $ff-open-sans;
   text-transform: uppercase;
@@ -72,10 +112,12 @@ strike{
     border: none;
     border-radius: 3px;
     box-shadow: none;
-    margin-bottom: rem(15px);
 }
 .panel-heading {
     font-family: $ff-open-sans;
+}
+.panel-title a:hover{
+  text-decoration: none!important;
 }
 #accordion .panel-heading, #accordionFilter .panel-heading{
     padding: 0;
@@ -88,19 +130,21 @@ strike{
 }
 #accordion .panel-title a.collapsed:before, #accordionFilter .panel-title 
 a.collapsed:before{
-    color: #676767 !important;
+    color: $grey !important;
     transform: rotate(0) !important;
     top: 25px !important;
 }
-#accordion .panel-title a.collapsed:before, #accordion .panel-title a:before, #accordionFilter .panel-title a.collapsed:before, #accordionFilter .panel-title a:before{
+#accordion .panel-title a.collapsed:before, 
+#accordion .panel-title a:before, #accordionFilter .panel-title a.collapsed:before, 
+#accordionFilter .panel-title a:before{
     content: "\f067";
     font-family: fontawesome;
     width: 20px;
     height: 20px;
     line-height: 28px;
-    font-size: 11px;
+    font-size: rem(11px);
     font-weight: 900;
-    color: #282828;
+    color: $brand-color;
     text-align: center;
     position: absolute;
     top: 30px;
@@ -118,9 +162,9 @@ a.collapsed:before{
 }
 #accordion .panel-title a, #accordionFilter .panel-title a{
     display: block;
-    padding: 30px 0;
+    padding: 20px 0;
     background: $white-color;
-    font-size: 15px;
+    font-size: rem(15px);
     font-weight: 700;
     color: $grey;
     border-top: 1px solid #d3d3d3;
@@ -132,10 +176,28 @@ a.collapsed:before{
 #accordion .panel-body, #accordionFilter .panel-body{
     padding: 10px 15px 15px;
     border: none;
-    font-size: 15px;
-    color: #615f5f;
-    line-height: 27px;
+    font-size: rem(15px);
+}
+.panel-body > .filter_checkbox{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.panel-body > .filter_checkbox > label{
+  font-family: $ff-open-sans;
+  color: $grey;
+  font-size: rem(13px);
 }
 input {
-    outline: 0;
+  outline: 0;
 }
+/*.filter_checkbox span{
+  background-color: rgb(54, 69, 79);
+  width: 15px;
+    height: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 27px;
+}*/

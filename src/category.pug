@@ -127,11 +127,11 @@ block category_content
                       |  Option 3
         .col-lg-10.col-md-10.product_list
           .col-lg-12.col-md-12
-            select.option_list
-              option(selected="selected") We Recommend
-              option Newest
-              option Lowest Price
-              option Highest Price
+            select.option_list.dropdown(data-settings='{"wrapperClass":"metro"}')
+              option(data-ref="value" aria-placeholder="Select a country") We Recommend
+              option(value="1") Newest
+              option(value="2") Lowest Price
+              option(value="3") Highest Price
           .col-lg-3.col-md-3.column
             a(href="#")
               img(src="images/product.png" alt="Kashmir Box").img-responsive

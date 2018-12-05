@@ -1,0 +1,20 @@
+extends ./layouts/product.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block product_content
+  main.product
+    //-Breadcrumb
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.Bread_crumb
+          nav.path(aria-label="breadcrumb")
+            ol.breadcrumb.productbreadcrumb
+              li.breadcrumb-item
+                a(href="#") Home
+              li.breadcrumb-item
+                a(href="#") Women
+              li.breadcrumb-item
+                a(href="#") Women Clothing
+              li.breadcrumb-item
+                a(href="#") Home       

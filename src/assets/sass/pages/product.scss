@@ -1,0 +1,21 @@
+/*Bread_crumb*/
+.Bread_crumb {
+  margin: 15px 0;
+}
+.Bread_crumb > .path{
+  float:left !important;
+}
+.Bread_crumb > .path > .productbreadcrumb{
+  background-color: $light-shade !important;
+}
+.Bread_crumb > .path > .productbreadcrumb > li > a{
+  color: $grey;
+  font-family: "Open Sans",sans-serif;
+  font-size: rem(12px);
+}
+.productbreadcrumb > li > a:hover{
+  text-decoration: none;
+}
+.productbreadcrumb > .breadcrumb-item:last-of-type{
+  font-weight: bold;
+}

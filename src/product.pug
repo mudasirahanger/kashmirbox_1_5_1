@@ -5,7 +5,7 @@ block app_variables
 block product_content
   main.product
     //-Breadcrumb
-    .container-fluid
+    .container
       .row
         .col-lg-12.col-md-12.Bread_crumb
           nav.path(aria-label="breadcrumb")
@@ -17,4 +17,77 @@ block product_content
               li.breadcrumb-item
                 a(href="#") Women Clothing
               li.breadcrumb-item
-                a(href="#") Home       
+                a(href="#") Home
+    .container            
+      .row
+        //-Image
+        .col-lg-6.col-md-6.product_image
+          img(src="images/product-img-1.jpg" alt="product_image").img-responsive
+        //-Product_Info  
+        .col-lg-6.col-md-6.product_info
+          h3 Coin Grey Vine Tilla Embroidered Wool Phiran
+          .rating
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          <hr>
+          p.product_price 
+            strong Rs. 8000
+            s Rs. 10000
+            span.discount (20% OFF)
+          .buttons  
+            button.add_to_cart Add to Cart
+            button.add_to_wishlist Add to Cart
+          //-.share_options
+            p Share
+            a(href="#")
+              img(src="images/facebook.png" alt="facebook")
+            a(href="#")    
+              img(src="images/twitter.png" alt="twitter")
+            a(href="#")    
+              img(src="images/instagram.png" alt="instagram")
+            a(href="#")    
+              img(src="images/google+.png" alt="google_plus")
+            a(href="#")    
+              img(src="images/linkedin.png" alt="linkedin")
+            a(href="#")    
+              img(src="images/pinterest.png" alt="pinterest")
+          .more_colors
+            h5 More colors
+            img(src="https://assets.myntassets.com/h_150,q_90,w_112/assets/images/1321002/2016/5/18/11463562233855-WROGN-Beige-Printed-Polo-T-shirt-861463562233597-1.jpg")
+          .cod
+            h5 check cod availability
+            .input_field
+              input(type="text" placeholder="Enter pincode (India)")
+              span.fa.fa-search
+          <hr>
+          .description
+            h5 Product details
+            .accordionRight
+              .card
+                ul.nav.nav-tabs(role="tablist")
+                  li(role="presentation").active
+                    a(href="#home" aria-controls="home" role="tab" data-toggle="tab").product-bold-words-nav MORE INFO
+                  li(role="presentation")
+                    a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab").product-bold-words-nav DESCRIPTION
+                  li(role="presentation")
+                    a(href="#messages" aria-controls="messages" role="tab" data-toggle="tab").product-bold-words-nav SELLER DETAILS
+                //-Tab panes
+                .tab-content.accordionRightDesc
+                  .tab-pane.active(role="tabpanel")#home
+                    ul.moreinfo
+                      li.moreinfo_items Material: Cotton
+                      li.moreinfo_items Color: Black
+                      li.moreinfo_items Size: Custom made
+                      li.moreinfo_items Care: Dry Clean
+                      li.moreinfo_items Embriodery: Hand Aari
+                      li.moreinfo_items Estimated Arrival: Between 20-30 days in India
+                      li.moreinfo_items Availability: Ships Internationally            
+                  .tab-pane(role="tabpanel")#profile
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. 
+                  .tab-pane(role="tabpanel")#messages
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+        //-About craft and reviews           
+        .col-lg-12.col-md-12.about_craft_and_reviews

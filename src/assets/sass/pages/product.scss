@@ -1,6 +1,6 @@
 /*Bread_crumb*/
 .Bread_crumb {
-  margin: 15px 0;
+  margin: 0 !important;
 }
 .Bread_crumb > .path{
   float:left !important;
@@ -18,4 +18,186 @@
 }
 .productbreadcrumb > .breadcrumb-item:last-of-type{
   font-weight: bold;
+}
+/*product info*/
+.product_info h3{
+	font-family: $brand-font;
+    font-size: rem(25px);
+    color: $brand-color;
+    font-weight: bold;
+}
+.product_info >.rating >.checked{
+	color: $orange;
+}
+.product_info>.product_price>strong{
+	font-size: rem(23px);
+    color: $brand-color;
+    font-family: $ff-open-sans;
+    font-weight: bold;
+    margin-right: rem(10px);
+}
+.product_info>.product_price>s{
+    font-size: rem(18px);
+    color: $grey;
+    font-family: $ff-open-sans;
+    margin-right: rem(10px);
+}
+.product_info>.product_price>.discount{
+  font-size: rem(18px);
+  font-family: $ff-open-sans;
+  color:$red-color;
+}
+.product_info>.buttons>.add_to_cart{
+	border: 1px solid $brand-color;
+    box-shadow: none;
+    outline: none;
+    height: 52px;
+    width: 225px;
+    font-family: $ff-open-sans;
+    font-size: rem(15px);
+    background: $brand-color;
+    color:$white-color;
+}
+.product_info>.buttons{
+	margin-top: rem(25px);
+}
+.product_info>.buttons>.add_to_wishlist{
+	border: 1px solid $grey;
+    box-shadow: none;
+    outline: none;
+    height: 52px;
+    width: 170px;
+    font-family: $ff-open-sans;
+    font-size: rem(15px);
+    background: $white-color;
+}
+/*.product_info>.share_options{
+	margin-top: rem(25px);
+	display: flex;
+}
+.product_info>.share_options>p{
+	font-size: rem(15px);
+    color: $brand-color !important;
+    font-family:$ff-open-sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: rem(25px);
+}
+.product_info>.share_options>a>img{
+	margin-right: rem(15px);
+}*/
+.product_info>.more_colors{
+	margin-top: rem(25px);
+	margin-bottom: rem(35px);
+}
+.product_info>.more_colors>h5{
+	font-size: rem(15px);
+    color: $brand-color !important;
+    font-family:$ff-open-sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: rem(25px);
+    word-spacing: rem(2px);
+}
+.product_info>.more_colors>img{
+	width: 55px;
+    height: auto;
+    padding: 15px 0px 15px 0px;
+}
+.product_info>.cod{
+	margin-top: rem(25px);
+	margin-bottom: rem(35px);
+}
+.product_info>.cod>h5{
+	font-size: rem(15px);
+    color: $brand-color !important;
+    font-family:$ff-open-sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: rem(25px);
+    word-spacing: rem(2px);
+}
+.product_info>.cod>.input_field>input{
+	width: 170px;
+    border: none;
+    padding: 15px 0px 15px 0px;
+    font-family:$ff-open-sans;
+    font-size: rem(14px);
+}
+.product_info>.cod>.input_field{
+	width: 200px;
+    box-shadow: none;
+    border-bottom: 1px solid $grey;
+}
+.product_info>.description>h5{
+    font-size: rem(15px);
+    color: $brand-color !important;
+    font-family:$ff-open-sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: rem(25px);
+    word-spacing: rem(2px);
+}
+.product_info>.description{
+	margin-top: rem(25px);
+	margin-bottom: rem(35px);
+}
+/*desciption*/
+.product_info>.description>.accordionRight{
+	padding: 15px 0px 15px 0px;
+}
+.nav-tabs {
+    border: none;
+    margin-bottom: rem(18px);
+}
+.accordionRight .nav-tabs>li {
+    position: relative;
+    margin-right: rem(20px);
+}
+.accordionRight .nav-tabs>li:first-child:after {
+    content: none;
+}
+.accordionRight .nav-tabs>li:after {
+    content: '|';
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: -12px;
+    font-weight: bold;
+}
+.accordionRight .nav-tabs>li>a {
+    border: none;
+    font-weight: bold;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border-bottom: 2px solid $brand-color !important;
+    border: none;
+}
+.accordionRight .product-bold-words-nav {
+    padding: 4px 0 !important;
+}
+.nav-tabs>li>a {
+    color: $brand-color !important;
+}
+.product-bold-words-nav {
+    font-family:$ff-open-sans;
+    font-size: rem(14px);
+    padding: 10px !important;
+}
+.accordionRight .nav-tabs>li>a:hover, .accordionRight .nav-tabs>li>a:focus {
+    color: $brand-color;
+    text-decoration: none;
+    border-bottom: 2px solid $brand-color !important;
+}
+.accordionRightDesc > div {
+    font-size: 14px;
+    font-family: $ff-open-sans;
+    line-height: 24px;
+    color: $grey;
+}
+.accordionRightDesc > div > .moreinfo {
+    padding-left: 30px;
+}
+.accordionRightDesc > div > .moreinfo > .moreinfo_items{
+    color: $grey !important;
 }

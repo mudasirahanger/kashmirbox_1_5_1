@@ -25,7 +25,7 @@ block product_content
           img(src="images/product-img-1.jpg" alt="product_image").img-responsive
         //-Product_Info  
         .col-lg-6.col-md-6.product_info
-          h3 Coin Grey Vine Tilla Embroidered Wool Phiran
+          h3 Coin Grey Vine Tilla Embroidered Wool Phiran #[b Share]
           .rating
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -39,7 +39,8 @@ block product_content
             span.discount (20% OFF)
           .buttons  
             button.add_to_cart Add to Cart
-            button.add_to_wishlist Add to Cart
+              //-i.fa.fa-shopping-cart
+            button.add_to_wishlist Add to Wishlist
           //-.share_options
             p Share
             a(href="#")
@@ -56,15 +57,25 @@ block product_content
               img(src="images/pinterest.png" alt="pinterest")
           .more_colors
             h5 More colors
-            img(src="https://assets.myntassets.com/h_150,q_90,w_112/assets/images/1321002/2016/5/18/11463562233855-WROGN-Beige-Printed-Polo-T-shirt-861463562233597-1.jpg")
+            img(src="images/product-img-1.jpg")
+            img(src="images/product-img-1.jpg")
+            img(src="images/product-img-1.jpg")  
+          .size
+            h5 Select size #[button size chart] 
+            .buttons
+              button.size_buttons S
+              button.size_buttons M
+              button.size_buttons L
+              button.size_buttons XL
           .cod
             h5 check cod availability
             .input_field
               input(type="text" placeholder="Enter pincode (India)")
-              span.fa.fa-search
+              span.fa.fa-search     
           <hr>
           .description
             h5 Product details
+            p KBCODE: #[b KB0001]
             .accordionRight
               .card
                 ul.nav.nav-tabs(role="tablist")
@@ -91,3 +102,15 @@ block product_content
                     | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
         //-About craft and reviews           
         .col-lg-12.col-md-12.about_craft_and_reviews
+          .card
+            ul.nav.nav-tabs(role="tablist")
+              li(role="presentation").active
+                a.product-bold-words-nav(href="#abtCraft" aria-controls="abtCraft" role="tab" data-toggle="tab") About the craft
+              li(role="presentation")
+                a.product-bold-words-nav(href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab") Reviews
+            //-Tab panes
+            .tab-content.accordionRightDesc
+              .tab-pane.active(role="tabpanel")#abtCraft
+                |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.  
+              .tab-pane(role="tabpanel")#reviews
+                |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

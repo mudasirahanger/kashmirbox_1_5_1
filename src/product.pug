@@ -21,18 +21,31 @@ block product_content
     .container            
       .row
         //-Image
-        .col-lg-6.col-md-6.product_image
-          img(src="images/product-img-1.jpg" alt="product_image").img-responsive
+        .col-lg-1.col-md-1.product_images
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg").img-responsive
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg").img-responsive
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(3)-786x1000.jpg").img-responsive
+        .col-lg-5.col-md-5.product_image  
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image").img-responsive
+          .col-lg-4.col-md-4 
+            .feature_1 Genuine
         //-Product_Info  
         .col-lg-6.col-md-6.product_info
-          h3 Coin Grey Vine Tilla Embroidered Wool Phiran #[b Share]
+          .share
+            a(href="#" data-toggle="popover" data-placement="bottom").share_popover
+              span.fa.fa-share
+              h6 Share
+            #popover_content_wrapper.content
+              p Some content inside the popover      
+          h3 Amma
+          h5.product_name Coin Grey Vine Tilla Embroidered Wool Phiran
           .rating
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-          <hr>
+          hr
           p.product_price 
             strong Rs. 8000
             s Rs. 10000
@@ -57,9 +70,9 @@ block product_content
               img(src="images/pinterest.png" alt="pinterest")
           .more_colors
             h5 More colors
-            img(src="images/product-img-1.jpg")
-            img(src="images/product-img-1.jpg")
-            img(src="images/product-img-1.jpg")  
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg")  
           .size
             h5 Select size #[button size chart] 
             .buttons
@@ -72,37 +85,35 @@ block product_content
             .input_field
               input(type="text" placeholder="Enter pincode (India)")
               span.fa.fa-search     
-          <hr>
+          hr
           .description
             h5 Product details
             p KBCODE: #[b KB0001]
             .accordionRight
-              .card
-                ul.nav.nav-tabs(role="tablist")
-                  li(role="presentation").active
-                    a(href="#home" aria-controls="home" role="tab" data-toggle="tab").product-bold-words-nav MORE INFO
-                  li(role="presentation")
-                    a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab").product-bold-words-nav DESCRIPTION
-                  li(role="presentation")
-                    a(href="#messages" aria-controls="messages" role="tab" data-toggle="tab").product-bold-words-nav SELLER DETAILS
+              ul.nav.nav-tabs(role="tablist")
+                li(role="presentation").active
+                  a(href="#home" aria-controls="home" role="tab" data-toggle="tab").product-bold-words-nav MORE INFO
+                li(role="presentation")
+                  a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab").product-bold-words-nav DESCRIPTION
+                li(role="presentation")
+                  a(href="#messages" aria-controls="messages" role="tab" data-toggle="tab").product-bold-words-nav SELLER DETAILS
                 //-Tab panes
-                .tab-content.accordionRightDesc
-                  .tab-pane.active(role="tabpanel")#home
-                    ul.moreinfo
-                      li.moreinfo_items Material: Cotton
-                      li.moreinfo_items Color: Black
-                      li.moreinfo_items Size: Custom made
-                      li.moreinfo_items Care: Dry Clean
-                      li.moreinfo_items Embriodery: Hand Aari
-                      li.moreinfo_items Estimated Arrival: Between 20-30 days in India
-                      li.moreinfo_items Availability: Ships Internationally            
-                  .tab-pane(role="tabpanel")#profile
+              .tab-content.accordionRightDesc
+                .tab-pane.active(role="tabpanel")#home
+                  ul.moreinfo
+                    li.moreinfo_items Material: Cotton
+                    li.moreinfo_items Color: Black
+                    li.moreinfo_items Size: Custom made
+                    li.moreinfo_items Care: Dry Clean
+                    li.moreinfo_items Embriodery: Hand Aari
+                    li.moreinfo_items Estimated Arrival: Between 20-30 days in India
+                    li.moreinfo_items Availability: Ships Internationally            
+                .tab-pane(role="tabpanel")#profile
                     | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. 
-                  .tab-pane(role="tabpanel")#messages
+                .tab-pane(role="tabpanel")#messages
                     | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-        //-About craft and reviews           
-        .col-lg-12.col-md-12.about_craft_and_reviews
-          .card
+          //-About craft and reviews           
+          .about_craft_and_reviews
             ul.nav.nav-tabs(role="tablist")
               li(role="presentation").active
                 a.product-bold-words-nav(href="#abtCraft" aria-controls="abtCraft" role="tab" data-toggle="tab") About the craft
@@ -114,3 +125,18 @@ block product_content
                 |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.  
               .tab-pane(role="tabpanel")#reviews
                 |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    //-You may also like           
+    .container-fluid
+      .row.similar_products
+        h3 Similar Products
+        .col-lg-3.col-md-3
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg").img-responsive
+        .col-lg-3.col-md-3
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg").img-responsive
+        .col-lg-3.col-md-3
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg").img-responsive
+        .col-lg-3.col-md-3
+          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg").img-responsive        
+
+
+                

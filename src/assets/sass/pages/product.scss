@@ -10,7 +10,7 @@
 }
 .Bread_crumb > .path > .productbreadcrumb > li > a{
   color: $grey;
-  font-family: "Open Sans",sans-serif;
+  font-family:$ff-open-sans;
   font-size: rem(12px);
 }
 .productbreadcrumb > li > a:hover{
@@ -19,15 +19,55 @@
 .productbreadcrumb > .breadcrumb-item:last-of-type{
   font-weight: bold;
 }
+.product_images img{
+    width: rem(64px);
+    height: auto;
+    padding: 0px 0px 15px 0px;
+}
+.product_image>div{
+    padding-left: 0px;
+}
+.feature_1{
+    background-color: $grey;
+    font-family: $ff-open-sans;
+    font-size: rem(16px);
+    color: $brand-color;
+}
 /*product info*/
-.product_info h3{
+.product_info h3,.similar_products >h3{
 	font-family: $brand-font;
     font-size: rem(30px);
     color: $brand-color;
     font-weight: bold;
 }
+.product_info> .product_name{
+   font-family: $ff-open-sans;
+   color: $grey;
+   font-size: rem(20px);
+   margin-top: rem(5px);
+   margin-bottom: rem(5px);
+}
+.product_info>.share>.share_popover{
+    float: right;
+    display: flex;
+}
+.product_info>.share>.share_popover>h6{
+   font-size: rem(14px);
+   font-family: "Open Sans",sans-serif;
+   text-decoration: none;
+}
+.product_info>.share>.share_popover>span{
+    color:$grey;
+    margin-right: rem(5px);
+}
+.product_info >.share>.share_popover:hover{
+    text-decoration: none;
+}
 .product_info >.rating >.checked{
 	color: $orange;
+}
+.share>.content{
+    display: none;
 }
 .product_info>.product_price>strong{
 	font-size: rem(23px);
@@ -107,7 +147,7 @@
     word-spacing: rem(2px);
 }
 .product_info>.more_colors>img{
-	width: 55px;
+	width: 20%;
     height: auto;
     padding: 15px 0px 15px 0px;
     margin-right: rem(15px);
@@ -183,13 +223,13 @@
 }
 .product_info>.description{
 	margin-top: rem(25px);
-	margin-bottom: rem(35px);
+	/*margin-bottom: rem(35px);*/
 }
 /*desciption*/
 .product_info>.description>.accordionRight,.about_craft_and_reviews{
 	padding: 15px 0px 15px 0px;
 }
-.accordionRight > .card>.nav-tabs,.about_craft_and_reviews>.card>.nav-tabs {
+.accordionRight>.nav-tabs,.about_craft_and_reviews>.nav-tabs {
     border: none;
     margin-bottom: rem(18px);
 }
@@ -248,7 +288,19 @@
 .accordionRightDesc > div > .moreinfo > .moreinfo_items{
     color: $grey !important;
 }
-/*about craft and reviews*/
+/*about craft and reviews
 .about_craft_and_reviews{
     margin-top: rem(40px);
+}*/
+/*view similar products*/
+.similar_products{
+    margin-top: rem(20px);
+}
+.similar_products h3{
+    margin-bottom: rem(20px);
+    margin-left: rem(15px);
+}
+.similar_products img{
+    margin-left:auto;
+    margin-right: auto;
 }

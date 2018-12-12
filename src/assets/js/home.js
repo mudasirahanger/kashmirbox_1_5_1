@@ -31,3 +31,12 @@ $('.top_nav_li.dropdown,.menu.dropdown').hover(function() {
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(10).fadeOut(500);
 });
+//-script for share option in product page.
+$(document).ready(function(){
+  $('.share_popover').popover({ 
+    html : true,
+    content: function() {
+      return $('#popover_content_wrapper').html();
+    }
+  });
+});

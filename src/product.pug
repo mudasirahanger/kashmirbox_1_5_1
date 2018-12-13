@@ -20,15 +20,22 @@ block product_content
                 a(href="#") Home
     .container            
       .row
-        //-Image
-        .col-lg-1.col-md-1.product_images
-          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg").img-responsive
-          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg").img-responsive
-          img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(3)-786x1000.jpg").img-responsive
-        .col-lg-5.col-md-5.product_image  
+        //-Image   
+        .col-lg-6.col-md-6.product_image  
           img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image").img-responsive
+          .product_images
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(3)-786x1000.jpg")
           .col-lg-4.col-md-4 
-            .feature_1 Genuine
+            .features 
+              p 100% Genuine
+          .col-lg-4.col-md-4 
+            .features
+              p EMI
+          .col-lg-4.col-md-4 
+            .features
+              p Ready to ship    
         //-Product_Info  
         .col-lg-6.col-md-6.product_info
           .share
@@ -50,10 +57,6 @@ block product_content
             strong Rs. 8000
             s Rs. 10000
             span.discount (20% OFF)
-          .buttons  
-            button.add_to_cart Add to Cart
-              //-i.fa.fa-shopping-cart
-            button.add_to_wishlist Add to Wishlist
           //-.share_options
             p Share
             a(href="#")
@@ -67,12 +70,7 @@ block product_content
             a(href="#")    
               img(src="images/linkedin.png" alt="linkedin")
             a(href="#")    
-              img(src="images/pinterest.png" alt="pinterest")
-          .more_colors
-            h5 More colors
-            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg")
-            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image")
-            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg")  
+              img(src="images/pinterest.png" alt="pinterest")  
           .size
             h5 Select size #[button size chart] 
             .buttons
@@ -80,51 +78,55 @@ block product_content
               button.size_buttons M
               button.size_buttons L
               button.size_buttons XL
+          .more_colors
+            h5 More colors
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image")
+            img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg")    
           .cod
-            h5 check cod availability
+            .heading
+              h5 delivery options
+              span.fa.fa-truck.fa-2x
             .input_field
               input(type="text" placeholder="Enter pincode (India)")
-              span.fa.fa-search     
+              span.fa.fa-search
+          .buttons
+            button.add_to_cart
+              .wrapper_for_button 
+                span.fa.fa-shopping-cart.fa-2x
+                p Add to Cart 
+            button.add_to_wishlist
+              .wrapper_for_button 
+                span.fa.fa-heart-o.fa-2x
+                p Add to Wishlist 
           hr
           .description
-            h5 Product details
+            .heading
+              h5 Product details
+              span.fa.fa-info-circle.fa-2x 
             p KBCODE: #[b KB0001]
-            .accordionRight
-              ul.nav.nav-tabs(role="tablist")
-                li(role="presentation").active
-                  a(href="#home" aria-controls="home" role="tab" data-toggle="tab").product-bold-words-nav MORE INFO
-                li(role="presentation")
-                  a(href="#profile" aria-controls="profile" role="tab" data-toggle="tab").product-bold-words-nav DESCRIPTION
-                li(role="presentation")
-                  a(href="#messages" aria-controls="messages" role="tab" data-toggle="tab").product-bold-words-nav SELLER DETAILS
-                //-Tab panes
-              .tab-content.accordionRightDesc
-                .tab-pane.active(role="tabpanel")#home
-                  ul.moreinfo
-                    li.moreinfo_items Material: Cotton
-                    li.moreinfo_items Color: Black
-                    li.moreinfo_items Size: Custom made
-                    li.moreinfo_items Care: Dry Clean
-                    li.moreinfo_items Embriodery: Hand Aari
-                    li.moreinfo_items Estimated Arrival: Between 20-30 days in India
-                    li.moreinfo_items Availability: Ships Internationally            
-                .tab-pane(role="tabpanel")#profile
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. 
-                .tab-pane(role="tabpanel")#messages
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-          //-About craft and reviews           
-          .about_craft_and_reviews
-            ul.nav.nav-tabs(role="tablist")
-              li(role="presentation").active
-                a.product-bold-words-nav(href="#abtCraft" aria-controls="abtCraft" role="tab" data-toggle="tab") About the craft
-              li(role="presentation")
-                a.product-bold-words-nav(href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab") Reviews
-            //-Tab panes
-            .tab-content.accordionRightDesc
-              .tab-pane.active(role="tabpanel")#abtCraft
-                |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.  
-              .tab-pane(role="tabpanel")#reviews
-                |Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            .product_details
+              h6 MORE INFO
+              ul
+                li Material: Cotton
+                li Color: Black
+                li Size: Custom made
+                li Care: Dry Clean
+                li Embriodery: Hand Aari
+                li Estimated Arrival: Between 20-30 days in India
+                li Availability: Ships Internationally
+            .product_details
+              h6 DESCRIPTION
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            .product_details
+              h6 SELLER DETAILS
+              p  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            .product_details
+              h6 About the craft
+              p  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            .product_details
+              h6 Reviews
+              p  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
     //-You may also like           
     .container-fluid
       .row.similar_products

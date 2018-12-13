@@ -19,19 +19,30 @@
 .productbreadcrumb > .breadcrumb-item:last-of-type{
   font-weight: bold;
 }
+.product_images{
+    margin-top: rem(10px);
+    margin-bottom: rem(20px);
+    text-align: center;
+}
 .product_images img{
-    width: rem(64px);
+    width: rem(100px);
     height: auto;
-    padding: 0px 0px 15px 0px;
+    margin-right: rem(5px);
 }
 .product_image>div{
     padding-left: 0px;
+    padding-right: 5px;
 }
-.feature_1{
+.features{
     background-color: $grey;
+    height: 50px;
+}
+.features> p{
     font-family: $ff-open-sans;
     font-size: rem(16px);
-    color: $brand-color;
+    color: $white-color;
+    text-align: center;
+    padding-top: rem(10px);
 }
 /*product info*/
 .product_info h3,.similar_products >h3{
@@ -88,33 +99,53 @@
   color:$red-color;
   font-weight: bold;
 }
+.product_info>.buttons{
+    margin-top: rem(25px);
+    display: flex;
+}
 .product_info>.buttons>.add_to_cart{
-	border: 1px solid $brand-color;
+	border: 1px solid $orange;
     box-shadow: none;
     outline: none;
     height: 52px;
     width: 50%;
-    font-family: $ff-open-sans;
-    font-size: rem(15px);
     background: $brand-color;
     color:$white-color;
     margin-right: rem(20px);
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: rem(8px);
 }
-.product_info>.buttons{
-	margin-top: rem(25px);
+.product_info>.buttons>.add_to_cart>.wrapper_for_button,
+.product_info>.buttons>.add_to_wishlist>.wrapper_for_button{
+    display: flex;
+    justify-content: center;
+}
+.product_info>.buttons>.add_to_cart>.wrapper_for_button>p,
+.product_info>.buttons>.add_to_wishlist>.wrapper_for_button>p{
+    font-family: $ff-open-sans;
+    font-size: rem(15px);
+}
+.product_info>.buttons>.add_to_cart>.wrapper_for_button>span,
+.product_info>.buttons>.add_to_wishlist>.wrapper_for_button>span{
+    margin-right: rem(15px);
+}
+.product_info>.buttons>.add_to_cart>.wrapper_for_button>span{
+   color:$orange;
 }
 .product_info>.buttons>.add_to_wishlist{
 	border: 1px solid $grey;
     box-shadow: none;
     outline: none;
     height: 52px;
-    width: 35%;
-    font-family: $ff-open-sans;
-    font-size: rem(15px);
+    width: 50%;
     background-color: $light-shade;
     text-transform: uppercase;
+    border-radius: rem(8px);
+    font-weight: bold;
+}
+.product_info>.buttons>.add_to_cart:hover{
+    opacity: 0.8;
 }
 .product_info>.buttons>.add_to_wishlist:hover{
     border-color: $brand-color;
@@ -135,8 +166,7 @@
 	margin-right: rem(15px);
 }*/
 .product_info>.more_colors{
-	margin-top: rem(25px);
-	margin-bottom: rem(35px);
+	margin-top: rem(20px);
 }
 .product_info>.more_colors>h5{
 	font-size: rem(15px);
@@ -154,7 +184,6 @@
 }
 .product_info>.size{
     margin-top: rem(25px);
-    margin-bottom: rem(35px);
 }
 .product_info>.size>h5{
     font-size: rem(15px);
@@ -188,17 +217,7 @@
     text-transform: uppercase;
 }
 .product_info>.cod{
-	margin-top: rem(25px);
-	margin-bottom: rem(35px);
-}
-.product_info>.cod>h5{
-	font-size: rem(15px);
-    color: $brand-color !important;
-    font-family:$ff-open-sans;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: rem(25px);
-    word-spacing: rem(2px);
+	margin-top: rem(20px);
 }
 .product_info>.cod>.input_field>input{
 	width: 170px;
@@ -212,81 +231,56 @@
     box-shadow: none;
     border-bottom: 1px solid $grey;
 }
-.product_info>.description>h5{
+.product_info>.description>.heading>h5,.product_info>.cod>.heading>h5{
     font-size: rem(15px);
     color: $brand-color !important;
     font-family:$ff-open-sans;
     text-transform: uppercase;
     font-weight: bold;
-    margin-right: rem(25px);
     word-spacing: rem(2px);
+}
+.product_info>.description>.heading>span,.product_info>.cod>.heading>span{
+    margin-left: rem(10px);
+    margin-top: rem(-3px);
 }
 .product_info>.description{
 	margin-top: rem(25px);
 	/*margin-bottom: rem(35px);*/
 }
-/*desciption*/
+.product_info>.description>.heading,.product_info>.cod>.heading{
+    display: flex; 
+}
+/*description*/
 .product_info>.description>.accordionRight,.about_craft_and_reviews{
 	padding: 15px 0px 15px 0px;
 }
-.accordionRight>.nav-tabs,.about_craft_and_reviews>.nav-tabs {
-    border: none;
-    margin-bottom: rem(18px);
-}
-.accordionRight .nav-tabs>li,.about_craft_and_reviews .nav-tabs>li {
-    position: relative;
-    margin-right: rem(20px);
-}
-.accordionRight .nav-tabs>li:first-child:after,
-.about_craft_and_reviews .nav-tabs>li:first-child:after{
-    content: none;
-}
-.accordionRight .nav-tabs>li:after,.about_craft_and_reviews .nav-tabs>li:after {
-    content: '|';
-    display: inline-block;
-    position: absolute;
-    top: 2px;
-    left: -12px;
-    font-weight: bold;
-}
-.accordionRight .nav-tabs>li>a,.about_craft_and_reviews .nav-tabs>li>a{
-    border: none;
-    font-weight: bold;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    border-bottom: 2px solid $brand-color !important;
-    border: none;
-}
-.accordionRight .product-bold-words-nav,.about_craft_and_reviews .product-bold-words-nav {
-    padding: 4px 0 !important;
-}
-.nav-tabs>li>a {
-    color: $brand-color !important;
-}
-.product-bold-words-nav {
-    font-family:$ff-open-sans;
+.product_info>.description>p {
     font-size: rem(14px);
-    padding: 10px !important;
-    text-transform: uppercase;
-}
-.accordionRight .nav-tabs>li>a:hover, .accordionRight .nav-tabs>li>a:focus,
-.about_craft_and_reviews .nav-tabs>li>a:hover,
-.about_craft_and_reviews .nav-tabs>li>a:focus{
-    color: $brand-color;
-    text-decoration: none;
-    border-bottom: 2px solid $brand-color !important;
-}
-.accordionRightDesc > div,.description>p {
-    font-size: 14px;
     font-family: $ff-open-sans;
-    line-height: 24px;
+    line-height: rem(24px);
     color: $grey;
 }
-.accordionRightDesc > div > .moreinfo {
-    padding-left: 30px;
+/*moreinfo*/
+.product_info>.description>.product_details{
+  margin-top:rem(10px);
 }
-.accordionRightDesc > div > .moreinfo > .moreinfo_items{
-    color: $grey !important;
+.product_info>.description>.product_details>h6{
+    font-family:$ff-open-sans;
+    font-size: rem(14px);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product_info>.description>.product_details>ul{
+   padding: 10px 0px 0px 30px;
+   line-height: rem(26px);
+}
+.product_info>.description>.product_details >ul>li,.product_details>p{
+   color: $grey !important;
+   font-size: rem(13px);
+   font-family:$ff-open-sans;
+}
+.product_details>p{
+   padding: 10px 0px 0px 0px;
 }
 /*about craft and reviews
 .about_craft_and_reviews{

@@ -1,0 +1,189 @@
+.cart_breadcrumb{
+  margin-top: rem(20px);
+}
+.logo_wrap > a > h1{
+  font-size: rem(40px);
+  font-family: $brand-font;
+  font-style:normal;
+  color: $brand-color;
+  text-transform: uppercase;
+  text-align:left;
+}
+.logo_wrap > a:hover,.logo_wrap > a:focus, .logo_wrap > a:active{
+  text-decoration: none;
+  border:none;
+}
+.safe-and-secure > p,.continue_shopping > p{
+  font-family: $ff-open-sans;
+  color:$grey;
+  font-size: rem(15px);
+  text-align: right;
+  margin-top: rem(10px);
+}
+.continue_shopping > .trust_label{
+  display: flex;
+  justify-content: center;
+}
+.continue_shopping > .trust_label >p{
+  text-align: center;
+  background-color: $light-shade;
+  font-family: $ff-open-sans;
+  font-size: rem(20px);
+  margin-top: rem(20px);
+  height: rem(40px);
+}
+.continue_shopping > p{
+  text-align: center;
+  margin-top: 0px;
+  font-size: rem(20px);
+  text-transform: uppercase;
+}
+.cartproducts{
+  margin-top: rem(50px);
+  margin-bottom: rem(50px);
+}
+/*product details*/
+.product_details,.rate_details{
+  border: 1px solid $grey;
+}
+.product_details> h3{
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  font-weight: bold;
+  margin-top: rem(20px);
+  margin-left: rem(18px);
+}
+.product_details>.wrapper>div{
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}
+.product_details>.wrapper>div>.name_and_rate{
+  display: flex;
+}
+.product_details>.wrapper>div>.name_and_rate>p{
+  color: $brand-color;
+  font-weight: bold;
+  font-size: rem(18px);
+}
+.product_details>.wrapper>div>.name_and_price>p:nth-of-type(2){
+  margin-left: auto;
+}
+.product_details>.wrapper>div>.name_and_rate>.rate{
+  margin-left: auto;
+  display: flex;
+}
+.product_details>.wrapper>div>.sold_by>.rate>p{
+  margin-left: rem(5px);
+  border-left: 1px solid $grey;
+  padding-left: rem(5px);
+  color: $red-color;
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+}
+.product_details>.wrapper>div>.name_and_rate>.rate>s{
+  color: $brand-color;
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+}
+.product_details>.wrapper>div>.sold_by>p{
+  font-weight: normal;
+}
+.divider{
+  margin-top: rem(50px);
+}
+.product_details>.wrapper>div>.remove_and_wishlist>p{
+  color: $grey;
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product_details>.wrapper>div>.remove_and_wishlist>span{
+  color: $orange;
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product_details>.wrapper>div>.size_and_quantity>p:nth-of-type(2){
+  margin-left: rem(20px);
+}
+.product_details>.wrapper>div>.size_and_quantity>input{
+  width:rem(50px);
+  margin-left: rem(10px);
+}
+input[type="text"] {
+  font-size:rem(20px);
+}
+/*rate details*/
+.rate_details{
+ padding: 10px 30px 10px 30px;
+}
+.rate_details>p{
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  text-transform: uppercase;
+  margin-bottom: rem(10px);
+}
+.rate_details>.rate_feature{
+  display: flex;
+}
+.rate_details>.rate_feature>p{
+  color: $brand-color;
+  font-size: rem(16px);
+}
+.rate_details>.bag_discptn>p:nth-of-type(2){
+  margin-left: auto;
+  font-family: $ff-open-sans;
+  font-size: rem(14px);
+}
+.rate_details>.apply_coupon>p:nth-of-type(2){
+  color: $red-color;
+}
+.rate_details>.total{
+  font-weight: bold;
+  margin-bottom: rem(10px);
+}
+.rate_details>.total>p{
+  font-size: rem(18px);
+}
+/*checkout*/
+.rate_details>.checkout{
+  background: $brand-color;
+  width: 100% !important;
+  border-radius: 0;
+  height: rem(55px);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top:rem(15px);
+}
+.rate_details>.checkout>a{
+  color: $white-color;
+  text-align: center;
+  font-family: $ff-open-sans;
+}
+/*footer*/
+.footer_section{
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}
+.footer_section > p{
+ text-align: center;
+ margin-bottom: 20px;
+ font-family: $ff-open-sans;
+ font-size: rem(15px);
+ color: $grey;
+}
+.partner_images{
+  display: flex;
+  justify-content: center;
+}
+.partner_images >img{
+  width: 40px;
+  height: 20px;
+  margin-right: 5px;
+}

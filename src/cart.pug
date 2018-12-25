@@ -1,0 +1,104 @@
+extends ./layouts/cart.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block cart_content
+  main.cart_
+    //-Product_banner
+    .container
+      .row
+        .col-lg-12.col-md-12.continue_shopping
+          .trust_label
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1_5/images/cart.png")
+            p KashmirBox is trusted by more than 1 million customers worldwide  
+          p continue shopping
+    .container
+      .row.cartproducts
+        .col-lg-8.col-md-8.product_details
+          h3 My Shopping Bag(1 Items)
+          .row.wrapper
+            .col-lg-3.col-md-3
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+            .col-lg-9.col-md-9
+              .name_and_rate.name_and_price
+                p Emerald Hand Embroidered Silk Suit
+                p Rs.7000
+              .name_and_rate.sold_by
+                p sold by amma
+                .rate
+                  s Rs.1999
+                  p 20% OFF 
+              .name_and_rate.size_and_quantity
+                p Size
+                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
+                p Quantity
+                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
+              hr.divider
+              .name_and_rate.remove_and_wishlist
+                p remove
+                span move to wishlist
+          .row.wrapper
+            .col-lg-3.col-md-3
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+            .col-lg-9.col-md-9
+              .name_and_rate.name_and_price
+                p Emerald Hand Embroidered Silk Suit
+                p Rs.7000
+              .name_and_rate.sold_by
+                p sold by amma
+                .rate
+                  s Rs.1999
+                  p 20% OFF 
+              .name_and_rate.size_and_quantity
+                p Size
+                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
+                p Quantity
+                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
+              hr.divider
+              .name_and_rate.remove_and_wishlist
+                p remove
+                span move to wishlist
+          .row.wrapper
+            .col-lg-3.col-md-3
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+            .col-lg-9.col-md-9
+              .name_and_rate.name_and_price
+                p Emerald Hand Embroidered Silk Suit
+                p Rs.7000
+              .name_and_rate.sold_by
+                p sold by amma
+                .rate
+                  s Rs.1999
+                  p 20% OFF 
+              .name_and_rate.size_and_quantity
+                p Size
+                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
+                p Quantity
+                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
+              hr.divider
+              .name_and_rate.remove_and_wishlist
+                p remove
+                span move to wishlist            
+        .col-lg-3.col-md-3.col-lg-offset-1.col-md-offset-1.rate_details
+          p price details
+          .rate_feature.bag_discptn
+            p Bag Total
+            p Rs.21000
+          .rate_feature.bag_discptn
+            p Bag Discount
+            p Rs.300
+          .rate_feature.bag_discptn
+            p Estimated Tax
+            p Rs.35
+          .rate_feature.bag_discptn.apply_coupon
+            p Discount
+            p Apply Coupon 
+          .rate_feature.bag_discptn
+            p Delivery Charges
+            p Rs.149
+          hr
+          .rate_feature.bag_discptn.total
+            p Total
+            p Rs.20,884
+          .checkout
+            a(href="#") checkout

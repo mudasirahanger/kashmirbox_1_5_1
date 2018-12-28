@@ -26,8 +26,8 @@
 
 
 // 5. Components
-// @import
-//  'components/breadcrums',
+@import
+  'components/breadcrumb';
 //  'components/button',
 //  'components/button',
 //  'components/breadcrums',
@@ -44,7 +44,8 @@
   'pages/home',
   'pages/category',
   'pages/product',
-  'pages/cart';
+  'pages/cart',
+  'pages/account';
 
 // 7. Themes
 @import

@@ -43,36 +43,36 @@
   margin-bottom: rem(50px);
 }
 /*product details*/
-.product_details,.rate_details{
+.product_details_incart,.rate_details{
   border: 1px solid $grey;
 }
-.product_details> h3{
+.product_details_incart> h3{
   font-family: $ff-open-sans;
   font-size: rem(15px);
   font-weight: bold;
   margin-top: rem(20px);
   margin-left: rem(18px);
 }
-.product_details>.wrapper>div{
+.product_details_incart>.wrapper>div{
   margin-top: rem(20px);
   margin-bottom: rem(20px);
 }
-.product_details>.wrapper>div>.name_and_rate{
+.product_details_incart>.wrapper>div>.name_and_rate{
   display: flex;
 }
-.product_details>.wrapper>div>.name_and_rate>p{
+.product_details_incart>.wrapper>div>.name_and_rate>p{
   color: $brand-color;
   font-weight: bold;
   font-size: rem(18px);
 }
-.product_details>.wrapper>div>.name_and_price>p:nth-of-type(2){
+.product_details_incart>.wrapper>div>.name_and_price>p:nth-of-type(2){
   margin-left: auto;
 }
-.product_details>.wrapper>div>.name_and_rate>.rate{
+.product_details_incart>.wrapper>div>.name_and_rate>.rate{
   margin-left: auto;
   display: flex;
 }
-.product_details>.wrapper>div>.sold_by>.rate>p{
+.product_details_incart>.wrapper>div>.sold_by>.rate>p{
   margin-left: rem(5px);
   border-left: 1px solid $grey;
   padding-left: rem(5px);
@@ -80,18 +80,18 @@
   font-size: rem(14px);
   font-family: $ff-open-sans;
 }
-.product_details>.wrapper>div>.name_and_rate>.rate>s{
+.product_details_incart>.wrapper>div>.name_and_rate>.rate>s{
   color: $brand-color;
   font-size: rem(14px);
   font-family: $ff-open-sans;
 }
-.product_details>.wrapper>div>.sold_by>p{
+.product_details_incart>.wrapper>div>.sold_by>p{
   font-weight: normal;
 }
 .divider{
   margin-top: rem(50px);
 }
-.product_details>.wrapper>div>.remove_and_wishlist>p{
+.product_details_incart>.wrapper>div>.remove_and_wishlist>p{
   color: $grey;
   font-size: rem(14px);
   font-family: $ff-open-sans;
@@ -100,7 +100,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.product_details>.wrapper>div>.remove_and_wishlist>span{
+.product_details_incart>.wrapper>div>.remove_and_wishlist>span{
   color: $orange;
   font-size: rem(14px);
   font-family: $ff-open-sans;
@@ -109,10 +109,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-.product_details>.wrapper>div>.size_and_quantity>p:nth-of-type(2){
+.product_details_incart>.wrapper>div>.size_and_quantity>p:nth-of-type(2){
   margin-left: rem(20px);
 }
-.product_details>.wrapper>div>.size_and_quantity>input{
+.product_details_incart>.wrapper>div>.size_and_quantity>input{
   width:rem(50px);
   margin-left: rem(10px);
 }

@@ -1,0 +1,86 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+          .as-hero
+            .ah-image
+              img(src="images/as-hero.jpg").img-responsive 
+            .ah-desc
+              label Hello,
+              h3 muheet mehraj
+          .as-link-box
+            h2 my stuff
+            ul
+              li 
+                a(href="#") My Orders
+              li 
+                a(href="#") My Returns
+              li 
+                a(href="#") My Wishlist
+          .as-link-box
+            h2 profile &amp; settings
+            ul
+              li 
+                a(href="#") Personal Info
+              li 
+                a(href="#") Addresses
+          .as-link-box
+            h2 my stuff
+            ul
+              li 
+                a(href="#") Wallet
+              li 
+                a(href="#") KB Cash
+              li 
+                a(href="#") Store Credits          
+        .col-lg-9.col-md-9.personal_info
+          h2 Personal Information
+          .account-body-inner
+            .form(method="post" action="#").apinfo-form
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Name
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Last Name
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Address
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Email
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Password
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label Phone Number
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name")
+              .apinfo-form-row.apinfo-form-row-gender
+                .apinfo-form-desc
+                  label Gender
+                .apinfo-form-input
+                  input(type="radio" name="a_pi_gender" id="a_pi_gender_male" value="male" checked)
+                  label(for="a_pi_gender_male")  Male
+                  input(type="radio" name="a_pi_gender" id="a_pi_gender_female" value="female")
+                  label(for="a_pi_gender_female")  Female
+                  input(type="radio" name="a_pi_gender" id="a_pi_gender_other" value="other")
+                  label(for="a_pi_gender_other")  Other
+              input(type="submit" name="a_pi_submit" value="SAVE")

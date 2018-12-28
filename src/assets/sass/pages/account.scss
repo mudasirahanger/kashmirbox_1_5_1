@@ -1,0 +1,162 @@
+.overview>.as-hero{
+	background-color: $light-shade;
+	overflow: hidden;
+	padding: 20px 30px;
+}
+.overview > .as-hero > .ah-image{
+	width: rem(66px);
+	height: rem(66px);
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.overview>.as-hero>.ah-desc{
+	float: left;
+	margin-top: rem(10px);
+	margin-left: rem(14px);
+}
+.overview>.as-hero>.ah-desc>label{
+	color:$grey;
+	font-weight: 500;
+	font-size: rem(15px);
+	font-family:  $ff-open-sans;
+}
+.overview>.as-hero>.ah-desc>h3{
+	font-family:  $ff-open-sans;
+	font-weight: 600;
+	color: $brand-color;
+	font-size: rem(15px);
+	text-transform: uppercase;
+}
+/*linkbox*/
+.overview >.as-link-box > ul{
+	display: block;
+	background-color: $light-shade;
+	padding-left: rem(28px);
+	padding-right: rem(28px);
+	padding-top: rem(30px);
+	padding-bottom: rem(30px);
+}
+.overview >.as-link-box >ul > li{
+	display: block;
+	padding-bottom: rem(30px);
+	line-height: normal;
+}
+.overview >.as-link-box > ul> li:last-child{
+	padding-bottom: 0;
+}
+.overview >.as-link-box > ul > li >a{
+	color: $brand-color;
+	font-size: rem(15px);
+	font-weight: 500;
+	font-family: $ff-open-sans;
+}
+.overview >.as-link-box{
+	margin-top: rem(35px);
+}
+.overview >.as-link-box > h2{
+	font-family: $brand-font;
+	font-weight: 700;
+	font-size: rem(25px);
+	color: $brand-color;
+	text-transform: capitalize;
+	margin-bottom: rem(18px);
+}
+/*body*/
+.personal_info>h2{
+	font-family: $brand-font;
+	font-weight: bold;
+	color: $brand-color;
+	font-size: rem(30px);
+}
+.account-body-inner{
+	background-color:$light-shade;
+	padding: rem(35px);
+	font-family: $ff-open-sans;
+	overflow: hidden;
+	margin-top: rem(20px);
+}
+/*.account-body-inner h3{
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: capitalize;
+	color: #282928;
+}*/
+.apinfo-form-row{
+	width: 100%;
+	max-width: rem(250px);
+	margin-bottom: rem(35px);
+}
+.apinfo-form-row label{
+	font-weight: 500;
+	font-size: rem(16px);
+	margin-bottom: rem(16px);
+	color: $brand-color;
+	line-height: normal;
+}
+.apinfo-form-input input{
+	width: 100%;
+	height: 45px;
+	border:1px solid $grey;
+	background-color: $white-color;
+	padding: 8px 10px;
+	font-size: rem(15px);
+	font-weight: 500;
+	color: $grey;
+}
+.apinfo-form-input>input:hover{
+	border-color: $brand-color;
+}
+/*gcgdg*/
+.apinfo-form-row.apinfo-form-row-gender label{
+	margin-bottom: rem(26px);
+}
+.apinfo-form-row-gender input[type=radio] {
+	display: none;
+}
+.apinfo-form-row-gender input[type=radio] + label {
+	background: url('../images/radio-btns.png');
+	background-repeat: no-repeat;
+	background-position: left -18px;
+	padding-left: rem(28px);
+}
+.apinfo-form-row-gender input[type=radio]:checked + label {
+	background: url('../images/radio-btns.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: rem(28px);
+}
+.apinfo-form-row-gender .apinfo-form-input label{
+	font-weight: 500;
+	font-size: rem(15px);
+	color:$grey;
+	margin-bottom: 0;
+	vertical-align: top;
+	margin-right: rem(40px);
+	cursor: pointer;
+}
+.apinfo-form-row-gender.apinfo-form-row{
+	max-width: rem(360px);
+	overflow: hidden;
+	margin-bottom: rem(45px);
+}
+.apinfo-form-input > div{
+	float: left;
+	margin-bottom: rem(6px);
+}
+.apinfo-form-row-gender .apinfo-form-input-edit{
+	float: none;
+	margin-left: rem(50px);
+}
+.apinfo-form input[type="submit"]{
+	width: rem(130px);
+	height: rem(40px);
+	background-color: $brand-color;
+	color: $white-color;
+	text-transform: uppercase;
+	font-size: rem(14px);
+	border: none;
+	font-family: $ff-open-sans;
+}

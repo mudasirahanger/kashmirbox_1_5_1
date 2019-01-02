@@ -24,7 +24,6 @@
   'layout/header',
   'layout/footer';
 
-
 // 5. Components
 @import
   'components/breadcrumb';
@@ -45,7 +44,10 @@
   'pages/category',
   'pages/product',
   'pages/cart',
-  'pages/account';
+  'pages/account',
+  'pages/account-address',
+  'pages/account-orders',
+  'pages/account-wishlist';
 
 // 7. Themes
 @import

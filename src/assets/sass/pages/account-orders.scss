@@ -1,0 +1,116 @@
+.personal_info h2{
+	overflow: hidden;
+	font-family: $brand-font;
+	font-weight: bold;
+	color: $brand-color;
+	font-size: rem(30px);
+}
+.account-orders{
+	margin-top: rem(20px);
+}
+.ao-box{
+	width: 48.5%;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: rem(25px);
+	background-color: $light-shade;
+	text-align: center;
+}
+.ao-box:nth-of-type(even){
+	margin-right: 0;
+}
+.ao-box h5{
+	font-family:$ff-open-sans;
+	font-size: rem(22px);
+	color: $brand-color;
+	font-weight: 600;
+	margin-top: rem(30px);
+	margin-bottom: rem(15px);
+}
+.aob-link-box{
+	padding: 0 10px;
+}
+.ao-link{
+	display: inline-block;
+	color: $grey;
+	font-size: rem(13px);
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family:$ff-open-sans;
+}
+.ao-link:after{
+	content: '|';
+	display: inline-block;
+	margin-left: rem(8px);
+	margin-right: rem(4px);
+	vertical-align: text-bottom;
+}
+.ao-link:last-of-type:after{
+	content: normal;
+}
+.aof-meta{
+	width: 25%;
+	float: left;
+	background-color: $grey;
+	border-right: 2px solid $light-shade;
+	padding: 13px 6px;
+}
+.aof-meta:last-of-type{
+	border-right: 0;
+}
+.aof-option{
+	font-weight: 500;
+	font-size: rem(13px);
+	color: $light-shade;
+	text-transform: capitalize;
+	line-height: normal;
+	margin-bottom: rem(6px);
+	font-family:$ff-open-sans;
+}
+.aof-value{
+	font-weight: 600;
+	font-size: rem(14px);
+	color: $light-shade;
+	text-transform: capitalize;
+	font-family:$ff-open-sans;
+}
+.ao-status-ship{
+	color: $orange;
+}
+.ao-status-cancel{
+	color: $red-color;
+}
+.aob-footer{
+	margin-top: rem(25px);
+}
+.ao-load-more-wrap{
+	clear: both;
+	text-align: center;
+	margin-top: rem(45px);
+}
+#ao-load-more{
+	font-family: $ff-open-sans;
+	display: inline-block;
+	background-color: $brand-color;
+	text-transform: uppercase;
+	color: $white-color;
+	font-size: rem(15px);
+	font-weight: 500;
+	text-decoration: none;
+	padding: 12px 54px;
+}
+
+@media(max-width: 992px){
+	.aof-meta{
+		width: 50%;
+	}
+
+	.aof-meta:nth-of-type(even){
+		border-right: 0;
+	}
+	.aof-meta:nth-of-type(1),
+	.aof-meta:nth-of-type(2){
+		border-bottom: 2px solid #e0e0e0;
+	}
+}

@@ -4,7 +4,17 @@ block app_variables
   - var pageTitle = "Kashmir Box";
 block product_content
   main.product
-    include ./components/breadcrumb.pug 
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#")
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Women
+      li.breadcrumb-item
+        a(href="#") Women Clothing
+      li.breadcrumb-item
+        a(href="#") Home 
     .container            
       .row
         //-Image   

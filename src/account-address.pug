@@ -1,0 +1,66 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#") 
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Account
+      li.breadcrumb-item
+        a(href="#") Address Book
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+        .col-lg-9.col-md-9.personal_info
+          h2 Addresses
+          .account-body-inner
+            .aa-box-wrap
+              .aa-box
+                h3 address 1 
+                  label (default)
+                .aa-box-inner
+                  h4.name muheet mehraj
+                  h5 Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,
+                  h5 Srinagar- 190002
+                  h5 Jammu and Kashmir
+                  h5 Ph: 9797978377
+                  .aa-links-wrap
+                    a.aal-edit.aal-links(href="#") Edit 
+                      i.fa.fa-angle-double-right
+                    a.aal-delete.aal-links(href="#") Delete 
+                      i.fa.fa-angle-double-right
+              .aa-box
+                h3 address 2
+                .aa-box-inner
+                  h4.name muheet mehraj
+                  h5 Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,
+                  h5 Srinagar- 190002
+                  h5 Jammu and Kashmir
+                  h5 Ph: 9797978377
+                  .aa-links-wrap
+                    a.aal-edit.aal-links(href="#") Edit 
+                      i.fa.fa-angle-double-right
+                    a.aal-delete.aal-links(href="#") Delete 
+                      i.fa.fa-angle-double-right
+            .aa-form-wrap
+              h3 new address
+              form(method="post" action="#").aa-form
+                .aa-form-row
+                  input(type="text" name="a_a_name" placeholder="Name" required)
+                  input(type="text" name="a_a_email" placeholder="Email" required)
+                  input(type="text" name="a_a_phone" placeholder="Phone number" required)
+                .aa-form-row.aa-form-row-full
+                  input(type="text" name="a_a_address" placeholder="Address" required)
+                .aa-form-row
+                  input(type="text" name="a_a_landmark" placeholder="Landmark" required)
+                  input(type="text" name="a_a_city" placeholder="City" required)
+                  input(type="text" name="a_a_pincode" placeholder="Pincode" required)
+                .aa-form-row
+                  input(type="text" name="a_a_state" placeholder="State" required)
+                .aa-form-row
+                  input(type="submit" name="a_a_submit" value="Save Address")           

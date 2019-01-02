@@ -1,0 +1,157 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#")
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Women
+      li.breadcrumb-item
+        a(href="#") Women Clothing
+      li.breadcrumb-item
+        a(href="#") Home
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+        .col-lg-9.col-md-9.personal_info
+          h2 Orders
+          .account-orders
+            .ao-box.ao-box-pick
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-pick picklisted
+            .ao-box.ao-box-pick
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-pick picklisted
+            .ao-box.ao-box-shipped  
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-ship shipped
+            .ao-box.ao-box-cancel 
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol 
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-cancel cancelled
+            .ao-box.ao-box-pick
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-pick picklisted
+            .ao-box.ao-box-pick
+              h5 #898292019
+              .aob-link-box
+                a(href="#").ao-link track order
+                a(href="#").ao-link cancel order
+                a(href="#").ao-link view invoice
+              .aob-footer
+                .aof-meta
+                  .aof-option date
+                  .aof-value  11/11/2017
+                .aof-meta
+                  .aof-option items
+                  .aof-value  3 
+                .aof-meta
+                  .aof-option amount
+                  .aof-value
+                    span.rupee-symbol
+                      i.fa.fa-inr
+                    | 5,000
+                .aof-meta
+                  .aof-option status
+                  .aof-value.ao-status-pick picklisted
+          .ao-load-more-wrap
+            a(href="#")#ao-load-more load more

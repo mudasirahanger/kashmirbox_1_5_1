@@ -1,0 +1,91 @@
+.personal_info h2{
+	overflow: hidden;
+	font-family: $brand-font;
+	font-weight: bold;
+	color: $brand-color;
+	font-size: rem(30px);
+}
+.account-wishlist-row{
+	overflow: hidden;
+	margin-bottom: rem(20px);
+	background-color: $light-shade;
+	padding: 20px 33px;
+	margin-top: rem(20px);
+}
+.aw-image{
+	float: left;
+	margin-right: rem(30px);
+}
+.aw-image img{
+	width: rem(135px);
+	height: rem(135px);
+}
+.aw-desc{
+	float: left;
+}
+.aw-d-title{
+	font-family: $ff-open-sans;
+	font-weight: 500;
+	font-size: rem(16px);
+	color: $brand-color;
+	text-transform: capitalize;
+	text-decoration: none;
+	line-height: normal;
+	display: block;
+}
+.aw-d-title:hover{
+	color: $brand-color;
+	text-decoration: none;
+}
+.aw-d-meta{
+	margin-top: rem(7px);
+	margin-bottom: rem(8px);
+}
+.aw-d-star{
+	float: left;
+	color: $red-color;
+	font-size: rem(13px);
+	margin-right: rem(12px);
+}
+.aw-d-review{
+	font-size: rem(14px);
+	font-weight: 400;
+	color: $grey;
+	text-decoration: none;
+	font-family: $ff-open-sans;
+}
+.aw-d-review:hover{
+	text-decoration: none;
+	color: $grey;
+}
+.aw-d-price{
+	color: $brand-color;
+	font-size: rem(16px);
+	font-weight: 700;
+	margin-bottom: rem(12px);
+	font-family: $ff-open-sans;
+}
+.aw-d-btns a{
+	color: $white-color;
+	text-transform: uppercase;
+	font-size: rem(12px);
+	display: inline-block;
+	text-decoration: none;
+	font-family: $ff-open-sans;
+}
+.aw-d-btn-add{
+	background-color: $brand-color;
+	padding: 10px 12px;
+	margin-right: rem(8px);
+}
+.aw-d-btn-remove{
+	background-color: $grey;
+	padding: 10px 12px;
+	margin-right: rem(8px);
+}
+
+@media(max-width: 991px){
+	.aw-desc{
+		max-width: rem(300px);
+	}
+}

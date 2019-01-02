@@ -1,0 +1,78 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#")
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Account
+      li.breadcrumb-item
+        a(href="#") Wishlist
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+        .col-lg-9.col-md-9.personal_info
+          h2 Wishlist
+          .account-wishlist
+            .account-wishlist-row
+              .aw-image
+                img.img-responsive(src="images/wishlist-order-1.jpg")
+              .aw-desc
+                a(href="#").aw-d-title koshur one tree almond kernel delight 400 gms
+                .aw-d-meta
+                  .aw-d-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                  a.aw-d-review(href="#") 3 Reviews
+                .aw-d-price
+                  span.fa.fa-inr
+                  |5,000
+                .aw-d-btns
+                  a.aw-d-btn-add(href="#") add to cart
+                  a.aw-d-btn-remove(href="#") Remove
+            .account-wishlist-row
+              .aw-image
+                img.img-responsive(src="images/wishlist-order-1.jpg")
+              .aw-desc
+                a(href="#").aw-d-title koshur one tree almond kernel delight 400 gms
+                .aw-d-meta
+                  .aw-d-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                  a.aw-d-review(href="#") 3 Reviews
+                .aw-d-price
+                  span.fa.fa-inr
+                  |5,000
+                .aw-d-btns
+                  a.aw-d-btn-add(href="#") add to cart
+                  a.aw-d-btn-remove(href="#") Remove
+            .account-wishlist-row
+              .aw-image
+                img.img-responsive(src="images/wishlist-order-1.jpg")
+              .aw-desc
+                a(href="#").aw-d-title koshur one tree almond kernel delight 400 gms
+                .aw-d-meta
+                  .aw-d-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                  a.aw-d-review(href="#") 3 Reviews
+                .aw-d-price
+                  span.fa.fa-inr
+                  |5,000
+                .aw-d-btns
+                  a.aw-d-btn-add(href="#") add to cart
+                  a.aw-d-btn-remove(href="#") Remove

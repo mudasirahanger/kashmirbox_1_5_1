@@ -37,5 +37,8 @@
     "gulp-webserver": "^0.9.1",
     "pug": "^2.0.0-rc.2",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "readmore-js": "file:node_modules/readmore-js"
   }
 }

@@ -1,28 +1,24 @@
-extends ./layouts/category.pug
+extends ./layouts/brand.pug
 
 block app_variables
   - var pageTitle = "Kashmir Box";
-block category_content
-  main.category
+block brand_content
+  main.brand
     //-Product_banner
     .container_fluid
       .row
-        .col-md-12.col-lg-12.padding-0.categorybanner
+        .col-lg-12.col-md-12.padding-0.brandbanner
           img(src="images/product_banner.png" alt="Banner").img-responsive
-          h1 EMBROIDERED ETHNIC KURTIS!
+          h1 yinder pashmina society
         //-Productlist and filters
-        //-will remove with breadcrumb file
-        include ./components/breadcrumb.pug
-        ol.breadcrumb.productbreadcrumb
-          li.breadcrumb-item
-            a(href="#")
-              span.fa.fa-home
-          li.breadcrumb-item
-            a(href="#") Women
-          li.breadcrumb-item
-            a(href="#") Women Clothing
-          li.breadcrumb-item
-            a(href="#") Home
+      .row
+        .col-lg-11.col-md-11.col-lg-offset-1.col-md-offset-1.brand_description
+          img(src="images/Rectangle 898.png" alt="atisan image")
+          .discription  
+            h3 yinder pashmina society
+            p Lorem ipsum dolor sit amet, mea ferri lobortis complectitur ex. Nulla dignissim theophrastus in quo, eos verterem recusabo ex. Ne sit tota movet, latine omnesque salutatus et pro. Prima tractatos assueverit ne sea, ea nominati consectetuer cum, ea nam delenit albucius antiopam. Unum quas homero in qui. His falli torquatos id, no eum cibo feugiat vituperatoribus, cu scripserit eloquentiam pro. Eu meliore partiendo est, partem aliquip bonorum vis no.
+            p Lorem ipsum dolor sit amet, mea ferri lobortis complectitur ex. Nulla dignissim theophrastus in quo, eos verterem recusabo ex. Ne sit tota movet, latine omnesque salutatus et pro. Prima tractatos assueverit ne sea, ea nominati consectetuer cum, ea nam delenit albucius antiopam. Unum quas homero in qui. His falli torquatos id, no eum cibo feugiat vituperatoribus, cu scripserit eloquentiam pro. Eu meliore partiendo est, partem aliquip bonorum vis no.
+            h5 - Rouf Ahmed (Pashmina artisan)
       .row
         .col-lg-2.col-md-2.filter_list
           h3 Filters

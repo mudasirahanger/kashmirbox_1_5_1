@@ -1,26 +1,25 @@
-/*
-.backgroundshade{
- height:100vh;
- margin:0;
- background:$light-shade
+/*------------------Main blog-----------------*/
+/**/
+@include respond-to(large-2){
+.blog-hero-image-wrapper:before {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    right: 0;
+    margin-top: rem(110px);
+    background: #fafafa;
+    transform: skewY(-15deg);
+    content:"";
 }
-.backgroundshade:before {
- content:"";
- position:absolute;
- top:0;
- bottom:0;
- left:-250px;
- width:500px;
- background:$white-color;
- transform:skew(-30deg);
-}*/
+.main_row{
+ margin-top: rem(80px);
+}
 .blog-hero-image-wrapper img{
  float:right;
  margin-top: 120px;
  position: relative;
  text-align: right;
 }
-@include respond-to(large-2){
 .blog-hero-content{
   background-color:$white-color;
   box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.22);
@@ -46,7 +45,7 @@
   line-height: 1.667;
   margin-top: rem(30px);
   max-width: rem(650px);
-}
+ }
 }
 @include respond-to(large-1-1){
 .blog-hero-image-wrapper{
@@ -70,7 +69,7 @@
 .featured_post {
   font-size: rem(14px);
   font-family: $ff-open-sans;
-  color: $brand-color;
+  color: $grey;
   text-transform: uppercase;
   line-height: 2.929;
 }
@@ -159,4 +158,175 @@
 }
 .author > span ,.date > span{
 	margin-right: rem(5px);
+}
+/*---------Single blog--------*/
+@include respond-to(large-2){
+ .blogcontent{
+   top:35%;
+   left: 0px;
+   position: absolute;
+ }
+ .single1{
+  line-height: 2;
+ }
+ .single2{
+  line-height: 4;
+ }
+}
+@include respond-to(large-1-1){
+ .blogcontent{
+   top:35%;
+   left: 0px;
+   position: absolute;
+ }
+ .single1{
+  line-height: 2;
+ }
+ .single2{
+  line-height: 3;
+ }
+}
+.banner {  
+  position:relative;
+  text-align:center;
+}
+.blogcontent{
+  width: 100%;
+ }
+.New_collections{
+  font-size: rem(40px);
+  left: 0px;
+  text-transform: capitalize;
+  font-family: $brand-font;
+  line-height: 1;
+}
+.New_collections,.single1,.single2{
+  color: $white-color;
+}
+.single1{
+  font-size: rem(20px);
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+}
+.single2{
+  font-size: rem(18px);
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+}
+/*tags*/
+.tags{
+  background-color: $light-shade;
+  width: 55%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(20px);
+}
+.heading_tags{
+  padding-top: rem(15px);
+  display: flex;
+  justify-content: center;
+}
+.heading_tags span{
+  margin-right: rem(10px);
+  margin-top: rem(1px);
+}
+.heading_tags p{
+ text-transform: uppercase;
+ font-family: $ff-open-sans;
+}
+.wrapper_tags{
+ text-align: center;
+}
+.wrapper_tags a{
+   background: $white-color;
+   border: 1px solid $grey;
+   margin: 10px;
+   padding: 2px 10px;
+   display: block;
+   font-size: rem(14px);
+   color: $brand-color;
+   font-family: $ff-open-sans;
+   display: inline-block;
+}
+.wrapper_tags a:hover{
+	text-decoration: none;
+}
+/*text*/
+.blog_text,.blog_subscribe{
+  width: 55%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog_text p{
+  font-family: $ff-open-sans;
+  font-size: rem(14px);
+  color: $brand-color;
+  margin-top: rem(20px);
+  text-align: justify;
+}
+.blog_text img{
+  margin-top: rem(30px);
+}
+/*subscribe*/
+.blog_subscribe{
+	background-color: $light-shade;
+	margin-top: rem(40px);
+	display: flex;
+}
+.blog_form{
+	padding:20px 20px 20px 20px;
+	max-width: rem(450px);
+}
+.blog1{
+  font-size: rem(18px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: justify;
+}
+.blog2{
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color:$brand-color;
+  line-height: 1.7;
+  text-align: left;
+  margin-top: rem(15px);
+}
+.blog_form input{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(182, 182, 182);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+  text-transform: capitalize;
+  padding-left: rem(20px);
+  margin-top: rem(20px);
+} 
+.blog_button{
+  background-color: $brand-color;
+  color: $white-color;
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin-top: rem(20px);
+  font-family: $ff-open-sans;
+  text-transform: uppercase;
+}
+/*most popular posts*/
+.most_popular_posts{
+  margin-top: rem(50px);
+}
+.most_popular_posts h3{
+  font-family:$brand-font;
+  font-size: rem(24px);
+  color: $brand-color;
+  margin-bottom: rem(20px);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }

@@ -13,22 +13,34 @@
   text-transform: uppercase;
 }
 /*product_list*/
-.product_list > div > select{
-	width: 25%;
+.product_list > div > .sort_order{
     float: right;
-    border-color: $grey;
-    box-shadow: none;
-    border-bottom: 1px solid $grey;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -webkit-border-radius: 0px;
-    background-image: url(https://image.flaticon.com/icons/svg/60/60781.svg);
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 12px;
+    border: 1px solid #eee;
     font-family:  $ff-open-sans;
     color: $brand-color;
     margin-bottom: rem(30px);
+    padding: 10px 10px;
+}
+.sort_order a{
+  color:$grey;
+  text-decoration: none;
+}
+.sort{
+  text-align:center;
+  font-size: rem(12px);
+  font-family: $ff-open-sans;
+  font-style:normal;
+  padding: rem(0px) ;
+  margin: rem(0px);
+  left: -9px;
+  -webkit-box-shadow:0px 1px 1px $light-shade;
+ -moz-box-shadow:0px 1px 1px $light-shade;
+ box-shadow:0px 1px 1px $light-shade;
+}
+.sort > li{
+  padding-top: rem(10px);
+  font-size: rem(14px);
+  color: $grey;
 }
 .column > a{
 	text-decoration: none;
@@ -76,7 +88,7 @@ center{
   color:$red-color;
 }
 .column>a>center >.checked {
-  color: $orange;
+  color: $grey !important;
 }
 /*filter_list*/
 .filter_list h3{

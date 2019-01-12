@@ -1,0 +1,82 @@
+extends ./layouts/blog.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block blog_content
+  main.single_blog
+    //-slider
+    .container_fluid
+      .row
+        .col-lg-12.col-md-12.padding-0.banner
+          a(href="https://www.kashmirbox.com/christmas-offers-2018/")
+            img(src="images/single_blog.png" alt="Banner").img-responsive
+            .blogcontent
+              p.single1 featured post
+              p.New_collections The Women of shehjar - empowering themselves and eachother
+              p.single2 samiya andrabi 
+                span | 24/05/2017
+      .row
+        .col-lg-12.col-md-12
+          .tags
+            .heading_tags
+              span.fa.fa-tag
+              p tags
+            .wrapper_tags
+              a(href="") women enterpreneurs
+              a(href="") women empowerment
+              a(href="") artisans of kashmir
+          .blog_text
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu. Ad summo suavitate interpretaris qui, et ius wisi perfecto. Ei est impedit graecis neglegentur, vocent accumsan contentiones an quo. Ne illud appetere dissentiunt pro, usu at copiosae postulant vulputate, noluisse intellegat posidonium pro ne. In nec petentium dissentias, vix id alii perpetua, iusto consetetur definitionem ex quo. Et tacimates volutpat molestiae eos, ut sea utinam blandit.
+            img(src="images/blog1.png" alt="blog image1").img-responsive
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu.
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu. Ad summo suavitate interpretaris qui, et ius wisi perfecto. Ei est impedit graecis neglegentur, vocent accumsan contentiones an quo. Ne illud appetere dissentiunt pro, usu at copiosae postulant vulputate, noluisse intellegat posidonium pro ne. In nec petentium dissentias, vix id alii perpetua, iusto consetetur definitionem ex quo. Et tacimates volutpat molestiae eos, ut sea utinam blandit.
+            img(src="images/blog2.png" alt="blog image1").img-responsive
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu.
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu. Ad summo suavitate interpretaris qui, et ius wisi perfecto. Ei est impedit graecis neglegentur, vocent accumsan contentiones an quo. Ne illud appetere dissentiunt pro, usu at copiosae postulant vulputate, noluisse intellegat posidonium pro ne. In nec petentium dissentias, vix id alii perpetua, iusto consetetur definitionem ex quo. Et tacimates volutpat molestiae eos, ut sea utinam blandit.
+            img(src="images/blog3.png" alt="blog image1").img-responsive
+            p Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit. Consul principes interpretaris duo te. Mei cibo efficiantur ea. Adipisci accusamus consulatu mel no. Solum eripuit cum ad, ut sit ignota alterum commune. Quo cibo vocibus ocurreret ei, ut duo utamur antiopam dissentiet. Ea duo congue deseruisse, an nullam discere fastidii usu.
+          .blog_subscribe
+            img(src="images/Layer 734.png" alt="image")
+            .blog_form  
+              .blog1 subscribe to kashmirbox newsletter
+              .blog2 Lorem ipsum dolor sit amet, eu erant apeirian nam, ea primis fierent pri. Magna regione impedit eu eam, eu pri dolorum hendrerit.
+              input(type="text" placeholder="first name").firstname
+              input(type="text" placeholder="first name").firstname
+              input(type="text" placeholder="first name").firstname
+              a(href="")
+                button(type="submit").blog_button sign me up
+      .row.most_popular_posts
+        h3 most popular posts          
+        .col-xs-12.col-sm-6.col-md-6.col-lg-4
+          .blog-link-wrapper
+            .blog-link
+              .blog-image
+                a(href="") 
+                  img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/blog/default_blog.png" alt="blog-image-goes-here")
+              .blog-heading
+                p BLOG: THE PASHMINA RING TEST
+              .title
+                p
+                  a(href="") The Pashmina Ring Test - Truth. Lorem ipsum dolor sit amet, eu erant apeirian nam
+        .col-xs-12.col-sm-6.col-md-6.col-lg-4
+          .blog-link-wrapper
+            .blog-link
+              .blog-image
+                a(href="") 
+                  img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/blog/default_blog.png" alt="blog-image-goes-here")
+              .blog-heading
+                p BLOG: THE PASHMINA RING TEST
+              .title
+                p
+                  a(href="") The Pashmina Ring Test - Truth. Lorem ipsum dolor sit amet, eu erant apeirian nam
+        .col-xs-12.col-sm-6.col-md-6.col-lg-4
+          .blog-link-wrapper
+            .blog-link
+              .blog-image
+                a(href="") 
+                  img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/blog/default_blog.png" alt="blog-image-goes-here")
+              .blog-heading
+                p BLOG: THE PASHMINA RING TEST
+              .title
+                p
+                  a(href="") The Pashmina Ring Test - Truth. Lorem ipsum dolor sit amet, eu erant apeirian nam

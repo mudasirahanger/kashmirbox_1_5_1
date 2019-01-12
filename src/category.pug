@@ -8,7 +8,7 @@ block category_content
     .container_fluid
       .row
         .col-md-12.col-lg-12.padding-0.categorybanner
-          img(src="images/product_banner.png" alt="Banner").img-responsive
+          img(src="images/category.png" alt="Banner").img-responsive
           h1 EMBROIDERED ETHNIC KURTIS!
         //-Productlist and filters
         //-will remove with breadcrumb file
@@ -124,11 +124,17 @@ block category_content
                       |  Option 3
         .col-lg-10.col-md-10.product_list
           .col-lg-12.col-md-12
-            select.option_list.dropdown(data-settings='{"wrapperClass":"metro"}')
-              option(data-ref="value" aria-placeholder="Select a country") We Recommend
-              option(value="1") Newest
-              option(value="2") Lowest Price
-              option(value="3") Highest Price
+            ul.top_nav_row.sort_order
+              li.top_nav_li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown') We Recommend 
+                  span.fa.fa-angle-down.fa-lg
+                  ul.dropdown-menu.sort
+                    li
+                      a(href="#") Newest
+                    li
+                      a(href="#") Lowest
+                    li
+                      a(href="#") Highest
           .col-lg-3.col-md-3.column
             a(href="#")
               img(src="images/product.png" alt="Kashmir Box").img-responsive

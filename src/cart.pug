@@ -13,12 +13,25 @@ block cart_content
             p KashmirBox is trusted by more than 1 million customers worldwide  
           p continue shopping
     .container
-      .row.cartproducts
+      .row.cartproducts  
         .col-lg-8.col-md-8.product_details_incart
+          .row
+            blockquote.offers_blockquote 
+              h4 offers
+              ul
+                li 10% Cashback on Airtel Payments Bank.
+                li 10% Cashback on Airtel Payments Bank.
+                li 10% Cashback on Airtel Payments Bank.
+          .row
+            .alert.alert-info(role="alert").free_delivery_alert 
+              span.fa.fa-truck 
+              |Yay! 
+              b Free Delivery 
+              |on this order 
           h3 My Shopping Bag(1 Items)
-          .row.wrapper
+          .row.product_wrapper
             .col-lg-3.col-md-3
-              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg" style="width:80%")
             .col-lg-9.col-md-9
               .name_and_rate.name_and_price
                 p Emerald Hand Embroidered Silk Suit
@@ -37,9 +50,9 @@ block cart_content
               .name_and_rate.remove_and_wishlist
                 p remove
                 span move to wishlist
-          .row.wrapper
+          .row.product_wrapper
             .col-lg-3.col-md-3
-              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg" style="width:80%")
             .col-lg-9.col-md-9
               .name_and_rate.name_and_price
                 p Emerald Hand Embroidered Silk Suit
@@ -58,9 +71,9 @@ block cart_content
               .name_and_rate.remove_and_wishlist
                 p remove
                 span move to wishlist
-          .row.wrapper
+          .row.product_wrapper
             .col-lg-3.col-md-3
-              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg")
+              img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg" style="width:80%")
             .col-lg-9.col-md-9
               .name_and_rate.name_and_price
                 p Emerald Hand Embroidered Silk Suit
@@ -92,7 +105,8 @@ block cart_content
             p Rs.35
           .rate_feature.bag_discptn.apply_coupon
             p Discount
-            p Apply Coupon 
+            p 
+              a(href="") Apply Coupon   
           .rate_feature.bag_discptn
             p Delivery Charges
             p Rs.149

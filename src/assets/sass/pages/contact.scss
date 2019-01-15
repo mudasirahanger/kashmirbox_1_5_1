@@ -1,0 +1,36 @@
+/*body*/
+.contact_info>h2{
+	font-family: $brand-font;
+	font-weight: bold;
+	color: $brand-color;
+	font-size: rem(30px);
+}
+.contact-body-inner{
+	background-color:$light-shade;
+	padding: rem(35px);
+	font-family: $ff-open-sans;
+	overflow: hidden;
+	margin-top: rem(20px);
+}
+
+.contact-box-wrap > .aa-box-inner{
+	border: 1px solid $grey;
+	background-color: $white-color;
+	padding: 35px 26px;
+}
+.contact-box-wrap > .aa-box-inner:hover{
+	border: 1px solid $brand-color;
+}
+.contact-box-wrap >.aa-box-inner > .name{
+	color: $brand-color;
+	margin-bottom: rem(20px);
+	font-weight: bold;
+}
+.contact-box-wrap >.aa-box-inner h4, h5{
+	font-family:$ff-open-sans;
+	font-size: rem(14px);
+	color: $brand-color;
+}
+.contact-body-inner>.aa-box-inner>.address{
+	max-width: 40%;
+}

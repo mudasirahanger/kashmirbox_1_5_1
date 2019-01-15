@@ -1,16 +1,158 @@
-extends ./layouts/blog.pug
+extends ./layouts/careers.pug
 
 block app_variables
   - var pageTitle = "Kashmir Box";
 block career_content
-  main.career_blog
+  main.career
     //-slider
     .container_fluid
       .row
         .col-lg-12.col-md-12.padding-0.banner
           a(href="https://www.kashmirbox.com/christmas-offers-2018/")
-            img(src="images/single_blog.png" alt="Banner").img-responsive
-            .blogcontent
-              p.single1 featured post
-              p.New_collections The Women of shehjar - empowering themselves and eachother
-              a(href="#") see current openings
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/main_banner.jpg" alt="Banner").img-responsive
+            .careertext
+              p.c_text1 LET’S UNFURL A COMMUNITY THAT MAKES A DIFFERENCE!
+              p.c_text2 Because alone we can do so little, together we can do so much
+              button
+                a(href="#") see current openings
+    .container            
+      .row
+        .col-lg-12.col-md-12.why-us
+          h2 why work at kashmir box?
+          p Because doing what you love matters. Doing it full-time matters all the more. The best part? You get to do it alongside some of the brightest, most passionate people across all disciplines and specialties. At Kashmir Box, we love people who are genuinely passionate, believe in working hard, enjoy to the fullest and are outrageously innovative in whatever they do!
+      .row.why-us2
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections
+          h2 Friendly and Robust Environment
+          p While at work, we believe in getting things done. Our concept of KB’ism means that we are a combination of fun loving and passionate and believe in smart and result oriented work.
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections
+          h2 Cross Departmental Learning
+          p Our people get to learn the functioning of various departments. Results – you become a true industry expert and gain an insight beneficial for your personal and professional growth.
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections 
+          h2 A Transparent Structure
+          p Our processes are smooth and transparent – be it for our employees, vendors or customers. It only adds to the reasons of why you must join the fabulous team of Kashmir Box.
+      .row.why-us3    
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections
+          h2 Personal and Professional Growth
+          p At Kashmir Box, we live by the value of empowering our people. Thus, we ensure that your personal as well as professional growth curve reaches a pinnacle.
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections
+          h2 A Creative Atmosphere
+          p With a homely and light work environment, creativity bursts forth at Kashmir Box to attain our vision – of offering and empowering Kashmir.
+        .col-lg-4.col-md-4.col-md-4.col-xs-4.three_sections 
+          h2 Make an Impact
+          p Each day you spend at Kashmir Box, is a day where you get to impact the lives of 10000+ artisans, 200+ growers and 50+ brands from the remotest corners of Kashmir.
+    .section.co.padding-0      
+      .container
+        .row.current_opening
+          h2 current openings
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 1
+              h4 Executive
+              p Consumer Experience | Srinagar | Delhi
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 1
+              h4 Executive
+              p Consumer Experience | Srinagar 
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 0
+              h4 Executive
+              p Consumer Experience | Srinagar
+        .row.current_opening        
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 1
+              h4 Executive
+              p Consumer Experience | Srinagar
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 0
+              h4 Executive
+              p Consumer Experience | Srinagar
+          .col-lg-4.col-md-4.col-md-4.col-xs-4
+            .cp_sections
+              p 1
+              h4 Executive
+              p Consumer Experience | Srinagar
+    .container
+      .row.members
+        h2 The people of kashmirbox
+        p Meet the people who make Kashmir Box what it is – the dreamers, thinkers and achievers behind each of our processes.
+        .col-lg-12.col-md-12.member_images
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/Ishfaq_Sir.png").img-responsive
+            p.person-nice-name Ishfaq Mir
+            p.person-position Chairman
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/muheet.png").img-responsive
+            p.person-nice-name Muheet Mehraj
+            p.person-position C.E.O
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sajid.png").img-responsive
+            p.person-nice-name Sajid Nahvi
+            p.person-position C.O.O
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/ramesh_koul.png").img-responsive
+            p.person-nice-name Ramesh Koul
+            p.person-position C.F.O
+      .row.members
+        .col-lg-12.col-md-12.member_images
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sajad.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sajad.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/Maqsood.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sabreen.png")
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/muntazir.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+      .row.members
+        .col-lg-12.col-md-12.member_images
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sajad.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sajad.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/Maqsood.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/sabreen.png").img-responsive
+            p.person-nice-name Ishfaq Mir
+            p.person-position Chairman
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/muntazir.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+          .image-wrapper
+            img(src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1/images/people/muntazir.png").img-responsive
+            p.person-nice-name Member
+            p.person-position abc
+    .section.applynow.padding-0
+      .container
+        .row.apply_now
+          .col-lg-8.col-md-8
+            .leftside
+              p Are you a Fresher?
+              h2 Join Kashmir Box For An Internship
+              p And get a headstart to a lucrative career
+          .col-lg-4.col-md-4
+            .rightside
+              button
+                a(href="#") apply now

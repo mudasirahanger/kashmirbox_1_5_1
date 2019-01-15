@@ -1,0 +1,222 @@
+@include respond-to(large-2){
+ .careertext{
+   top:35%;
+   left: 0px;
+   position: absolute;
+ }
+ .c_text1{
+  line-height: 3;
+ }
+}
+@include respond-to(large-1-1){
+ .careertext{
+   top:35%;
+   left: 0px;
+   position: absolute;
+ }
+ .c_text1{
+  line-height: 2;
+ }
+}
+.banner {  
+  position:relative;
+  text-align:center;
+}
+.careertext{
+  width: 100%;
+}
+.careertext>a:hover{
+  text-decoration: none;
+}
+.c_text2{
+  font-size: rem(35px);
+  left: 0px;
+  text-transform: capitalize;
+  font-family: $brand-font;
+  line-height: 1;
+  font-weight: bold;
+}
+.c_text2,.c_text1{
+  color: $white-color;
+  text-decoration: none;
+}
+.c_text1{
+  font-size: rem(15px);
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+}
+.careertext > button{
+  padding: 15px 30px;
+  color: $white-color;
+  background: $red-color;
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  border:none;
+  margin-top: rem(20px);
+ }
+ .careertext > button > a{
+  color:$white-color;
+  text-decoration: none;
+ }
+ /*why work at kashmirbox*/
+ .why-us,.co{
+  text-align: center;
+  margin-top: rem(50px);
+ }
+ .why-us h2{
+  font-family: $ff-open-sans;
+  font-size: rem(26px);
+  color: $brand-color;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+ .why-us > p,.members > p{
+  font-family: $ff-open-sans;
+  font-size: rem(17px);
+  color: $grey;
+  font-weight: normal;
+  margin-top: rem(20px);
+ }
+ .why-us2,.why-us3{
+  margin-top: rem(50px);
+ }
+ .three_sections{
+   text-align: left;
+ }
+ .three_sections > h2{
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: rem(22px);
+}
+ .three_sections > p{
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  color: $grey;
+  font-weight: normal;
+  margin-top: rem(20px);
+}
+ /*.current_opening*/
+.co{
+  background-color: $light-shade;
+}
+.current_opening{
+  margin-bottom: rem(20px);
+}
+.current_opening h2{
+  font-family: $ff-open-sans;
+  font-size: rem(26px);
+  color: $brand-color;
+  font-weight: 900;
+  text-transform:uppercase;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}
+.cp_sections{
+  border: 1px solid $grey;
+  background: $white-color;
+  padding: 20px 20px 40px 20px;
+}
+.cp_sections:hover{
+  background-color: $brand-color;
+}
+.cp_sections > h4:hover{
+  color: $white-color;
+}
+.cp_sections >p:nth-of-type(1){
+  text-align: left;
+  font-size: rem(40px);
+  color: $grey;
+  font-family: $ff-open-sans;
+}
+.cp_sections > h4{
+  text-align: left;
+  font-size: rem(25px);
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-weight: bold;
+}
+.cp_sections >p{
+  text-align: left;
+  font-size: rem(15px);
+  color: $grey;
+  font-family: $ff-open-sans;
+  margin-top: rem(10px);
+}
+/*members*/
+.members{
+  text-align: center;
+  margin-top: rem(20px);
+}
+.members h2{
+  font-family: $ff-open-sans;
+  font-size: rem(26px);
+  color: $brand-color;
+  font-weight: 900;
+  text-transform:uppercase;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}
+.member_images{
+ display: inline-flex;
+ justify-content: center;
+ margin-top: rem(40px);
+}
+.image-wrapper{
+  margin-right: rem(20px);
+}
+.image-wrapper >.person-nice-name{
+  text-align: center;
+  font-family:$ff-open-sans;
+  font-weight: bold;
+  font-size: rem(20px);
+  color:$grey;
+  margin-top: rem(10px);
+}
+.image-wrapper > .person-position{
+  text-align: center;
+  text-transform: uppercase;
+  color:$grey;
+  font-size: rem(13px);
+  font-family:$ff-open-sans;
+}
+/*apply now*/
+.applynow{
+  background-color: $brand-color;
+  margin-top: rem(40px);
+}
+.apply_now{
+  text-align: left;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+}
+.leftside >h2{
+  font-family: $brand-font;
+  font-weight: bold;
+  font-size: rem(30px);
+  color: $white-color;
+  letter-spacing: 2px !important;
+  padding: 10px 0px 10px 0px;
+}
+.leftside >p{
+  font-size: rem(14px);
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+  color: $light-shade;
+}
+.rightside > button{
+  padding: 15px 30px;
+  color: $white-color;
+  background: $red-color;
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  border:none;
+  margin-top: rem(20px);
+ }
+.rightside > button > a{
+  color:$white-color;
+  text-decoration: none;
+ }

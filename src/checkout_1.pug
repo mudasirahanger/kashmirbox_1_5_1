@@ -1,0 +1,37 @@
+extends ./layouts/checkout.pug
+
+block app_variables
+  -var pageTitle = "Kashmir Box";
+block checkout_content
+  main.checkout
+    //-checkout body
+    .container
+      .row.steps
+        .col-lg-12.col-md-12 
+          .firststep
+            p Login/Signup
+            p Shipping address
+            p Payment 
+        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2.leftside
+          h3 1.Login
+          .email_address
+            input(type="text" placeholder="Enter email address")
+          .button.continue 
+            a(href="#") continue 
+        .col-lg-5.col-md-5.col-lg-offset-1.col-md-offset-1.rightside
+          p Advantages of secure login
+          .text_with_icons
+            .icons
+              img(src="images/authentic_guarantee.png" alt="images")
+            .text 
+              p Authenticity Guaranteed
+          .text_with_icons
+            .icons
+              img(src="images/safe_secure.png" alt="images")
+            .text    
+              p.text_with_icons 100% Safe & Secure Payments Process
+          .text_with_icons
+            .icons
+              img(src="images/easy_return.png" alt="images")
+            .text
+              p.text_with_icons Easy Returns

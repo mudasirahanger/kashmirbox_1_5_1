@@ -1,0 +1,141 @@
+/*banner style added in base.scss*/
+/*abt_text and team_text*/
+.abt_text,.team_text,.abt_members{
+  margin-top: rem(40px);
+}
+.abt_text >div> h2,.team_text >div> h2{
+  font-size: rem(32px);
+  font-family: $brand-font;
+  color: $brand-color;
+  line-height: 1.326;
+  text-align: left;
+  font-weight: bold;
+}
+.abt_text >div> p,.team_text >div> p{
+  font-size: 15px;
+  font-family: "Gotham";
+  color: rgb(115, 115, 115);
+  line-height: 2;
+  text-align: left;
+}
+/*evolution*/
+.evolution{
+  text-align: center;
+  margin-top: rem(50px);
+}
+.evolution > h3{
+  font-size: rem(20px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  margin-bottom: rem(20px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.evolution > div{
+  display: flex;
+  justify-content: center;
+  margin-top: rem(30px);
+}
+.evolution_progress_leftside > .single_item{
+  max-width: rem(200px);
+  text-align: right;
+  height: rem(140px);
+}
+.evolution_progress_rightside > .single_item{
+  max-width: rem(200px);
+  text-align: left;
+  height: rem(140px);
+}
+.single_item p{
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  line-height: 1.333;
+  font-weight: bold;
+}
+.single_item p:nth-of-type(2){
+  font-weight: normal;
+  color:$grey;
+  margin-top: rem(10px);
+  line-height: 1.5;
+}
+.evolution_progress_middle > .circle_with_border{
+  background-color: $grey;
+  width: rem(40px);
+  height: rem(40px);
+  border-radius:50%;
+  position: relative;
+  border: 1px solid $brand-color;
+  margin-left: rem(25px);
+  margin-right: rem(25px);
+}
+.circle_with_border>.smalldot{
+  background-color: $brand-color;
+  width: rem(7px);
+  height: rem(7px);
+  border-radius:50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.evolution_progress_middle > .vertical_line{
+  width: rem(1px);
+  height: rem(95px);
+  background-color: $grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(5px);
+  margin-bottom: rem(5px);
+}
+.evolution > div > .single_item > .last_one{
+  max-width:200px;
+}
+/*joinus and corevalues*/
+.joinus,.corevalues{
+  background-color: $light-shade;
+  margin-top: rem(40px);
+}
+.join_us,.core_values{
+  text-align: left;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  padding: 10px 0px 10px 0px;
+}
+.join_us >div> h2,.core_values > h2{
+  font-family: $brand-font;
+  font-size: rem(30px);
+  color: $brand-color;
+  letter-spacing: 2px !important;
+  margin-bottom: rem(20px);
+  font-weight: bold;
+}
+.join_us >div> p,.core_values > div > p{
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  margin-bottom: rem(20px);
+}
+.join_us >div> button{
+  padding: 15px 30px;
+  color: $white-color;
+  background: $brand-color;
+  border:none;
+  margin-top: rem(20px);
+  width: rem(300px);
+  height: rem(65px);
+ }
+.join_us >div> button > a{
+  color:$white-color;
+  text-decoration: none;
+  font-size: rem(15px);
+  text-transform: uppercase;
+  font-family: $ff-open-sans;
+ }
+.core_values> div> h3{
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  margin-bottom: rem(20px);
+  font-weight: bold;
+  text-transform: uppercase;
+}

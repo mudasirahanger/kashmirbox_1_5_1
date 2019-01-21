@@ -1,0 +1,35 @@
+extends ./layouts/checkout.pug
+
+block app_variables
+  -var pageTitle = "Kashmir Box";
+block checkout_content
+  main.checkout
+    //-checkout body
+    .container
+      .row.steps
+        .col-lg-12.col-md-12
+          .firststep
+            p Login/Signup
+            p Shipping address
+            p Payment 
+        .col-lg-6.col-md-6.col-lg-offset-2.col-md-offset-2.leftside
+          h3 3. Select payment method
+          .row.payment_method
+            img(src="images/ccavenue.png").payment_type
+            img(src="images/pay u.png").payment_type
+            img(src="images/mobiwik.png").payment_type
+          .row.payment_method  
+            img(src="images/paytm.png").payment_type
+            img(src="images/cod.png").payment_type
+        .col-lg-4.col-md-4.rightside
+          .subtotal 
+            p Sub total: 
+              span 7,000
+            p Discount:
+              span.discount_percent 10%
+            p GST:
+              span 600
+            p Shipping:
+              span 200
+            p Grand total:
+              span 7,800

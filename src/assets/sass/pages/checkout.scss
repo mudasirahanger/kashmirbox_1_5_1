@@ -1,0 +1,167 @@
+.steps{
+   margin-top: rem(40px);
+}
+.steps > div > .firststep{
+  border-bottom: 1px solid $grey;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(40px);
+}
+.steps > div > .firststep > p{
+  font-size: rem(17px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.529;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: rem(15px);
+}
+/*login*/
+.steps>.leftside{
+  margin-bottom: rem(50px);
+}
+.steps>.leftside>h3,.heading>div>h3{
+  font-size: rem(18px);
+  font-family: $ff-open-sans;
+  color:$brand-color;
+  text-align: left;
+  margin-bottom: rem(40px);
+}
+.steps>.leftside>.email_address{
+  margin-bottom: rem(30px);	
+}
+.steps>.leftside>.email_address>input{
+  border:none;
+  border-bottom: 1px solid $grey;
+  width: rem(370px);
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  padding-left: rem(10px);
+  padding-bottom: rem(10px);
+}
+.steps>.leftside>.continue{
+  border:none;
+  color: $white-color;
+  background-color: $brand-color;
+  width: rem(370px);
+  text-align: center;
+  height:rem(57px);
+  padding-top: rem(15px);
+}
+.leftside>.continue > a{
+  font-size: rem(16px);
+  font-family: $ff-open-sans;
+  color:$white-color;
+  text-transform: uppercase;
+  line-height: 1.625;
+}
+.leftside>.continue > a:hover{
+  text-decoration: none;
+}
+/*rightside*/
+.steps>.rightside{
+  margin-top: rem(70px);
+  margin-bottom: rem(50px);
+}
+.steps>.rightside>p{
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.733;
+  text-align: left;
+  margin-bottom: rem(20px);
+}
+.steps>.rightside>.text_with_icons{
+	display: flex;
+}
+.steps>.rightside>.text_with_icons>.text{
+	margin-left: rem(10px);
+}
+.steps>.rightside>.text_with_icons>.text>p{
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color:$brand-color;
+  line-height: 2;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: rem(5px);
+}
+/*checkout_3*/
+.leftside>.payment_method{
+  display: flex;
+  margin-bottom: rem(20px);
+}
+.leftside>.payment_method:nth-of-type(1){
+  margin-top: rem(60px);
+}
+.leftside>.payment_method>.payment_type{
+  margin-right: rem(20px);
+  width: 140px;
+  height: 50px;
+}
+.rightside>.subtotal>p{
+  font-size: rem(17px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  line-height: 2.059;
+  text-align: left;
+}
+.rightside>.subtotal>p>span{
+  font-size: rem(17px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 2.059;
+  margin-left: rem(8px);
+}
+.rightside>.subtotal > p > .discount_percent{
+ color:$red-color;
+ font-weight: bold;
+}
+/*checkout_2*/
+.addressbook>div>.addressbox {
+  border:1px solid $grey;
+  background-color: rgba(43, 43, 43, 0);
+  max-width: rem(350px);
+  height: rem(215px);
+  padding:15px 15px 15px 20px;
+  margin-bottom: rem(25px);
+}
+.addressbook>div>.addressbox:hover{
+  border-color:$brand-color;
+}
+.addressbook>div>.addressbox>p,.addressbook>div>.addressbox>.addnew{
+  font-size: rem(15px);
+  font-family:$ff-open-sans;
+  color: rgb(21, 20, 20);
+  color: $grey;
+  line-height: 1.7
+}
+.addressbook>div>.addressbox>.name{
+  font-weight: bold;
+  color: $brand-color;
+  margin-bottom: rem(4px);
+  text-transform: uppercase;
+}
+.addressbook>div>.addressbox>.address{
+  max-width:rem(200px);
+}
+.addressbook>div>.addressbox>.availability{
+  font-size: rem(14px);
+  margin-top: rem(15px);
+  color: $brand-color;
+}
+.addressbook>div>.addressbox>.addnew{
+  font-size: rem(15px);
+  font-family:$ff-open-sans;
+  color: $grey;
+  text-align: center;
+  margin-top: rem(50px);
+}
+.addressbook>div>.addressbox>.plusaddress{
+  margin-top: rem(50px);
+  color: $grey;
+}

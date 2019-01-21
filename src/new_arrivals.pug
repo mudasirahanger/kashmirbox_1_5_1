@@ -1,0 +1,156 @@
+extends ./layouts/new_arrivals.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block newarrivals_content
+  main.newarrivals
+    .container_fluid
+      .row
+        .col-lg-12.col-md-12.padding-0.banner
+          a(href="https://www.kashmirbox.com")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Main-banner.jpg" alt="Banner").img-responsive
+            //-h2.about_text1 New Arrivals This Week
+    //-First section
+    .container
+      .row.new_firstsection
+        .col-lg-6.col-md-6
+          .group1
+            a(href="https://www.kashmirbox.com/new-in-the-box/art-of-gifting")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-Main.jpg" alt="image").img-responsive
+        .col-lg-5.col-md-5.col-lg-offset-1.col-md-offset-1
+          .text
+            p.new_main Festive Gifting 2018
+            p.new_main2  The Art of Gifting
+            p.new_main2 Luxury Gifts For All Occasions
+            .Rectangle_633
+              a(src="https://www.kashmirbox.com/new-in-the-box/art-of-gifting")
+                p.View_Complete_Collection view colllection
+    //-Second section
+    .container
+      .row.new_products
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/zafferano-kb9790") 
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive  
+          .text2
+            p.new1 Zafferano
+            p.new2 Rs 780                 
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/kashmiri-crafts-gift-her-kb9785")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive 
+          .text2
+            p.new1 Kashmiri Crafts Gift Hamper
+            p.new2 Rs 2100
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/hale-food-basket-kb9805")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive 
+          .text2
+            p.new1 Hale Food Basket
+            p.new2 Rs 1300
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/aroma-therapy-gift-her-kb9788")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive
+          .text2
+            p.new1  Aroma Therapy Gift Hamper
+            p.new2 Rs 1250
+    //-third_section
+    .container
+      .row.new_thirdsection
+        .col-lg-5.col-md-5
+          .text3
+            .new_main_2 Fall Winter 2018
+            .new_main2_2 The Pashmina Recital
+            .new_main2_2 Luxury Handwoven Cashmere
+            .Rectangle_633_2
+              a(href="https://www.kashmirbox.com/lifestyle/craft-pashmina?sort=p.date_added&order=DESC")
+                p.View_Complete_Collection_2 view collection
+        .col-lg-6.col-md-6.col-lg-offset-1.col-md-offset-1
+          .group2
+            a(href="https://www.kashmirbox.com/lifestyle/craft-pashmina?sort=p.date_added&order=DESC") 
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Farsh-Home-decor-Main.jpg" alt="image").img-responsive
+    //--Fourth section
+    .container
+      .row.new_products
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/zafferano-kb9790") 
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive  
+          .text2
+            p.new1 Zafferano
+            p.new2 Rs 780                 
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/kashmiri-crafts-gift-her-kb9785")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive 
+          .text2
+            p.new1 Kashmiri Crafts Gift Hamper
+            p.new2 Rs 2100
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/hale-food-basket-kb9805")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive 
+          .text2
+            p.new1 Hale Food Basket
+            p.new2 Rs 1300
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/aroma-therapy-gift-her-kb9788")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive
+          .text2
+            p.new1  Aroma Therapy Gift Hamper
+            p.new2 Rs 1250
+    //-SPECIAL PICKS FROM THE ARTISANS
+    .container
+      .row.specialpicks
+        p.new_arrivals New Arrivals
+        p.SpecailPicks Special Picks
+        p.SpecailPicks From the artisians
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.specialcolumn
+          a(href="https://www.kashmirbox.com/new-in-the-box/vintage-copper")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Hami-pashmina-2.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.specialcolumn
+          a(href="https://www.kashmirbox.com/new-in-the-box/vintage-copper")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Hami-pashmina-2.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.specialcolumn
+          a(href="https://www.kashmirbox.com/new-in-the-box/vintage-copper")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Hami-pashmina-2.jpg" alt="image").img-responsive
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.specialcolumn
+          a(href="https://www.kashmirbox.com/new-in-the-box/vintage-copper")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Hami-pashmina-2.jpg" alt="image").img-responsive            
+    //-First section
+    .container
+      .row.new_firstsection
+        .col-lg-6.col-md-6
+          .group1
+            a(href="https://www.kashmirbox.com/new-in-the-box/art-of-gifting")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-Main.jpg" alt="image").img-responsive
+        .col-lg-5.col-md-5.col-lg-offset-1.col-md-offset-1
+          .text
+            p.new_main Festive Gifting 2018
+            p.new_main2  The Art of Gifting
+            p.new_main2 Luxury Gifts For All Occasions
+            .Rectangle_633
+              a(src="https://www.kashmirbox.com/new-in-the-box/art-of-gifting")
+                p.View_Complete_Collection view colllection
+    //-Second section
+    .container
+      .row.new_products
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/zafferano-kb9790") 
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive  
+          .text2
+            p.new1 Zafferano
+            p.new2 Rs 780                 
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/kashmiri-crafts-gift-her-kb9785")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg" alt="image").img-responsive 
+          .text2
+            p.new1 Kashmiri Crafts Gift Hamper
+            p.new2 Rs 2100
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/hale-food-basket-kb9805")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive 
+          .text2
+            p.new1 Hale Food Basket
+            p.new2 Rs 1300
+        .col-lg-3.col-md-3.col-sm-3.col-xs-6.productcolumn
+          a(href="https://www.kashmirbox.com/aroma-therapy-gift-her-kb9788")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/new_arrrivals/Special-Hands-1.jpg").img-responsive
+          .text2
+            p.new1  Aroma Therapy Gift Hamper
+            p.new2 Rs 1250               

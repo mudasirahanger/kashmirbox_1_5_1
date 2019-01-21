@@ -1,0 +1,44 @@
+extends ./layouts/checkout.pug
+
+block app_variables
+  -var pageTitle = "Kashmir Box";
+block checkout_content
+  main.checkout
+    //-checkout body
+    .container
+      .row.steps
+        .col-lg-12.col-md-12
+          .firststep
+            p Login/Signup
+            p Shipping address
+            p Payment
+      .row.heading
+        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
+          h3 3. Select payment method 
+      .row.addressbook       
+        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
+          .addressbox
+            p.name Sajid nahvi  
+            p 0123456789
+            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
+            p Srinagar-190002
+            p.availability COD not available for this product
+        .col-lg-4.col-md-4
+          .addressbox
+            p.name Sajid nahvi  
+            p 0123456789
+            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
+            p Srinagar-190002
+            p.availability All payment options available for this address
+      .row.addressbook       
+        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
+          .addressbox
+            p.name Sajid nahvi  
+            p 0123456789
+            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
+            p Srinagar-190002
+            p.availability All payment options available for this address
+        .col-lg-4.col-md-4
+          .addressbox
+            span.fa.fa-plus.plusaddress
+            p.addnew Add New Address     

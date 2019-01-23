@@ -84,7 +84,7 @@
 	margin-right: rem(8px);
 }
 
-@media(max-width: 991px){
+@include respond-to(large-only){
 	.aw-desc{
 		max-width: rem(300px);
 	}

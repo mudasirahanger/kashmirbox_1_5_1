@@ -33,7 +33,7 @@
                     <li><a href="#">Rs.</a></li>
                     <li><a href="#">$       </a></li>
                   </ul></a></li><span class="top_divider">|</span>
-              <li class="top_nav_li dropdown"><a class="dropdown-toggle nav_text" href="" data-toggle="dropdown">Help <span class="fa fa-angle-down fa-lg"></span>
+              <li class="top_nav_li dropdown on_hover_dropdown"><a class="dropdown-toggle nav_text" href="" data-toggle="dropdown">Help <span class="fa fa-angle-down fa-lg"></span>
                   <ul class="dropdown-menu help">
                     <li> <a href="#"><b>Call:</b>+91-979-665-9999</a></li>
                     <li> <a href="#"><b>Email:</b>care@kashmirbox.com</a></li>
@@ -347,8 +347,8 @@
                     <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
                     <h5>Srinagar- 190002</h5>
                     <h5>Jammu and Kashmir</h5>
-                    <h5>Ph: 9797978377</h5>
-                    <div class="aa-links-wrap"><a class="aal-edit aal-links" href="#">Edit <i class="fa fa-angle-double-right"></i></a><a class="aal-delete aal-links" href="#">Delete <i class="fa fa-angle-double-right"></i></a></div>
+                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#" data-phone="+919797978377" data-toggle="modal" data-target="#verifyotp">Verify OTP <i class="fa fa-angle-double-right"></i></a></h5>
+                    <div class="aa-links-wrap"><a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="fa fa-angle-double-right"></i></a><a class="aal-delete aal-links" href="#">Delete <i class="fa fa-angle-double-right"></i></a></div>
                   </div>
                 </div>
                 <div class="aa-box">
@@ -358,34 +358,110 @@
                     <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
                     <h5>Srinagar- 190002</h5>
                     <h5>Jammu and Kashmir</h5>
-                    <h5>Ph: 9797978377</h5>
-                    <div class="aa-links-wrap"><a class="aal-edit aal-links" href="#">Edit <i class="fa fa-angle-double-right"></i></a><a class="aal-delete aal-links" href="#">Delete <i class="fa fa-angle-double-right"></i></a></div>
+                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#" data-phone="+919797978377" data-toggle="modal" data-target="#verifyotp">Verify OTP <i class="fa fa-angle-double-right"></i></a></h5>
+                    <div class="aa-links-wrap"><a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="fa fa-angle-double-right"></i></a><a class="aal-delete aal-links" href="#">Delete <i class="fa fa-angle-double-right"></i></a></div>
                   </div>
                 </div>
               </div>
               <div class="aa-form-wrap">
-                <h3>new address</h3>
-                <form class="aa-form" method="post" action="#">
+                <h3>Add new address</h3>
+                <form class="aa-form" method="post" action="#" novalidate="novalidate">
+                  <div class="aa-form-row aa-form-row-full">
+                    <div class="aa-form-input-wrap aa-form-input-wrap-default-address">
+                      <input type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true">
+                      <label for="a_a_default_address">Make this default address  </label>
+                    </div>
+                  </div>
                   <div class="aa-form-row">
-                    <input type="text" name="a_a_name" placeholder="Name" required>
-                    <input type="text" name="a_a_email" placeholder="Email" required>
-                    <input type="text" name="a_a_phone" placeholder="Phone number" required>
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_name" placeholder="Name" id="a_a_name" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Name properly</label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap">   
+                      <input type="text" name="a_a_email" placeholder="Email" id="a_a_email" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Email properly</label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap">  
+                      <input type="text" name="a_a_phone" placeholder="Phone number" id="a_a_phone" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Phone Number properly  </label>
+                      </div>
+                    </div>
                   </div>
                   <div class="aa-form-row aa-form-row-full">
-                    <input type="text" name="a_a_address" placeholder="Address" required>
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_address" placeholder="Address" id="a_a_address" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Address properly</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aa-form-row aa-form-row-full">
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_address" placeholder="Address 2" required>
+                    </div>
                   </div>
                   <div class="aa-form-row">
-                    <input type="text" name="a_a_landmark" placeholder="Landmark" required>
-                    <input type="text" name="a_a_city" placeholder="City" required>
-                    <input type="text" name="a_a_pincode" placeholder="Pincode" required>
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_landmark" placeholder="Landmark" id="a_a_landmark" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Landmark properly</label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap"> 
+                      <input type="text" name="a_a_city" placeholder="City" id="a_a_city" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the City properly</label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap">   
+                      <input type="text" name="a_a_pincode" placeholder="Pincode" id="a_a_pincode" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the Pincode properly  </label>
+                      </div>
+                    </div>
                   </div>
                   <div class="aa-form-row">
-                    <input type="text" name="a_a_state" placeholder="State" required>
-                  </div>
-                  <div class="aa-form-row">
-                    <input type="submit" name="a_a_submit" value="Save Address">
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_state" placeholder="State" id="a_a_state" required>
+                      <div class="aa-form-input-error">
+                        <label>Please add the State properly</label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap">
+                      <input type="text" name="a_a_country" id="a_a_country" placeholder="Country" required="required">
+                      <div class="aa-form-input-error">
+                        <label>Please add the Country properly  </label>
+                      </div>
+                    </div>
+                    <div class="aa-form-input-wrap">
+                      <input type="submit" name="a_a_submit" value="Save Address">
+                    </div>
                   </div>
                 </form>
+              </div>
+            </div>
+            <div class="otpModal modal fade" id="verifyotp" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Verify OTP</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>We have sent as OTP via SMS to the below phone number.</p>
+                    <h3 id="otp-number">+919797978377</h3>
+                    <p>To verify the phone number, please enter the OTP code in the below text box.</p>
+                    <form method="POST" action="#">
+                      <input type="text" name="otp-code" required="required">
+                      <input type="submit" name="" value="VERIFY">
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

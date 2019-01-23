@@ -30,8 +30,10 @@ block account_content
                   h5 Srinagar- 190002
                   h5 Jammu and Kashmir
                   h5 Ph: 9797978377
+                    a(href="#" data-phone="+919797978377" data-toggle="modal" data-target="#verifyotp").verifyOtpButtonAddress Verify OTP 
+                      i.fa.fa-angle-double-right
                   .aa-links-wrap
-                    a.aal-edit.aal-links(href="#") Edit 
+                    a.aal-edit.aal-links(href="account-edit-address.html") Edit 
                       i.fa.fa-angle-double-right
                     a.aal-delete.aal-links(href="#") Delete 
                       i.fa.fa-angle-double-right
@@ -43,25 +45,77 @@ block account_content
                   h5 Srinagar- 190002
                   h5 Jammu and Kashmir
                   h5 Ph: 9797978377
+                    a(href="#" data-phone="+919797978377" data-toggle="modal" data-target="#verifyotp").verifyOtpButtonAddress Verify OTP 
+                      i.fa.fa-angle-double-right
                   .aa-links-wrap
-                    a.aal-edit.aal-links(href="#") Edit 
+                    a.aal-edit.aal-links(href="account-edit-address.html") Edit 
                       i.fa.fa-angle-double-right
                     a.aal-delete.aal-links(href="#") Delete 
                       i.fa.fa-angle-double-right
             .aa-form-wrap
-              h3 new address
-              form(method="post" action="#").aa-form
-                .aa-form-row
-                  input(type="text" name="a_a_name" placeholder="Name" required)
-                  input(type="text" name="a_a_email" placeholder="Email" required)
-                  input(type="text" name="a_a_phone" placeholder="Phone number" required)
+              h3 Add new address
+              form(method="post" action="#" novalidate="novalidate").aa-form
                 .aa-form-row.aa-form-row-full
-                  input(type="text" name="a_a_address" placeholder="Address" required)
+                  .aa-form-input-wrap.aa-form-input-wrap-default-address
+                    input(type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true")
+                    label(for="a_a_default_address") Make this default address  
                 .aa-form-row
-                  input(type="text" name="a_a_landmark" placeholder="Landmark" required)
-                  input(type="text" name="a_a_city" placeholder="City" required)
-                  input(type="text" name="a_a_pincode" placeholder="Pincode" required)
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_name" placeholder="Name" id="a_a_name" required)
+                    .aa-form-input-error
+                      label Please add the Name properly
+                  .aa-form-input-wrap    
+                    input(type="text" name="a_a_email" placeholder="Email" id="a_a_email" required)
+                    .aa-form-input-error
+                      label Please add the Email properly
+                  .aa-form-input-wrap   
+                    input(type="text" name="a_a_phone" placeholder="Phone number" id="a_a_phone" required)
+                    .aa-form-input-error
+                      label Please add the Phone Number properly  
+                .aa-form-row.aa-form-row-full
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_address" placeholder="Address" id="a_a_address" required)
+                    .aa-form-input-error
+                      label Please add the Address properly
+                .aa-form-row.aa-form-row-full
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_address" placeholder="Address 2" required)     
                 .aa-form-row
-                  input(type="text" name="a_a_state" placeholder="State" required)
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_landmark" placeholder="Landmark" id="a_a_landmark" required)
+                    .aa-form-input-error
+                      label Please add the Landmark properly
+                  .aa-form-input-wrap 
+                    input(type="text" name="a_a_city" placeholder="City" id="a_a_city" required)
+                    .aa-form-input-error
+                      label Please add the City properly
+                  .aa-form-input-wrap    
+                    input(type="text" name="a_a_pincode" placeholder="Pincode" id="a_a_pincode" required)
+                    .aa-form-input-error
+                      label Please add the Pincode properly  
                 .aa-form-row
-                  input(type="submit" name="a_a_submit" value="Save Address")           
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_state" placeholder="State" id="a_a_state" required)
+                    .aa-form-input-error
+                      label Please add the State properly
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_country" id="a_a_country" placeholder="Country" required="required")
+                    .aa-form-input-error
+                      label Please add the Country properly  
+                  .aa-form-input-wrap
+                    input(type="submit" name="a_a_submit" value="Save Address")
+          //--OTP Modal
+          #verifyotp.otpModal.modal.fade(role="dialog")
+            .modal-dialog
+              //-Modal content
+              .modal-content
+                .modal-header
+                  button(type="button" data-dismiss="modal").close &times;
+                  h4.modal-title Verify OTP
+                .modal-body
+                  p We have sent as OTP via SMS to the below phone number.
+                  h3#otp-number +919797978377
+                  p To verify the phone number, please enter the OTP code in the below text box.
+                  form(method="POST" action="#")
+                    input(type="text" name="otp-code" required="required")
+                    input(type="submit" name="" value="VERIFY")

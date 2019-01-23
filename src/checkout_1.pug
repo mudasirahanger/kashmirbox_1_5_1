@@ -8,7 +8,7 @@ block checkout_content
     .container
       .row.steps
         .col-lg-12.col-md-12 
-          .firststep
+          .firststep.checkout_1
             p Login/Signup
             p Shipping address
             p Payment 
@@ -16,8 +16,15 @@ block checkout_content
           h3 1.Login
           .email_address
             input(type="text" placeholder="Enter email address")
+          h3 Create/Enter Password
+          .password
+            input(type="text" placeholder="Create/Enter you Password")
+          .password
+            input(type="text" placeholder="Confirm Password")      
           .button.continue 
-            a(href="#") continue 
+            a(href="#") continue
+          .button.connect_with_fb
+            a(href="#") connect with facebook
         .col-lg-5.col-md-5.col-lg-offset-1.col-md-offset-1.rightside
           p Advantages of secure login
           .text_with_icons

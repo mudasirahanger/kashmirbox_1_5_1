@@ -8,13 +8,29 @@ block checkout_content
     .container
       .row.steps
         .col-lg-12.col-md-12
-          .firststep
+          .firststep.checkout_2
             p Login/Signup
             p Shipping address
             p Payment
       .row.heading
         .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
-          h3 3. Select payment method 
+          h3 3. Select address 
+      .row.addressbook       
+        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
+          .addressbox
+            p.name Sajid nahvi
+              span default
+            p 0123456789
+            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
+            p Srinagar-190002
+            p.availability * COD not available for this product
+        .col-lg-4.col-md-4
+          .addressbox
+            p.name Sajid nahvi  
+            p 0123456789
+            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
+            p Srinagar-190002
+            p.availability * All payment options available for this address
       .row.addressbook       
         .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
           .addressbox
@@ -22,23 +38,9 @@ block checkout_content
             p 0123456789
             p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
             p Srinagar-190002
-            p.availability COD not available for this product
+            p.availability * All payment options available for this address
         .col-lg-4.col-md-4
-          .addressbox
-            p.name Sajid nahvi  
-            p 0123456789
-            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
-            p Srinagar-190002
-            p.availability All payment options available for this address
-      .row.addressbook       
-        .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
-          .addressbox
-            p.name Sajid nahvi  
-            p 0123456789
-            p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
-            p Srinagar-190002
-            p.availability All payment options available for this address
-        .col-lg-4.col-md-4
-          .addressbox
-            span.fa.fa-plus.plusaddress
-            p.addnew Add New Address     
+          .addressbox.plus_address
+            a(href="#")
+              span.fa.fa-plus.plusaddress
+              p.addnew Add New Address

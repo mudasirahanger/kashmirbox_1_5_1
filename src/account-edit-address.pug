@@ -1,0 +1,90 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#") 
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Account
+      li.breadcrumb-item
+        a(href="#") Address Book
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+          include ./components/account.pug
+        .col-lg-9.col-md-9.personal_info
+          h2 Edit Address - Address 1
+          .account-body-inner
+            .aa-box-wrap
+              form(method="GET" action="#" novalidate="novalidate").aa-form
+                .aa-form-row.aa-form-row-full
+                  .aa-form-input-wrap.aa-form-input-wrap-default-address
+                    input(type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true")
+                    label(for="a_a_default_address") Make this default address
+                .aa-form-row
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_name" id="a_a_name" placeholder="Name" required="required")
+                    .aa-form-input-error
+                      label Please add the Name properly 
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_email" id="a_a_email" placeholder="Email" required="required")
+                    .aa-form-input-error
+                      label Please add the Email properly
+                  .aa-form-input-wrap
+                    input(type="tel" name="a_a_phone" id="a_a_phone" placeholder="Phone number" required="required")
+                    .aa-form-input-error
+                      label Please add the Phone Number properly
+                .aa-form-row.aa-form-row-full
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_address" id="a_a_address" placeholder="Address" required="required")
+                    .aa-form-input-error
+                      label Please add the Address properly
+                .aa-form-row.aa-form-row-full
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_address_2" id="a_a_address" placeholder="Address 2")
+                .aa-form-row
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_landmark" id="a_a_landmark" placeholder="Landmark" required="required")
+                    .aa-form-input-error
+                      label Please add the Landmark properly 
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_city" id="a_a_city" placeholder="City" required="required")
+                    .aa-form-input-error
+                      label Please add the City properly
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_pincode" id="a_a_pincode" placeholder="Pincode" required="required")
+                    .aa-form-input-error
+                      label Please add the Pincode properly
+                .aa-form-row
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_state" id="a_a_state" placeholder="State" required="required")
+                    .aa-form-input-error
+                      label Please add the State properly
+                  .aa-form-input-wrap
+                    input(type="text" name="a_a_country" id="a_a_country" placeholder="City" required="required")
+                    .aa-form-input-error
+                      label Please add the Country properly
+                  .aa-form-input-wrap
+                    input(type="submit" name="a_a_submit" value="Update Address")  
+          //--OTP Modal
+          #verifyOtpModalAddress.otpModal.modal.fade(role="dialog")
+            .modal-dialog
+            //-Modal content
+            .modal-content
+              .modal-header
+                button(type="button" data-dismiss="modal").close &times;
+                h4.modal-title Verify OTP
+              .modal-body
+                p We have sent as OTP via SMS to the below phone number.
+                h3#otp-number
+                p To verify the phone number, please enter the OTP code in the below text box.
+                form(method="POST" action="#")
+                  input(type="text" name="otp-code" required="required")
+                  input(type="submit" name="" value="VERIFY")         
+
+                             

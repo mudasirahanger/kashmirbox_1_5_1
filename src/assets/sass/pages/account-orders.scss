@@ -101,7 +101,7 @@
 	padding: 12px 54px;
 }
 
-@media(max-width: 992px){
+@include respond-to(large-only){
 	.aof-meta{
 		width: 50%;
 	}

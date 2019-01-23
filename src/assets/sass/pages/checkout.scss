@@ -1,7 +1,9 @@
 .steps{
    margin-top: rem(40px);
 }
-.steps > div > .firststep{
+.steps > div > .firststep.checkout_1,.steps > div > .firststep.checkout_2,
+.steps > div > .firststep.checkout_3
+{
   border-bottom: 1px solid $grey;
   width: 55%;
   margin-left: auto;
@@ -9,6 +11,33 @@
   display: flex;
   justify-content: center;
   margin-bottom: rem(40px);
+}
+.steps > div > .checkout_1:before{
+  position: absolute;
+  background: $brand-color;
+  height: 2px;
+  content: '';
+  width: 17%;
+  top:49%;
+  left: 23%;
+}
+.steps > div > .checkout_2:before{
+  position: absolute;
+  background: #151414;
+  height: 2px;
+  content: '';
+  width: 17%;
+  top: 49%;
+  left: 43%;
+}
+.steps > div > .checkout_3:before{
+  position: absolute;
+  background: #151414;
+  height: 2px;
+  content: '';
+  width: 17%;
+  top: 49%;
+  left: 62%;
 }
 .steps > div > .firststep > p{
   font-size: rem(17px);
@@ -31,35 +60,36 @@
   text-align: left;
   margin-bottom: rem(40px);
 }
-.steps>.leftside>.email_address{
-  margin-bottom: rem(30px);	
+.steps>.leftside>.email_address,.steps>.leftside>.password{
+  margin-bottom: rem(50px);	
 }
-.steps>.leftside>.email_address>input{
+.steps>.leftside>.email_address>input,.steps>.leftside>.password>input{
   border:none;
   border-bottom: 1px solid $grey;
-  width: rem(370px);
+  width: rem(345px);
   font-family: $ff-open-sans;
   font-size: rem(15px);
   padding-left: rem(10px);
   padding-bottom: rem(10px);
 }
-.steps>.leftside>.continue{
+.steps>.leftside>.continue,.steps>.leftside>.connect_with_fb{
   border:none;
   color: $white-color;
   background-color: $brand-color;
-  width: rem(370px);
+  width: rem(345px);
   text-align: center;
   height:rem(57px);
   padding-top: rem(15px);
+  margin-bottom: rem(20px);
 }
-.leftside>.continue > a{
+.leftside>.continue > a,.leftside>.connect_with_fb > a{
   font-size: rem(16px);
   font-family: $ff-open-sans;
   color:$white-color;
   text-transform: uppercase;
   line-height: 1.625;
 }
-.leftside>.continue > a:hover{
+.leftside>.continue > a:hover,.leftside>.connect_with_fb > a:hover{
   text-decoration: none;
 }
 /*rightside*/
@@ -102,6 +132,14 @@
   margin-right: rem(20px);
   width: 140px;
   height: 50px;
+  position:relative;
+}
+.leftside>.payment_method>.input-hidden{
+  /*position: absolute;*/
+}
+.input-hidden[type=radio]:checked + img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #090;
 }
 .rightside>.subtotal>p{
   font-size: rem(17px);
@@ -133,7 +171,11 @@
 .addressbook>div>.addressbox:hover{
   border-color:$brand-color;
 }
-.addressbook>div>.addressbox>p,.addressbook>div>.addressbox>.addnew{
+.addressbook>div>.addressbox>a{
+  text-decoration: none;
+}
+.addressbook>div>.addressbox>p,.addressbook>div>.addressbox>a>.addnew
+{
   font-size: rem(15px);
   font-family:$ff-open-sans;
   color: rgb(21, 20, 20);
@@ -145,6 +187,9 @@
   color: $brand-color;
   margin-bottom: rem(4px);
   text-transform: uppercase;
+}
+.addressbook>div>.addressbox>.name>span{
+ float: right;
 }
 .addressbook>div>.addressbox>.address{
   max-width:rem(200px);
@@ -159,9 +204,11 @@
   font-family:$ff-open-sans;
   color: $grey;
   text-align: center;
-  margin-top: rem(50px);
 }
-.addressbook>div>.addressbox>.plusaddress{
-  margin-top: rem(50px);
+.addressbook>div>.plus_address{
+  text-align: center;
+}
+.addressbook>div>.plus_address>a>.plusaddress{
   color: $grey;
+  margin-top: rem(60px);
 }

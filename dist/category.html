@@ -695,46 +695,32 @@
         </div>
       </div>
     </footer>
-    <div class="modal fade" id="register-login-modal" tabindex="-1" role="dialog" aria-labelledby="RegisterLoginModalLabel">
-      <div class="modal-dialog modal-lg padding-0" role="document">
-        <div class="modal-content padding-0 clearfix">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          <div class="col-sm-6 col-left padding-0">
-            <div class="content">
-              <h4>Welcome to KashmirBox</h4>
-              <p>KashmirBox is your destination for genuine Kashmiri products served directly from the  heart of Kashmir</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-right padding-0">
-            <ul class="links">
-              <li><a class="active">Login</a></li>
-              <li><a class="href" #>Register</a></li>
-            </ul>
-            <form id="popup-login-form">
-              <div class="form-group">
-                <input class="form-control" type="email" name="email" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="password" name="password" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <div class="col-xs-6 padding-0">
-                  <div class="checkbox checkbox-circle checkbox-primary">
-                    <input id="remember-me" type="checkbox" value="">
-                    <label for="remember-me">Keep me logged in</label>
+    <div class="modal fade modalLogin" id="register-login-modal" role="dialog">
+      <div class="modal-dialog modal_size">
+        <div class="modal-content">
+          <div class="modal-body login_body">
+            <div class="row">
+              <button class="close modalLoginClose" type="button" data-dismiss="modal">×</button>
+              <div class="col-md-12 modalLoginMain">
+                <div class="col-md-6 col-sm-12 col-xs-12 modalLoginMainD1"><img class="img-responsive hidden-xs hidden-sm" src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1_5/images/loginKB.png">
+                  <h2 class="hidden-md hidden-lg">LOGIN OR SIGN UP</h2>
+                  <h4 class="hidden-md hidden-lg">Get access to your orders, wishlish and recommendations</h4>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 modalLoginMainD2" id="loginBox">
+                  <div class="textboxHead">
+                    <input class="form-control textboxes" type="text" placeholder="Enter your email address">
                   </div>
+                  <div class="textboxHead" id="modalLoginMainD3">
+                    <input class="form-control textboxes" type="password" placeholder="Enter password"><a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
+                  </div>
+                  <div class="login_and_signup">
+                    <button class="btnlogin_and_register" type="button">Login    </button>
+                    <button class="btnlogin_and_register" type="button">Register</button>
+                  </div>
+                  <button class="btn_connect" type="button">Connect with Facebook</button>
                 </div>
-                <div class="col-xs-6 padding-0 forgot-password-link"><a href="#">Forgot Password?</a></div>
               </div>
-              <div class="form-group btn-wrap">
-                <div class="col-xs-6 padding-0"><a class="btn btn-white register-btn" href="#">Register</a></div>
-                <div class="col-xs-6 padding-0">
-                  <button class="btn btn-orange login-btn" type="submit">Login</button>
-                </div>
-              </div>
-            </form>
-            <div class="separator"> <span>OR    </span></div>
-            <div class="social-login-btns"><a class="btn btn-white google-login-btn" href="#">Connect with <strong>Google</strong></a><a class="btn btn-white facebook-login-btn" href="#">Connect with <strong>Facebook</strong>  </a></div>
+            </div>
           </div>
         </div>
       </div>

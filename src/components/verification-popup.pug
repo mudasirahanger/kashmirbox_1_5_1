@@ -1,0 +1,15 @@
+//--OTP Modal
+#verifyotp.otpModal.modal.fade(role="dialog")
+  .modal-dialog
+    //-Modal content
+    .modal-content
+      .modal-header
+        button(type="button" data-dismiss="modal").close &times;
+        h4.modal-title Verify OTP
+      .modal-body
+        p We have sent as OTP via SMS to the below phone number.
+        h3#otp-number +919797978377
+        p To verify the phone number, please enter the OTP code in the below text box.
+        form(method="POST" action="#")
+          input(type="text" name="otp-code" required="required")
+          input(type="submit" name="" value="VERIFY")

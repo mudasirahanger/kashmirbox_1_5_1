@@ -93,7 +93,8 @@
 .free_delivery_alert{
   margin-bottom: 0px;
   margin-top:rem(10px);
-  font-family: $brand-font;
+  font-family: $ff-open-sans;
+  font-size:rem(15px);
 }
 .free_delivery_alert > span{
   margin-right: 5px;
@@ -115,7 +116,8 @@
 .product_details_incart>.product_wrapper>div>.name_and_rate>p{
   color: $brand-color;
   font-weight: bold;
-  font-size: rem(18px);
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
 }
 .product_details_incart>.product_wrapper>div>.name_and_price>p:nth-of-type(2){
   margin-left: auto;
@@ -139,6 +141,7 @@
 }
 .product_details_incart>.product_wrapper>div>.sold_by>p{
   font-weight: normal;
+  margin-bottom: rem(5px);
 }
 .divider{
   margin-top: rem(50px);
@@ -168,7 +171,7 @@
   width:rem(50px);
   margin-left: rem(10px);
 }
-input[type="text"] {
+.size_and_quantity>input[type="text"] {
   font-size:rem(20px);
 }
 /*rate details*/
@@ -186,8 +189,8 @@ input[type="text"] {
 }
 .rate_details>.rate_feature>p{
   color: $brand-color;
-  font-size: rem(16px);
-  font-family: $brand-font;
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
 }
 .rate_details>.bag_discptn>p:nth-of-type(2){
   margin-left: auto;

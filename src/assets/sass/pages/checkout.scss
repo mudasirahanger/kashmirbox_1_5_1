@@ -75,12 +75,17 @@
 .steps>.leftside>.continue,.steps>.leftside>.connect_with_fb{
   border:none;
   color: $white-color;
-  background-color: $brand-color;
   width: rem(345px);
   text-align: center;
   height:rem(57px);
   padding-top: rem(15px);
   margin-bottom: rem(20px);
+}
+.steps>.leftside>.continue{
+  background-color: $brand-color;
+}
+.steps>.leftside>.connect_with_fb{
+  background: #4267b2;/*facebook color*/
 }
 .leftside>.continue > a,.leftside>.connect_with_fb > a{
   font-size: rem(16px);

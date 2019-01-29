@@ -53,3 +53,8 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+//-script for login and register
+$(".btn-reg").click(function(){
+  $(".reg").removeClass('hidden');
+  //-$('#loginBtn').addClass('hidden');
+});

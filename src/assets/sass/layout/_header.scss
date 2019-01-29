@@ -240,6 +240,12 @@ header a:hover, a:active, a:focus {
 .dropdown-header{
   margin-bottom: 10px;
 }
+/*top_nav_active*/
+@include respond-to(large-2){
+.top_nav_active{
+  height: rem(46px);
+ }
+}
 /*sticky header*/
 .headerr {
   padding: 10px 16px;

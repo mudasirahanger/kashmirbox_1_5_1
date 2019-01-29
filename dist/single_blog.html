@@ -16,15 +16,15 @@
   <body>
     <div class="site-overlay">   </div>
     <header>
-      <div class="top_nav">
+      <div class="col-lg-12 col-md-12 top_nav">
         <div class="container">
           <div class="row padding-0">
-            <ul class="col-lg-6 col-md-6 top_nav_row">
+            <ul class="top_nav_row">
               <li class="top_nav_active">       <a href="#">KB</a></li>
               <li class="top_nav_li"><a class="nav_text" href="#">KB cashmere pashmina </a></li>
               <li class="top_nav_li"><a class="nav_text" href="#">KB wholesale</a></li>
             </ul>
-            <ul class="col-lg-3 col-md-3 col-lg-offset-3 col-md-offset-3 top_nav_row">
+            <ul class="top_nav_row">
               <li class="top_nav_li"><a class="nav_text" href="#">Services         </a></li><span class="top_divider">| </span>
               <li class="top_nav_li dropdown"><a class="dropdown-toggle nav_text" data-toggle="dropdown">Currency <span class="fa fa-angle-down fa-lg"></span>
                   <ul class="dropdown-menu currency">
@@ -371,12 +371,16 @@
     </main>
     <footer>
       <div class="container">
-        <div class="row signup_toget_acces">
-          <div class="col-lg-12 col-md-12">
-            <h3 class="subscribe">Sign up to get first access, curated notes about new styles, sales and events.</h3>
-            <div class="email">
-              <input class="emailsearch center-block" type="text" placeholder="your email address"><span>
-                <button class="btn-subscribe" type="submit">subscribe</button></span>
+        <div class="col-md-10 col-xs-12 col-md-offset-1">
+          <div class="row signup_toget_acces">
+            <div class="col-lg-12 col-md-12 newsletter">
+              <div class="col-lg-8 col-md-8">
+                <h3 class="subscribe">Sign up to get first access, curated notes about new styles, sales and events.</h3>
+                <div class="input-group" id="subscribeMobile">
+                  <input class="form-control newsletterTextbox" type="text" placeholder="your email address"><span class="input-group-btn">
+                    <button class="btn newsletterButton" type="button">SUBSCRIBE         </button></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -496,15 +500,24 @@
                   <h4 class="hidden-md hidden-lg">Get access to your orders, wishlish and recommendations</h4>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 modalLoginMainD2" id="loginBox">
+                  <div class="textboxHead hidden reg">
+                    <input class="form-control textboxes" type="text" placeholder="Enter your First Name">
+                  </div>
+                  <div class="textboxHead hidden reg">
+                    <input class="form-control textboxes" type="text" placeholder="Enter your Last Name">
+                  </div>
                   <div class="textboxHead">
                     <input class="form-control textboxes" type="text" placeholder="Enter your email address">
                   </div>
                   <div class="textboxHead" id="modalLoginMainD3">
                     <input class="form-control textboxes" type="password" placeholder="Enter password"><a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
                   </div>
+                  <div class="textboxHead hidden reg" id="modalLoginMainD3">
+                    <input class="form-control textboxes" type="password" placeholder="Confirm password">
+                  </div>
                   <div class="login_and_signup">
-                    <button class="btnlogin_and_register" type="button">Login    </button>
-                    <button class="btnlogin_and_register" type="button">Register</button>
+                    <button class="btnlogin_and_register" type="button" id="loginBtn">Login</button>
+                    <button class="btnlogin_and_register btn-reg" type="button">Register</button>
                   </div>
                   <button class="btn_connect" type="button">Connect with Facebook</button>
                 </div>

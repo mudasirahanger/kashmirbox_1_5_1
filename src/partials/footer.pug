@@ -2,14 +2,15 @@
 footer
   //-subscribe
   .container
-    .row.signup_toget_acces
-      .col-lg-12.col-md-12
-        h3.subscribe Sign up to get first access, curated notes about new styles, sales and events.
-        .email
-          input.emailsearch.center-block(type="text" placeholder="your email address") 
-          span
-            button(type="submit").btn-subscribe subscribe
-            
+    .col-md-10.col-xs-12.col-md-offset-1
+      .row.signup_toget_acces
+        .col-lg-12.col-md-12.newsletter
+          .col-lg-8.col-md-8
+            h3.subscribe Sign up to get first access, curated notes about new styles, sales and events.
+            .input-group#subscribeMobile
+              input(type="text" placeholder="your email address").form-control.newsletterTextbox
+              span.input-group-btn
+                button.btn.newsletterButton(type="button") SUBSCRIBE         
   hr
   //-links 
   .container

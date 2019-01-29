@@ -12,12 +12,19 @@
                 h2.hidden-md.hidden-lg LOGIN OR SIGN UP
                 h4.hidden-md.hidden-lg Get access to your orders, wishlish and recommendations
             #loginBox.col-md-6.col-sm-12.col-xs-12.modalLoginMainD2
+              .textboxHead.hidden.reg
+                input(type="text" placeholder="Enter your First Name").form-control.textboxes
+              .textboxHead.hidden.reg
+                input(type="text" placeholder="Enter your Last Name").form-control.textboxes
               .textboxHead
                 input(type="text" placeholder="Enter your email address").form-control.textboxes
               .textboxHead#modalLoginMainD3
                 input(type="password" placeholder="Enter password").form-control.textboxes
                 a(href="#")#lnkforget.hyperlink Forgot?
+              .textboxHead#modalLoginMainD3.hidden.reg
+                input(type="password" placeholder="Confirm password").form-control.textboxes
               .login_and_signup
-                button(type="button").btnlogin_and_register Login    
-                button(type="button").btnlogin_and_register Register
+                button(type="button").btnlogin_and_register#loginBtn Login
+                //-button(type="button").btnlogin_and_register.hidden cancel    
+                button(type="button").btnlogin_and_register.btn-reg Register
               button(type="button").btn_connect Connect with Facebook

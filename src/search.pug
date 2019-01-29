@@ -1,0 +1,301 @@
+extends ./layouts/search.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block search_content
+  main.category
+    //-Product_banner
+    .container_fluid
+      .row
+        //-will remove with breadcrumb file
+        include ./components/breadcrumb.pug
+        ol.breadcrumb.productbreadcrumb
+          li.breadcrumb-item
+            a(href="#")
+              span.fa.fa-home
+          li.breadcrumb-item
+            a(href="#") Women
+          li.breadcrumb-item
+            a(href="#") Women Clothing
+          li.breadcrumb-item
+            a(href="#") Home
+      .row
+        .col-lg-2.col-md-2.filter_list
+          h3 Filters
+          .panel-group#accordion(role="tablist" aria-multiselectable="true")
+            .panel.panel-default
+              .panel-heading(role="tab" id="headingOne")
+                h4.panel-title
+                  a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Color
+              .panel-collapse.collapse.in#collapseOne(role="tabpanel" aria-labelledby="headingOne")
+                .panel-body
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox" placeholder='title of book')
+                      //-span(data-colorhex="black")
+                      | Option 1
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      | Option 2                  
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      |  Option 3
+            .panel.panel-default
+              .panel-heading(role="tab" id="headingTwo")
+                h4.panel-title
+                  a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Fabric
+              .panel-collapse.collapse.in#collapseTwo(role="tabpanel" aria-labelledby="headingTwo")
+                .panel-body
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox" placeholder='title of book')
+                      //-span(data-colorhex="black")
+                      | Option 1
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      | Option 2                  
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      |  Option 3
+            .panel.panel-default
+              .panel-heading(role="tab" id="headingThree")
+                h4.panel-title
+                  a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Type
+              .panel-collapse.collapse.in#collapseThree(role="tabpanel" aria-labelledby="headingThree")
+                .panel-body
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox" placeholder='title of book')
+                      //-span(data-colorhex="black")
+                      | Option 1
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      | Option 2                  
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      |  Option 3
+            .panel.panel-default
+              .panel-heading(role="tab" id="headingFour")
+                h4.panel-title
+                  a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour") Embroidery
+              .panel-collapse.collapse.in#collapseFour(role="tabpanel" aria-labelledby="headingFour")
+                .panel-body
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox" placeholder='title of book')
+                      //-span(data-colorhex="black")
+                      | Option 1
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      | Option 2                  
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      |  Option 3
+            .panel.panel-default
+              .panel-heading(role="tab" id="headingFive")
+                h4.panel-title
+                  a(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive") Brand
+              .panel-collapse.collapse.in#collapseFive(role="tabpanel" aria-labelledby="headingFive")
+                .panel-body
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox" placeholder='title of book')
+                      //-span(data-colorhex="black")
+                      | Option 1
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      | Option 2                  
+                  .checkbox.filter_checkbox
+                    label
+                      input(type="checkbox")
+                      |  Option 3
+        .col-lg-10.col-md-10.product_list
+          .col-lg-12.col-md-12
+            ul.top_nav_row.sort_order
+              li.top_nav_li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown') We Recommend 
+                  span.fa.fa-angle-down.fa-lg
+                  ul.dropdown-menu.sort
+                    li
+                      a(href="#") Newest
+                    li
+                      a(href="#") Lowest
+                    li
+                      a(href="#") Highest
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          .col-lg-3.col-md-3.column
+            a(href="#")
+              img(src="images/product.png" alt="Kashmir Box").img-responsive
+              p.product_text Aftab Garden Silk Saree
+              center
+                span.price Rs. 3,344
+                strike Rs. 4,500
+                span.discount (10% OFF)
+              center
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>

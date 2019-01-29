@@ -3,57 +3,43 @@
 // -----------------------------------------------------------------------------
 /*subscribe*/
 .signup_toget_acces{
-  padding-top: rem(53px);
-  padding-bottom: rem(53px);
+  padding-top: rem(20px);
+  padding-bottom: rem(30px);
 }
-.subscribe {
-  font-size: rem(32px);
+.signup_toget_acces>.newsletter{
+  justify-content: center;
+  display: flex;
+}
+.signup_toget_acces>.newsletter>div>h3 {
   font-family: $brand-font;
+  margin: 50px 0;
+  padding-left: 0;
+  line-height: 30px;
+  font-size: rem(32px);
   color: $brand-color;
-  line-height: 1.406;
   text-align: center;
-  max-width: rem(575px);
-  margin-left: auto;
-  margin-right:auto;
+  letter-spacing: 1.5px;
 }
-.email{
-  margin-top: rem(50px);
-  position: relative;
+.newsletter>div>.input-group>.newsletterTextbox {
+    border-radius: 0;
+    border-color: $brand-color;
+    padding: 20px;
+    height: rem(55px);
+    box-shadow: none;
+    -webkit-appearance: none;
+    font-family: $ff-open-sans;
+    font-size: rem(18px);
 }
-.emailsearch {
-  border-style: solid;
-  border-width: rem(1px);
-  background-color: $white-color;
-  width: rem(572px);
-  height: rem(67px);
-  border-color: $brand-color;
-  padding-left: rem(20px);
-  font-family:$ff-open-sans;
-  font-style: italic;
-  font-size: rem(20px);
-  text-transform: lowercase;
-}
-.btn-subscribe{
-  position: absolute;
-  top: 2%;
-  right: 24%;
-  background-color: $brand-color;
-  width: rem(199px);
-  height: rem(65px);
-  font-size: rem(14px);
-  font-family: $ff-open-sans;
-  color: $white-color;
-  text-transform: uppercase;
-  border:none;
-  border-radius: rem(0px);
-}
-.btn-subscribe:hover, .btn-subscribe:focus, .btn-subscribe.focus {
-   color: $white-color;
-}
-@include respond-to(large-1) {
-  .btn-subscribe {
-    right: 20%;
-  }
+.input-group>.input-group-btn>.newsletterButton {
+    font-size: rem(15px);
+    padding: 14.5px 25px;
+    border-radius: 0;
+    color: $white-color;
+    background: $brand-color;
+    font-family: $ff-open-sans;
+    height: rem(55px);
+    width: rem(172px);
+    outline: 0;
 }
 /*links*/
 .links{

@@ -3,7 +3,7 @@
   padding: 0;
 }
 .modalLogin > .modal_size{
-    width: 60%;
+    width: 70%;
 }
 .login_body>div>.modalLoginMain{
   padding: 0; 
@@ -62,6 +62,10 @@
     box-shadow: none;
     font-family: $ff-open-sans;
     font-size: rem(15px);
+}
+.modalLoginMainD2{
+    height: 600px;
+    overflow: auto;
 }
 .modalLoginMainD2>.textboxHead>a{
     float: right; 

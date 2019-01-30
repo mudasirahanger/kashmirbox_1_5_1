@@ -25,9 +25,13 @@
 .locations{
    margin-top: rem(40px);
 }
+.locations:nth-of-type(2){
+	margin-top: rem(80px);
+	margin-bottom: rem(80px);
+}
 .locations >h3{
   font-family: $brand-font;
-  font-size:rem(22px);
+  font-size:rem(24px);
   font-weight: bold;
   color: $brand-color;
   margin-bottom: rem(30px);
@@ -35,18 +39,30 @@
 }
 .locations >div{
   border-left: 2px solid $brand-color;
-  height: rem(80px);
+  height: 45%;
+  padding-left: rem(20px);
 }
 .locations >div>.heading{
 	font-family: $ff-open-sans;
 	font-size:rem(15px);
 	text-transform: uppercase;
 	color: $brand-color;
+	margin-top: rem(-10px);
+	font-weight: bold;
 }
-.locations >div>.address{
+.locations >div>.address,.locations >div>.address2{
 	font-family: $ff-open-sans;
 	font-size:rem(15px);
 	text-transform: capitalize;
 	color: $grey;
-	max-width: 400px;
+	max-width: 325px;
+	margin-top: rem(10px);
+}
+.locations >div>.address2{
+	margin:0; 
+}
+.locations >div>.address>span{
+	font-weight: bold;
+	color:$brand-color;
+	margin-right: rem(5px);
 }

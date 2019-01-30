@@ -102,6 +102,11 @@
   margin-top: rem(70px);
   margin-bottom: rem(50px);
 }
+@include respond-to(large-1-1){
+  .steps>.rightside{
+    padding-left:rem(50px);
+  }
+}
 .steps>.rightside>p{
   font-size: rem(15px);
   font-family: $ff-open-sans;
@@ -144,7 +149,7 @@
 }
 .input-hidden[type=radio]:checked + img {
   border: 1px solid #fff;
-  box-shadow: 0 0 3px 3px #090;
+  box-shadow: 0 0 3px 3px $brand-color;
 }
 .rightside>.subtotal>p{
   font-size: rem(17px);

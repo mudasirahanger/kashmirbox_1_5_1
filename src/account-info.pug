@@ -24,36 +24,50 @@ block account_content
               .apinfo-form-row
                 .apinfo-form-desc
                   label Name
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row
                 .apinfo-form-desc
                   label Last Name
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row
                 .apinfo-form-desc
                   label Address
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row
                 .apinfo-form-desc
                   label Email
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row
                 .apinfo-form-desc
                   label Password
+                  a(href="#").apinfo-form-input-edit change password 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row
                 .apinfo-form-desc
                   label Phone Number
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
                 .apinfo-form-input
                   input(type="text" name="a_pi_name")
               .apinfo-form-row.apinfo-form-row-gender
                 .apinfo-form-desc
                   label Gender
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit        
                 .apinfo-form-input
                   input(type="radio" name="a_pi_gender" id="a_pi_gender_male" value="male" checked)
                   label(for="a_pi_gender_male")  Male
@@ -61,4 +75,11 @@ block account_content
                   label(for="a_pi_gender_female")  Female
                   input(type="radio" name="a_pi_gender" id="a_pi_gender_other" value="other")
                   label(for="a_pi_gender_other")  Other
+              .apinfo-form-row
+                .apinfo-form-desc
+                  label D.O.B (Mm/Dd/Yyyy)
+                  a(href="#").apinfo-form-input-edit edit 
+                    i.fa.fa-edit
+                .apinfo-form-input
+                  input(type="text" name="a_pi_name" placeholder="05/09/2018")    
               input(type="submit" name="a_pi_submit" value="SAVE")

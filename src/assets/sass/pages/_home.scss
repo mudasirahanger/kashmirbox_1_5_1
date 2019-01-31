@@ -95,6 +95,42 @@ p.Heading2 {
   margin-left: auto;
   margin-right: auto;
 }
+/*recently viewed*/
+.recently_viewed_container{
+  margin-top: rem(60px);
+}
+.recently_viewed_row img{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.recently_viewed_row>div>a{
+  text-decoration: none;
+}
+.recently_viewed_row>.recently_div>div{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 17px 0px rgba(143, 143, 143, 0.11);
+}
+.recently_viewed_row>div>.name_price{
+  left: 15%;
+  bottom: -10%;
+  width: 70%;
+  padding: 10px 10px 10px 10px;
+}
+.recently_viewed_row>div>.name_price>p{
+  color:$brand-color;
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+}
+.recently_viewed_row>div>.name_price>center{
+  color: $grey;
+  font-size: rem(12px);
+  font-family: $ff-open-sans;
+}
+.recently_viewed_row>div>.name_price>center> strike{
+  margin-right: rem(5px);
+}
 /*Social*/
 .social_container{
   margin-top: rem(52px);

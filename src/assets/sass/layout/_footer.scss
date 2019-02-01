@@ -29,6 +29,8 @@
     -webkit-appearance: none;
     font-family: $ff-open-sans;
     font-size: rem(18px);
+    font-style: italic;
+    text-transform: capitalize;
 }
 .input-group>.input-group-btn>.newsletterButton {
     font-size: rem(15px);
@@ -57,13 +59,21 @@
 .footer_links, .need_help p{
   font-size: rem(13px);
   font-family:$ff-open-sans;
-  color:$grey;;
+  color:$grey;
   line-height: 2.077;
 }
 .footer_links:hover, .footer_links:focus {
   text-decoration: none;
   background-color:transparent;
   color:$grey;/*change color #878787*/
+}
+.experience_on_mobile{
+  margin-top: rem(19px);
+}
+.experience_on_mobile > a> img{
+  margin-top: rem(10px);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .services{
   display:flex;

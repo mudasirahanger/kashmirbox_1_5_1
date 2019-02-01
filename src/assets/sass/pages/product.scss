@@ -24,11 +24,14 @@
     padding-top: rem(10px);
 }
 /*product info*/
-.product_info h3,.similar_products >h3{
+.product_info>a{
+  text-decoration:none;
+}
+.product_info>a> h3,.similar_products >h3{
 	font-family: $ff-open-sans;
-    font-size: rem(25px);
-    color: $brand-color;
-    font-weight: bold;
+  font-size: rem(25px);
+  color: $brand-color;
+  font-weight: bold;
 }
 .product_info> .product_name{
    font-family: $ff-open-sans;

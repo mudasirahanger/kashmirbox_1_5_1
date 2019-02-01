@@ -124,17 +124,7 @@ block category_content
                       |  Option 3
         .col-lg-10.col-md-10.product_list
           .col-lg-12.col-md-12
-            ul.top_nav_row.sort_order
-              li.top_nav_li.dropdown
-                a.dropdown-toggle(data-toggle='dropdown') We Recommend 
-                  span.fa.fa-angle-down.fa-lg
-                  ul.dropdown-menu.sort
-                    li
-                      a(href="#") Newest
-                    li
-                      a(href="#") Lowest
-                    li
-                      a(href="#") Highest
+            include ./components/sort-order.pug
           .col-lg-3.col-md-3.column
             a(href="product.html")
               img(src="images/product.png" alt="Kashmir Box").img-responsive

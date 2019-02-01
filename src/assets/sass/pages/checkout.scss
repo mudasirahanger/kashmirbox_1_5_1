@@ -78,7 +78,6 @@
   width: rem(345px);
   text-align: center;
   height:rem(57px);
-  padding-top: rem(15px);
   margin-bottom: rem(20px);
 }
 .steps>.leftside>.continue{
@@ -87,15 +86,12 @@
 .steps>.leftside>.connect_with_fb{
   background: #4267b2;/*facebook color*/
 }
-.leftside>.continue > a,.leftside>.connect_with_fb > a{
+.leftside>.continue,.leftside>.connect_with_fb{
   font-size: rem(16px);
   font-family: $ff-open-sans;
   color:$white-color;
   text-transform: uppercase;
   line-height: 1.625;
-}
-.leftside>.continue > a:hover,.leftside>.connect_with_fb > a:hover{
-  text-decoration: none;
 }
 /*rightside*/
 .steps>.rightside{

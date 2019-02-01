@@ -98,7 +98,7 @@ block cart_content
           .rate_feature.bag_discptn.apply_coupon
             p Discount
             p 
-              a(href="") Apply Coupon   
+              a(href="" data-toggle="modal" data-target="#applycoupon") Apply Coupon   
           .rate_feature.bag_discptn
             p Delivery Charges
             p Rs.149
@@ -106,5 +106,25 @@ block cart_content
           .rate_feature.bag_discptn.total
             p Total
             p Rs.20,884
-          .checkout
-            a(href="#") checkout
+          button.checkout(type="button" onclick="location.href='checkout_1.html';")
+            |checkout
+          //--OTP Modal
+          #applycoupon.applyModal.modal.fade(role="dialog")
+            .modal-dialog
+              //-Modal content
+              .modal-content
+                .modal-header
+                  button(type="button" data-dismiss="modal").close &times;
+                  h4.modal-title Apply Coupon
+                .modal-body.apply_coupon_body
+                  h3 enter coupon code.
+                  form(method="POST" action="#").apply_form
+                    input(type="text" name="applycoupon" required="required" placeholder="Type coupon code here").coupon-code
+                  p or  
+                  h4 Best coupon for you. 
+                  .coupon-base-valid.CouponContainer
+                .modal-footer
+                  form(method="POST" action="#").button_form
+                    a(href="#")
+                      p cancel
+                    input(type="submit" name="" value="APPLY")

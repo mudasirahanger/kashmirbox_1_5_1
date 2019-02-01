@@ -127,8 +127,9 @@
 }
 /***otp***/
 .otpModal .modal-title{
-	font-family: $brand-font;
+	font-family:  $ff-open-sans;
 	color: $brand-color;
+	font-weight: bold;
 }
 .otpModal #otp-number{
 	font-family: $ff-open-sans;
@@ -159,6 +160,11 @@
 	text-transform: uppercase;
 	font-size: rem(14px);
 	border: none;
+	font-family: $ff-open-sans;
+}
+.otpModal  .otpcode{
+	font-style:italic;
+	font-family: $ff-open-sans;
 }
 /******Edit Address*******/
 .aa-form-input-wrap{

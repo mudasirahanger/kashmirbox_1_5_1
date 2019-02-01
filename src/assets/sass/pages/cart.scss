@@ -211,16 +211,82 @@
 .rate_details>.checkout{
   background: $brand-color;
   width: 100% !important;
-  border-radius: 0;
+  border:none;
   height: rem(55px);
   text-transform: uppercase;
   text-align: center;
-  padding-top:rem(15px);
-}
-.rate_details>.checkout>a{
   color: $white-color;
   text-align: center;
   font-family: $ff-open-sans;
+}
+.applyModal .modal-title{
+  font-family:  $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size:rem(15px);
+}
+.apply_coupon_body{
+  margin-top:rem(20px);
+}
+.apply_coupon_body >h3,.apply_coupon_body>h4{
+  font-family:  $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size:rem(13px);
+}
+.apply_form > input{
+  width: 100%;
+}
+.apply_coupon_body>p{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: rem(20px);
+}
+.modal-footer .button_form{
+  display:flex;
+  justify-content: center;
+}
+.button_form > a{
+  text-decoration: none;
+}
+.button_form > a > p{
+  font-size: rem(16px);
+  font-family: $ff-open-sans;
+  color:$orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: rem(20px);
+  margin-top: rem(5px);
+}
+.button_form > input{
+  width: rem(130px);
+  height: rem(40px);
+  background-color: $brand-color;
+  color: $white-color;
+  text-transform: uppercase;
+  font-size: rem(14px);
+  border: none;
+  font-family: $ff-open-sans;
+}
+.applyModal .coupon-code{
+  font-style:italic;
+  font-family: $ff-open-sans;
+  height: rem(40px);
+  padding: 8px 10px;
+  font-size: rem(15px);
+  font-weight: 500;
+  color: $grey;
+}
+.coupon-base-valid.CouponContainer{
+  background-color: rgba(17,218,177,.1);
+  border: 1px solid #b9f0e5;
+  padding: 10px 20px 10px 35px;
+    border: 1px solid #d4d5d9;
+    margin-bottom: 10px;
+    border-radius: 4px;
 }
 /*footer*/
 .footer_section{

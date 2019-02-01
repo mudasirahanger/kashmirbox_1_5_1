@@ -55,11 +55,12 @@ block product_content
                 img(src="images/facebook.png")
               a(href="#")    
                 img(src="images/google+.png")
-              a(href="#")  
+              a(href="#")
                 img(src="images/instagram.png")
               a(href="#")
                 img(src="images/linkedin.png")
-          h3 Amma
+          a(href="brand.html")
+            h3 Amma
           h5.product_name Coin Grey Vine Tilla Embroidered Wool Phiran
           .rating
             span.fa.fa-star.checked
@@ -106,7 +107,7 @@ block product_content
               input(type="text" placeholder="Enter pincode (India)")
               span.fa.fa-search
           .buttons
-            button.add_to_cart
+            button.add_to_cart(type="button" onclick="location.href='cart.html';")
               .wrapper_for_button 
                 span.fa.fa-shopping-cart.fa-2x
                 p Add to Cart 

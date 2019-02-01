@@ -21,12 +21,12 @@ block checkout_content
             input(type="text" placeholder="Create/Enter you Password")
           .password
             input(type="text" placeholder="Confirm Password")      
-          .button.continue 
-            a(href="#") continue
+          button.continue(type="button" onclick="location.href='checkout_2.html';") 
+            | continue
           //-.button.continue 
             a(href="#") Register  
-          .button.connect_with_fb
-            a(href="#") connect with facebook
+          button.connect_with_fb(type="button" onclick="location.href='#';")
+            | connect with facebook
         .col-lg-5.col-md-5.col-lg-offset-1.col-md-offset-1.rightside
           p Advantages of secure login
           .text_with_icons

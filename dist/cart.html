@@ -162,7 +162,7 @@
             </div>
             <div class="rate_feature bag_discptn apply_coupon">
               <p>Discount</p>
-              <p> <a href="">Apply Coupon   </a></p>
+              <p> <a href="" data-toggle="modal" data-target="#applycoupon">Apply Coupon   </a></p>
             </div>
             <div class="rate_feature bag_discptn">
               <p>Delivery Charges</p>
@@ -173,7 +173,32 @@
               <p>Total</p>
               <p>Rs.20,884</p>
             </div>
-            <div class="checkout"><a href="#">checkout</a></div>
+            <button class="checkout" type="button" onclick="location.href='checkout_1.html';">checkout</button>
+            <div class="applyModal modal fade" id="applycoupon" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Apply Coupon</h4>
+                  </div>
+                  <div class="modal-body apply_coupon_body">
+                    <h3>enter coupon code.</h3>
+                    <form class="apply_form" method="POST" action="#">
+                      <input class="coupon-code" type="text" name="applycoupon" required="required" placeholder="Type coupon code here">
+                    </form>
+                    <p>or  </p>
+                    <h4>Best coupon for you. </h4>
+                    <div class="coupon-base-valid CouponContainer"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <form class="button_form" method="POST" action="#"><a href="#">
+                        <p>cancel</p></a>
+                      <input type="submit" name="" value="APPLY">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

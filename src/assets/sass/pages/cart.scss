@@ -95,13 +95,16 @@
   margin-top:rem(10px);
   font-family: $ff-open-sans;
   font-size:rem(15px);
+  background-color: #ffa5006e;
+  border-color: $orange;
+  color: $brand-color;
 }
 .free_delivery_alert > span{
   margin-right: 5px;
 }
 .product_details_incart> h3{
   font-family: $ff-open-sans;
-  font-size: rem(18px);
+  font-size: rem(18px); 
   font-weight: bold;
   margin-top: rem(20px);
   margin-bottom: rem(20px);
@@ -113,7 +116,7 @@
 .product_details_incart>.product_wrapper>div>.name_and_rate{
   display: flex;
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate>p{
+.product_details_incart>.product_wrapper>div>.name_and_rate>p,div>.type>p{
   color: $brand-color;
   font-weight: bold;
   font-size: rem(15px);
@@ -139,9 +142,11 @@
   font-size: rem(14px);
   font-family: $ff-open-sans;
 }
-.product_details_incart>.product_wrapper>div>.sold_by>p{
+.product_details_incart>.product_wrapper>div>.sold_by>p,div>.type>p{
   font-weight: normal;
   margin-bottom: rem(5px);
+  color:$grey;
+  font-size: rem(13px);
 }
 .divider{
   margin-top: rem(50px);
@@ -235,6 +240,7 @@
   font-weight: bold;
   text-transform: capitalize;
   font-size:rem(13px);
+  margin-bottom: rem(10px);
 }
 .apply_form > input{
   width: 100%;
@@ -280,13 +286,61 @@
   font-weight: 500;
   color: $grey;
 }
-.coupon-base-valid.CouponContainer{
-  background-color: rgba(17,218,177,.1);
-  border: 1px solid #b9f0e5;
+.couponcontainer{
+  background-color: #ffa5006e;/*coupon*/
+  border: 1px solid $orange;
   padding: 10px 20px 10px 35px;
-    border: 1px solid #d4d5d9;
-    margin-bottom: 10px;
-    border-radius: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.couponcontainer >.couponcode{
+  display: flex;
+}
+.couponcontainer >.couponcode>input{
+    color: #94969f;
+    font-size: 20px;
+    margin-top: rem(15px);
+}
+.couponcontainer >.couponcode> .codebox{
+  border: 1px dashed $grey;
+  background: $white-color;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  margin-right: rem(10px);
+  font-family: $ff-open-sans;
+  color:$grey;
+  margin-left: rem(10px)
+}
+.couponcontainer >.couponcode > p{
+  font-family: $ff-open-sans;
+  font-size:rem(14px);
+  font-weight:bold;
+  text-transform: uppercase;
+  margin-left: rem(5px);
+  margin-top: rem(10px);
+  margin-right: rem(5px);
+}
+.couponcontainer >.couponcode > p> span{
+  font-size:rem(16px);
+  color:$orange-color;
+  margin-left: rem(5px);
+}
+.couponcontainer >.couponcode >.amount{
+  color:$orange-color;
+  margin-left: rem(0px);
+}
+.couponcontainer > .info{
+  font-family: $ff-open-sans;
+  font-size:rem(14px);
+  margin-left: rem(15px);
+  margin-top: rem(10px);
+  max-width: 300px;
+}
+.couponcontainer > .info > span{
+  color: $brand-color;
+  margin-left: rem(5px);
+  font-weight: bold;
 }
 /*footer*/
 .footer_section{

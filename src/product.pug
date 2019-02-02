@@ -35,13 +35,11 @@ block product_content
               img#img_04(src='https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(5)-786x1000.jpg' alt="Product 4")
           .product-img
             img#product-img(src='https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg' data-zoom-image="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt='Product 1')
-            .col-lg-4.col-md-4 
+            .three_features
               .features 
                 p 100% Genuine
-            .col-lg-4.col-md-4
               .features
                 p EMI
-            .col-lg-4.col-md-4 
               .features
                 p Ready to ship
         //-Product_Info  
@@ -73,22 +71,13 @@ block product_content
             strong Rs. 8000
             s Rs. 10000
             span.discount (20% OFF)
-          //-.share_options
-            p Share
-            a(href="#")
-              img(src="images/facebook.png" alt="facebook")
-            a(href="#")    
-              img(src="images/twitter.png" alt="twitter")
-            a(href="#")    
-              img(src="images/instagram.png" alt="instagram")
-            a(href="#")    
-              img(src="images/google+.png" alt="google_plus")
-            a(href="#")    
-              img(src="images/linkedin.png" alt="linkedin")
-            a(href="#")    
-              img(src="images/pinterest.png" alt="pinterest")  
           .size
-            h5 Select size #[button size chart] 
+            h5 Choose type 
+            //-#[button(type="button").size-chart Choose type]
+            .type
+              select.form-control.product-type.form-control-product
+                option unstiched
+                option stiched
             .buttons
               button.size_buttons S
               button.size_buttons M

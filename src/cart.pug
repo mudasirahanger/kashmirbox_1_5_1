@@ -29,13 +29,13 @@ block cart_content
                 p Emerald Hand Embroidered Silk Suit
                 p Rs.7000
               .name_and_rate.sold_by
-                p sold by amma
+                p sold by amma  
                 .rate
                   s Rs.1999
                   p 20% OFF 
+              .type
+                p Choose the suit type: Unsitched Suit  
               .name_and_rate.size_and_quantity
-                p Size
-                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
                 p Qty
                 input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
               hr.divider
@@ -53,10 +53,10 @@ block cart_content
                 p sold by amma
                 .rate
                   s Rs.1999
-                  p 20% OFF 
+                  p 20% OFF
+              .type
+                p Choose the suit type: Unsitched Suit     
               .name_and_rate.size_and_quantity
-                p Size
-                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
                 p Qty
                 input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
               hr.divider
@@ -74,10 +74,10 @@ block cart_content
                 p sold by amma
                 .rate
                   s Rs.1999
-                  p 20% OFF 
+                  p 20% OFF
+              .type
+                p Choose the suit type: Unsitched Suit     
               .name_and_rate.size_and_quantity
-                p Size
-                input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
                 p Qty
                 input(type="text" name="quantity[234863]" value="1" size="1").form-control.sq
               hr.divider
@@ -121,8 +121,16 @@ block cart_content
                   form(method="POST" action="#").apply_form
                     input(type="text" name="applycoupon" required="required" placeholder="Type coupon code here").coupon-code
                   p or  
-                  h4 Best coupon for you. 
-                  .coupon-base-valid.CouponContainer
+                  h4 Best coupon for you.
+                  .couponcontainer
+                    .couponcode
+                      input(type="radio" name="pt")
+                      .codebox HELLO001
+                      p save
+                        span.fa.fa-inr  
+                      p.amount 207
+                    p.info Rs. 300 off on minimum purchase of Rs. 799.0 Valid till 31st December 2019
+                      span Details  
                 .modal-footer
                   form(method="POST" action="#").button_form
                     a(href="#")

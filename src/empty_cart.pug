@@ -1,0 +1,13 @@
+extends ./layouts/cart.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block cart_content
+  main.empty_cart
+    .container
+      .row
+        .col-lg-12.col-md-12
+          img(src="images/bag.png" alt="image").img-responsive
+          h2 Hey, it feels so light!
+          p There is nothing in your bag. Let's add some items.
+          button(type="button" onclick="location.href='login_panel.html';") add items from wishlist

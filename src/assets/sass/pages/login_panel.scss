@@ -1,0 +1,25 @@
+.login_panel >.container-fluid{
+    background: linear-gradient(to bottom right, #FEEDF6, #FCF0E2);
+    text-align: center;
+    padding-top: rem(30px);
+    position: relative;
+    padding-bottom: rem(40px);	
+}
+.login_panel .login-box{
+   display: inline-block;
+   width: rem(400px);
+   background-color: $white-color;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+   padding: 20px 10px;
+   max-width: rem(430px);
+}
+.login-box > .login-title{
+   font-size: rem(25px);
+   margin-top: rem(15px);
+   color: $brand-color;
+   font-family: $ff-open-sans;
+   letter-spacing: -1px;	
+}
+.login-box >.loginpanel{
+	height:auto;
+}

@@ -1,0 +1,28 @@
+extends ./layouts/login_panel.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block login_panel_content
+  main.login_panel
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12
+          .login-box
+            p.login-title Login to Kashmirbox
+            .col-md-12.col-sm-12.col-xs-12.modalLoginMainD2.loginpanel
+              .textboxHead.hidden.reg
+                input(type="text" placeholder="Enter your First Name").form-control.textboxes
+              .textboxHead.hidden.reg
+                input(type="text" placeholder="Enter your Last Name").form-control.textboxes
+              .textboxHead
+                input(type="text" placeholder="Enter your email address").form-control.textboxes
+              .textboxHead#modalLoginMainD3
+                input(type="password" placeholder="Enter password").form-control.textboxes
+                a(href="#")#lnkforget.hyperlink Forgot?
+              .textboxHead#modalLoginMainD3.hidden.reg
+                input(type="password" placeholder="Confirm password").form-control.textboxes
+              .login_and_signup
+                button(type="button" onclick="location.href='checkout_1.html';").btnlogin_and_register#loginBtn Login
+                //-button(type="button").btnlogin_and_register.hidden cancel    
+                button(type="button").btnlogin_and_register.btn-reg Register
+              button(type="button").btn_connect Connect with Facebook   

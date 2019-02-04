@@ -1,0 +1,38 @@
+.empty_cart .container{
+	margin-bottom: rem(50px);
+}
+.empty_cart div{
+  text-align: center;
+}
+.empty_cart img{
+  margin-left:auto;
+  margin-right:auto;
+}
+.empty_cart h2{
+	font-family: $ff-open-sans;
+	color:$brand-color;
+	font-size: rem(20px); 
+	font-weight: bold;
+	margin-top: rem(30px);
+}
+.empty_cart p{
+	font-family: $ff-open-sans;
+	color:$brand-color;
+	font-size: rem(15px); 
+	margin-top: rem(10px);
+}
+.empty_cart button{
+	background: $brand-color;
+    width: 20%;
+    border: none;
+    height: rem(55px);
+    text-transform: uppercase;
+    color: $white-color;
+    font-family: $ff-open-sans;
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
+    margin-right: auto;
+    margin-top: rem(30px);
+    font-size:rem(14px);
+}

@@ -1,0 +1,41 @@
+.four_o_four >.container-fluid{
+	background-color:$brand-color;
+	height: rem(80px);
+}
+.four_o_four >.container-fluid > .row>.logo > img{
+	margin-left: auto;
+	margin-right: auto;
+	width: rem(100px);
+}
+.four_o_four >.container-fluid > .row>.logo{
+	margin-top: rem(8px);
+}
+.go_to_homeage{
+   margin-top: rem(40px);
+}
+.go_to_homeage img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.go_to_homeage button{
+    background: $brand-color;
+    width: 20%;
+    border: none;
+    height: rem(55px);
+    text-transform: uppercase;
+    color: $white-color;
+    font-family: $ff-open-sans;
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
+    margin-right: auto;
+}
+.go_to_homeage p{
+	font-family: $ff-open-sans;
+	color:$brand-color;
+	font-size: rem(20px); 
+	text-align: center;
+	font-weight: bold;
+	margin-top: rem(20px);
+	margin-bottom: rem(20px);
+}

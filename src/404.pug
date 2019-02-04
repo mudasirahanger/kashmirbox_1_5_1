@@ -1,0 +1,16 @@
+extends ./layouts/404.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block four_o_four_content
+  main.four_o_four
+    .container-fluid
+      .row.padding-0
+        .col-lg-12.col-md-12.logo
+          img(src="images/icons/kb.png" alt="kashmirbox").img-responsive
+      .container.go_to_homeage
+        .row
+          .col-lg-12.col-md-12
+            img(src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/error-500_f9bbb4.png").img-responsive
+            p Unfortunately the page you are looking for has been moved or deleted
+            button(type="button" onclick="location.href='index.html';") go to homepage

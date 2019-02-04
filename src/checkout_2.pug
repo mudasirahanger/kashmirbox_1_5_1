@@ -4,6 +4,10 @@ block app_variables
   -var pageTitle = "Kashmir Box";
 block checkout_content
   main.checkout
+    .container
+      .row
+        .col-lg-12.col-md-12.continue_shopping   
+          include ./components/tagline.pug
     //-checkout body
     .container
       .row.steps

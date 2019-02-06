@@ -350,6 +350,18 @@
         display: none;
       }
     }
+
+/*.affix {
+    top: 0px;
+    width: 50%;
+    z-index: 9999 !important;
+    flex-flow: column;
+    position: sticky;
+  }
+
+.affix + .container-fluid {
+    padding-top: 70px;
+  }*/
 @include respond-to(medium){
     .left-col {
         > #product-img-slider {

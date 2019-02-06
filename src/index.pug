@@ -6,10 +6,9 @@ block home_content
   main.home
     //-slider
     .container_fluid
-      .row
+      .hero-slider-section.row
         .col-md-12.col-lg-12.padding-0
-          a(href="https://www.kashmirbox.com/christmas-offers-2018/")
-            img(src="https://www.kashmirbox.com/image/catalog/kb1/homepage/slideshow/Cash-pash-d.jpg" alt="Banner").img-responsive                     
+          include components/hero-slider.pug                     
     //-Sale Section
     .container.sale_container
       .row
@@ -70,18 +69,8 @@ block home_content
       p.Heading Trending in Craft
       p.Heading2 Luxury Handmade Apparel, Accents & Home Decor
       .row.craft_row
-        .col-lg-3.col-md-3.col-sm-3.col-xs-6
-          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
-            img(src="images/Themed-Christmas.jpg" alt="image").img-responsive
-        .col-lg-3.col-md-3.col-sm-3.col-xs-6
-          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
-            img(src="images/Kani-Cashmere.jpg" alt="image").img-responsive
-        .col-lg-3.col-md-3.col-sm-3.col-xs-6
-          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
-            img(src="images/Themed-Christmas.jpg" alt="image").img-responsive
-        .col-lg-3.col-md-3.col-sm-3.col-xs-6
-          a( href="https://www.kashmirbox.com/exotic-foods/healthy-living-exotic-foods-dry-fruits")
-            img(src="images/Kani-Cashmere.jpg" alt="image").img-responsive        
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          include components/trending_in_craft.pug        
     //-Beauty
     .container.beauty_container
       p.Heading Trending in Beauty
@@ -168,8 +157,7 @@ block home_content
             .imageborder
               img(src="images/Blog.jpg" alt="image").img-responsive.greyshade.fullwidth
         .col-lg-5.col-md-5.col-sm-5.col-xs-12.secondimage
-          a(href="product.html")
-            img(src="images/Talat-Aziz.jpg" alt="image").imageadjust.img-responsive.fullwidth
+          include components/testimonial_slider.pug
 //- .item
  a(href="/gi-off-white-border-embroidered-pashmina-shawl-kb5238")
  img(src="images/Siriwatana.jpg" alt="image").imageadjust.fullwidth

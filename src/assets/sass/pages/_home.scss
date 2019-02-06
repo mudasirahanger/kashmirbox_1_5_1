@@ -1,6 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+/*sale*/
+.hero-slider-section {
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+}
 /*Sale*/
 .sale_container{
   margin-top: rem(52px);
@@ -11,8 +17,8 @@
 .imageadjust{
   margin-left: auto;
 }
-.secondimage img{
-   height: 383px !important;
+.secondimage .slide-frame{
+   height: rem(383px) !important;
  }
  /**Best Seller**/
 .bestseller_container{
@@ -172,7 +178,7 @@ p.Heading2 {
  }
 }
 @include respond-to(large-only){
- .secondimage img{
-   height: 319px !important;
+ .secondimage .slide-frame{
+   height: rem(319px) !important;
  }
 }

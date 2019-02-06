@@ -1,0 +1,43 @@
+.hero-slider {
+  .slide {
+    .slide-frame {
+      background-size: cover;
+      height: rem(300px);
+      background-position: center center;
+      width: 100%;
+      display: table;
+      .slide-content{
+        display: table-cell;
+        vertical-align: middle;
+        .container {
+          max-width: rem($lg-container);
+        }
+      }
+    }
+  }
+  .slick-dots {
+    bottom: rem(10px);
+  }
+  .slick-dots li button:before {
+    font-size: rem(16px);
+    color: white;
+    opacity: 1;
+  }  
+  .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    color: $brand-color;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $brand-color;
+  }
+}
+
+
+@include respond-to(medium) {
+  .hero-slider {
+    .slide {
+      .slide-frame {
+        height: rem(460px);
+      }
+    }
+  }
+}

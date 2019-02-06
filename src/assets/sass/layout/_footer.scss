@@ -14,7 +14,7 @@
   font-family: $brand-font;
   margin: 50px 0;
   padding-left: 0;
-  line-height: 30px;
+  line-height: 45px;
   font-size: rem(32px);
   color: $brand-color;
   text-align: center;
@@ -28,7 +28,7 @@
     box-shadow: none;
     -webkit-appearance: none;
     font-family: $ff-open-sans;
-    font-size: rem(18px);
+    font-size: rem(13px);
     font-style: italic;
     text-transform: capitalize;
 }
@@ -123,7 +123,7 @@
   margin-left: rem(15px);
 }
 .about_kashmirbox .descptn {
-  font-size: rem(14px);
+  font-size: rem(13px);
   font-family: $ff-open-sans;
   color: $grey;
   line-height: 1.471;

@@ -133,6 +133,14 @@ header a:hover, a:active, a:focus {
    line-height: rem(23px);
  }
  /*navbar*/
+  .affix {
+    top: -20px;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
 .navbar-center{
   display: flex!important;
   justify-content: center;
@@ -175,7 +183,7 @@ header a:hover, a:active, a:focus {
   margin: rem(0px);
 }
 .currency>li>a:hover, .currency>li>a:focus {
-  background-color: $grey;
+  background-color: #edede;
 }
 .currency a{
    padding: rem(0px);
@@ -195,7 +203,7 @@ header a:hover, a:active, a:focus {
    padding: rem(0px);
 } 
 .help>li>a:hover, .help>li>a:focus {
-  background-color: $grey;
+  background-color: #ededed;
 }
 /*add menu css in new file*/
 /*menu*/

@@ -1,0 +1,19 @@
+.product_list > div > .sort_order{
+    float: right;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #d3d3d3;
+    color: $brand-color;
+    margin-bottom: rem(30px);
+    font-family: $ff-open-sans;
+    font-size: rem(14px);
+    padding: 0;
+    max-width: rem(245px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url(https://image.flaticon.com/icons/svg/60/60781.svg);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}

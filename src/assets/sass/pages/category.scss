@@ -2,6 +2,9 @@
 	position:relative;
 	text-align: center;
 }
+.categorybanner > img{
+  height:rem(350px);
+}
 .categorybanner h1{
 	position:absolute;
 	width: 100%;
@@ -12,35 +15,9 @@
   color: $white-color;
   text-transform: uppercase;
 }
-/*product_list*/
-.product_list > div > .sort_order{
-    float: right;
-    border: 1px solid #eee;
-    font-family:  $ff-open-sans;
-    color: $brand-color;
-    margin-bottom: rem(30px);
-    padding: 10px 10px;
-}
-.sort_order a{
-  color:$grey;
-  text-decoration: none;
-}
-.sort{
-  text-align:center;
-  font-size: rem(12px);
+.productbreadcrumb{
   font-family: $ff-open-sans;
-  font-style:normal;
-  padding: rem(0px) ;
-  margin: rem(0px);
-  left: -9px;
-  -webkit-box-shadow:0px 1px 1px $light-shade;
- -moz-box-shadow:0px 1px 1px $light-shade;
- box-shadow:0px 1px 1px $light-shade;
-}
-.sort > li{
-  padding-top: rem(10px);
   font-size: rem(14px);
-  color: $grey;
 }
 .column > a{
 	text-decoration: none;
@@ -49,8 +26,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.column{
-  margin-bottom: rem(20px);
+.product_list > .column{
+  margin-bottom: rem(40px);
 }
 .product_text{
   font-size: rem(14px);
@@ -67,6 +44,7 @@ center{
   max-width: 219px;
   margin-left: auto;
   margin-right: auto;
+  color:$grey;
 }
 .column > a > center > .price{
   font-size: rem(14px);
@@ -157,7 +135,7 @@ a.collapsed:before{
     background: $white-color;
     font-size: rem(15px);
     font-weight: 700;
-    color: $grey;
+    color: $brand-color !important;
     border-top: 1px solid #d3d3d3;
     position: relative;
     transition: all .5s ease 0s;
@@ -181,14 +159,16 @@ a.collapsed:before{
 input {
   outline: 0;
 }
-/*.filter_checkbox span{
-  background-color: rgb(54, 69, 79);
-  width: 15px;
+.filter_checkbox span{
+    width: 15px;
     height: 15px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     display: inline-block;
     margin-right: 8px;
-    margin-left: 27px;
-}*/
+    margin-left: 8px;
+}
+.colour-colorDisplay[data-colorhex='white'], .colour-colorDisplay[data-colorhex='off white'] {
+    border: 1px solid #d6d6d6;
+}

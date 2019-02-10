@@ -109,6 +109,8 @@ p.Heading2 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  width:rem(234px);
+  height:rem(390px);
 }
 .recently_viewed_row>div>a{
   text-decoration: none;
@@ -120,7 +122,7 @@ p.Heading2 {
 }
 .recently_viewed_row>div>.name_price{
   left: 15%;
-  bottom: -10%;
+  bottom: 0%;
   width: 70%;
   padding: 10px 10px 10px 10px;
 }

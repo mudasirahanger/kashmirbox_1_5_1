@@ -68,6 +68,13 @@
 .product_wrapper{
   margin-top: rem(20px);
 }
+.cartproducts>.rate_details{
+  flex-flow: column;
+  position: sticky;
+  top: 64px;
+  bottom: 0;
+  z-index: 2;
+}
 .product_wrapper,.rate_details{
   border: 1px solid $grey;
 }

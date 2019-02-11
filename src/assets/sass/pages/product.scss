@@ -8,36 +8,47 @@
     height: auto;
     margin-right: rem(5px);
 }
+.product_image{
+  flex-flow: column;
+    position: sticky;
+    top: 64px;
+    bottom: 0;
+    z-index: 2;
+}
 .product_image>div{
     padding-left: 0px;
     padding-right: 5px;
 }
 .features{
-    background-color: $grey;
+    background-color: #f7f7f7;
     height: 50px;
 }
 .features> p{
     font-family: $ff-open-sans;
     font-size: rem(16px);
-    color: $white-color;
+    color: $brand-color;
     text-align: center;
     padding-top: rem(10px);
 }
 /*product info*/
+.product_info{
+  padding-top:rem(4px);
+}
 .product_info>a{
   text-decoration:none;
 }
-.product_info>a> h3,.similar_products >h3{
+.product_info>a> h3{
 	font-family: $ff-open-sans;
-  font-size: rem(25px);
+  font-size: rem(20px);
   color: $brand-color;
   font-weight: bold;
+  position: absolute;
 }
 .product_info> .product_name{
-   font-family: $ff-open-sans;
+   font-family: $brand-font;
    color: $grey;
-   font-size: rem(20px);
-   margin-top: rem(5px);
+   font-size: rem(28px);
+   margin-top: rem(30px);
    margin-bottom: rem(5px);
 }
 .product_info>.share>.share_popover{
@@ -74,6 +85,12 @@
 .share>.content{
     display: none;
 }
+.rating>.fa.fa-star.checked{
+  color:$orange;
+}
+.rating>.fa.fa-star{
+  color:$grey;
+}
 .product_info>.product_price>strong{
 	font-size: rem(23px);
     color: $brand-color;
@@ -98,7 +115,7 @@
     display: flex;
 }
 .product_info>.buttons>.add_to_cart{
-	border: 1px solid $orange;
+	  border: none;
     box-shadow: none;
     outline: none;
     height: 52px;
@@ -108,11 +125,9 @@
     margin-right: rem(40px);
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: rem(8px);
 }
 .product_info>.buttons>.add_to_cart>.wrapper_for_button,
 .product_info>.buttons>.add_to_wishlist>.wrapper_for_button{
-    display: flex;
     justify-content: center;
 }
 .product_info>.buttons>.add_to_cart>.wrapper_for_button>p,
@@ -120,22 +135,14 @@
     font-family: $ff-open-sans;
     font-size: rem(15px);
 }
-.product_info>.buttons>.add_to_cart>.wrapper_for_button>span,
-.product_info>.buttons>.add_to_wishlist>.wrapper_for_button>span{
-    margin-right: rem(15px);
-}
-.product_info>.buttons>.add_to_cart>.wrapper_for_button>span{
-   color:$orange;
-}
 .product_info>.buttons>.add_to_wishlist{
-	border: 1px solid $grey;
+	  border: 1px solid $grey;
     box-shadow: none;
     outline: none;
     height: 52px;
     width: 40%;
     background-color: $light-shade;
     text-transform: uppercase;
-    border-radius: rem(8px);
     font-weight: bold;
 }
 .product_info>.buttons>.add_to_cart:hover{
@@ -188,7 +195,7 @@
     word-spacing: rem(2px);
 }
 .product_info>.size>.buttons>.size_buttons{
-    margin: 15px 10px 15px 0px;
+    margin: 5px 10px 15px 0px;
     background-color: $light-shade;
     border: 1px solid $grey;
     border-radius: 50px;
@@ -215,15 +222,26 @@
  font-family: $ff-open-sans;
 }
 .type>.product-type{
-  width: 52%;
   font-family: $ff-open-sans;
   text-transform: capitalize;
-  margin-bottom: rem(20px);
+  margin-bottom: rem(25px);
   color: $grey;
-}
-.type>.product-type:hover,.type>.product-type:focus,.type>.product-type:active{
-  border: 1px solid rgba(0,0,0,0.2);;
-  box-shadow: $grey;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #d3d3d3;
+    color: #151414;
+    margin-bottom: 1.875rem;
+    font-family: "Open Sans",sans-serif;
+    font-size: .875rem;
+    padding: 0;
+    max-width: 15.3125rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url(https://image.flaticon.com/icons/svg/60/60781.svg);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px;
 }
 .product_info>.cod{
 	margin-top: rem(20px);
@@ -285,11 +303,20 @@
 }
 .product_info>.description>.product_details >ul>li,.product_details>p{
    color: $grey !important;
-   font-size: rem(13px);
+   font-size: rem(14px);
    font-family:$ff-open-sans;
 }
 .product_details>p{
+   text-align: justify;
    padding: 10px 0px 0px 0px;
+}
+.description>.product_description{
+  margin-top:0px !important;
+  padding:0px;
+  margin-bottom: 20px;
+}
+.description>.heading>h5{
+  margin-bottom:0px;
 }
 /*about craft and reviews
 .about_craft_and_reviews{
@@ -297,11 +324,17 @@
 }*/
 /*view similar products*/
 .similar_products{
-    margin-top: rem(20px);
+    margin-top: rem(50px);
 }
 .similar_products h3{
-    margin-bottom: rem(20px);
+    margin-bottom: rem(30px);
     margin-left: rem(15px);
+    font-family: $ff-open-sans;
+    font-size: rem(20px);
+    color: $brand-color;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 .similar_products img{
     margin-left:auto;

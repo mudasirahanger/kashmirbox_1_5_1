@@ -104,6 +104,59 @@ jQuery(document).ready(function($){
     ]
   });
 });
+//similar products
+jQuery(document).ready(function($){
+  $('.similar_products_slider').slick({
+    'prevArrow' : '<span class="fa fa-chevron-left slide-back"></span>',
+    'nextArrow' : '<span class="fa fa-chevron-right slide-next"></span>',
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '80px',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });
+});
 /*******************************************************************************
 Global Helper Functions
 ********************************************************************************/

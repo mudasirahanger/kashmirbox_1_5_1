@@ -358,12 +358,25 @@
                   <option>stiched</option>
                 </select>
               </div>
+              <h5>Choose size</h5>
               <div class="buttons">
                 <button class="size_buttons">S</button>
                 <button class="size_buttons">M</button>
                 <button class="size_buttons">L</button>
                 <button class="size_buttons">XL</button>
               </div>
+            </div>
+            <div class="buttons">
+              <button class="add_to_cart" type="button" onclick="location.href='cart.html';">
+                <div class="wrapper_for_button">
+                  <p>Add to Cart </p>
+                </div>
+              </button>
+              <button class="add_to_wishlist">
+                <div class="wrapper_for_button">
+                  <p>Add to Wishlist    </p>
+                </div>
+              </button>
             </div>
             <div class="more_colors">
               <h5>More colors</h5><img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg"><img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10300(1)-786x1000.jpg" alt="product_image"><img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg">
@@ -373,29 +386,20 @@
                 <h5>delivery options</h5><span class="fa fa-truck"></span>
               </div>
               <div class="input_field">
-                <input type="text" placeholder="Enter pincode (India)"><span class="fa fa-search"></span>
+                <input type="text" placeholder="Enter pincode (India)"><span class="fa fa-search"> </span>
               </div>
-            </div>
-            <div class="buttons">
-              <button class="add_to_cart" type="button" onclick="location.href='cart.html';">
-                <div class="wrapper_for_button"> <span class="fa fa-shopping-cart fa-2x"></span>
-                  <p>Add to Cart </p>
-                </div>
-              </button>
-              <button class="add_to_wishlist">
-                <div class="wrapper_for_button"> <span class="fa fa-heart-o fa-2x"></span>
-                  <p>Add to Wishlist </p>
-                </div>
-              </button>
             </div>
             <hr>
             <div class="description">
               <div class="heading">
                 <h5>Product details</h5><span class="fa fa-info-circle"></span>
               </div>
-              <p>KBCODE: <b>KB0001</b></p>
+              <div class="product_details product_description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+              </div>
               <div class="product_details">
                 <h6>MORE INFO</h6>
+                <p>KBCODE: <b>KB0001</b></p>
                 <ul>
                   <li>Material: Cotton</li>
                   <li>Color: Black</li>
@@ -403,12 +407,8 @@
                   <li>Care: Dry Clean</li>
                   <li>Embriodery: Hand Aari</li>
                   <li>Estimated Arrival: Between 20-30 days in India</li>
-                  <li>Availability: Ships Internationally</li>
+                  <li>Availability: Ships Internationally      </li>
                 </ul>
-              </div>
-              <div class="product_details">
-                <h6>DESCRIPTION</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
               </div>
               <div class="product_details">
                 <h6>SELLER DETAILS</h6>
@@ -426,13 +426,45 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row similar_products">
-          <h3>Similar Products</h3>
-          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg"></a></div>
-          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg"></a></div>
-          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10432(1)-786x1000.jpg"></a></div>
-          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10301(1)-786x1000.jpg"></a></div>
+          <h3>Goes with this</h3>
+          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+          <div class="col-lg-3 col-md-3"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row similar_products">
+          <h3>You may also like</h3>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="similar_products_slider">
+              <div class="slide">
+                <div class="slide-content"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+              </div>
+              <div class="slide">
+                <div class="slide-frame">
+                  <div class="slide-content"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-frame">
+                  <div class="slide-content"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-frame">
+                  <div class="slide-content"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-frame">
+                  <div class="slide-content"><a href="#"><img class="img-responsive" src="images/product.png" alt="Kashmir Box"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

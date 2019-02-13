@@ -1,7 +1,7 @@
 .similar_products_slider {
   .slide {
     .slide-content {
-      width: rem(253px);
+      width: rem(245px);
       height: auto;
       margin: 0 auto;
       .slide-img {
@@ -75,7 +75,7 @@
     }
   }
 }
-.slide-content .product_text{
+.slide-content > a > .product_text{
   font-size: rem(14px);
   font-family: $ff-open-sans;
   color:  $brand-color;
@@ -92,22 +92,35 @@
   margin-right: auto;
   color:$grey;
 }
-.slide-content .product_text > center > .price{
+.similar_products_slider .price{
   font-size: rem(14px);
   color: $brand-color;
   font-family: $ff-open-sans;
   font-weight:bold;
   margin-right: rem(5px);
 }
-.slide-content .product_text > center > strike{
+.similar_products_slider strike{
   font-size: rem(13px);
   color: $grey;
   font-family: $ff-open-sans;
   margin-right: rem(5px);
 }
-.slide-content .product_text > center > .discount{
+.similar_products_slider .discount{
   font-size: rem(13px);
   color: $grey;
   font-family: $ff-open-sans;
   color:$red-color;
+}
+.similar_products_slider .slide-content>a:hover{
+  text-decoration: none;
+}
+@include respond-to (large-1-1){
+  .similar_products_slider {
+  .slide {
+    .slide-content {
+      width: rem(215px);
+      height: auto;
+      }
+    }
+  }
 }

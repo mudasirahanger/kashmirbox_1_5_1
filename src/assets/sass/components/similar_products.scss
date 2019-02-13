@@ -2,7 +2,7 @@
   .slide {
     .slide-content {
       width: rem(253px);
-      height:rem(369px);
+      height: auto;
       margin: 0 auto;
       .slide-img {
         display: inline-block;
@@ -74,4 +74,40 @@
       transition: opacity 1s;
     }
   }
+}
+.slide-content .product_text{
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color:  $brand-color;
+  line-height: 1.529;
+  text-align: center;
+  margin: 15px 0 8px;
+  max-width: 219px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide-content center{
+  max-width: 219px;
+  margin-left: auto;
+  margin-right: auto;
+  color:$grey;
+}
+.slide-content .product_text > center > .price{
+  font-size: rem(14px);
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-weight:bold;
+  margin-right: rem(5px);
+}
+.slide-content .product_text > center > strike{
+  font-size: rem(13px);
+  color: $grey;
+  font-family: $ff-open-sans;
+  margin-right: rem(5px);
+}
+.slide-content .product_text > center > .discount{
+  font-size: rem(13px);
+  color: $grey;
+  font-family: $ff-open-sans;
+  color:$red-color;
 }

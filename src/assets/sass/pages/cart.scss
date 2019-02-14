@@ -42,8 +42,9 @@
 .continue_shopping > .trust_label >span>p{
   text-align: center;
   font-family: $ff-open-sans;
-  font-size: rem(20px);
+  font-size: rem(18px);
   color:$white-color;
+  padding-top:rem(5px);
 }
 .continue_shopping >.continue_icon{
   display: flex;
@@ -68,15 +69,14 @@
 .product_wrapper{
   margin-top: rem(20px);
 }
-.cartproducts>.rate_details{
+.rate_details{
   flex-flow: column;
   position: sticky;
   top: 64px;
   bottom: 0;
   z-index: 2;
-}
-.product_wrapper,.rate_details{
   border: 1px solid $grey;
+  background-color:$light-shade;
 }
 .offers_blockquote {
   margin: 0 0 0px;
@@ -102,8 +102,8 @@
   margin-top:rem(10px);
   font-family: $ff-open-sans;
   font-size:rem(15px);
-  background-color: #ffa5006e;
-  border-color: $orange;
+  background-color: $light-shade;
+  border-color:$brand-color;
   color: $brand-color;
 }
 .free_delivery_alert > span{
@@ -120,17 +120,21 @@
   margin-top: rem(20px);
   margin-bottom: rem(20px);
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate{
+.product_details_incart>.product_wrapper>div>.name_and_rate,
+.product_details_incart>.product_wrapper>div>.type
+{
   display: flex;
+  margin-bottom: rem(5px);
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate>p,div>.type>p{
+.product_details_incart>.product_wrapper>div>.name_and_rate>p,div>.type>p,
+.product_details_incart>.product_wrapper>div>.name_and_price>p{
   color: $brand-color;
   font-weight: bold;
   font-size: rem(15px);
   font-family: $ff-open-sans;
 }
-.product_details_incart>.product_wrapper>div>.name_and_price>p:nth-of-type(2){
-  margin-left: auto;
+.product_details_incart>.product_wrapper>div>.name_and_price{
+  margin-top: rem(10px);
 }
 .product_details_incart>.product_wrapper>div>.name_and_rate>.rate{
   margin-left: auto;
@@ -294,8 +298,8 @@
   color: $grey;
 }
 .couponcontainer{
-  background-color: #ffa5006e;/*coupon*/
-  border: 1px solid $orange;
+  background-color: $light-shade;/*coupon*/
+  border: 1px solid $brand-color;
   padding: 10px 20px 10px 35px;
   margin-bottom: 10px;
   border-radius: 4px;

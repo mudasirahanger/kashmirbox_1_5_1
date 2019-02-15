@@ -74,7 +74,7 @@
   position: sticky;
   top: 64px;
   bottom: 0;
-  z-index: 2;
+  z-index: 1050;
   border: 1px solid $grey;
   background-color:$light-shade;
 }
@@ -192,7 +192,7 @@
 }
 /*rate details*/
 .rate_details{
- padding: 10px 30px 10px 30px;
+ padding: 18px 30px 10px 30px;
 }
 .rate_details>p{
   font-family: $ff-open-sans;
@@ -205,13 +205,14 @@
 }
 .rate_details>.rate_feature>p{
   color: $brand-color;
-  font-size: rem(15px);
+  font-size: rem(16px);
   font-family: $ff-open-sans;
 }
 .rate_details>.bag_discptn>p:nth-of-type(2){
   margin-left: auto;
   font-family: $ff-open-sans;
-  font-size: rem(14px);
+  font-size: rem(16px);
+  color: $grey;
 }
 .rate_details>.apply_coupon>p>a{
   color: $red-color;
@@ -362,8 +363,12 @@
  text-align: center;
  margin-bottom: 20px;
  font-family: $ff-open-sans;
- font-size: rem(15px);
+ font-size: rem(13px);
  color: $grey;
+}
+.checkout_footer > p{
+  margin-bottom: rem(0px);
+  color:$brand-color;
 }
 .partner_images{
   display: flex;

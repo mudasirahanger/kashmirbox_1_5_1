@@ -15,7 +15,7 @@
 }
 .safe-and-secure > p,.continue_shopping > p{
   font-family: $ff-open-sans;
-  color:$grey;
+  color:$brand-color;
   font-size: rem(15px);
   text-align: right;
   margin-top: rem(10px);
@@ -27,7 +27,7 @@
   background: linear-gradient(to right, $grey 30%, $brand-color 100%);
   height: rem(40px);
   display: flex;
-  margin-top: rem(30px);
+  margin-top: rem(40px);
 }
 .continue_shopping > .trust_label > .trustimage{
   margin-left: rem(-10px);

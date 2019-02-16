@@ -6,7 +6,10 @@ block checkout_content
   main.checkout
     .container
       .row
-        .col-lg-12.col-md-12.continue_shopping   
+        .col-lg-12.col-md-12.continue_shopping
+          .continue_icon
+            span.fa.fa-chevron-left
+            p continue shopping   
           include ./components/tagline.pug
     //-checkout body
     .container
@@ -22,29 +25,81 @@ block checkout_content
       .row.addressbook       
         .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
           .addressbox
+            input(type="checkbox" name="pt")
             p.name Sajid nahvi
               span default
             p 0123456789
             p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
             p Srinagar-190002
             p.availability * COD not available for this product
+            hr.space
+            p.edit
+              a(href="#") Edit
+                i.fa.fa-angle-double-right
         .col-lg-4.col-md-4
           .addressbox
+            input(type="checkbox" name="pt")
             p.name Sajid nahvi  
             p 0123456789
             p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
             p Srinagar-190002
             p.availability * All payment options available for this address
+            hr.space
+            p.edit
+              a(href="#") Edit
+                i.fa.fa-angle-double-right
       .row.addressbook       
         .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
           .addressbox
+            input(type="checkbox" name="pt")
             p.name Sajid nahvi  
             p 0123456789
             p.address Indo Kashmir Complex, Zaldagar, Nawab Bazar
             p Srinagar-190002
             p.availability * All payment options available for this address
+            hr.space
+            p.edit
+              a(href="#") Edit
+                i.fa.fa-angle-double-right
         .col-lg-4.col-md-4
           .addressbox.plus_address
-            a(href="#")
+            a(href="" data-toggle="modal" data-target="#add_address")
               span.fa.fa-plus.plusaddress
               p.addnew Add New Address
+          //--Add_Address Modal
+          #add_address.applyModal.modal.fade(role="dialog")
+            .modal-dialog
+              //-Modal content
+              .modal-content
+                .modal-header
+                  button(type="button" data-dismiss="modal").close &times;
+                  h4.modal-title Add New Address
+                .modal-body.apply_coupon_body
+                  form(method="post" action="#" novalidate="novalidate").aa-form
+                    .aa-form-row.aa-form-row-full
+                      .aa-form-input-wrap.aa-form-input-wrap-default-address
+                        input(type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true")
+                        label(for="a_a_default_address") Make this default address
+                    .aa-form-row
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_name" placeholder="Name" id="a_a_name" required)
+                        .aa-form-input-error
+                          label Please add the Name properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_email" placeholder="Email" id="a_a_email" required)
+                        .aa-form-input-error
+                          label Please add the Email properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_phone" placeholder="Phone number" id="a_a_phone" required)
+                        .aa-form-input-error
+                          label Please add the Phone Number properly 
+                    .aa-form-row.aa-form-row-full
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_address" placeholder="Address" id="a_a_address" required)
+                        .aa-form-input-error
+                          label Please add the Address properly
+                .modal-footer
+                  form(method="POST" action="#").button_form
+                    a(href="#")
+                      p cancel
+                    input(type="submit" name="" value="APPLY")

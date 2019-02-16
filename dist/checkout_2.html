@@ -31,7 +31,7 @@
     <div class="container">
       <div class="row cart_breadcrumb">
         <div class="col-lg-6 col-md-6 logo_wrap"><a href="#">
-            <h1>kashmirbox</h1></a></div>
+            <h1>kashmir box</h1></a></div>
         <div class="col-lg-6 col-md-6 safe-and-secure">
           <p>100% Safe &amp; Secure Payment Process</p>
         </div>
@@ -41,7 +41,10 @@
     <main class="checkout">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 continue_shopping">  
+          <div class="col-lg-12 col-md-12 continue_shopping">
+            <div class="continue_icon"><span class="fa fa-chevron-left"></span>
+              <p>continue shopping   </p>
+            </div>
             <div class="trust_label"><span class="trustimage"><img class="img-responsive" src="images/shield.png" alt="image"></span><span class="text">
                 <p>KashmirBox is trusted by more than 1 million customers worldwide</p></span></div>
           </div>
@@ -65,36 +68,99 @@
         <div class="row addressbook">      
           <div class="col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
             <div class="addressbox">
+              <input type="checkbox" name="pt">
               <p class="name">Sajid nahvi<span>default</span></p>
               <p>0123456789</p>
               <p class="address">Indo Kashmir Complex, Zaldagar, Nawab Bazar</p>
               <p>Srinagar-190002</p>
               <p class="availability">* COD not available for this product</p>
+              <hr class="space">
+              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
             <div class="addressbox">
+              <input type="checkbox" name="pt">
               <p class="name">Sajid nahvi  </p>
               <p>0123456789</p>
               <p class="address">Indo Kashmir Complex, Zaldagar, Nawab Bazar</p>
               <p>Srinagar-190002</p>
               <p class="availability">* All payment options available for this address</p>
+              <hr class="space">
+              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
         </div>
         <div class="row addressbook">      
           <div class="col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
             <div class="addressbox">
+              <input type="checkbox" name="pt">
               <p class="name">Sajid nahvi  </p>
               <p>0123456789</p>
               <p class="address">Indo Kashmir Complex, Zaldagar, Nawab Bazar</p>
               <p>Srinagar-190002</p>
               <p class="availability">* All payment options available for this address</p>
+              <hr class="space">
+              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
-            <div class="addressbox plus_address"><a href="#"><span class="fa fa-plus plusaddress"></span>
+            <div class="addressbox plus_address"><a href="" data-toggle="modal" data-target="#add_address"><span class="fa fa-plus plusaddress"></span>
                 <p class="addnew">Add New Address</p></a></div>
+            <div class="applyModal modal fade" id="add_address" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add New Address</h4>
+                  </div>
+                  <div class="modal-body apply_coupon_body">
+                    <form class="aa-form" method="post" action="#" novalidate="novalidate">
+                      <div class="aa-form-row aa-form-row-full">
+                        <div class="aa-form-input-wrap aa-form-input-wrap-default-address">
+                          <input type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true">
+                          <label for="a_a_default_address">Make this default address</label>
+                        </div>
+                      </div>
+                      <div class="aa-form-row">
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_name" placeholder="Name" id="a_a_name" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Name properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_email" placeholder="Email" id="a_a_email" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Email properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_phone" placeholder="Phone number" id="a_a_phone" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Phone Number properly </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="aa-form-row aa-form-row-full">
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_address" placeholder="Address" id="a_a_address" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Address properly</label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <form class="button_form" method="POST" action="#"><a href="#">
+                        <p>cancel</p></a>
+                      <input type="submit" name="" value="APPLY">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

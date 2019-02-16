@@ -1,10 +1,10 @@
 .steps{
-   margin-top: rem(40px);
+   margin-top: rem(70px);
 }
 .steps > div > .firststep.checkout_1,.steps > div > .firststep.checkout_2,
 .steps > div > .firststep.checkout_3
 {
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid #9e9898;
   width: 55%;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +65,7 @@
 }
 .steps>.leftside>.email_address>input,.steps>.leftside>.password>input{
   border:none;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid #e3e3e3;;
   width: rem(345px);
   font-family: $ff-open-sans;
   font-size: rem(15px);
@@ -167,22 +167,24 @@
 }
 /*checkout_2*/
 .addressbook>div>.addressbox {
-  border:1px solid $grey;
+  border:1px solid #e3e3e3;
   background-color: rgba(43, 43, 43, 0);
   max-width: rem(350px);
-  height: rem(215px);
-  padding:15px 15px 15px 20px;
+  height: rem(242px);
+  padding: 15px 20px 10px 30px;
   margin-bottom: rem(25px);
 }
-.addressbook>div>.addressbox:hover{
-  border-color:$brand-color;
+.addressbook>div>.addressbox >input[type="checkbox"]{
+  position:absolute;
+  top: 17px;
+  left: 25px;
 }
 .addressbook>div>.addressbox>a{
   text-decoration: none;
 }
 .addressbook>div>.addressbox>p,.addressbook>div>.addressbox>a>.addnew
 {
-  font-size: rem(15px);
+  font-size: rem(14px);
   font-family:$ff-open-sans;
   color: rgb(21, 20, 20);
   color: $grey;
@@ -191,7 +193,7 @@
 .addressbook>div>.addressbox>.name{
   font-weight: bold;
   color: $brand-color;
-  margin-bottom: rem(4px);
+  margin-bottom: rem(12px);
   text-transform: uppercase;
 }
 .addressbook>div>.addressbox>.name>span{
@@ -199,11 +201,23 @@
 }
 .addressbook>div>.addressbox>.address{
   max-width:rem(200px);
+  margin-top:rem(5px);
 }
 .addressbook>div>.addressbox>.availability{
-  font-size: rem(14px);
+  font-size: rem(13px);
   margin-top: rem(15px);
   color: $brand-color;
+}
+.addressbook>div>.addressbox>.space{
+  margin-bottom:rem(10px);
+  margin-top:rem(10px);
+}
+.addressbook>div>.addressbox>.edit >a{
+  text-decoration: none;
+  color:$orange;
+}
+.addressbook>div>.addressbox>.edit >a >i{
+  margin-left:rem(5px);
 }
 .addressbook>div>.addressbox>.addnew{
   font-size: rem(15px);

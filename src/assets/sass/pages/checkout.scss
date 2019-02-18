@@ -232,3 +232,23 @@
   color: $grey;
   margin-top: rem(60px);
 }
+.add_address_body{
+  margin-top:rem(20px);
+}
+.add_address_body form{
+  margin-top: rem(0px);
+}
+.add_address_body >h3,.add_address_body>h4{
+  font-family:  $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size:rem(13px);
+  margin-bottom: rem(10px);
+}
+.add_address_body>p{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: rem(20px);
+}

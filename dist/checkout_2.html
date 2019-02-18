@@ -75,7 +75,7 @@
               <p>Srinagar-190002</p>
               <p class="availability">* COD not available for this product</p>
               <hr class="space">
-              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
+              <p class="edit"><a href="" data-toggle="modal" data-target="#add_address">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
@@ -87,7 +87,7 @@
               <p>Srinagar-190002</p>
               <p class="availability">* All payment options available for this address</p>
               <hr class="space">
-              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
+              <p class="edit"><a href="" data-toggle="modal" data-target="#add_address">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
               <p>Srinagar-190002</p>
               <p class="availability">* All payment options available for this address</p>
               <hr class="space">
-              <p class="edit"><a href="#">Edit<i class="fa fa-angle-double-right"></i></a></p>
+              <p class="edit"><a href="" data-toggle="modal" data-target="#add_address">Edit<i class="fa fa-angle-double-right"></i></a></p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
@@ -114,7 +114,7 @@
                     <button class="close" type="button" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add New Address</h4>
                   </div>
-                  <div class="modal-body apply_coupon_body">
+                  <div class="modal-body add_address_body">
                     <form class="aa-form" method="post" action="#" novalidate="novalidate">
                       <div class="aa-form-row aa-form-row-full">
                         <div class="aa-form-input-wrap aa-form-input-wrap-default-address">
@@ -124,9 +124,15 @@
                       </div>
                       <div class="aa-form-row">
                         <div class="aa-form-input-wrap">
-                          <input type="text" name="a_a_name" placeholder="Name" id="a_a_name" required>
+                          <input type="text" name="a_a_name" placeholder="First Name" id="a_a_name" required>
                           <div class="aa-form-input-error">
-                            <label>Please add the Name properly</label>
+                            <label>Please add the First Name properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_email" placeholder="last Name" id="a_a_email" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Last name properly    </label>
                           </div>
                         </div>
                         <div class="aa-form-input-wrap">
@@ -150,12 +156,50 @@
                           </div>
                         </div>
                       </div>
+                      <div class="aa-form-row aa-form-row-full">
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_address" placeholder="Address 2" required>
+                        </div>
+                      </div>
+                      <div class="aa-form-row">
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_landmark" placeholder="Landmark" id="a_a_landmark" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Landmark properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_city" placeholder="City" id="a_a_city" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the City properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_pincode" placeholder="Pincode" id="a_a_pincode" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the Pincode properly</label>
+                          </div>
+                        </div>
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_state" placeholder="State" id="a_a_state" required>
+                          <div class="aa-form-input-error">
+                            <label>Please add the State properly    </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="aa-form-row">
+                        <div class="aa-form-input-wrap">
+                          <input type="text" name="a_a_country" id="a_a_country" placeholder="Country" required="required">
+                          <div class="aa-form-input-error">
+                            <label>Please add the Country properly                              </label>
+                          </div>
+                        </div>
+                      </div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <form class="button_form" method="POST" action="#"><a href="#">
-                        <p>cancel</p></a>
-                      <input type="submit" name="" value="APPLY">
+                    <form class="button_form" method="POST" action="#">
+                      <input type="submit" name="" value="SAVE ADDRESS">
                     </form>
                   </div>
                 </div>

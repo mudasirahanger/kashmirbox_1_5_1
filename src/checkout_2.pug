@@ -34,7 +34,7 @@ block checkout_content
             p.availability * COD not available for this product
             hr.space
             p.edit
-              a(href="#") Edit
+              a(href="" data-toggle="modal" data-target="#add_address") Edit
                 i.fa.fa-angle-double-right
         .col-lg-4.col-md-4
           .addressbox
@@ -46,7 +46,7 @@ block checkout_content
             p.availability * All payment options available for this address
             hr.space
             p.edit
-              a(href="#") Edit
+              a(href=""  data-toggle="modal" data-target="#add_address") Edit
                 i.fa.fa-angle-double-right
       .row.addressbook       
         .col-lg-4.col-md-4.col-lg-offset-2.col-md-offset-2
@@ -59,7 +59,7 @@ block checkout_content
             p.availability * All payment options available for this address
             hr.space
             p.edit
-              a(href="#") Edit
+              a(href="" data-toggle="modal" data-target="#add_address") Edit
                 i.fa.fa-angle-double-right
         .col-lg-4.col-md-4
           .addressbox.plus_address
@@ -74,7 +74,7 @@ block checkout_content
                 .modal-header
                   button(type="button" data-dismiss="modal").close &times;
                   h4.modal-title Add New Address
-                .modal-body.apply_coupon_body
+                .modal-body.add_address_body
                   form(method="post" action="#" novalidate="novalidate").aa-form
                     .aa-form-row.aa-form-row-full
                       .aa-form-input-wrap.aa-form-input-wrap-default-address
@@ -82,9 +82,13 @@ block checkout_content
                         label(for="a_a_default_address") Make this default address
                     .aa-form-row
                       .aa-form-input-wrap
-                        input(type="text" name="a_a_name" placeholder="Name" id="a_a_name" required)
+                        input(type="text" name="a_a_name" placeholder="First Name" id="a_a_name" required)
                         .aa-form-input-error
-                          label Please add the Name properly
+                          label Please add the First Name properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_email" placeholder="last Name" id="a_a_email" required)
+                        .aa-form-input-error
+                          label Please add the Last name properly    
                       .aa-form-input-wrap
                         input(type="text" name="a_a_email" placeholder="Email" id="a_a_email" required)
                         .aa-form-input-error
@@ -98,8 +102,33 @@ block checkout_content
                         input(type="text" name="a_a_address" placeholder="Address" id="a_a_address" required)
                         .aa-form-input-error
                           label Please add the Address properly
+                    .aa-form-row.aa-form-row-full
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_address" placeholder="Address 2" required)  
+                    .aa-form-row
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_landmark" placeholder="Landmark" id="a_a_landmark" required)
+                        .aa-form-input-error
+                          label Please add the Landmark properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_city" placeholder="City" id="a_a_city" required)
+                        .aa-form-input-error
+                          label Please add the City properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_pincode" placeholder="Pincode" id="a_a_pincode" required)
+                        .aa-form-input-error
+                          label Please add the Pincode properly
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_state" placeholder="State" id="a_a_state" required)
+                        .aa-form-input-error
+                          label Please add the State properly    
+                    .aa-form-row
+                      .aa-form-input-wrap
+                        input(type="text" name="a_a_country" id="a_a_country" placeholder="Country" required="required")
+                        .aa-form-input-error
+                          label Please add the Country properly                              
                 .modal-footer
                   form(method="POST" action="#").button_form
-                    a(href="#")
+                    //-a(href="#" data-dismiss="modal")
                       p cancel
-                    input(type="submit" name="" value="APPLY")
+                    input(type="submit" name="" value="SAVE ADDRESS")

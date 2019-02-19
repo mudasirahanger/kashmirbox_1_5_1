@@ -202,7 +202,7 @@
 .product_features p{
   font-family: "Open Sans",sans-serif !important;
   color: #151414;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: capitalize;
 }
 .social_share{
@@ -301,7 +301,8 @@
   max-width: 125px;
 }
 .choose_type h3,.choose_size h3,
-.more_colors h3,.cod h3,.product_details h3{
+.more_colors h3,.cod h3,.product_details h3,
+.more_info h3{
   font-size: 15px;
   color: #151414 !important;
   font-family: "Open Sans",sans-serif !important;
@@ -335,7 +336,8 @@
   margin-right: 5px;
 }
 /*buttons*/
-.buttons,.more_colors,.cod,.product_details{
+.buttons,.more_colors,.cod,
+.product_details,.more_info{
   margin-bottom: 20px;
 }
 .buttons > .add_to_cart{
@@ -344,6 +346,7 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 0px;
+  font-family: "Open Sans",sans-serif !important;
 }
 .buttons > .add_to_wishlist{
   height: 52px;
@@ -351,6 +354,7 @@
   text-transform: uppercase;
   border: 1px solid #151414 !important;
   border-radius: 0px;
+  font-family: "Open Sans",sans-serif !important;
 }
 /*more colors and delivery options*/
 .more_colors{
@@ -360,7 +364,7 @@
   margin-top:20px;
   margin-bottom: 20px;
 }
-.more_colors h3,.cod h3,.product_details h3{
+.more_colors h3,.cod h3,.product_details h3,.more_info h3{
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -386,6 +390,17 @@
   margin-left: -20px;
   font-size: 15px;
 }
+/*more info*/
+.more_info p{
+  font-weight: bold;
+}
+.more_info p,.more_info li{
+  font-size: 13px;
+  color: #878787 !important;
+  font-family: "Open Sans",sans-serif !important;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
 /*product_details*/
 .product_details p{
   text-align: justify;
@@ -393,13 +408,15 @@
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
 }
-.goes_with_this h2{
-    margin-bottom: 1.875rem;
-    margin-left: .9375rem;
+.goes_with_this h2,.similar_products h2{
+    margin-bottom: 20px;
     font-family: "Open Sans",sans-serif;
     font-size: 1.25rem;
     color: #151414;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+}
+.similar_products{
+  margin-top: 50px !important;
 }

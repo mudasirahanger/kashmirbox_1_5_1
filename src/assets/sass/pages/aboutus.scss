@@ -1,21 +1,26 @@
 /*banner style added in base.scss*/
 /*abt_text and team_text*/
+.about_text1{
+  font-weight:normal;
+}
 .abt_text,.team_text,.abt_members{
-  margin-top: rem(40px);
+  margin-top: rem(50px);
 }
 .abt_text >div> h2,.team_text >div> h2{
-  font-size: rem(32px);
+  font-size: rem(28px);
+  max-width: 320px;
   font-family: $brand-font;
   color: $brand-color;
-  line-height: 1.326;
+  line-height: 1.596;
   text-align: left;
   font-weight: bold;
+  word-spacing: 4px;
 }
 .abt_text >div> p,.team_text >div> p{
-  font-size: 15px;
-  font-family: "Gotham";
-  color: rgb(115, 115, 115);
-  line-height: 2;
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.896;
   text-align: left;
 }
 /*evolution*/
@@ -60,17 +65,17 @@
   line-height: 1.5;
 }
 .evolution_progress_middle > .circle_with_border{
-  background-color: $grey;
+  background-color: rgb(227, 227, 227);
   width: rem(40px);
   height: rem(40px);
   border-radius:50%;
   position: relative;
-  border: 1px solid $brand-color;
+  border: 1px solid rgb(158, 158, 158);
   margin-left: rem(25px);
   margin-right: rem(25px);
 }
 .circle_with_border>.smalldot{
-  background-color: $brand-color;
+  background-color:$grey;
   width: rem(7px);
   height: rem(7px);
   border-radius:50%;
@@ -81,7 +86,7 @@
 .evolution_progress_middle > .vertical_line{
   width: rem(1px);
   height: rem(95px);
-  background-color: $grey;
+  background-color: rgb(210, 210, 210);
   margin-left: auto;
   margin-right: auto;
   margin-top: rem(5px);
@@ -93,12 +98,12 @@
 /*joinus and corevalues*/
 .joinus,.corevalues{
   background-color: $light-shade;
-  margin-top: rem(40px);
+  margin-top: rem(50px);
 }
 .join_us,.core_values{
   text-align: left;
-  margin-top: rem(20px);
-  margin-bottom: rem(20px);
+  margin-top: rem(50px);
+  margin-bottom: rem(40px);
   padding: 10px 0px 10px 0px;
 }
 .join_us >div> h2,.core_values > h2{
@@ -106,14 +111,16 @@
   font-size: rem(30px);
   color: $brand-color;
   letter-spacing: 2px !important;
-  margin-bottom: rem(20px);
+  margin-bottom: rem(25px);
   font-weight: bold;
+  margin-top: rem(10px);
 }
 .join_us >div> p,.core_values > div > p{
   font-size: rem(14px);
   font-family: $ff-open-sans;
   color: $grey;
   margin-bottom: rem(20px);
+  line-height: 1.8;
 }
 .join_us >div> button{
   padding: 15px 30px;

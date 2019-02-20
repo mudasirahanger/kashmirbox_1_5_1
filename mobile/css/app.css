@@ -169,6 +169,56 @@
 .footer{
   background: #fff !important;
 }
+/*signin popup*/
+.signin_popup .popup-close{
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: lighter;
+  color: #878787;
+}
+.signin_popup img{
+  width: 100%;
+  height: auto;
+}
+.md .loginlist ul:before {
+  content: none !important;
+}
+.md .loginlist ul:after{
+  content: none !important;
+}
+.loginlist .item-title{
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+}
+.loginlist input[type="text"],.loginlist input[type="password"]{
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px !important;
+}
+.loginlist{
+  margin-top: 15px;
+}
+.loginlist .buttons{
+  margin-top: 10px;
+}
+.loginlist button{
+  background: #151414 !important;
+  color: #fff !important;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 80% !important;
+  margin-left:5px;
+  border-radius: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.loginlist .fb_button{
+  width: 90% !important;
+}
+.loginlist .item-inner{
+}
 /*product page*/
 .product_page{
   padding-bottom: 40px;
@@ -310,7 +360,7 @@
   font-weight: bold;
   word-spacing: 2px;
 }
-.choose_type .item-title{
+/*.choose_type .item-title{
   display: flex;
 }
 .choose_type .f7-icons{
@@ -323,6 +373,18 @@
   color: #151414;
   font-size: 13px;
   font-family: "Open Sans",sans-serif !important;
+}*/
+.choose_type select{
+  width: 125px;
+}
+.choose_type .input-dropdown-wrap{
+  min-height: 26px;
+}
+.choose_type option{
+  color: #151414;
+  font-size: 13px;
+  font-family: "Open Sans",sans-serif !important;
+  /*background: #f7f7f7;*/
 }
 .choose_size > .size_buttons{
   display: flex;
@@ -334,9 +396,14 @@
   background-color: #fdfdfd !important;
   border: 1px solid #878787 !important;
   margin-right: 5px;
+  color:#151414 !important;
+  font-family: "Open Sans",sans-serif !important;
+}
+.size_buttons > .button-outline:hover{
+  border: 1px solid #151414 !important;
 }
 /*buttons*/
-.buttons,.more_colors,.cod,
+.more_colors,.cod,
 .product_details,.more_info{
   margin-bottom: 20px;
 }
@@ -419,4 +486,7 @@
 }
 .similar_products{
   margin-top: 50px !important;
+}
+.similar_products .swiper-pagination-bullets{
+  bottom: 0px;
 }

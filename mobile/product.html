@@ -782,14 +782,14 @@
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div class="page" data-name="category">
+        <div class="page" data-name="product">
           <!-- Top Navbar -->
           <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
             <div class="left header_icons">
               <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon f7-icons">menu</i>
                 <i class="icon material-icons md-only material:favorite">menu</i>
               </a>
             </div>
@@ -928,8 +928,16 @@
             </div>
             <div class="block">
               <div class="row buttons">
-                <button class="col button button-fill add_to_cart">add to cart</button>
-                <button class="col button button-outline add_to_wishlist">add to wishlist</button>
+                <div class="col">
+                 <a href="#" class="">
+                   <button class="col button button-fill add_to_cart">add to cart</button>
+                 </a>
+                </div>
+                <div class="col">
+                 <a href="#">
+                   <button class="col button button-outline add_to_wishlist">add to wishlist</button>
+                 </a>
+                </div>
                 <div class="col"></div>
               </div>
               <div class="row more_colors">
@@ -1120,22 +1128,13 @@
             </div>
           </div>     
           <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
-            <div class="toolbar-inner sort_filter_icons">
+            <div class="toolbar-inner">
               <a href="#tab-1" class="tab-link tab-link-active">
-                <div class="f7-demo-icon-cell">
-                  <div class="f7-demo-icon">
-                    <i class="f7-icons">sort</i>
-                  </div>
-                  <div class="f7-demo-icon-label">sort</div>
-                </div>
+                   <button class="col button button-fill add_to_cart">add to cart</button>
               </a>
+              
               <a href="#tab-2" class="tab-link tab-link-active">
-                <div class="f7-demo-icon-cell">
-                  <div class="f7-demo-icon">
-                    <i class="f7-icons">filter</i>
-                  </div>
-                  <div class="f7-demo-icon-label">filter</div>
-                </div>
+                <button class="col button button-fill add_to_cart">add to wishlist</button>
               </a>
             </div>
           </div>

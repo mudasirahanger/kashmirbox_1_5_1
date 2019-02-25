@@ -506,6 +506,9 @@
   bottom: 0px;
 }
 /*cart*/
+.cart_page .card{
+  border-radius: 0px;
+}
 .cart_page hr{
   border: 1px solid #eee;
   margin-top: 25px;
@@ -667,6 +670,9 @@
   color: orange;
 }
 /*rate deatils*/
+.cart_page .rate_items > .card{
+  margin-bottom: 20px !important;
+}
 .cart_page .rate_items>.card{
   border: 1px solid #878787;
   background-color: #fdfdfd;
@@ -684,12 +690,32 @@
 }  
 .cart_page .rate_items .details >.left_side{
   color: #151414;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans",sans-serif;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.cart_page .rate_items .details >.apply_coupon{
+  color: red !important;
+}
+.cart_page .rate_items .details > .total{
+  font-weight: bold;
 }
 .cart_page .rate_items .details >p:nth-of-type(2){
   margin-left: auto;
   color: #878787;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans",sans-serif;
+  margin-top:5px;
+  margin-bottom:5px;
 } 
+.cart_page .rate_items .details > button{
+  height: 52px;
+  background: #151414 !important;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-family: "Open Sans",sans-serif !important;
+  border:none;
+  margin-top: 8px;
+}

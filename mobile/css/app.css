@@ -537,7 +537,159 @@
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to right, #878787 30%, #151414 100%);
-  height:40px;
+  height: 40px;
   display: flex;
   margin-top:20px;
 }
+.cart_page .trustimage{
+  margin-left: -10px;
+}
+.cart_page .trustimage >img{
+  margin-top: -10px;
+ }
+.cart_page .tagline > .text{
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family: "Open Sans",sans-serif;
+  font-size: 18px;
+}
+.cart_page .tagline > .text >p{
+  margin-top: 5px;
+}
+/*offers_card*/
+.cart_page .offers_card {
+  /*margin-bottom: 50px !important;*/
+}
+.cart_page .offers_card > .card{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #eee;
+  border-right: 2px solid #eee;
+  border-left: 5px solid #878787;
+}
+.offers_card > .card > .card-header{
+  font-family: Cormorant !important;
+  color: #151414 !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cart_page .offers_card >.card > .card-content{
+  padding-bottom: 2px;
+}
+.offers_card li{
+  font-family: "Open Sans",sans-serif;
+  line-height: 1.7;
+  font-size: 13px;
+  color: #878787 !important;
+}
+/*message_box*/
+.cart_page .message_box > .card{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans",sans-serif;
+  font-size: .9375rem;
+  background-color: #fdfdfd !important;
+  border:1px solid #151414 !important;
+  color: #151414 !important;
+}
+.cart_page .message_box .card-content{
+    text-align: center;
+}
+/*order item*/
+.cart_page .order_items,.cart_page .rate_items{
+  margin-left: auto;
+  margin-right: auto;
+}
+.order_items h3{
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+.order_items > .product_wrapper{
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.order_items .order_details >.name,.qty,.rate{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #151414;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+}
+.order_items .order_details >.type{
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #878787;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.order_items .order_details >.quantity{
+  display: flex;
+}
+.order_details >.quantity input{
+  margin-top: 6px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 34px;
+  padding: 6px 12px;
+  width: 50px;
+}
+.product_wrapper .card-footer{
+  justify-content: center;
+}
+.product_wrapper .card-footer > a{
+  margin-left: auto;
+  margin-right: auto;
+}
+.product_wrapper .card-footer > a >p{
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.product_wrapper .card-footer > a >.remove{
+  color: #878787;
+}
+.product_wrapper .card-footer > a >.wishlist{
+  color: orange;
+}
+/*rate deatils*/
+.cart_page .rate_items>.card{
+  border: 1px solid #878787;
+  background-color: #fdfdfd;
+  margin: 0px;
+  padding: 18px 20px 10px 20px;
+}
+.cart_page .rate_items .heading{
+  font-family: "Open Sans",sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color:#151414;
+}
+.cart_page .rate_items .details{
+  display: flex;
+}  
+.cart_page .rate_items .details >.left_side{
+  color: #151414;
+  font-size: 16px;
+  font-family: "Open Sans",sans-serif;
+}
+.cart_page .rate_items .details >p:nth-of-type(2){
+  margin-left: auto;
+  color: #878787;
+  font-size: 16px;
+  font-family: "Open Sans",sans-serif;
+} 

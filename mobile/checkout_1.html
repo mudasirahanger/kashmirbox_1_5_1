@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#151414">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>KB</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="catalog/view/theme/kashmirbox_1_5/css/custom.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div class="page" data-name="checkout">
+          <!-- Scrollable page content -->
+          <div class="subnavbar second_nav">
+            <div class="subnavbar-inner">
+            <!-- Subnavbar content, for example tabs buttons -->
+              <div class="block product_block">
+                <p>KB CHECKOUT</p>
+              </div>
+            </div>  
+          </div>
+          <div class="page-content checkout_1_page">
+            <!-- Each "cell" has col-[width in percents] class -->
+            <div class="block cart_heading">
+              <div class="row">
+                <div class="col-100">
+                  <p> 100% Safe & Secure Payment Process</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="block tagline">
+                <div class="row">
+                  <div class="col-100">
+                    <img src="images/Untitled-3.jpg" alt="image">
+                  </div>
+                </div>
+              </div>
+              <!--order item-->
+              <div class="col-75 login_details">
+                <h3>1. Login</h3>
+                <!--product-->
+                <div class="card checkout_wrapper">
+                  <div class="card-content row">
+                    <!-- Card content -->
+                    <div class="col-100 login_col">
+                      <div class="item-input-wrap">
+                        <input type="text" name="name" placeholder="Enter email address">
+                      </div>
+                      <div class="item-input-wrap">
+                        <input type="text" name="name" placeholder="Create / Enter password">
+                      </div>
+                      <div class="item-input-wrap">
+                        <input type="text" name="name" placeholder="Confirm passowrd" class="confirm_field">
+                      </div>
+                      <a href="#">
+                        <button class="col button button-outline add_to_wishlist">continue</button>  
+                      </a>
+                      <a href="#">
+                        <button class="col button button-fill add_to_cart">connect with facebook</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="block checkout_footer">
+              <div class="row">
+                <div class="col-100">
+                  <p>Copyright @ KashmirBox.com 2017-18. All Rights Reserved</p>
+                </div>
+              </div>
+            </div>     
+        </div>
+      </div>
+  </div>
+</div>  
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

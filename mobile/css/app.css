@@ -430,7 +430,6 @@
   height: 52px;
   color: #151414;
   text-transform: uppercase;
-  border: 1px solid #151414 !important;
   border-radius: 0px;
   font-family: "Open Sans",sans-serif !important;
 }
@@ -753,9 +752,41 @@
 .checkout_1_page .login_details input{
   margin-bottom: 25px;
 }
-.checkout_1_page .login_details .confirm_field{
-  margin-bottom: 0px !important;
-}
 .checkout_1_page .login_details .login_col{
   padding: 30px 30px;
+}
+.login_details .continue,.login_details .connect_with_fb{
+  max-width: 300px;
+  border-radius: 0px !important;
+  font-family: "Open Sans",sans-serif !important;
+  color: #fff; 
+  height: 52px;
+}
+.login_details .continue{
+  background: #151414 !important;
+  border: 1px solid #151414 !important;
+  margin-bottom: 20px;
+}
+.login_details .connect_with_fb{
+  background: #4267b2 !important;
+  border: 1px solid #4267b2 !important;
+  margin-bottom: 20px;
+}
+.login_details .heading
+{
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  color: #878787;
+  line-height: 1.733;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.login_details .text{
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  line-height: 2;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom:5px;
 }

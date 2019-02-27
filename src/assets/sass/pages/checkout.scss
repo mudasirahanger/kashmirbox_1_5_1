@@ -214,7 +214,8 @@
 }
 .addressbook>div>.addressbox>.edit >a{
   text-decoration: none;
-  color:$orange;
+  color:$grey;
+  font-weight:bold;
 }
 .addressbook>div>.addressbox>.edit >a >i{
   margin-left:rem(5px);
@@ -251,4 +252,9 @@
   text-align: center;
   font-weight: bold;
   margin-top: rem(20px);
+}
+@include respond-to(large-1-1){
+  .addressbook>div>.addressbox{
+    height:rem(252px);
+  }
 }

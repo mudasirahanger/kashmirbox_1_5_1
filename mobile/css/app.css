@@ -589,6 +589,9 @@
   border:1px solid #151414 !important;
   color: #151414 !important;
 }
+.cart_page .message_box > .card p{
+  padding: 3px;
+}
 .cart_page .message_box .card-content{
     text-align: center;
 }
@@ -732,17 +735,23 @@
 }
 /**checkout_1_page**/
 .checkout_1_page .checkout_footer,
-.checkout_2_page .checkout_footer{
+.checkout_2_page .checkout_footer,
+.checkout_3_page .checkout_footer
+{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .checkout_1_page .login_details,
-.checkout_2_page .login_details{
+.checkout_2_page .login_details,
+.checkout_3_page .login_details
+{
   margin-left: auto;
   margin-right: auto;
 }
 .checkout_1_page .login_details h3,
-.checkout_2_page .login_details h3 {
+.checkout_2_page .login_details h3,
+.checkout_3_page .login_details h3
+ {
   font-family: "Open Sans",sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -751,7 +760,9 @@
   text-align: left;
 }
 .checkout_1_page .checkout_wrapper,
-.checkout_2_page .checkout_wrapper{
+.checkout_2_page .checkout_wrapper,
+.checkout_3_page .checkout_wrapper
+{
   margin-top: 20px;
   margin-left: 0px;
   margin-right: 0px;
@@ -836,7 +847,8 @@
   margin-top:15px;
   color: #151414;
 }
-.checkout_wrapper .addressbox p{
+.checkout_wrapper .addressbox p,
+.checkout_wrapper .plus_address a{
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   color: #151414;
@@ -869,4 +881,16 @@
 }
 .checkout_wrapper .addressbook_footer {
   padding: 0px;
+}
+.checkout_2_page .checkout_wrapper .plus_address{
+  text-align: center;
+  margin-top: 10px;
+} 
+.checkout_2_page .checkout_wrapper .plus_address p{
+  margin-top: 0px;
+}
+.checkout_wrapper .plus_address a >i{
+  margin-bottom: 10px !important;
+  font-weight: bold;
+  font-size: 20px;
 }

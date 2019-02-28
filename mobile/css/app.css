@@ -512,13 +512,15 @@
   border-radius: 0px;
 }
 .cart_page hr,.checkout_1_page hr,
-.checkout_2_page hr{
+.checkout_2_page hr,
+.checkout_3_page hr{
   border: 1px solid #eee;
   margin-top: 25px;
 }
 .cart_page .cart_heading,
 .checkout_1_page .cart_heading,
-.checkout_2_page .cart_heading
+.checkout_2_page .cart_heading,
+.checkout_3_page .cart_heading
 {
   margin: 10px !important;
 }
@@ -528,15 +530,18 @@
 }
 .cart_page .cart_footer p, 
 .checkout_1_page .checkout_footer p,
-.checkout_2_page .checkout_footer p {
+.checkout_2_page .checkout_footer p,
+.checkout_3_page .checkout_footer p {
   font-family: "Open Sans",sans-serif;
   color: #151414;
   text-align: center;
   margin-top: 10px;
+  font-size: 13px;
 }
 .cart_page .cart_heading p,
 .checkout_1_page .cart_heading p,
-.checkout_2_page .cart_heading p{
+.checkout_2_page .cart_heading p,
+.checkout_3_page .cart_heading p{
   font-family: "Open Sans",sans-serif;
   color: #878787;
   text-align: center;
@@ -546,8 +551,10 @@
 .checkout{
   background-color: #151414;
 }
-.cart_page .tagline,.checkout_1_page .tagline,
-.checkout_2_page .tagline{
+.cart_page .tagline,
+.checkout_1_page .tagline,
+.checkout_2_page .tagline,
+.checkout_3_page .tagline{
   width: 98%;
   margin-left: auto;
   margin-right: auto;
@@ -596,7 +603,8 @@
     text-align: center;
 }
 /*order item*/
-.cart_page .order_items,.cart_page .rate_items{
+.cart_page .order_items,
+.cart_page .rate_items{
   margin-left: auto;
   margin-right: auto;
 }
@@ -753,7 +761,7 @@
 .checkout_3_page .login_details h3
  {
   font-family: "Open Sans",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -893,4 +901,124 @@
   margin-bottom: 10px !important;
   font-weight: bold;
   font-size: 20px;
+}
+/*popup*/
+.popup-addAddress{
+  height: 500px;
+  overflow: auto;
+}
+.popup-addAddress .popup-close{
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: lighter;
+  color: #878787;
+}
+.popup-addAddress .block-title{
+  margin-left: 10px;
+}
+.popup-addAddress .block-title > label{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+}
+.popup-addAddress .block{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.popup-addAddress .item-input-wrap input{
+  font-size: .875rem;
+  font-family: "Open Sans",sans-serif;
+  max-width: 80%;
+}
+.popup-addAddress .item-floating-label{
+  color:151414 !important;
+}
+.popup-addAddress .save_address{
+  width:50%;
+  height: 40px;
+  background-color: #151414;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none !important;
+  font-family: "Open Sans",sans-serif;
+  border-radius: 0px !important;
+  border-color: #151414 !important;
+  margin-left: auto;
+  margin-right:auto;
+}
+/*checkout_3*/
+.checkout_3_page .checkout_wrapper{
+  padding: 20px 30px;
+}
+.checkout_wrapper .payment_method{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.payment_method .payment_type{
+  width: 172px !important;
+  height: 58px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkout_3_page .login_details .final_amount{
+  display: flex;
+  justify-content: center;
+}
+.login_details .final_amount > p{
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  line-height: 2.059;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.login_details .final_amount > p:nth-of-type(2){
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  color: #878787;
+  line-height: 2.059;
+  margin-left:8px;
+}
+.login_details .final_amount > .discount_percent{
+  color: red !important;
+  font-weight: bold;
+}
+.payment_method input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+.payment_method label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 172px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+:checked + label:before {
+  content: "✓";
+  background-color: black;
+  transform: scale(1);
 }

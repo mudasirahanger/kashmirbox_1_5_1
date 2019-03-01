@@ -42,3 +42,8 @@ $$('#my-login-screen .login-button').on('click', function () {
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
+//-script for cart
+$(".apply_coupon").click(function(){
+  $(".applycoupon").removeClass('disabled');
+  //-$('#loginBtn').addClass('hidden');
+});

@@ -604,7 +604,8 @@
 }
 /*order item*/
 .cart_page .order_items,
-.cart_page .rate_items{
+.cart_page .rate_items,
+.cart_page .applycoupon{
   margin-left: auto;
   margin-right: auto;
 }
@@ -626,7 +627,7 @@
   margin-bottom: 5px;
   color: #151414;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13.5px;
   font-family: "Open Sans",sans-serif;
 }
 .order_items .order_details >.type{
@@ -660,7 +661,7 @@
 .product_wrapper .card-footer > a >p{
   margin-right: auto;
   margin-left: auto;
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Open Sans",sans-serif;
   text-transform: uppercase;
   font-weight: normal;
@@ -674,6 +675,7 @@
 /*rate deatils*/
 .cart_page .rate_items > .card{
   margin-bottom: 20px !important;
+  margin-top: 20px !important;
 }
 .cart_page .rate_items>.card{
   border: 1px solid #878787;
@@ -697,7 +699,7 @@
   margin-top:5px;
   margin-bottom:5px;
 }
-.cart_page .rate_items .details >.apply_coupon{
+.cart_page .rate_items .details >.apply_coupon > .popover-open{
   color: red !important;
 }
 .cart_page .rate_items .details > .total{
@@ -740,6 +742,127 @@
   width: 40px;
   height: 20px;
   margin-right: 5px;
+}
+/*cart popup*/
+.cart_page .applycoupon .card-header{
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.cart_page .applycoupon .card-content{
+  padding: 15px;
+}
+.cart_page .card-content h3{
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.cart_page .applycoupon .card{
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.cart_page .applycoupon .coupon-code{
+  font-style: italic;
+  font-family: "Open Sans",sans-serif;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #878787;
+  border: 1px solid #878787;
+  width: 100%;
+}
+.cart_page .applycoupon .or{
+  font-family: "Open Sans",sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.cart_page .applycoupon h4{
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size:13px;
+  margin-bottom:5px;
+  margin-top: 5px;
+}
+.cart_page .applycoupon .couponcontainer{
+  background-color: #fdfdfd;
+  border: 1px solid #151414;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.cart_page .couponcode{
+  display: flex;
+}
+.cart_page .couponcode input{
+  color: #94969f;
+  font-size: 20px;
+  margin-top:15px;
+}
+.cart_page .couponcode .codebox{
+  border: 1px dashed #878787;
+  background: #fff;
+  padding: 10px 5px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Open Sans",sans-serif;
+  color: #878787;
+  margin-left: 5px;
+  max-width: 58px;
+  font-size:12.5px;
+  height:20px;
+}
+.cart_page .couponcode p{
+  font-family: "Open Sans",sans-serif;
+  font-size: 11.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.cart_page .couponcode span, .amount{
+  color:red;
+  margin-left: 3px;
+}
+.cart_page .applycoupon .info{
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+.cart_page .applycoupon .info span{
+  font-weight: bold;
+}
+.applycoupon .card-footer p{
+  font-size: 13px;
+  font-family: "Open Sans",sans-serif;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-top:8px;
+}
+.applycoupon .card-footer{
+  justify-content: center;
+}
+.applycoupon .card-footer button{
+  border-radius: 0px;
+  background: #151414 !important;
+  border: 1px solid #151414 !important;
+  width: 35% !important;
 }
 /**checkout_1_page**/
 .checkout_1_page .checkout_footer,
@@ -884,8 +1007,9 @@
 }
 .checkout_wrapper .addressbook_footer .edit > a > i {
   font-size: 10px;
-  margin-left: 2px;
+  margin-left: 5px;
   margin-top: -3px;
+  display: inline-block !important;
 }
 .checkout_wrapper .addressbook_footer {
   padding: 0px;
@@ -924,6 +1048,14 @@
   font-family: "Open Sans",sans-serif;
   color: #151414;
 }
+.popup-addAddress .block-heading{
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  text-transform: uppercase;
+  margin-top: -20px;
+}
 .popup-addAddress .block{
   width: 80%;
   margin-left: auto;
@@ -950,6 +1082,7 @@
   border-color: #151414 !important;
   margin-left: auto;
   margin-right:auto;
+  margin-top: 20px;
 }
 /*checkout_3*/
 .checkout_3_page .checkout_wrapper{

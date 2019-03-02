@@ -80,6 +80,87 @@
 /*.featured_craft,.trending_in_craft{
   margin-top: -36px !important;
 }*/
+.home .more_about{
+  margin:0px;
+  padding: 0px;
+}
+.home .more_about .list{
+  margin: 0px;
+}
+.home .more_about .accordion-item-content{
+  margin-left: auto;
+  margin-right: auto;
+}
+.more_about .list .footer_links{
+  width: 100%;
+}
+.more_about .list .footer_links:before,.more_about .list .footer_links:after{
+  height: 0px !important;
+}
+.more_about .accordion-item .item-title{
+  font-family: "Open Sans",sans-serif;
+  color: #151414;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right:auto;
+}
+.more_about .accordion-item .item-link{
+   background: #f7f7f7;
+}
+.more_about .accordion-item-content .headings{
+  color: #151414;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.more_about .accordion-item-content{
+  color: #151414 !important;
+  text-align: center;
+}
+.more_about .accordion-item-content a{
+  color: #878787 !important;
+  padding: 0px 10px;
+  font-size: 13px;
+}
+.more_about .accordion-item-content .first_image{
+  display: flex;
+  justify-content: center;
+}
+.more_about .images_accordian,.more_about .need_help{
+  margin-top: 40px;
+}
+.more_about .first_image{
+  margin-bottom: 15px;
+}
+.more_about .first_image img{
+  width: 46px;
+  height: 47px;
+}
+.more_about .first_image .text{
+  margin-left: 10px;
+}
+.more_about .first_image .text > .heading{
+  font-size: 13px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: bold;
+  color: #151414;
+}
+.more_about .first_image .text > p{
+  font-size: 13px;
+  font-family: "Open Sans",sans-serif;
+  color:#878787;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.more_about .social_images{
+  display: flex;
+}
+.more_about .social_images img{
+  width:30px;
+  height:30px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*category page*/
 .second_nav{
   background-color: #f7f7f7 !important;
@@ -181,6 +262,9 @@
     color: rgb(255, 165, 0) !important;
 }
 /*signin popup*/
+.signin_popup{
+  overflow: auto;
+}
 .signin_popup .popup-close{
   position: fixed;
   top: 5px;
@@ -189,7 +273,74 @@
   font-weight: lighter;
   color: #878787;
 }
-.signin_popup img{
+.signin_popup .card{
+  padding: 20px 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 0px;
+}
+.signin_popup .card .login-title{
+  font-size: 18px;
+  margin-top: 15px;
+  color: #151414;
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: -1px;
+}
+.signin_popup .card .textboxHead{
+  margin: 35px 0;
+  border-bottom: 1px solid grey;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signin_popup .card .textboxHead .password{
+  width:75% !important;
+}
+.signin_popup .textboxHead input{
+  font-family: "Open Sans",sans-serif;
+  font-size:12px;
+  padding: 10px;  
+  width: 100%;
+}
+.signin_popup .textboxHead > a {
+  float: right;
+  margin-right:5px;
+  font-family: "Open Sans",sans-serif;
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.signin_popup .buttons{
+  display: flex;
+  justify-content: center;
+}
+.signin_popup .buttons button{
+  background: #151414 !important;
+  border: 1px solid #151414 !important;
+  margin-bottom: 20px;
+  border-radius: 0px !important;
+  font-family: "Open Sans",sans-serif !important;
+  color: #fff;
+  height: 52px;
+  font-size: 13px;
+}
+.signin_popup .buttons a{
+  width: 40%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.signin_popup .buttons .connectfb > button {
+  background: #4267b2 !important;
+  border:none !important;
+}
+.signin_popup .buttons .connectfb{
+  width: 82%;
+}
+/*.signin_popup img{
   width: 100%;
   height: auto;
 }
@@ -229,7 +380,7 @@
   width: 90% !important;
 }
 .loginlist .item-inner{
-}
+}*/
 /*product page*/
 .product_page{
   padding-bottom: 40px;

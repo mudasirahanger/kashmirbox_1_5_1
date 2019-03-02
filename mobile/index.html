@@ -10,7 +10,6 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <title>KB</title>
-
   <link rel="stylesheet" href="framework7/css/framework7.min.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
@@ -763,49 +762,50 @@
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="#" data-popup=".signin_popup">Sign in</a></p>
+            <p><a class="link popup-open" href="" data-popup=".signin_popup">Sign in</a></p>
             <p><a class="link popup-open" href="#" data-popup=".signin_popup">Sign up</a></p>
             <p><a class="link popup-open" href="#" >Contact us</a></p>
            </div>
-           <div class="popup  popup-tablet-fullscreen signin_popup"> 
+           <div class="popup popup-tablet-fullscreen signin_popup"> 
+            <div class="row no-gap">
               <!-- Close Popup -->
-              <div class="row no-gap">
-                <a class="link popup-close" href="#">x</a>
-                <div class="col-50">
-                  <img src="https://www.kashmirbox.com/catalog/view/theme/kashmirbox_1_5/images/loginKB.png">
-                </div>
-                <div class="col-50 infinite-scroll-content">
-                  <form>
-                    <div class="list loginlist">
-                      <ul>
-                       <li class="item-content item-input">
-                        <div class="item-inner">
-                         
-                          <div class="item-input-wrap">
-                           <input type="text" name="username" placeholder="Your username">
-                          </div>
-                        </div>
-                       </li>
-                       <li class="item-content item-input">
-                        <div class="item-inner">
-                         
-                          <div class="item-input-wrap">
-                           <input type="password" name="password" placeholder="Your password">
-                          </div>
-                        </div>
-                       </li>
-                     </ul>
-                     <div class="row buttons">
-                       <div class="col"><button class="col button button-fill">login</button></div>
-                       <div class="col"><button class="col button button-fill">register</button></div>
-                     </div>
-                     <div class="row buttons">
-                       <div class="col"><button class="col button button-fill fb_button">connect with facebook</button></div>
-                     </div>
+              <a class="link popup-close" href="#">x</a>
+              <div class="card col-75">
+                <div class="card-content">
+                  <!-- Card content -->
+                  <p class="login-title">Login to Kashmirbox</p>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="email" placeholder="Enter your First Name">
                   </div>
-                 </form>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your Last Name">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your email address">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes password" type="password" placeholder="Enter Password">
+                    <a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="password" placeholder="Confirm Password">
+                  </div>
+                  <div class="buttons">
+                    <a href="#">
+                      <button class="col button button-outline login">login</button>  
+                    </a>
+                    <a href="#">
+                      <button class="col button button-outline register">register</button>
+                    </a>
+                  </div>
+                  <div class="buttons">
+                    <a href="#" class="connectfb">
+                      <button class="col button button-outline">Connect with Facebook</button>  
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
            </div>
           </div>
         </div>
@@ -813,7 +813,7 @@
     </div>
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main ios-edges">
-      <div class="page" data-name="home">
+      <div class="page home" data-name="home">
         <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
@@ -1088,13 +1088,68 @@
                     </div>
               </div>
               <!--Footer-->
-              <div class="toolbar home_footer">
-                <div class="toolbar-inner">
-                  <a href="#" class="link">Link 1</a>
-                  <a href="#" class="link">Link 2</a>
-                  <a href="#" class="link">Link 3</a>
-                </div>
+              <div class="block more_about">
+              <div class="list row">
+                <ul class="footer_links">
+                  <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">More about shopping at Kashmirbox</div>
+                    </div></a>
+                    <div class="accordion-item-content col-85">
+                        <p class="headings">Our Company</p>
+                        <a> About Us</a> | <a> Careers </a> | <a> Shipping</a>  |  <a> Returns</a> | <a>Terms & Conditions</a>
+                    </div>
+                    <div class="accordion-item-content col-85">
+                        <p class="headings">Our Categories</p>
+                          <a>Paper Mache </a> | <a> Walnut Wood </a> | <a> Chain Stitch</a>
+                    </div>
+                    <div class="accordion-item-content col-85">
+                        <p class="headings">More</p>
+                          <a>Bulk Orders </a> | <a> Customisation  </a> | <a> Gifting</a>
+                          | <a> Product Development</a> | <a> Kashmir Tales</a>
+                    </div>
+                    <div class="accordion-item-content col-85 images_accordian">
+                      <div class="first_image">
+                        <img src="images/Layer 28.png" alt="image">
+                        <div class="text"><p class="heading">100% original gurantee</p>
+                          <p>for all products</p></div>
+                      </div>
+                      <div class="first_image">
+                        <img src="images/Layer_29.png" alt="image">
+                        <div class="text"><p class="heading">100% original gurantee</p>
+                          <p>for all products</p></div>
+                      </div>
+                      <div class="first_image">
+                        <img src="images/Layer 30.png" alt="image">
+                        <div class="text"><p class="heading">100% original gurantee</p>
+                          <p>for all products</p></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content col-85">
+                      <p class="headings">Connect with us</p>
+                       <div class="social_images">
+                         <img src="images/facebook.png" alt="image">
+                         <img src="images/twitter.png" alt="image">
+                         <img src="images/instagram.png" alt="image">
+                         <img src="images/google+.png" alt="image">
+                         <img src="images/linkedin.png" alt="image">
+                         <img src="images/pinterest.png" alt="image">
+                       </div>
+                    </div>
+                    <div class="accordion-item-content col-85 need_help">
+                      <p class="headings">Need Help?</p>
+                       <div class="text">
+                         <span>Email :</span> care@kashmirbox.com
+                       </div>
+                       <div class="text">
+                        <span>Contact :</span> +91-9796-659-999
+                       </div>
+                    </div>
+                   </div>
+                  </li>
+                </ul>
               </div>
+             </div>
         </div><!--page content close-->
       </div> <!--page-->
     </div>

@@ -782,7 +782,7 @@
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div class="page" data-name="product">
+      <div class="page product" data-name="product">
           <!-- Top Navbar -->
           <!-- Top Navbar -->
         <div class="navbar top_nav">
@@ -1128,14 +1128,20 @@
             </div>
           </div>     
           <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
-            <div class="toolbar-inner">
-              <a href="#tab-1" class="tab-link tab-link-active">
+            <div class="toolbar-inner cart_wishlist">
+              <a href="#tab-1" class="tab-link wishlist">
+                <button class="col button button-fill">add to wishlist</button>
+              </a>
+              <a href="#tab-1" class="tab-link cart">
+                <button class="col button button-fill">add to cart</button>
+              </a>
+              <!--<a href="#tab-1" class="tab-link tab-link-active">
                <button class="col button button-fill add_to_wishlist">add to wishlist</button>  
               </a>
               
               <a href="#tab-2" class="tab-link tab-link-active">
                 <button class="col button button-fill add_to_cart">add to cart</button>
-              </a>
+              </a>-->
             </div>
           </div>
         </div>

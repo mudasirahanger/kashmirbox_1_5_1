@@ -21,7 +21,7 @@
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-dark">
+    <div class="panel panel-left panel-cover">
       <div class="view">
         <div class="page menubackground">
           <div class="page-content">
@@ -763,33 +763,65 @@
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="#" data-popup=".popup-about">Sign in</a></p>
-            <p><a class="link popup-open" href="#" data-popup=".popup-about">Sign up</a></p>
+            <p><a class="link popup-open" href="" data-popup=".signin_popup">Sign in</a></p>
+            <p><a class="link popup-open" href="#" data-popup=".signin_popup">Sign up</a></p>
             <p><a class="link popup-open" href="#" >Contact us</a></p>
            </div>
-           <div class="popup popup-about">
-            <div class="block">
-              <p>About</p>
+           <div class="popup popup-tablet-fullscreen signin_popup"> 
+            <div class="row no-gap">
               <!-- Close Popup -->
-              <p><a class="link popup-close" href="#">Close popup</a></p>
-              <p>Lorem ipsum dolor sit amet...</p>
+              <a class="link popup-close" href="#">x</a>
+              <div class="card col-75">
+                <div class="card-content">
+                  <!-- Card content -->
+                  <p class="login-title">Login to Kashmirbox</p>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="email" placeholder="Enter your First Name">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your Last Name">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your email address">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes password" type="password" placeholder="Enter Password">
+                    <a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="password" placeholder="Confirm Password">
+                  </div>
+                  <div class="buttons">
+                    <a href="#">
+                      <button class="col button button-outline login">login</button>  
+                    </a>
+                    <a href="#">
+                      <button class="col button button-outline register">register</button>
+                    </a>
+                  </div>
+                  <div class="buttons">
+                    <a href="#" class="connectfb">
+                      <button class="col button button-outline">Connect with Facebook</button>  
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
            </div>
           </div>
         </div>
       </div>
-      </div><!--panel-->
+    </div><!--panel-->
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
       <div class="page product" data-name="product">
-          <!-- Top Navbar -->
-          <!-- Top Navbar -->
+        <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
             <div class="left header_icons">
               <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="icon material-icons md-only material:favorite">menu</i>
+                <i class="icon material-icons material:favorite">menu</i>
               </a>
             </div>
             <div class="title sliding logo">KB</div>
@@ -1000,9 +1032,9 @@
                    <div class="card-footer">
                     <div class="name_container">
                       <h3>product name</h3>
-                      <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                       <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>
+                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                      <i class="f7-icons wishlist_icon">heart_fill</i>
+                    </a>-->
                     </div>
                     <div class="price-container">
                      <span class="price">Rs. 3,344</span>
@@ -1023,9 +1055,9 @@
                    <div class="card-footer">
                     <div class="name_container">
                       <h3>product name</h3>
-                      <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                       <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>
+                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                      <i class="f7-icons wishlist_icon">heart_fill</i>
+                    </a>-->
                     </div>
                     <div class="price-container">
                      <span class="price">Rs. 3,344</span>
@@ -1046,9 +1078,9 @@
                    <div class="card-footer">
                     <div class="name_container">
                       <h3>product name</h3>
-                      <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                       <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>
+                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                      <i class="f7-icons wishlist_icon">heart_fill</i>
+                    </a>-->
                     </div>
                     <div class="price-container">
                      <span class="price">Rs. 3,344</span>
@@ -1069,9 +1101,9 @@
                    <div class="card-footer">
                     <div class="name_container">
                       <h3>product name</h3>
-                      <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                       <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>
+                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                      <i class="f7-icons wishlist_icon">heart_fill</i>
+                    </a>-->
                     </div>
                     <div class="price-container">
                      <span class="price">Rs. 3,344</span>

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="framework7/css/framework7.min.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" type="text/css" href="catalog/view/theme/kashmirbox_1_5/css/custom.css">
 </head>
 <body>
@@ -22,7 +21,7 @@
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-dark">
+    <div class="panel panel-left panel-cover">
       <div class="view">
         <div class="page menubackground">
           <div class="page-content">
@@ -35,7 +34,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -154,7 +153,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -273,7 +272,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -392,7 +391,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -511,7 +510,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -630,7 +629,7 @@
                  </div></a>
                  <div class="accordion-item-content">
                   <div class="block">
-                   <!--sub items-->
+                   <!--sub items--> 
                    <div class="list">
                     <ul>
                       <li class="accordion-item"><a href="#" class="item-content item-link">
@@ -757,55 +756,87 @@
                  <div class="item-inner">
                   <div class="item-title menu_item">sale</div>
                  </div></a>
-                </li>
+                </li> 
               </ul>
             </div><!--list-->
            </div>
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="#" data-popup=".popup-about">Sign in</a></p>
-            <p><a class="link popup-open" href="#" data-popup=".popup-about">Sign up</a></p>
+            <p><a class="link popup-open" href="" data-popup=".signin_popup">Sign in</a></p>
+            <p><a class="link popup-open" href="#" data-popup=".signin_popup">Sign up</a></p>
             <p><a class="link popup-open" href="#" >Contact us</a></p>
            </div>
-           <div class="popup popup-about">
-            <div class="block">
-              <p>About</p>
+           <div class="popup popup-tablet-fullscreen signin_popup"> 
+            <div class="row no-gap">
               <!-- Close Popup -->
-              <p><a class="link popup-close" href="#">Close popup</a></p>
-              <p>Lorem ipsum dolor sit amet...</p>
+              <a class="link popup-close" href="#">x</a>
+              <div class="card col-75">
+                <div class="card-content">
+                  <!-- Card content -->
+                  <p class="login-title">Login to Kashmirbox</p>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="email" placeholder="Enter your First Name">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your Last Name">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="text" placeholder="Enter your email address">
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes password" type="password" placeholder="Enter Password">
+                    <a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
+                  </div>
+                  <div class="textboxHead col-80">
+                    <input class="textboxes" type="password" placeholder="Confirm Password">
+                  </div>
+                  <div class="buttons">
+                    <a href="#">
+                      <button class="col button button-outline login">login</button>  
+                    </a>
+                    <a href="#">
+                      <button class="col button button-outline register">register</button>
+                    </a>
+                  </div>
+                  <div class="buttons">
+                    <a href="#" class="connectfb">
+                      <button class="col button button-outline">Connect with Facebook</button>  
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
            </div>
           </div>
         </div>
       </div>
-      </div><!--panel-->
+    </div><!--panel-->
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div class="page" data-name="category">
+        <div class="page search-page" data-name="search-page">
         <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
             <div class="left header_icons">
               <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only material:favorite">menu</i>
+                <i class="icon material-icons material:favorite">menu</i>
               </a>
             </div>
             <div class="title sliding logo">KB</div>
             <div class="right header_icons">
-
+              
               <a href="#" class="link icon-only material:favorite " data-panel="right">
               <i class="f7-icons">search</i>
-
+              
               </a>
               <a href="#" class="link icon-only material:favorite " data-panel="right">
-
+              
                <i class="f7-icons">heart_fill</i>
               </a>
                <a href="#" class="link icon-only material:favorite " data-panel="right">
-              <i class="icon material-icons">shopping_cart</i>
+              <i class="icon material-icons">shopping_cart</i> 
               </a>
             </div>
           </div>
@@ -819,7 +850,6 @@
               </div>
             </div>
           </div>
-
           <!-- Scrollable page content -->
           <div class="page-content">
             <div class="chip_row">
@@ -836,23 +866,22 @@
                   <div class="chip-label">Example Chip</div>
                 </div>
             </div>
-
             <div class="row no-gap">
              <!-- Each "cell" has col-[width in percents] class -->
              <div class="col-50">
                <div class="card category_card">
                 <a href="#">
                   <div class="card-content">
-                  <!-- Card content -->
+                  <!-- Card content -->      
                     <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
                   </div>
                 </a>
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>
+                     <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                    </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -874,15 +903,71 @@
                 <a href="#">
                 <div class="card-content">
                   <!-- Card content -->
-                    <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                    <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">  
                 </div>
                 </a>
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
+                  </div>
+                  <div class="price-container">
+                    <span class="price">Rs. 3,344</span>
+                    <strike>Rs. 4,500</strike>
+                    <span class="discount">(10% OFF)</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons">star_fill</i>
+                    <i class="f7-icons">star_fill</i>
+                   </div>
+                </div>
+              </div>
+             </div>
+             <div class="col-50">
+               <div class="card category_card">
+                <div class="card-content">
+                  <!-- Card content -->
+                  <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/healthy_living/exotic_foods/dryfruits/KB10321(4)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                </div>
+                <div class="card-footer">
+                  <div class="name_container">
+                    <h3>product name</h3>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
+                  </div>
+                  <div class="price-container">
+                    <span class="price">Rs. 3,344</span>
+                    <strike>Rs. 4,500</strike>
+                    <span class="discount">(10% OFF)</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons active">star_fill</i>
+                    <i class="f7-icons">star_fill</i>
+                    <i class="f7-icons">star_fill</i>
+                   </div>
+                </div>
+              </div>
+             </div>
+             <div class="col-50">
+               <div class="card category_card">
+                <div class="card-content">
+                  <!-- Card content -->
+                  <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/healthy_living/beauty-products/kb9516(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
+                </div>
+                <div class="card-footer">
+                  <div class="name_container">
+                    <h3>product name</h3>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -908,9 +993,9 @@
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -936,9 +1021,9 @@
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -964,9 +1049,9 @@
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
+                    <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
+                    <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -992,65 +1077,9 @@
                 <div class="card-footer">
                   <div class="name_container">
                     <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
-                  </div>
-                  <div class="price-container">
-                    <span class="price">Rs. 3,344</span>
-                    <strike>Rs. 4,500</strike>
-                    <span class="discount">(10% OFF)</span>
-                  </div>
-                  <div class="ratings">
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons">star_fill</i>
-                    <i class="f7-icons">star_fill</i>
-                   </div>
-                </div>
-              </div>
-             </div>
-             <div class="col-50">
-               <div class="card category_card">
-                <div class="card-content">
-                  <!-- Card content -->
-                  <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                </div>
-                <div class="card-footer">
-                  <div class="name_container">
-                    <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
-                  </div>
-                  <div class="price-container">
-                    <span class="price">Rs. 3,344</span>
-                    <strike>Rs. 4,500</strike>
-                    <span class="discount">(10% OFF)</span>
-                  </div>
-                  <div class="ratings">
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons active">star_fill</i>
-                    <i class="f7-icons">star_fill</i>
-                    <i class="f7-icons">star_fill</i>
-                   </div>
-                </div>
-              </div>
-             </div>
-             <div class="col-50">
-               <div class="card category_card">
-                <div class="card-content">
-                  <!-- Card content -->
-                  <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                </div>
-                <div class="card-footer">
-                  <div class="name_container">
-                    <h3>product name</h3>
-                    <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto;height: auto;">
-                     <i class="f7-icons wishlist_icon">heart_fill</i>
-                  </a>
+                     <!--<a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto;height: auto;">
+                   <i class="f7-icons wishlist_icon">heart_fill</i>
+                  </a>-->
                   </div>
                   <div class="price-container">
                     <span class="price">Rs. 3,344</span>
@@ -1072,7 +1101,7 @@
           </div>
           <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
             <div class="toolbar-inner sort_filter_icons">
-              <a href="#tab-1" class="tab-link tab-link-active">
+              <a href="#tab-1" class="tab-link tab-link-active popover-open" data-popover=".popover-links">
                 <div class="f7-demo-icon-cell">
                   <div class="f7-demo-icon">
                     <i class="f7-icons">sort</i>
@@ -1080,7 +1109,7 @@
                   <div class="f7-demo-icon-label">sort</div>
                 </div>
               </a>
-              <a href="#tab-2" class="tab-link tab-link-active">
+              <a href="#tab-2" class="tab-link tab-link-active popup-open" data-popup=".popup-about">
                 <div class="f7-demo-icon-cell">
                   <div class="f7-demo-icon">
                     <i class="f7-icons">filter</i>
@@ -1089,6 +1118,27 @@
                 </div>
               </a>
             </div>
+          </div>
+          <!--sort and filter-->
+          <div class="popover popover-links sort_links">
+            <div class="popover-inner">
+              <div class="list">
+               <ul>
+                <li><a class="list-button item-link" href="#">We Recommend</a></li>
+                <li><a class="list-button item-link" href="#">Newest</a></li>
+                <li><a class="list-button item-link" href="#">Lowest Price</a></li>
+                <li><a class="list-button item-link" href="#">Highest Price</a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+          <div class="popup popup-about filter_links">
+            <div class="block">
+            <p>About</p>
+            <!-- Close Popup -->
+             <p><a class="link popup-close" href="#">Close popup</a></p>
+            <p>Lorem ipsum dolor sit amet...</p>
+           </div>
           </div>
         </div>
       </div>

@@ -28,9 +28,6 @@
   color:#151414;
   font-family: "Open Sans",sans-serif !important;
 }
-.item-inner>.menu_item,.single-item>.item-inner>.menu_item{
-  
-}
 /*sub menu*/
 .item-inner>.submenu_item,
 .accordion-item-content>.particular_item>a>p{
@@ -1272,7 +1269,8 @@
   color: #878787;
   font-weight: bold;
 }
-.checkout_wrapper .addressbook_footer .edit > a > i {
+.checkout_wrapper .addressbook_footer .edit > a > i,
+.account .account-address .aa-box-inner i {
   font-size: 10px;
   margin-left: 5px;
   margin-top: -3px;
@@ -1337,7 +1335,7 @@
   color:151414 !important;
 }
 .popup-addAddress .save_address{
-  width:50%;
+  width:100%;
   height: 40px;
   background-color: #151414;
   color: #fff;
@@ -1350,6 +1348,9 @@
   margin-left: auto;
   margin-right:auto;
   margin-top: 20px;
+}
+.popup-addAddress .save_address a:hover{
+  background-color: #151414;
 }
 /*checkout_3*/
 .checkout_3_page .checkout_wrapper{
@@ -1482,7 +1483,27 @@ label:before {
   margin-bottom: 20px;
   border: 0.7px solid #e3e3e3 !important;
 }
-/*account*/
+/*account main page*/
+.md .accordion-list .account-menu:before{
+ display: none !important;
+}
+.md .accordion-list .account-menu:after{
+ display: none !important;
+}
+.account h2{
+  font-family: Cormorant !important;
+  font-weight: bold;
+  color: #151414;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 25px;
+}
+/*account personal information*/
+.account .account-address .list
+{
+  margin-top: 0px;
+}
 .account .personal_information{
   padding-top: 0px !important;
 }
@@ -1530,16 +1551,6 @@ label:before {
   padding: 10px;
   width: 100%;
 }
-.account .personal_information button{
-  color: #fff;
-  font-size: 15px;
-  background-color: #151414;
-  border: 1px solid #151414 !important;
-  border-radius: 0px; 
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .account .personal_information ul{
   margin:10px;
 }
@@ -1554,6 +1565,145 @@ label:before {
 }
 .account .account_footer .toolbar-inner a{
   color: #fff;
+}
+/*account address*/ 
+.account .aa-box-inner:hover {
+  border: 1px solid #151414 !important;
+}
+.account .account-address {
+  padding-top: 0px !important;
+}
+.account .aa-box{
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.account .account-address .aa-box h3{
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-family: "Open Sans",sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+.account .account-address .aa-box label{
+  color: orange;
+}
+.account .account-address .aa-box .name{
+  color: #151414;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+}
+.account .account-address .aa-box h5{
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+  color: #878787;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+.account .account-address .aa-box h5 a{
+  color: orange;
+  text-decoration: none;
+  float: right;
+}
+.account .account-address .aa-box .aa-box-inner{
+  border: 1px solid #878787;
+  background-color: #fff;
+  padding: 10px 26px;
+}
+.account .account-address .aa-links-wrap .aal-edit{
+  color: orange;
+  text-decoration: none;
+  margin-right:5px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+}
+.account .account-address .aa-links-wrap .aal-delete {
+  color:red;
+  float: right;
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+}
+.account .account-address .add_address button,
+.account .personal_information .update_address button,
+.account .account-orders .load_more button {
+  border-radius: 0px !important;
+  font-family: "Open Sans",sans-serif !important;
+  color: #fff;
+  height: 52px;
+  background: #151414 !important;
+  border: 1px solid #151414 !important;
+}
+/*account-orders*/
+.account .account-orders .ao-box-pick{
+  background-color: #fdfdfd;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100% !important;
+}
+.account .account-orders .aa-box h5{
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  color: #151414;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+.account .account-orders .aob-link-box {
+  padding: 0 10px;
+}
+.account .account-orders .ao-link{
+  display: inline-block;
+  color: #878787;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Open Sans",sans-serif;
+}
+.account .account-orders .ao-link:after {
+  content: '|';
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+}
+.account .account-orders .ao-link:nth-of-type(3):after{
+ display: none;
+}
+.account .account-orders .aob-footer {
+  margin-top: 25px;
+}
+.account .account-orders  .aof-meta {
+  width: 24.3%;
+  float: left;
+  background-color: #878787;
+  border-right: 2px solid #fdfdfd;
+  padding: 13px 0px;
+}
+.account .account-orders .aof-option,
+.account .account-orders .aof-value {
+  font-weight: 500;
+  font-size:13px;
+  color: #fdfdfd;
+  text-transform: capitalize;
+  line-height: normal;
+  margin-bottom: 6px;
+  font-family: "Open Sans",sans-serif;
+}
+.account .account-orders .aof-value{
+  font-weight: bold;
+}
+.account .account-orders .ao-status-ship{
+  color: orange;
+}
+.account .account-orders .ao-status-cancel{
+  color: red;
 }
 /*css files of sameer*/
 /* Search*/

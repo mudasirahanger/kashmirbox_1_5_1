@@ -762,9 +762,9 @@
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="" data-popup="">Profile</a></p>
-            <p><a class="link popup-open" href="#" data-popup="">Logout</a></p>
-            <p><a class="link popup-open" href="#" >Contact us</a></p>
+            <p><a class="link" href="#">Profile</a></p>
+            <p><a class="link" href="#">Logout</a></p>
+            <p><a class="link" href="#">Contact us</a></p>
            </div>
            <div class="popup popup-tablet-fullscreen signin_popup"> 
             <div class="row no-gap">
@@ -852,9 +852,9 @@
                     <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
                     <h5>Srinagar- 190002</h5>
                     <h5>Jammu and Kashmir</h5>
-                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
+                    <h5>Ph: 9797978377<a class="popover-open" href="#" data-popover=".popover-verifyotp">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
                     <div class="aa-links-wrap">
-                      <a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="icon f7-icons">chevron_right</i></a>
+                      <a class="aal-edit aal-links popup-open" href="#" data-popup=".popup-editAddress">Edit <i class="icon f7-icons">chevron_right</i></a>
                       <a class="aal-delete aal-links" href="#">Delete <i class="icon f7-icons">chevron_right</i></a>
                     </div>
                   </div>
@@ -867,9 +867,9 @@
                     <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
                     <h5>Srinagar- 190002</h5>
                     <h5>Jammu and Kashmir</h5>
-                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
+                    <h5>Ph: 9797978377<a class="popover-open" href="#" data-popover=".popover-verifyotp">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
                     <div class="aa-links-wrap">
-                      <a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="icon f7-icons">chevron_right</i></a>
+                      <a class="aal-edit aal-links popup-open" href="#" data-popup=".popup-editAddress">Edit <i class="icon f7-icons">chevron_right</i></a>
                       <a class="aal-delete aal-links" href="#">Delete <i class="icon f7-icons">chevron_right</i></a>
                     </div>
                   </div>
@@ -877,6 +877,23 @@
             <a href="#" class="add_address popup-open" data-popup=".popup-addAddress">
               <button class="col button button-outline">Add Address</button>  
             </a>
+          </div>
+          <div class="popover popover-verifyotp">
+                 <div class="popover-inner center_popover">
+                   <div class="block verify_block">
+                     <p>Verify OTP </p>
+                     <a class="link popover-close" href="#">✖</a>
+                   </div>
+                   <div class="center">
+                    <p>We have sent as OTP via SMS to the below phone number.</p>
+                    <p id="otp-number">+919797978377</p>
+                    <p>To verify the phone number, please enter the OTP code in the below text box.</p>
+                    <form method="POST" action="#">
+                      <input class="popover-input" type="text">
+                      <button class="col button button-fill">VERIFY</button>
+                    </form>
+                  </div>
+                 </div>
           </div>
           <div class="popup popup-addAddress">
              <div class="block">
@@ -987,6 +1004,118 @@
                     </li>
                    </ul>
                    <button class="button button-outline save_address">save address</button>
+                  </div>
+              </div>
+            </div><!--popup-->
+            <div class="popup popup-editAddress">
+             <div class="block">
+                 <!-- Close button -->
+                 <div class="block-heading"> edit address</div>
+                 <a class="link popup-close" href="#">&#10006;</a>
+                 <div class="block-title"><input type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true"> <label for="a_a_default_address">Make this default address</label></div>
+                  <div class="list no-hairlines-md">
+                   <ul>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">First Name</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="First Name">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Last Name</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Last Name">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">E-mail</div>
+                       <div class="item-input-wrap">
+                          <input type="email" placeholder="E-mail">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Phone number</div>
+                       <div class="item-input-wrap inputfields">
+                          <input type="tel" placeholder="Phone number">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Address</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Address">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Address 2</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Address 2">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Landmark</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Landmark">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">City</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="City">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Pincode</div>
+                       <div class="item-input-wrap">
+                          <input type="number" placeholder="Pincode">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">State</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="State">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Country</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Country">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                   </ul>
+                   <button class="button button-outline save_address">update address</button>
                   </div>
               </div>
             </div><!--popup-->

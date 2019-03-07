@@ -800,67 +800,155 @@
         </div>
         <!-- Page, data-name contains page name which can be used in callbacks -->
         <div class="page-content">
-          <div class="page-content personal_information">
-            <div class="as-hero">
-              <div class="ah-image"><img src="images/as-hero.jpg"></div>
-              <div class="ah-desc">
-                <label>Hello,</label>
-                <h3>muheet mehraj</h3>
-              </div>
+          <h2>Addresses</h2>
+          <div class="account-address">
+            <div class="aa-box">
+                  <h3>address 1 
+                    <label>(default)</label>
+                  </h3>
+                  <div class="aa-box-inner">
+                    <h4 class="name">muheet mehraj</h4>
+                    <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
+                    <h5>Srinagar- 190002</h5>
+                    <h5>Jammu and Kashmir</h5>
+                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
+                    <div class="aa-links-wrap">
+                      <a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="icon f7-icons">chevron_right</i></a>
+                      <a class="aal-delete aal-links" href="#">Delete <i class="icon f7-icons">chevron_right</i></a>
+                    </div>
+                  </div>
             </div>
-            <div class="list no-hairlines-md">
+            <div class="aa-box">
+                  <h3>address 2
+                  </h3>
+                  <div class="aa-box-inner">
+                    <h4 class="name">muheet mehraj</h4>
+                    <h5>Kashmir Box, Indo Kashmir Carpet Factory, Zaldagar, Nawab Bazar, Opposite J&amp;K Bank,</h5>
+                    <h5>Srinagar- 190002</h5>
+                    <h5>Jammu and Kashmir</h5>
+                    <h5>Ph: 9797978377<a class="verifyOtpButtonAddress" href="#">Verify OTP <i class="icon f7-icons">chevron_right</i></a></h5>
+                    <div class="aa-links-wrap">
+                      <a class="aal-edit aal-links" href="account-edit-address.html">Edit <i class="icon f7-icons">chevron_right</i></a>
+                      <a class="aal-delete aal-links" href="#">Delete <i class="icon f7-icons">chevron_right</i></a>
+                    </div>
+                  </div>
+            </div>
+            <a href="#" class="add_address popup-open" data-popup=".popup-addAddress">
+              <button class="col button button-outline">Add Address</button>  
+            </a>
+          </div>
+          <div class="popup popup-addAddress">
+             <div class="block">
+                 <!-- Close button -->
+                 <div class="block-heading"> add new address</div>
+                 <a class="link popup-close" href="#">&#10006;</a>
+                 <div class="block-title"><input type="checkbox" name="a_a_default_address" id="a_a_default_address" value="default_true"> <label for="a_a_default_address">Make this default address</label></div>
+                  <div class="list no-hairlines-md">
                    <ul>
                     <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="text" placeholder="Name">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="text" placeholder="Last Name">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="text" placeholder="Address">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="email" placeholder="Email">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="password" placeholder="Password">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="tel" placeholder="Phone Number">
-                     </div>
-                    </li>
-                    <li class="item-content item-input">
-                      <div class="item-inner drpdwn">
-                         <div class="item-input-wrap input-dropdown-wrap">
-                           <select placeholder="Please choose...">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                           </select>
-                         </div>
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">First Name</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="First Name">
+                          <span class="input-clear-button"></span>
                       </div>
+                     </div>
                     </li>
                     <li class="item-content item-input">
-                     <div class="textboxHead">
-                        <input class="textboxes" type="tel" placeholder="D.O.B">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Last Name</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Last Name">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">E-mail</div>
+                       <div class="item-input-wrap">
+                          <input type="email" placeholder="E-mail">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Phone number</div>
+                       <div class="item-input-wrap inputfields">
+                          <input type="tel" placeholder="Phone number">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Address</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Address">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Address 2</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Address 2">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Landmark</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Landmark">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">City</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="City">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Pincode</div>
+                       <div class="item-input-wrap">
+                          <input type="number" placeholder="Pincode">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">State</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="State">
+                          <span class="input-clear-button"></span>
+                      </div>
+                     </div>
+                    </li>
+                    <li class="item-content item-input">
+                     <div class="item-inner">
+                       <div class="item-title item-floating-label">Country</div>
+                       <div class="item-input-wrap">
+                          <input type="text" placeholder="Country">
+                          <span class="input-clear-button"></span>
+                      </div>
                      </div>
                     </li>
                    </ul>
-            </div>
-            <a href="#" class="update_address popup-open" data-popup=".popup-addAddress">
-              <button class="col button button-outline">Update</button>  
-            </a>
-          </div>
+                   <button class="button button-outline save_address">save address</button>
+                  </div>
+              </div>
+            </div><!--popup-->
         </div><!--page content close-->
       </div> <!--page-->
     </div>

@@ -763,9 +763,8 @@
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="" data-popup=".signin_popup">Sign in</a></p>
-            <p><a class="link popup-open" href="#" data-popup=".signin_popup">Sign up</a></p>
-            <p><a class="link popup-open" href="#" >Contact us</a></p>
+            <p><a class="link popup-open" href="" data-popup=".signin_popup">Login & Signup</a></p>
+            <p><a class="link external" href="contact_us.html">Contact us</a></p>
            </div>
            <div class="popup popup-tablet-fullscreen signin_popup"> 
             <div class="row no-gap">
@@ -801,7 +800,7 @@
                   </div>
                   <div class="buttons">
                     <a href="#" class="connectfb">
-                      <button class="col button button-outline">Connect with Facebook</button>  
+                      Connect with Facebook  
                     </a>
                   </div>
                 </div>
@@ -831,11 +830,11 @@
               <i class="f7-icons">search</i>
               
               </a>
-              <a href="#" class="link icon-only material:favorite " data-panel="right">
+              <a href="#" class="link icon-only material:favorite popup-open" data-panel="right" data-popup=".signin_popup">
               
                <i class="f7-icons">heart_fill</i>
               </a>
-               <a href="#" class="link icon-only material:favorite " data-panel="right">
+               <a href="empty_cart.html" class="link icon-only material:favorite external" data-panel="right">
               <i class="icon material-icons">shopping_cart</i> 
               </a>
             </div>
@@ -930,22 +929,6 @@
                    </div>
                  </div>
               </div>
-              <!--<div class="col">
-                 <div class="choose_type">              
-                   <a class="item-link smart-select smart-select-init" data-open-in="popover">
-                   <select name="abc" class="type">
-                      <option value="unstiched" selected>Unstiched</option>
-                      <option value="stiched">Stiched</option>
-                   </select>
-                   <div class="item-content">
-                     <div class="item-inner">
-                       <div class="item-title"><h3>choose type</h3>
-                        <i class="f7-icons active">chevron_down</i></div>
-                     </div>
-                   </div>
-                   </a>
-                 </div>
-              </div>-->
               <div class="col">   
                  <div class="choose_size">
                    <h3>choose size</h3>
@@ -958,20 +941,6 @@
               </div>
             </div>
             <div class="block">
-              <!--<div class="row buttons">
-                <div class="col">
-                 <a href="#" class="">
-                  <button class="col button button-outline add_to_wishlist">add to wishlist</button>
-                   
-                 </a>
-                </div>
-                <div class="col">
-                 <a href="#">
-                  <button class="col button button-fill add_to_cart">add to cart</button>
-                 </a>
-                </div>
-                <div class="col"></div>
-              </div>-->
               <div class="row more_colors">
                 <h3>more colors</h3>
                 <div class="product_images">
@@ -1162,18 +1131,11 @@
           <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
             <div class="toolbar-inner cart_wishlist">
               <a href="#tab-1" class="tab-link wishlist">      
-                <button class="col button button-fill"><i class="f7-icons">heart_fill</i>wishlist</button>
+                <button class="col button button-fill"><!--<i class="f7-icons">heart_fill</i>-->wishlist</button>
               </a>
-              <a href="#tab-1" class="tab-link cart">
-                <button class="col button button-fill"><i class="icon material-icons">shopping_cart</i>add to cart</button>
+              <a href="cart.html" class="tab-link cart external">
+                <button class="col button button-fill"><!--<i class="icon material-icons">shopping_cart</i>-->add to cart</button>
               </a>
-              <!--<a href="#tab-1" class="tab-link tab-link-active">
-               <button class="col button button-fill add_to_wishlist">add to wishlist</button>  
-              </a>
-              
-              <a href="#tab-2" class="tab-link tab-link-active">
-                <button class="col button button-fill add_to_cart">add to cart</button>
-              </a>-->
             </div>
           </div>
         </div>

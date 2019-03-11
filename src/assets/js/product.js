@@ -95,11 +95,18 @@ jQuery(document).ready(function($){
         $($(this).data('target')).collapse('toggle');
     });
   }
-
   function intPX(str) {
     if(!str) 
       return 0;
     return parseFloat(str.replace('px'));
   }
-
+});
+//-script for share option in product page.
+$(document).ready(function(){
+  $('.share_popover').popover({ 
+    html : true,
+    content: function() {
+      return $('#popover_content_wrapper').html();
+    }
+  });
 });

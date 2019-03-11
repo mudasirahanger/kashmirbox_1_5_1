@@ -8,8 +8,9 @@ block cart_content
       .row
         .col-lg-12.col-md-12.continue_shopping
           .continue_icon
-            span.fa.fa-chevron-left
-            p continue shopping   
+            a(href="index.html")
+              span.fa.fa-chevron-left
+              p continue shopping   
           include ./components/tagline.pug
     .container
       .row.cartproducts
@@ -38,13 +39,19 @@ block cart_content
                 p Choose the suit type: Unsitched Suit  
               .name_and_rate.size_and_quantity
                 p Qty
-                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
+                input(type="text" name="quantity[234863]" value="1" size="10").form-control
+                span.input-group-btn
+                  button(type="submit" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Update")
+                    i.fa.fa-refresh
+                .sq
               .name_and_price
                 p Rs.7000  
               hr.divider
               .name_and_rate.remove_and_wishlist
-                p remove
-                span move to wishlist
+                a(href="#")
+                  p remove
+                a(href="#") 
+                  span move to wishlist
           .row.product_wrapper
             .col-lg-3.col-md-3
               img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg" style="width:80%")
@@ -55,13 +62,19 @@ block cart_content
                 p Choose the suit type: Unsitched Suit  
               .name_and_rate.size_and_quantity
                 p Qty
-                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
+                input(type="text" name="quantity[234863]" value="1" size="10").form-control
+                span.input-group-btn
+                  button(type="submit" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Update")
+                    i.fa.fa-refresh
+                .sq
               .name_and_price
                 p Rs.7000  
               hr.divider
               .name_and_rate.remove_and_wishlist
-                p remove
-                span move to wishlist
+                a(href="#")
+                  p remove
+                a(href="#") 
+                  span move to wishlist
           .row.product_wrapper
             .col-lg-3.col-md-3
               img(src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/dress_material/kb10513(1)-168x212.jpg" style="width:80%")
@@ -72,13 +85,19 @@ block cart_content
                 p Choose the suit type: Unsitched Suit  
               .name_and_rate.size_and_quantity
                 p Qty
-                input(type="text" name="quantity[234863]" value="1" size="10").form-control.sq
+                input(type="text" name="quantity[234863]" value="1" size="10").form-control
+                span.input-group-btn
+                  button(type="submit" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Update")
+                    i.fa.fa-refresh
+                .sq
               .name_and_price
                 p Rs.7000  
               hr.divider
               .name_and_rate.remove_and_wishlist
-                p remove
-                span move to wishlist            
+                a(href="#")
+                  p remove
+                a(href="#") 
+                  span move to wishlist           
         .col-lg-3.col-md-3.col-lg-offset-1.col-md-offset-1.rate_details
           p price details
           .rate_feature.bag_discptn

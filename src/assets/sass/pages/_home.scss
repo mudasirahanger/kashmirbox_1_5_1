@@ -17,7 +17,8 @@
 .imageadjust{
   margin-left: auto;
 }
-.secondimage .slide-frame{
+.secondimage .slide-frame,
+.secondimage .fullwidth{
    height: rem(383px) !important;
  }
  /**Best Seller**/
@@ -174,12 +175,15 @@ p.Heading2 {
    bottom:0;
 }
 /****Include*****/
+/*1199*/
 @include respond-to(large-1-1){
  .firstimage img{
-   height: 383px !important;
+   height: rem(383px) !important;
  }
 }
+/*991*/
 @include respond-to(large-only){
+ .secondimage .fullwidth
  .secondimage .slide-frame{
    height: rem(319px) !important;
  }

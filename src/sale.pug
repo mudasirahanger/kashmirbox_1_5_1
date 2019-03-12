@@ -1,0 +1,95 @@
+extends ./layouts/index.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block home_content
+  main.home
+    //-slider
+    .container_fluid
+      .hero-slider-section.row
+        .col-md-12.col-lg-12.padding-0
+          include components/hero-slider.pug                     
+    //-Sale Section
+    .container.sale_container
+      .row
+        .col-lg-12.col-md-12
+          a(href="https://www.kashmirbox.com/new-in-the-box/the-sundry-store")
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/end_of_season_sale/Strrip-d.jpg" alt="saleimage").img-responsive.visible-lg.visible-md.visible-sm.fullwidth
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/end_of_season_sale/Strrip-m.jpg" alt="image").img-responsive.fullwidth.visible-xs
+            //-img(src="images/Strip_for_mobile.jpg" alt="image").img-responsive.fullwidth.visible-xs
+      .row
+        .col-lg-7.col-md-7.col-sm-7.col-xs-12.firstimage
+          a(href="category.html")
+            img(src="images/Last-Time-On-Sale.jpg" alt="image").img-responsive.fullwidth
+        .col-lg-5.col-md-5.col-sm-5.col-xs-12.secondimage
+          a(href="category.html")
+            img(src="images/Natural-Dry-Fruits.jpg" alt="image").img-responsive.imageadjust.fullwidth
+    //--New Arrivals
+    .container.bestseller_container
+      p.Heading Luxury Apparel
+      p.Heading2 Upto 30% off
+      .row.bestseller_row
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+    //--New Arrivals
+    .container.bestseller_container
+      p.Heading Healthy Foods
+      p.Heading2 Upto 50% off
+      .row.bestseller_row
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+    //--New Arrivals
+    .container.bestseller_container
+      p.Heading Handcrafted Decor
+      p.Heading2 Upto 50% off
+      .row.bestseller_row
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/curtains.jpg" alt="image").img-responsive
+        .bestseller_div
+          a(href="category.html")
+            img(src="images/decorative-sonnet.jpg" alt="image").img-responsive                

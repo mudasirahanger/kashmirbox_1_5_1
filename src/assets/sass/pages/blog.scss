@@ -66,6 +66,17 @@
   display: block;
  }
 }
+.blog_background{
+  margin-bottom:rem(60px);
+}
+.blog_menu{
+  background: #fafafa;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  bottom: -44px;
+  width: 100%;
+}
 .featured_post {
   font-size: rem(14px);
   font-family: $ff-open-sans;

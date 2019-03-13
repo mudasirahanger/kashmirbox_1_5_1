@@ -41,14 +41,17 @@ header a:hover, a:active, a:focus {
   padding: rem(8px);
   text-transform:uppercase;
 }
+.left .nav_text{
+  text-transform: uppercase !important;
+}
 .nav_text{
   cursor: pointer;
   text-align:center;
-  font-size: rem(12px);
+  font-size: rem(11px);
   color: $white-color;
   font-family: $ff-open-sans;
   font-style:normal;
-  padding-top: rem(11px);
+  padding-top: rem(12px);
   padding-right: rem(11px);
   padding-bottom: rem(11px);
   padding-left: rem(11px);
@@ -73,7 +76,7 @@ header a:hover, a:active, a:focus {
     width: rem(255px);
     font-weight: 500;
     border: aliceblue;
-    font-size: rem(15px);
+    font-size: rem(12px);
     font-family: $ff-open-sans;
     font-style:italic;
     font-weight:normal;
@@ -104,8 +107,8 @@ header a:hover, a:active, a:focus {
    font-family: $ff-open-sans;
    font-style:normal;
    color: $brand-color;
-   text-transform: uppercase;
-   font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .login ul li{
   padding:0px 7px;

@@ -193,6 +193,20 @@
     font-weight: bold;
     word-spacing: rem(2px);
 }
+.product_info>.size>.buttons{
+  margin-bottom:rem(15px);
+}
+.product_info>.size>.quantity input{
+  font-family:$ff-open-sans;
+  width: 50%;
+}
+.product_info>.size>.quantity input:hover,
+.product_info>.size>.quantity input:active,
+.product_info>.size>.quantity input:focus{
+  border-color: #151414 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .product_info>.size>.buttons>.size_buttons{
     margin: 5px 10px 15px 0px;
     background-color: $light-shade;

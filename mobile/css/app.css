@@ -2015,7 +2015,7 @@ label:before {
   margin-left: auto;
   margin-right: auto;
 }
-/*new arrivals*/
+/*New arrivals page*/
 .new_arrivals .firstpart{
   margin-top: 37px;
 }
@@ -2097,4 +2097,93 @@ label:before {
 }
 .new_arrivals .thirdsection .text2{
   margin-bottom: 25px;
+}
+/*Aboutus page*/
+.aboutus .banner{
+  position: relative;
+  text-align: center;
+}
+/*.aboutus .about_text1{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: Cormorant !important;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px !important;
+}*/
+.aboutus .abouttext,
+.aboutus .core_values,
+.aboutus .team,
+.aboutus .join_us,
+{
+  line-height: 1.596;
+}
+.aboutus .team,
+.aboutus .join_us
+{
+  margin-top: 20px;
+}
+.aboutus .team h2,
+.aboutus .join_us h2{
+  margin-bottom: 0px;
+}
+.aboutus .core_values,
+.aboutus .join_us{
+  background-color: #fdfdfd;
+  margin-top: 20px;
+}
+.aboutus .abouttext .text1,
+.aboutus .core_values .text1,
+.aboutus .team .text1,
+.aboutus .join_us .text1
+{
+  color: #151414;
+  font-size: 14px;
+  font-family: Cormorant;
+  font-weight: bold;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.aboutus .abouttext .text2, 
+.aboutus .core_values .text2,
+.aboutus .team .text2,
+.aboutus .join_us .text2
+{
+  color: #878787;
+  font-size: 13px;
+  font-family: Montserrat;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+.aboutus .core_values .text2 .heading{
+  font-weight: bold;
+  color: #151414;
+  margin-top: 0px;
+}
+.aboutus .abouttext .text2 p{
+  margin-top: 0px;
+}
+.aboutus .team  .col-45{
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutus .join_us .Rectangle_633{
+  margin-top: 30px;
+  background-color: #151414;
+  height: auto;
+  max-width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutus .join_us .Rectangle_633 .View_openings{
+  font-size: 13px;
+  font-family: Montserrat;
+  color: #fff;
+  line-height: 2.647;
+  text-align: center;
+  text-transform: uppercase;
 }

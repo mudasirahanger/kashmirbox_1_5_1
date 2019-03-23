@@ -1604,30 +1604,46 @@ label:before {
   font-size:15px;
   text-transform: uppercase;
 }
-.account .personal_information .as-hero{
+.account .personal_information .as-hero
+{
   background-color: #f7f7f7;
   overflow: hidden;
   padding: 20px 30px;
   text-align: center;
 }
-.account .personal_information .textboxHead{
+.account .personal_information .textboxHead,
+.account .change_password .textboxHead{
   margin: 30px 0;
   border-bottom: 1px solid grey;
   position: relative;
   width: 100%;
 }
 .account .personal_information .textboxHead > input,
-.account .personal_information .drpdwn select{
+.account .personal_information .drpdwn select,
+.account .change_password .textboxHead > input,
+.account .change_password .drpdwn select
+{
   font-family: Montserrat;
   font-size: 13px;
   padding: 10px;
   width: 100%;
 }
-.account .personal_information ul{
+.account .personal_information ul,
+.account .change_password ul{
   margin:10px;
 }
-.account .personal_information li{
+.account .change_password ul{
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.account .personal_information li,
+.account .change_password li
+{
   padding-left: 0px !important; 
+}
+.account .change_password li{
+  min-height: 48px;
 }
 .account .personal_information .drpdwn{
   padding-right: 0px;
@@ -1704,7 +1720,8 @@ label:before {
 }
 .account .account-address .add_address button,
 .account .personal_information .update_address button,
-.account .account-orders .load_more button {
+.account .account-orders .load_more button,
+.account .change_password .update_password button{
   border-radius: 0px !important;
   font-family: Montserrat !important;
   color: #fff;
@@ -1775,7 +1792,8 @@ label:before {
 .account .account-orders .aob-link-box {
   padding: 0 10px;
 }
-.account .account-orders .ao-link{
+.account .account-orders .ao-link,
+.account .account-orders .ao-link_view{
   display: inline-block;
   color: #878787;
   font-size: 13px;
@@ -1784,14 +1802,22 @@ label:before {
   text-transform: capitalize;
   font-family: Montserrat;
 }
-.account .account-orders .ao-link:after {
+.account .account-orders .ao-link:after
+{
   content: '|';
   display: inline-block;
   margin-left: 8px;
   margin-right: 4px;
   vertical-align: text-bottom;
 }
-.account .account-orders .ao-link:nth-of-type(3):after{
+.account .account-orders .ao-link_view:after{
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+}
+.account .account-orders .ao-link:nth-of-type(3):after,
+.account .account-orders .ao-link_view:nth-of-type(3):after{
  display: none;
 }
 .account .account-orders .aob-footer {
@@ -1983,4 +2009,92 @@ label:before {
 .empty-cart-page .empty_image p{
    font-family: Open Sans,sans-serif !important;
   color: #151414;
+}
+/*SALE PAGE*/
+.sale .new_arrivals .col-50{
+  margin-left: auto;
+  margin-right: auto;
+}
+/*new arrivals*/
+.new_arrivals .firstpart{
+  margin-top: 37px;
+}
+.new_arrivals .thirdsection{
+  margin-top: 0px;
+}
+.new_arrivals .firstpart .col-70{
+  margin-left: auto;
+  margin-right: auto;
+}
+.new_arrivals .firstpart .col-70 .text{
+  margin-top: 30px;
+}
+.new_arrivals .thirdsection .col-70 .text{
+  margin-top: 0px;
+}
+.new_arrivals .thirdsection .col-70 .text1{
+  margin-top: 0px;
+}
+.new_arrivals .firstpart .col-70 .text1{
+  text-align: center;
+  font-size: 20px;
+  font-family: Cormorant !important;
+  color: #151414 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.new_arrivals .firstpart .col-70 .text2{
+  font-size: 16px;
+  font-family: Montserrat !important;
+  color: #151414 !important;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.new_arrivals .firstpart .col-70 .Rectangle_633{
+  margin-top: 30px;
+  background-color:#151414;
+  height: auto;
+  max-width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new_arrivals .firstpart .View_Complete_Collection{
+  font-size: 13px;
+  font-family: Montserrat;
+  color: #fff;
+  line-height: 2.647;
+  text-align: center;
+  text-transform: uppercase;
+}
+.new_arrivals .secondpart{
+  margin-top: -10px !important;
+}
+.new_arrivals .secondpart .col-50 .text{
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new_arrivals .secondpart .col-50 .text1{
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #151414;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.new_arrivals .secondpart .col-50 .text2{
+  font-size: 13px;
+  font-family: Montserrat;
+  color: #878787 !important;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.new_arrivals .thirdsection .col-50{
+  margin-bottom: 10px;
+}
+.new_arrivals .thirdsection .text2{
+  margin-bottom: 25px;
 }

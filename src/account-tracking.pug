@@ -1,0 +1,43 @@
+extends ./layouts/account.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block account_content
+  main.account
+    include ./components/breadcrumb.pug
+    ol.breadcrumb.productbreadcrumb
+      li.breadcrumb-item
+        a(href="#")
+          span.fa.fa-home
+      li.breadcrumb-item
+        a(href="#") Account
+      li.breadcrumb-item
+        a(href="#") Wishlist
+    .container-fluid
+      .row
+        .col-lg-3.col-md-3.overview
+          include ./components/account.pug
+        .col-lg-6.col-md-6.col-lg-offset-3.col-md-offset-3.personal_info
+          h2 order id 66750
+          .account-tracking
+            ul.progressbar
+              li.active
+                div.status_text
+                  p Order placed
+                  p (21 Dec 2018 21 Dec 2018)
+              li.active
+                div.status_text
+                  p Order placed
+                  p (21 Dec 2018 21 Dec 2018)
+              li.active
+                div.status_text
+                  p Order placed
+                  p (21 Dec 2018 21 Dec 2018)
+              li.deactive
+                div.status_text
+                  p Order placed
+                  p (21 Dec 2018 21 Dec 2018)
+              li.deactive
+                div.status_text
+                  p Order placed
+                  p (21 Dec 2018 21 Dec 2018)            

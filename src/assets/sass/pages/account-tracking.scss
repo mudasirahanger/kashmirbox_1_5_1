@@ -1,0 +1,66 @@
+.account-tracking .progressbar {
+  height: rem(326px) !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: rem(50px);
+  background-color: #fff !important;
+}
+.account-tracking .progressbar::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 5px !important;
+  background: #777 !important;
+  width: rem(5px) !important;
+  height: 100vh !important;
+}
+.account-tracking .progressbar li {
+  background: #000 !important;
+  border-radius: 100px !important;
+  width: rem(15px) !important;
+  height: rem(15px) !important;
+  z-index: 1 !important;
+  position: relative !important;
+}
+.account-tracking .progressbar li.active ~ li.deactive {
+  background: #777 !important;
+}
+.account-tracking .progressbar li.active ~ li.deactive::after {
+  height: 0 !important;
+}
+.account-tracking .progressbar li::after {
+  content: "" ;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  background: #000;
+  width: rem(5px);
+  height: 100vh;
+}
+.account-tracking .status_text{
+  position: absolute;
+  margin-left: 50px;
+  top: -30%;
+  width: rem(300px);
+  height: rem(50px);
+}
+.account-tracking .status_text p{
+  font-size: rem(13px);
+  font-family: Montserrat;
+  color: black !important;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: rem(5px);
+}
+.account-tracking .status_text p:nth-of-type(2){
+  font-size: rem(12px);
+  color:grey !important;
+  font-family: Montserrat;
+  font-weight: normal;
+}

@@ -1,0 +1,111 @@
+extends ./layouts/gifting.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block gifting_content
+  main.gifting
+    .container_fluid
+      .row
+        .col-lg-12.col-md-12.padding-0
+          .banner
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/gifting/Maine-banner-2-1440x577.jpg" alt="Banner").img-responsive
+            p.Blossom_like_florals The Art Of Gifting
+            .Embroidered_Ethnic_Kurtis Luxury Finds For All Occasions
+            div.Rectangle_2
+              a(href="https://www.kashmirbox.com/" target="_blank")
+                p.Explore_collection Explore Gifts
+    //--why choose kb
+    .container-fluid.padding-0
+      .row.features
+        .container
+          h2.Why_choose_KB why choose kb?
+          div.col-lg-3.col-md-3.col-sm-4.col-xs-6.column
+            div.box      
+              img(src="images/Layer 863.png" alt="icon").img-center.img-responsive
+              div.decrptn
+                p 100% Natural & Handmade Products
+          div.col-lg-3.col-md-3.col-sm-4.col-xs-6.column
+            div.box      
+              img(src="images/Layer 862.png" alt="icon").img-center.img-responsive
+              div.decrptn
+                p 10000+ Products to choose from
+          div.col-lg-3.col-md-3.col-sm-4.col-xs-6.column
+            div.box      
+              img(src="images/Layer 864.png" alt="icon").img-center.img-responsive
+              div.decrptn
+                  p Create a social impact
+          div.col-lg-3.col-md-3.col-sm-4.col-xs-6.column
+            div.box      
+              img(src="images/Customization-Available.png" alt="icon").img-center.img-responsive
+              div.decrptn
+                p Customization Available
+    //--range of gifts
+    .container
+      .row.gifts
+        .col-lg-6.col-md-6.col-sm-6.col-xs-12
+          p.Awesome_gifting_options awesome gifting options
+          p.Choose_from_our_wide_range_of_gifts Choose from our wide range of gifts                
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          include components/range_of_gifts.pug
+    //-what clients say
+    .container
+      .row.testimonails
+        h2.What_our_clients_say What our clients say
+        div.col-lg-4.col-md-4.col-sm-6.testimage
+          .row.testimage
+            .col-lg-6.col-md-6.col-sm-6                         
+              img(src="images/Layer 871.png" alt="client").img-responsive 
+            .col-lg-6.col-md-6.col-sm-6.text1
+              p.Mr__Prakash_Jha Siriwatana
+              p.MD___ITC Thailand                                      
+          .row.text2
+            .col-lg-12.col-md-12
+              .testimonail_text
+                p Excellent service!!
+                  | Love this website. They provide high quality products and services.
+        div.col-lg-4.col-md-4.col-sm-6.testimage
+          .row.testimage
+            .col-lg-6.col-md-6.col-sm-6                         
+              img(src="images/Layer 873.png" alt="client").img-responsive 
+            .col-lg-6.col-md-6.col-sm-6.text1
+              p.Mr__Prakash_Jha Dr. Yasmeen P
+              p.MD___ITC India                                      
+          .row.text2
+            .col-lg-12.col-md-12
+              .testimonail_text
+                p Great collections...
+                  | I appreciate Kashmirbox for the efforts and branding.
+        div.col-lg-4.col-md-4.col-sm-6.testimage
+          .row.testimage
+            .col-lg-6.col-md-6.col-sm-6                         
+              img(src="images/Layer 871.png" alt="client").img-responsive 
+            .col-lg-6.col-md-6.col-sm-6.text1
+              p.Mr__Prakash_Jha Vivek Sahni
+              p.MD___ITC India                                     
+          .row.text2
+            .col-lg-12.col-md-12
+              .testimonail_text
+                p Thanks for the timely delivery of the products 
+                  | my friend like it so much.
+    //-Social Impact
+    .container-fluid
+      .row.socialimpact
+        .col-lg-12.col-md-12.col-sm-12.padding-0
+          .social_image
+            img(src="https://www.kashmirbox.com/image/catalog/kb1/infromation/gifting/Artisan.jpg" alt="social").img-responsive.img-center
+          div.Rectangle_844
+            p.Social_impact Social impact
+            p.Everyone_is_a_part_of_social_impact Spreading A Million Smiles
+            p.Lorem_ipsum_dolor_sit_amet__consectetur_adipisc Your thoughtfully given gifts light up the lives of a grassroot artisan or farmer living somewhere in the far flung villages of Jammu, Kashmir and Ladakh. With each order you place, these unsung heroes of the soil get to sustain their livelihood and support their families to a dignified way of living and you become a harbinger of happiness, not only in the lives of your loved ones, but also those who are underpriviledged.
+            p.Lorem_ipsum_dolor_sit_amet__consectetur_adipisc Kashmir Box Initiative impacts more than 10000 grassroot artisans, 200+ farmers and 130 brands from the remotest corners of Jammu, Kashmir and Ladakh. Each of these farmers and artisans are given  direct access to the customers, wherein they get their due share of timely wage and improve their standard of living.
+    //--call back
+    .container
+      .row.call_back
+        .col-lg-10.col-md-10
+          .Rectangle_845
+            p.WANT_US_TO_CALL_YOU_BACK_ Book A Call Back
+            p.Etiam_tincidunt_lorem_orci__eget_congue_eros_al
+              | Get in touch with our team for gifting ideas, details, services and more.
+            .Rectangle_846
+              a(href="#" target="_blank")
+                p.Request_a_call_back Request a call back                 

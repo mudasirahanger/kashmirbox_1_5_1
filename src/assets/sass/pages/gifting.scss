@@ -1,0 +1,299 @@
+.gifting a:hover,a:focus{
+  text-decoration: none;
+}
+.gifting .banner {  
+  position:relative;
+  text-align: left;
+}
+.gifting .Blossom_like_florals {
+  font-size: rem(22px);
+  font-family: $ff-open-sans;
+  color: $white-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  top:35%;
+  left:10%;
+}
+.gifting .Embroidered_Ethnic_Kurtis {
+  font-family: $brand-font;
+  font-size: rem(40px);
+  color: $white-color;
+  text-transform: uppercase;
+  text-align: left;
+  position: absolute;
+  top:45%;
+  left:10%;
+  max-width:75%;
+}
+.gifting .Rectangle_2 {
+  border-radius:3px;
+  background-color: $white-color;
+  position: absolute;
+  width: rem(190px);
+  height: rem(54px);
+  border:none;
+  top:60%;
+  left:10%;
+}
+.gifting .Explore_collection{
+  font-size: rem(14px);
+  color: #151414 !important;
+  text-transform: uppercase;
+  line-height: 3.7;
+  text-align: center;
+  font-family: $ff-open-sans;
+}
+/*why choose kb*/
+.gifting .features {
+  background-color:#fcfcfc;
+  height: rem(300px);
+}
+.gifting .Why_choose_KB{
+  font-size: rem(32px);
+  font-family: $brand-font;
+  color: $brand-color;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: rem(40px);
+  font-weight:bold;
+}
+.gifting .box{
+  margin-top: rem(40px);
+  margin-left:auto;
+  margin-right: auto; 
+}
+.gifting .img-center {
+  display: block;
+  margin: 0 auto;
+}
+.gifting .decrptn {
+  margin-top: rem(40px);
+  width: rem(210px);
+  height: rem(47px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.gifting .decrptn p{
+  font-size: rem(16px);
+  font-family: $ff-open-sans;
+  color: black !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Gifting*/
+.gifting .gifts{
+  margin-top: rem(80px);
+}
+.gifting .Awesome_gifting_options {
+  font-family: $ff-open-sans;
+  font-size: rem(15px);
+  color: $grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+.gifting .Choose_from_our_wide_range_of_gifts {
+  font-size: rem(28px);
+  font-family: $brand-font;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 450px;
+  margin-bottom: rem(40px);
+}
+/*Testimonials*/
+.gifting .testimonails{
+  margin-top: rem(80px);
+}
+.gifting .What_our_clients_say {
+  font-size: rem(28px);
+  font-family: $brand-font;
+  color: $brand-color;
+  text-transform: uppercase;
+  margin-bottom: rem(50px);
+  text-align: center;
+  font-weight: bold;
+}
+.gifting .text1{
+  margin-top: rem(40px);
+}
+.gifting .text2{
+  margin-top: rem(20px);
+}
+.gifting .testimonail_text{
+  max-width:rem(340px);
+}
+.gifting .testimonail_text p{
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $grey;
+}
+.gifting .Mr__Prakash_Jha {
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gifting .MD___ITC {
+  font-size: rem(18px);
+  font-family: $ff-open-sans;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/**call back**/
+.gifting .call_back{
+  margin-top: rem(100px);
+  margin-bottom: rem(100px);
+  display: flex;
+  justify-content: center;
+}
+.gifting .Rectangle_845 {
+  background-color: $brand-color;
+  height: rem(386px);
+  padding: 40px 40px 20px 40px;
+}
+.gifting .WANT_US_TO_CALL_YOU_BACK_ {
+  margin-top: rem(20px);
+  font-size: rem(25px);
+  font-family: $ff-open-sans;
+  color: $white-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gifting .Etiam_tincidunt_lorem_orci__eget_congue_eros_al {
+  margin-top: rem(30px);
+  font-size: rem(20px);
+  font-family: $ff-open-sans;
+  color: $white-color;
+  text-align: center;
+}
+.gifting .Rectangle_846 {
+  margin-top: rem(40px);
+  background-color:$white-color;
+  width: rem(461px);
+  height: rem(81px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.gifting .Request_a_call_back {
+  padding-top: rem(25px);
+  text-align: center;
+  font-size: rem(17px);
+  font-family: $ff-open-sans;
+  color: $brand-color !important;
+}
+@include respond-to(large-4){
+  .gifting .socialimpact{
+   margin-top: rem(80px);
+  }
+  .gifting .social_image{
+    float: none;
+  }
+  .gifting .Rectangle_844{
+    position: static;
+    float: none;
+    width: 100%;
+    box-shadow:none;
+    background-color:white;
+    height:auto;
+    max-width: 100%;
+  }
+  .gifting .Social_impact{
+    font-size: 18px;
+    text-align: center;
+  }
+  .gifting .Everyone_is_a_part_of_social_impact{
+    text-align: center;
+  }
+  .gifting .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc{
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 50%;
+    font-size: 18px;
+  }
+  /**call back**/
+  .gifting .call_back{
+   margin-top: rem(100px);
+   margin-bottom: rem(100px);
+   display: flex;
+   justify-content: center;
+ }
+}
+@include respond-to(large-3){
+  .gifting .socialimpact{
+   margin-top: rem(80px);
+  }
+  .gifting .social_image{
+   position: relative;
+   float: right;
+  }
+  .gifting .Rectangle_844 {
+   background-color: $light-shade;
+   box-shadow: 0px 7px 13px 0px rgba(143, 143, 143, 0.19);
+   position: absolute;
+   top:12%;
+   left:7%;
+   max-width: 600px;
+   height: rem(551px);
+   padding: 40px 40px 20px 40px;
+  }
+ .gifting .Social_impact {
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color:black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.929;
+  text-align: left;
+ }
+ .gifting .Everyone_is_a_part_of_social_impact {
+  font-size: rem(20px);
+  font-family: $brand-font;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.464;
+  text-align: left;
+ }
+.gifting .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
+  margin-top: rem(25px);
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $grey;
+  line-height: 1.563;
+  text-align: left;
+  max-width: 100%;
+ }
+}
+@include respond-to(large-1-1){
+  /*banner*/
+  .gifting .Rectangle_2{
+    position:absolute !important;
+    top:65% !important;
+  }
+  .gifting .social_image{
+    width: 50%;
+  }
+  .gifting .Rectangle_844{
+   position: static !important;
+   width: 50%;
+   background-color:$white-color;
+   box-shadow:none;
+   height: auto;
+   padding: 0px 40px 20px 40px;
+   float: left;
+  }
+  .gifting .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc{
+    max-width: rem(500px);
+    margin-top: rem(15px);
+  }
+}

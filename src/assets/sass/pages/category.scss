@@ -66,7 +66,7 @@ center{
   color:$red-color;
 }
 .column>a>center >.checked {
-  color: $orange;
+  color: $brand-color !important;
 }
 /*filter_list*/
 .filter_list h3{

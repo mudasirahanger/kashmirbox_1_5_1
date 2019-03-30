@@ -1,0 +1,70 @@
+extends ./layouts/gifting.pug
+
+block app_variables
+  - var pageTitle = "Kashmir Box";
+block gifting_content
+  main.gift_card
+    .container
+      .row
+        .col-lg-6.col-md-6.col-sm-6.card_graphics
+          .card.firstcard
+            p $500
+            .text
+              .name muheet mehraj
+              .code q97-j7f-bbm-032
+            img(src="logo.png" alt="image")
+          .card.second_card
+            p $500
+            .text
+              .name muheet mehraj
+              .code q97-j7f-bbm-032  
+            img(src="logo.png" alt="image")
+          .card.third_card
+            p $500
+            .text
+              .name muheet mehraj
+              .code q97-j7f-bbm-032  
+            img(src="logo.png" alt="image")  
+        .col-lg-6.col-md-6.col-sm-6.text_and_form
+          .text
+            p.bold 
+            h1 kashmir box gift cards
+            p.normal A gift card will give you access to thousands of designer dresses and accessories. It's the perfect gift for someone who never wants to wear the same things twice.
+          .form
+            h2 gift card
+            .jj
+              .box
+                p Currency
+                input(type="text" ).inputtype
+              .box
+                p Amount
+                input(type="text" ).inputtype
+            h2 from
+            .jj
+              .box
+                p Your firstname
+                input(type="text" ).inputtype
+              .box
+                p Your surname
+                input(type="text" ).inputtype
+            h2 from
+            .jj
+              .box
+                p Recepient's full name
+                input(type="text" ).inputtype
+              .box
+                p Recepient's email
+                input(type="text" ).inputtype  
+            .jj.adjust_top  
+              .box.full-width
+                p Special message
+                input(type="text" ).inputtype
+            .jj.adjust_top  
+              .box
+                p Email date
+                input(type="text" ).inputtype
+              .box
+                p Email time
+                input(type="text" ).inputtype 
+            .adjust_top
+              button(type="submit") checkout          

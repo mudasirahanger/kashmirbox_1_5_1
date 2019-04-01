@@ -38,14 +38,14 @@
 }
 .product_info>a> h3{
 	font-family: $ff-open-sans;
-  font-size: rem(20px);
+  font-size: rem(21px);
   color: $brand-color;
   font-weight: bold;
   position: absolute;
 }
 .product_info> .product_name{
    font-family: $brand-font;
-   color: $grey;
+   color: #a8a1a1;
    font-size: rem(28px);
    margin-top: rem(30px);
    margin-bottom: rem(5px);
@@ -143,9 +143,6 @@
     background-color: $light-shade;
     text-transform: uppercase;
     font-weight: bold;
-}
-.product_info>.buttons>.add_to_cart:hover{
-    opacity: 0.8;
 }
 .product_info>.buttons>.add_to_wishlist:hover{
     border-color: $brand-color;
@@ -471,7 +468,7 @@ center{
               width: 100%;
             }
             &.active, &:hover {
-              border: rem(2px) solid $brand-color;
+              border: rem(2px) solid #e3e3e3;
               border-radius: rem(5px);
             }
           }

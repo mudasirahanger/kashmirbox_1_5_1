@@ -172,3 +172,14 @@ input {
 .colour-colorDisplay[data-colorhex='white'], .colour-colorDisplay[data-colorhex='off white'] {
     border: 1px solid #d6d6d6;
 }
+.btn-black{
+  background-color:$brand-color;
+  color:$white-color;
+  font-size:rem(14px);
+  border: none;
+  width: rem(194px);
+  height: auto;
+  padding: rem(10px);
+  font-family: $ff-open-sans;
+  text-transform: uppercase;
+}

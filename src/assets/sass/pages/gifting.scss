@@ -298,16 +298,19 @@
   }
 }
 /*gift certificate*/
-.card_graphics{
-  margin-top:100px;
+.gift_card{
+  margin-top:rem(30px);
+}
+.gift_card .card_graphics{
+  margin-top:rem(100px);
   position: relative;
   padding: 0px;
 }
 .gift_card .card{
   border-radius: 21px;
   background-color: $brand-color;
-  width: 400px;
-  height: 275px;
+  width: rem(385px);
+  height: rem(275px);
   position: relative;
   box-shadow:  0 0 10px  rgba(0,0,0,0.6);
   -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
@@ -318,8 +321,8 @@
   z-index: -1;
 }
 .gift_card .card:after{
-  width: 150px;
-  height: 275px;
+  width: rem(150px);
+  height: rem(275px);
   background-color: rgb(47, 47, 47);
   -ms-transform: skewY(60deg);
   -webkit-transform: skewY(60deg);
@@ -341,29 +344,33 @@
   z-index: 1;
 }
 .gift_card .card_graphics .text .name{
-  font-size: 20px;
+  font-size: rem(18px);
   color:#fff !important;
   text-transform: capitalize;
   letter-spacing: -1px;
+  font-family:$ff-open-sans;
 }
 .gift_card .card_graphics .text .code{
-  font-size: 20px;
-  color: rgb(255, 255, 255);
+  font-size: rem(18px);
+  color: #7f7f7f !important;
   text-transform: uppercase;
+  font-family:$ff-open-sans;
 }
 .gift_card .card > p{
   position: absolute;
   right: 25px;
   top: 20px;
-  color:rgb(255, 255, 255);
+  color:#7f7f7f !important;
+  font-family: $ff-open-sans;
+  font-size: rem(16px);
 }
 .gift_card .card img{
   position: absolute;
   bottom: 10%;
-  right: 15px;
+  right: 10px;
 }
 .gift_card .third_card{
-  margin-top: 100px;
+  margin-top: rem(100px);
   z-index: -1;
 }
 .gift_card .text_and_form .text,.text_and_form form{
@@ -371,42 +378,52 @@
   margin-left: auto;
 }
 .gift_card .text_and_form .text .bold{
-  font-size: 14px;
-  color: #151414 !important;
+  font-size: rem(14px);
+  color: $brand-color !important;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.714;
   margin-bottom: 0px;
+  font-family: $ff-open-sans;
 }
 .gift_card .text_and_form .text >h1{
-  font-size: 28px;
-  color: rgb(25, 25, 25);
+  font-size: rem(28px);
+  color: $brand-color;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.607;
-  margin-top: 5px;
+  margin-top: rem(5px);
+  margin-bottom: rem(10px);
+  font-family: $brand-font;
 }
 .gift_card .text_and_form .text .normal{
-  font-size: 16px;
-  color: rgb(127, 127, 127);
+  font-size: rem(16px);
+  color: $grey;
   line-height: 1.5;
+  margin-bottom: rem(10px);
+  font-family: $ff-open-sans;
 }
 .gift_card .text_and_form form h2{
-  font-size: 14px;
-  color: #151414;
+  font-size: rem(14px);
+  color: $brand-color;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.714;
   text-align: left;
+  font-family: $ff-open-sans;
+  margin-top: rem(20px);
+  margin-bottom: rem(10px);
 }
 .gift_card form .jj{
   display: flex;
 }
 .gift_card form .jj .box p{
-  font-size: 16px;
-  color: rgb(127, 127, 127);
+  font-size: rem(16px);
+  color: $grey;
   line-height: 1.5;
   font-weight: bold;
+  font-family: $ff-open-sans;
+  margin-bottom: rem(10px);
 }
 .gift_card form .jj .box{
   width: 50%;
@@ -423,25 +440,26 @@
 .gift_card form .jj .box input{
   border-style: solid;
   border-width: 2px;
-  border-color: rgb(202, 202, 202);
-  background-color: rgba(0, 0, 0, 0);
+  border-color:rgb(202, 202, 202);
+  background-color:$white-color;
   width: 97%;
   height: 54px;
-  font-size: 16px;
-  color: #878787;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: rem(16px);
+  color: $grey;
+  padding-left: rem(10px);
+  padding-right: rem(10px);
+  font-family: $ff-open-sans;
 }
 .gift_card form button{
-  background-color: rgb(40, 40, 40);
+  background-color: $brand-color;
   width: 99% !important;
   height: 74px;
   font-size: 16px;
-  font-family: "Gotham";
-  color: rgb(255, 255, 255);
+  font-family: $ff-open-sans;
+  color: $white-color;
   text-transform: uppercase;
   line-height: 1.5;
-  border-color:#151414;
+  border-color:$brand-color;
 }
 .gift_card button:active,button:focus{
   outline:none;
@@ -451,7 +469,7 @@
     width: 67%;
   }
   .gift_card .card:after{
-    width: 110px;
+    width: rem(110px);
     left: 121px;
   }
 }

@@ -1,23 +1,11 @@
-.four_o_four >.container-fluid{
-	background-color:$brand-color;
-	height: rem(80px);
-}
-.four_o_four >.container-fluid > .row>.logo > img{
-	margin-left: auto;
-	margin-right: auto;
-	width: rem(100px);
-}
-.four_o_four >.container-fluid > .row>.logo{
-	margin-top: rem(8px);
-}
-.go_to_homeage{
+.four_o_four .go_to_homeage{
    margin-top: rem(40px);
 }
-.go_to_homeage img{
+.four_o_four .go_to_homeage img{
 	margin-left: auto;
 	margin-right: auto;
 }
-.go_to_homeage button{
+.four_o_four .go_to_homeage button{
     background: $brand-color;
     width: 20%;
     border: none;
@@ -30,12 +18,26 @@
     display: flex;
     margin-right: auto;
 }
-.go_to_homeage p{
+.four_o_four .go_to_homeage .heading{
 	font-family: $ff-open-sans;
 	color:$brand-color;
-	font-size: rem(20px); 
+	font-size: rem(22px); 
 	text-align: center;
 	font-weight: bold;
-	margin-top: rem(20px);
-	margin-bottom: rem(20px);
+	margin-top: rem(10px);
+	text-transform: uppercase;
+}
+.four_o_four .go_to_homeage .descrptn{
+	font-size: rem(28px);
+    font-family: $brand-font;
+    color:$brand-color;
+    font-weight: bold;
+    line-height: 1.607;
+    text-align: center;
+}
+.four_o_four .go_to_homeage .products{
+	margin-top:rem(60px);
+}
+.four_o_four .go_to_homeage .products img{
+	margin-bottom: 30px; 
 }

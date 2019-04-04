@@ -106,6 +106,83 @@
   max-width: 450px;
   margin-bottom: rem(40px);
 }
+/*Personalized gifting*/
+.gifting .prsnlzd_gifts{
+  margin-top: 80px;
+  /*margin-bottom: 120px;*/
+}
+.gifting .Personalised_gifting {
+  font-family:$ff-open-sans;
+  font-size: rem(15px);
+  color: $grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: rem(15px);
+}
+.gifting .Customise_you_gifts_as_per_your_need {
+  font-size: rem(28px);
+  font-family: $brand-font;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: rem(15px);
+  max-width: 450px;
+  margin-bottom: rem(40px);
+}
+.gifting .per_gift{
+  position: relative;
+}
+/*smallbox*/
+.gifting .Rectangle_841 {
+  background-color:$white-color;
+  box-shadow: 0px 7px 13px 0px rgba(143, 143, 143, 0.19);
+  position: absolute;
+  right: 10%;
+  bottom: -20%;
+  max-width: 320px;
+  height: rem(300px);
+  padding: 40px 25px 20px 25px;
+}
+.gifting .Corporates {
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: rem(20px);
+}
+.gifting .Gift_your_employees_lorem_ipsum_dolor_sit_amet_ {
+  font-size: rem(16px);
+  font-family: $ff-open-sans;
+  color: $brand-color;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: rem(20px);
+}
+.gifting .Starts_at_just_399 {
+  font-size: rem(14px);
+  font-family: $ff-open-sans;
+  color: rgb(196, 57, 75) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: rem(30px);
+}
+.gifting .Rectangle_842 {
+  background-color:$brand-color;
+  width: rem(55px);
+  height: rem(65px);
+}
+.gifting .customise_now {
+  padding-top: rem(25px);
+  text-align: center;
+  font-size: rem(15px);
+  font-family: $ff-open-sans;
+  color: $white-color;
+}
 /*Testimonials*/
 .gifting .testimonails{
   margin-top: rem(80px);

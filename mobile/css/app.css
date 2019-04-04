@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant|Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family= 'Muli', sans-serif;');
+@import url('https://fonts.googleapis.com/css?family= 'Muli', sans-serif;:200,300,900');
 /* Your app styles here */
 /*menu*/
 .top_nav{
@@ -29,7 +30,7 @@
   text-transform: uppercase;	
   font-size: 13px;
   color:#151414;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 /*sub menu*/
 .item-inner>.submenu_item,
@@ -49,7 +50,7 @@
   margin-left: 13px !important;
 }
 .sign_in_up>p{
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .sign_in_up>p>a{
    color: #151414;
@@ -70,7 +71,7 @@
 }
 .subtitle{
   font-size: 16px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: #878787 !important;
   line-height: 1;
   text-align: center;
@@ -99,7 +100,7 @@
   width: 100%;
   padding: 20px;
   height: 55px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   font-size: 13px;
   color: #878787;
   font-style: italic;
@@ -110,7 +111,7 @@
   color:#fff;
   font-size: 13px;
   border-color: #151414;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   height: 55px;
   border-color:#151414 !important;
   text-transform:uppercase;
@@ -149,7 +150,7 @@
   height: 0px !important;
 }
 .more_about .accordion-item .item-title{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   font-size: 14px;
   margin-left: auto;
@@ -160,7 +161,7 @@
 }
 .more_about .accordion-item-content .headings{
   color: #151414;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 14px;
   font-weight: bold;
 }
@@ -205,13 +206,13 @@
 }
 .more_about .first_image .text > .heading{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-weight: bold;
   color: #151414;
 }
 .more_about .first_image .text > p{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color:#878787;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -229,7 +230,7 @@
   margin-left: auto;
 }
 .more_about .need_help .text{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   color: #151414;
 }
@@ -246,7 +247,7 @@
   text-align: justify;
   line-height: 21px;
   color: #878787;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size:13px;
 }
  .more_about .convenient_connection .gstin{
@@ -263,7 +264,7 @@
 .more_about .payment_partners h2{
   font-size: 14px;
   color: #151414;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin: 0px 0px 25px 0px;
 }
 .more_about .payment_partners img{
@@ -280,7 +281,7 @@
 }
 .more_about .copyright p{
   color: #fff;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   margin: 5px;
 }
@@ -295,7 +296,7 @@
   color: #151414;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .category_card{
   margin:0px !important;
@@ -315,12 +316,12 @@
 .name_container> h3{
   margin: 0px;
   font-size:13px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color:#151414;
   max-width: 100%;
 }
 .price-container span{
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .price-container .price{
   font-weight: bold;
@@ -366,7 +367,7 @@
 }
 .sort_filter_icons .f7-demo-icon-label{
   margin-left: 10px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   font-weight: bold;
 }
@@ -393,7 +394,7 @@
 }
 .category .sort_links a{
   font-size:13px !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 /*signin popup*/
 .signin_popup{
@@ -418,7 +419,7 @@
   font-size: 18px;
   margin-top: 15px;
   color: #151414;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   letter-spacing: -1px;
 }
 .signin_popup .card .textboxHead{
@@ -432,7 +433,7 @@
   width:75% !important;
 }
 .signin_popup .textboxHead input{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size:12px;
   padding: 10px;  
   width: 100%;
@@ -440,7 +441,7 @@
 .signin_popup .textboxHead > a {
   float: right;
   margin-right:5px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: red;
   position: absolute;
   top: 10px;
@@ -457,7 +458,7 @@
   border: 1px solid #151414 !important;
   margin-bottom: 20px;
   border-radius: 0px !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: #fff;
   height: 52px;
   font-size: 13px;
@@ -477,51 +478,9 @@
   font-size: 13px;
   display: inline-block;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   width: 67%;
 }
-/*.signin_popup img{
-  width: 100%;
-  height: auto;
-}
-.md .loginlist ul:before {
-  content: none !important;
-}
-.md .loginlist ul:after{
-  content: none !important;
-}
-.loginlist .item-title{
-  font-family: Montserrat;
-  font-size: 13px;
-}
-.loginlist input[type="text"],.loginlist input[type="password"]{
-  font-family: Montserrat;
-  font-size: 13px !important;
-}
-.loginlist{
-  margin-top: 15px;
-}
-.loginlist .buttons{
-  margin-top: 10px;
-}
-.loginlist button{
-  background: #151414 !important;
-  color: #fff !important;
-  font-family: Montserrat !important;
-  font-size: 13px;
-  text-transform: uppercase;
-  width: 80% !important;
-  margin-left:5px;
-  border-radius: 0px !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-.loginlist .fb_button{
-  width: 90% !important;
-}
-.loginlist .item-inner{
-}*/
-/*product page*/
 .product_page{
   padding-bottom: 40px;
 }
@@ -532,7 +491,7 @@
   color: #151414;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   display:flex;
 }
 .second_nav .product_block >p:nth-of-type(2){
@@ -543,7 +502,7 @@
    margin-right:5px;
 }
 .view_similar .chip-label{
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .product_features .col{
   background: #f7f7f7;
@@ -552,7 +511,7 @@
   padding-top: 10px;
 }
 .product_features p{
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: #151414;
   font-size: 16px;
   text-transform: capitalize;
@@ -569,7 +528,7 @@
 }
 .product_name_container .share >a{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   text-decoration: none;
   color: #151414;
   text-transform: capitalize;
@@ -586,14 +545,14 @@
 }
 .product_name_container h5{
  text-transform: capitalize;
- font-family: Montserrat !important;
+ font-family:  'Muli', sans-serif;
  margin: 0px;
  font-size: 18px;
  color: #878787;
  font-weight: normal;
 }
 .product_name_container h3{
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   font-size: 18px;
   color: #151414;
   font-weight: bold;
@@ -610,7 +569,7 @@
 }
 .product_price-container span,.product_price-container strike{
  text-transform: capitalize;
- font-family: Montserrat !important;
+ font-family:  'Muli', sans-serif;
  color: #151414;
  font-size: 13px;
  font-weight: normal;
@@ -619,18 +578,18 @@
   font-weight: bold;
   color:#151414;
   font-size: 18px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   margin-right: 10px;
 }
 .product_price-container strike{
   margin-right: 10px;
   font-size: 18px;
   color: #878787;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .product_price-container .discount{
   font-size: 18px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: red;
   font-weight: bold;
 }
@@ -657,25 +616,11 @@
 .more_info h3{
   font-size: 15px;
   color: #151414 !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   word-spacing: 2px;
 }
-/*.choose_type .item-title{
-  display: flex;
-}
-.choose_type .f7-icons{
-  font-size: 13px;
-  margin-top: 20px;
-  margin-left: 5px;
-  color: #151414;
-}
-.choose_type > .type > option{
-  color: #151414;
-  font-size: 13px;
-  font-family: Montserrat !important;
-}*/
 .choose_type select{
   width: 125px;
 }
@@ -685,7 +630,7 @@
 .choose_type option{
   color: #151414;
   font-size: 13px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   /*background: #f7f7f7;*/
 }
 .choose_size > .size_buttons{
@@ -699,7 +644,7 @@
   border: 1px solid #878787 !important;
   margin-right: 5px;
   color:#151414 !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .size_buttons > .button-outline:hover{
   border: 1px solid #151414 !important;
@@ -736,7 +681,7 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 0px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 .product .cart_wishlist button{
   width: 95%;
@@ -767,7 +712,7 @@
   border-bottom: 1px solid #878787;
   width: 170px;
   padding: 15px 0px 15px 0px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   font-size: 14px;
 }
 .cod .col{
@@ -786,7 +731,7 @@
 .more_info p,.more_info li{
   font-size: 13px;
   color: #878787 !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   text-transform: uppercase;
   word-spacing: 2px;
 }
@@ -795,11 +740,11 @@
   text-align: justify;
   color: #878787;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .goes_with_this h2,.similar_products h2{
     margin-bottom: 20px;
-    font-family: Montserrat;
+    font-family:  'Muli', sans-serif;;
     font-size: 1.25rem;
     color: #151414;
     font-weight: bold;
@@ -837,7 +782,7 @@
 .checkout_1_page .checkout_footer p,
 .checkout_2_page .checkout_footer p,
 .checkout_3_page .checkout_footer p {
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   text-align: center;
   margin-top: 10px;
@@ -847,7 +792,7 @@
 .checkout_1_page .cart_heading p,
 .checkout_2_page .cart_heading p,
 .checkout_3_page .cart_heading p{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787;
   text-align: center;
   margin-top: 10px;
@@ -888,7 +833,7 @@
   padding-bottom: 2px;
 }
 .offers_card li{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   line-height: 1.7;
   font-size: 13px;
   color: #878787 !important;
@@ -898,7 +843,7 @@
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: .9375rem;
   background-color: #fdfdfd !important;
   border:1px solid #151414 !important;
@@ -918,7 +863,7 @@
   margin-right: auto;
 }
 .order_items h3{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
@@ -936,7 +881,7 @@
   color: #151414;
   font-weight: bold;
   font-size: 13.5px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .order_items .order_details >.type{
   font-weight: normal;
@@ -970,7 +915,7 @@
   margin-right: auto;
   margin-left: auto;
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -992,7 +937,7 @@
   padding: 18px 20px 10px 20px;
 }
 .cart_page .rate_items .heading{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 15px;
   text-transform: uppercase;
   color:#151414;
@@ -1003,7 +948,7 @@
 .cart_page .rate_items .details >.left_side{
   color: #151414;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin-top:5px;
   margin-bottom:5px;
 }
@@ -1020,7 +965,7 @@
   margin-left: auto;
   color: #878787;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin-top:5px;
   margin-bottom:5px;
 } 
@@ -1030,7 +975,7 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 0px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   border:none;
   margin-top: 8px;
 }
@@ -1041,7 +986,7 @@
 .cart_page .rate_items .footer_section > p{
   text-align: center;
   margin-bottom: 20px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   color: #878787;
 }
@@ -1056,7 +1001,7 @@
 }
 /*cart popup*/
 .cart_page .applycoupon .card-header{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: uppercase;
@@ -1066,7 +1011,7 @@
   padding: 15px;
 }
 .cart_page .card-content h3{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: capitalize;
@@ -1080,7 +1025,7 @@
 }
 .cart_page .applycoupon .coupon-code{
   font-style: italic;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   padding: 8px 10px;
   font-size: 13px;
   font-weight: 500;
@@ -1089,7 +1034,7 @@
   width: 100%;
 }
 .cart_page .applycoupon .or{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
@@ -1098,7 +1043,7 @@
   font-size: 13px;
 }
 .cart_page .applycoupon h4{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: capitalize;
@@ -1128,7 +1073,7 @@
   text-align: center;
   display: inline-block;
   margin-right: 10px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787;
   margin-left: 5px;
   max-width: 58px;
@@ -1136,7 +1081,7 @@
   height:20px;
 }
 .cart_page .couponcode p{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 11.5px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1148,7 +1093,7 @@
   margin-left: 3px;
 }
 .cart_page .applycoupon .info{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   margin-left: 15px;
   margin-top: 10px;
@@ -1159,7 +1104,7 @@
 }
 .applycoupon .card-footer p{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: orange;
   text-transform: uppercase;
   font-weight: bold;
@@ -1195,7 +1140,7 @@
 .checkout_2_page .login_details h3,
 .checkout_3_page .login_details h3
  {
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
@@ -1213,7 +1158,7 @@
 .checkout_1_page .login_details input{
   border-bottom: 1px solid #e3e3e3;
   width: 100%;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 15px;
 }
 .checkout_1_page .login_details input{
@@ -1229,7 +1174,7 @@
   font-size: 13px;
   display: inline-block;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   width: 100%;
   text-align: center;
   padding-top: 15px;
@@ -1246,7 +1191,7 @@
 .login_details .heading
 {
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787;
   line-height: 1.733;
   text-align: left;
@@ -1254,7 +1199,7 @@
 }
 .login_details .text_with_icons p{
   font-size: 12.5px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   line-height: 2;
   text-align: left;
@@ -1283,7 +1228,7 @@
   margin-bottom: 12px;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   line-height: 1.7;
 }
 .checkout_wrapper .addressbox .number{
@@ -1297,7 +1242,7 @@
 .checkout_wrapper .addressbox p,
 .checkout_wrapper .plus_address a{
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   color: #878787;
   line-height: 1.7;
@@ -1376,14 +1321,14 @@
 .popup-editAddress .block-title > label{
   font-weight: bold;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
 }
 .popup-addAddress .block-heading,
 .popup-editAddress .block-heading{
   font-weight: bold;
   font-size: 15px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   text-transform: uppercase;
   margin-top: -20px;
@@ -1397,7 +1342,7 @@
 .popup-addAddress .item-input-wrap input,
 .popup-editAddress .item-input-wrap input{
   font-size: .875rem;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   max-width: 80%;
 }
 .popup-addAddress .item-floating-label,
@@ -1413,7 +1358,7 @@
   text-transform: uppercase;
   font-size: 14px;
   border: none !important;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   border-radius: 0px !important;
   border-color: #151414 !important;
   margin-left: auto;
@@ -1445,7 +1390,7 @@
 }
 .login_details .final_amount > p{
   font-size: 15px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   line-height: 2.059;
   text-align: left;
@@ -1454,7 +1399,7 @@
 }
 .login_details .final_amount > p:nth-of-type(2){
   font-size: 15px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787;
   line-height: 2.059;
   margin-left:8px;
@@ -1525,7 +1470,7 @@ label:before {
   margin-bottom: 30px;
 }
 .contact .location_div .heading{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 15px;
   text-transform: uppercase;
   color: #151414;
@@ -1537,7 +1482,7 @@ label:before {
 }
 .contact .location_div .address,
 .contact .location_div .address2{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 15px;
   color: #878787;
   max-width: 325px;
@@ -1595,10 +1540,10 @@ label:before {
   color: #878787;
   font-weight: 500;
   font-size: 15px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .account .personal_information .as-hero  h3{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-weight: 600;
   color: #151414;
   font-size:15px;
@@ -1623,7 +1568,7 @@ label:before {
 .account .change_password .textboxHead > input,
 .account .change_password .drpdwn select
 {
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   padding: 10px;
   width: 100%;
@@ -1672,7 +1617,7 @@ label:before {
 .account .account-address .aa-box h3{
   font-size: 13px;
   margin-bottom: 10px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   text-transform: capitalize;
   text-align: center;
 }
@@ -1683,11 +1628,11 @@ label:before {
   color: #151414;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 14px;
 }
 .account .account-address .aa-box h5{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
   color: #878787;
   text-transform: capitalize;
@@ -1709,13 +1654,13 @@ label:before {
   color: orange;
   text-decoration: none;
   margin-right:5px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
 }
 .account .account-address .aa-links-wrap .aal-delete {
   color:red;
   float: right;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px;
 }
 .account .account-address .add_address button,
@@ -1723,7 +1668,7 @@ label:before {
 .account .account-orders .load_more button,
 .account .change_password .update_password button{
   border-radius: 0px !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: #fff;
   height: 52px;
   background: #151414 !important;
@@ -1735,7 +1680,7 @@ label:before {
   margin-bottom: 10px;
 } 
 .popover-verifyotp .verify_block p{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   font-weight: bold;
   font-size: 14px;
@@ -1743,7 +1688,7 @@ label:before {
   padding: 10px;
 }
 .popover-verifyotp .center p{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin-bottom: 10px;
   font-size:13px;
   max-width: 250px;
@@ -1773,7 +1718,7 @@ label:before {
   background-color: #151414 !important;
   border-radius: 0px !important;
   color:#fff !important;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
 }
 /*account-orders*/
 .account .account-orders .ao-box-pick{
@@ -1783,7 +1728,7 @@ label:before {
   width: 100% !important;
 }
 .account .account-orders .aa-box h5{
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 14px;
   color: #151414;
   margin-bottom: 15px;
@@ -1800,7 +1745,7 @@ label:before {
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .account .account-orders .ao-link:after
 {
@@ -1838,7 +1783,7 @@ label:before {
   text-transform: capitalize;
   line-height: normal;
   margin-bottom: 6px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .account .account-orders .aof-value{
   font-weight: bold;
@@ -1870,7 +1815,7 @@ label:before {
   margin-top: 10px;
 }
 .account .account-address-view .aw-d-title {
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-weight: 500;
   font-size: 13px;
   color: #151414;
@@ -1894,7 +1839,7 @@ label:before {
   font-weight: 400;
   color: #878787;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin-left: 5px;
 }
 .account .account-address-view .aw-d-price {
@@ -1902,7 +1847,7 @@ label:before {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .account .account-address-view .aw-d-btns a {
   color: #fff;
@@ -1910,7 +1855,7 @@ label:before {
   font-size: .75rem;
   display: inline-block;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
 }
 .account .account-address-view .aw-d-btn-add{
   background-color: #151414;
@@ -1939,13 +1884,13 @@ label:before {
   margin: 0 !important;
   font-size: 14px  !important;
   font-weight: bold !important;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   text-transform: uppercase;
   color: #151414;
 }
 .brand-page .brand-content p{
   margin-top: 5px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-size: 13px  !important;
   color: #878787;
   line-height: 1.706;
@@ -1971,7 +1916,7 @@ label:before {
   float: right;
   font-size: 13px !important;
   color: #878787;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787;
   text-align: center;
   margin-top: 30px;
@@ -1981,7 +1926,7 @@ label:before {
 }
 .empty-cart-page .empty_image{
   text-align:center !important;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   margin:0px;
 }
 .empty-cart-page .empty_image {
@@ -2046,7 +1991,7 @@ label:before {
 }
 .new_arrivals .firstpart .col-70 .text2{
   font-size: 16px;
-  font-family: Montserrat !important;
+  font-family:  'Muli', sans-serif;
   color: #151414 !important;
   line-height: 1;
   text-align: center;
@@ -2062,7 +2007,7 @@ label:before {
 }
 .new_arrivals .firstpart .View_Complete_Collection{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #fff;
   line-height: 2.647;
   text-align: center;
@@ -2078,7 +2023,7 @@ label:before {
 }
 .new_arrivals .secondpart .col-50 .text1{
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   text-align: center;
   margin-top: 10px;
@@ -2086,7 +2031,7 @@ label:before {
 }
 .new_arrivals .secondpart .col-50 .text2{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #878787 !important;
   text-align: center;
   margin-top: 5px;
@@ -2103,14 +2048,7 @@ label:before {
   position: relative;
   text-align: center;
 }
-/*.aboutus .about_text1{
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: Cormorant !important;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 2px !important;
-}*/
+
 .aboutus .abouttext,
 .aboutus .core_values,
 .aboutus .team,
@@ -2155,7 +2093,7 @@ label:before {
 {
   color: #878787;
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   word-spacing: 4px;
   margin-left: auto;
   margin-right: auto;
@@ -2183,7 +2121,7 @@ label:before {
 }
 .aboutus .join_us .Rectangle_633 .View_openings{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #fff;
   line-height: 2.647;
   text-align: center;
@@ -2218,7 +2156,7 @@ label:before {
 }
 .single_item p{
   font-size: 14px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: #151414;
   line-height: 1.333;
   font-weight: bold;
@@ -2326,7 +2264,7 @@ label:before {
 }
 .account-tracking .status_text p{
   font-size: 13px;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   color: black !important;
   font-weight: bold;
   margin-top: 0px;
@@ -2335,6 +2273,77 @@ label:before {
 .account-tracking .status_text p:nth-of-type(2){
   font-size: 12px;
   color:grey !important;
-  font-family: Montserrat;
+  font-family:  'Muli', sans-serif;;
   font-weight: normal;
+}
+/**404 page**/
+.four_O_four .top_image,
+.four_O_four .categories{
+  margin-top:20px;
+}
+.four_O_four .top_image .heading{
+  font-family: 'Muli', sans-serif;",sans-serif;
+  color: #151414;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: .625rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right:auto;
+}
+.four_O_four .top_image .descrptn{
+  font-size: 16px;
+  font-family: Cormorant !important;
+  color: #151414;
+  font-weight: bold;
+  line-height: 1.607;
+  text-align: center;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right:auto;
+}
+/*gifting*/
+/*why choose kb*/
+.gifting .features {
+  background-color:#fcfcfc;
+  height: 300px;
+  margin-top: -6px;
+}
+.gifting .Why_choose_KB_ {
+  font-size: 28px;
+  font-family: Cormorant !important;
+  color: rgb(25, 25, 25);
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gifting .box{
+  margin-left:auto;
+  margin-right: auto; 
+}
+.gifting .box > img{
+  width: auto;
+}
+.gifting .img-center {
+    display: block;
+    margin: 0 auto;
+}
+.gifting .features .decrptn {
+  margin-top: 40px;
+  max-width: 210px;
+  height: 47px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gifting .decrptn p{
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;",sans-serif;
+  color: black !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }

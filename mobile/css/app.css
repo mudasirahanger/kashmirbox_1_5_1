@@ -2307,11 +2307,11 @@ label:before {
 /*why choose kb*/
 .gifting .features {
   background-color:#fcfcfc;
-  height: 300px;
+  height: auto;
   margin-top: -6px;
 }
 .gifting .Why_choose_KB_ {
-  font-size: 28px;
+  font-size: 25px;
   font-family: Cormorant !important;
   color: rgb(25, 25, 25);
   font-weight: normal;
@@ -2324,26 +2324,247 @@ label:before {
 .gifting .box{
   margin-left:auto;
   margin-right: auto; 
+  margin-bottom: 30px;
 }
 .gifting .box > img{
   width: auto;
 }
 .gifting .img-center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 .gifting .features .decrptn {
-  margin-top: 40px;
+  margin-top: 20px;
   max-width: 210px;
-  height: 47px;
   margin-left: auto;
   margin-right: auto;
 }
 .gifting .decrptn p{
-  font-size: 16px;
-  font-family: 'Muli', sans-serif;",sans-serif;
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
   color: black !important;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+/*range of gifts*/
+.gifting .Awesome_gifting_options {
+  font-family: 'Muli', sans-serif;
+  font-size:13px;
+  color: #878787;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin:0px;
+}
+.gifting .Choose_from_our_wide_range_of_gifts {
+  font-size:18px;
+  font-family: Cormorant !important;
+  color: #151414;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 450px;
+  margin-top: 10px;
+}
+/*Testimonials*/
+.gifting .What_our_clients_say {
+  font-size:18px;
+  font-family: Cormorant !important;
+  color: #151414;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+}
+.gifting .testimonails{
+  margin-top: 40px;
+}
+.gifting .testimonails img{
+  width:auto;
+}
+.gifting .testimonails .testimage > .image{
+  justify-content: center;
+}
+.gifting .testimonails .text2{
+  margin-bottom: 20px;
+}
+.gifting .testimonails .testimage  .text1{
+ 
+}
+.gifting .testimonails .text1 .MD___ITC{
+  margin-bottom: 0px;
+}
+.gifting .testimonail_text,
+.gifting .testimonails .text1 {
+  max-width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.gifting .testimonails .testimonail_text p{
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
+  color: #878787 !important;
+}
+.gifting .Mr__Prakash_Jha {
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gifting .MD___ITC {
+  font-size: 18px;
+  font-family: 'Muli', sans-serif;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*Personalized gifting*/
+.prsnlzd_gifts .Personalised_gifting {
+  font-family: Gotham-Book !important;
+  font-size: 15px;
+  color: #878787 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 15px;
+}
+.prsnlzd_gifts .Customise_you_gifts_as_per_your_need {
+  font-size: 28px;
+  font-family: Cormorant-SemiBold !important;
+  color: rgb(25, 25, 25) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 15px;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+.prsnlzd_gifts .per_gift{
+  position: relative;
+}
+/*smallbox*/
+.prsnlzd_gifts .Rectangle_841 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 7px 13px 0px rgba(143, 143, 143, 0.19);
+  position: absolute;
+  right: 10%;
+  bottom: -20%;
+  max-width: 320px;
+  height: 300px;
+  padding: 40px 25px 20px 25px;
+}
+.prsnlzd_gifts .Corporates {
+  font-size: 14px;
+  font-family: Gotham-Book !important;
+  color: rgb(57, 54, 54) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.prsnlzd_gifts .Gift_your_employees_lorem_ipsum_dolor_sit_amet_ {
+  font-size: 16px;
+  font-family: Gotham-Book !important;
+  color: rgb(25, 25, 25) !important;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.prsnlzd_gifts .Starts_at_just_399 {
+  font-size: 14px;
+  font-family: Gotham-Book !important;
+  color: rgb(196, 57, 75) !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.prsnlzd_gifts .Rectangle_842 {
+  background-color: rgb(40, 40, 40);
+  width: 255px;
+  height: 65px;
+}
+.prsnlzd_gifts .customise_now {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-family: Gotham;
+  color: white !important;
+}
+/*Social Impact*/
+.socialimpact{
+  padding: 0px !important;
+}
+.socialimpact .Social_impact {
+  font-size: 12px;
+  font-family: 'Muli', sans-serif;
+  color: #151414 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.929;
+ }
+.socialimpact .Rectangle_844 {
+   background-color:white;
+   padding: 5px 40px 20px 40px;
+   text-align: center;
+}
+.socialimpact .Everyone_is_a_part_of_social_impact {
+  font-size: 20px;
+  font-family: Cormorant !important;
+  color: black !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.464;
+ }
+.socialimpact .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
+  margin-top: 25px;
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
+  color:#878787;
+  line-height: 1.563;
+  max-width: 100%;
+  margin-bottom: 0px;
+ }
+ /**call back**/
+ .call_back{
+  margin-top:0px !important;
+ }
+.call_back .Rectangle_845 {
+  background-color: #151414;
+  width: auto;
+  height: auto;
+  padding: 30px 40px 30px 40px;
+}
+.call_back .WANT_US_TO_CALL_YOU_BACK_ {
+  margin-top:0px;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  color: white !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call_back .Etiam_tincidunt_lorem_orci__eget_congue_eros_al {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Cormorant !important;
+  color: white !important;
+  text-align: center;
+}
+.call_back .Rectangle_846 {
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  max-width: 300px;
+  height: 81px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.call_back .Request_a_call_back {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: black !important;
 }

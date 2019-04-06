@@ -2389,9 +2389,6 @@ label:before {
 .gifting .testimonails .text2{
   margin-bottom: 20px;
 }
-.gifting .testimonails .testimage  .text1{
- 
-}
 .gifting .testimonails .text1 .MD___ITC{
   margin-bottom: 0px;
 }
@@ -2422,6 +2419,9 @@ label:before {
   text-transform: uppercase;
 }
 /*Personalized gifting*/
+.gifting .personalised_pagination{
+  bottom: 235px;
+}
 .gifting .prsnlzd_gifts .Personalised_gifting {
   font-family: 'Muli', sans-serif;
   font-size:13px;

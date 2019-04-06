@@ -115,6 +115,7 @@
   height: 55px;
   border-color:#151414 !important;
   text-transform:uppercase;
+  width: 100% !important;
 }
 /*.featured_craft,.trending_in_craft{
   margin-top: -36px !important;
@@ -2364,7 +2365,6 @@ label:before {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  max-width: 450px;
   margin-top: 10px;
 }
 /*Testimonials*/
@@ -2375,6 +2375,7 @@ label:before {
   text-transform: uppercase;
   text-align: center;
   margin-top: 0px;
+  margin-bottom: 20px;
 }
 .gifting .testimonails{
   margin-top: 40px;
@@ -2421,83 +2422,73 @@ label:before {
   text-transform: uppercase;
 }
 /*Personalized gifting*/
-.prsnlzd_gifts .Personalised_gifting {
-  font-family: Gotham-Book !important;
-  font-size: 15px;
-  color: #878787 !important;
+.gifting .prsnlzd_gifts .Personalised_gifting {
+  font-family: 'Muli', sans-serif;
+  font-size:13px;
+  color: #878787;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 15px;
+  text-align: center;
+  margin:0px;
 }
-.prsnlzd_gifts .Customise_you_gifts_as_per_your_need {
-  font-size: 28px;
-  font-family: Cormorant-SemiBold !important;
-  color: rgb(25, 25, 25) !important;
+.gifting .prsnlzd_gifts .Customise_you_gifts_as_per_your_need {
+  font-size:18px;
+  font-family: Cormorant !important;
+  color: #151414;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
-  margin-left: 15px;
-  max-width: 450px;
-  margin-bottom: 40px;
-}
-.prsnlzd_gifts .per_gift{
-  position: relative;
+  text-align: center;
+  margin-top: 10px;
 }
 /*smallbox*/
-.prsnlzd_gifts .Rectangle_841 {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 7px 13px 0px rgba(143, 143, 143, 0.19);
-  position: absolute;
-  right: 10%;
-  bottom: -20%;
-  max-width: 320px;
-  height: 300px;
-  padding: 40px 25px 20px 25px;
+.gifting .prsnlzd_gifts .Rectangle_841 {
+  padding: 0px 20px 20px 20px;
 }
 .prsnlzd_gifts .Corporates {
   font-size: 14px;
-  font-family: Gotham-Book !important;
-  color: rgb(57, 54, 54) !important;
+  font-family: 'Muli', sans-serif;
+  color: #151414;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
-.prsnlzd_gifts .Gift_your_employees_lorem_ipsum_dolor_sit_amet_ {
-  font-size: 16px;
-  font-family: Gotham-Book !important;
-  color: rgb(25, 25, 25) !important;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 20px;
-}
-.prsnlzd_gifts .Starts_at_just_399 {
+.gifting .prsnlzd_gifts .Gift_your_employees_lorem_ipsum_dolor_sit_amet_ {
   font-size: 14px;
-  font-family: Gotham-Book !important;
-  color: rgb(196, 57, 75) !important;
+  font-family: 'Muli', sans-serif;
+  color: #151414;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.gifting .prsnlzd_gifts .Starts_at_just_399 {
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: rgb(196, 57, 75);
   font-weight: bold;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   margin-bottom: 30px;
 }
-.prsnlzd_gifts .Rectangle_842 {
-  background-color: rgb(40, 40, 40);
-  width: 255px;
+.gifting .prsnlzd_gifts .Rectangle_842 {
+  background-color:#151414;
+  max-width: 255px;
   height: 65px;
+  margin-left: auto;
+  margin-right:auto;
 }
-.prsnlzd_gifts .customise_now {
-  padding-top: 25px;
+.gifting .prsnlzd_gifts .customise_now {
+  padding-top: 20px;
   text-align: center;
   font-size: 15px;
-  font-family: Gotham;
+  font-family: 'Muli', sans-serif;
   color: white !important;
 }
 /*Social Impact*/
-.socialimpact{
+.gifting .socialimpact{
   padding: 0px !important;
 }
-.socialimpact .Social_impact {
+.gifting .socialimpact .Social_impact {
   font-size: 12px;
   font-family: 'Muli', sans-serif;
   color: #151414 !important;
@@ -2505,21 +2496,23 @@ label:before {
   text-transform: uppercase;
   line-height: 2.929;
  }
-.socialimpact .Rectangle_844 {
+.gifting .socialimpact .Rectangle_844 {
    background-color:white;
    padding: 5px 40px 20px 40px;
    text-align: center;
 }
-.socialimpact .Everyone_is_a_part_of_social_impact {
+.gifting .socialimpact .Everyone_is_a_part_of_social_impact {
   font-size: 20px;
   font-family: Cormorant !important;
   color: black !important;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.464;
+  margin-top: 0px;
+  margin-bottom: 0px;
  }
-.socialimpact .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
-  margin-top: 25px;
+.gifting .socialimpact .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
+  margin-top: 20px;
   font-size: 13px;
   font-family: 'Muli', sans-serif;
   color:#878787;
@@ -2527,33 +2520,36 @@ label:before {
   max-width: 100%;
   margin-bottom: 0px;
  }
+.gifting .socialimpact .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc:nth-of-type(even){
+  margin-top: 15px;
+ }
  /**call back**/
- .call_back{
+.gifting .call_back{
   margin-top:0px !important;
  }
-.call_back .Rectangle_845 {
+.gifting .call_back .Rectangle_845 {
   background-color: #151414;
   width: auto;
   height: auto;
   padding: 30px 40px 30px 40px;
 }
-.call_back .WANT_US_TO_CALL_YOU_BACK_ {
+.gifting .call_back .WANT_US_TO_CALL_YOU_BACK_ {
   margin-top:0px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Muli', sans-serif;
   color: white !important;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
-.call_back .Etiam_tincidunt_lorem_orci__eget_congue_eros_al {
+.gifting .call_back .Etiam_tincidunt_lorem_orci__eget_congue_eros_al {
   margin-top: 20px;
   font-size: 20px;
   font-family: Cormorant !important;
   color: white !important;
   text-align: center;
 }
-.call_back .Rectangle_846 {
+.gifting .call_back .Rectangle_846 {
   margin-top: 40px;
   background-color: rgb(255, 255, 255);
   max-width: 300px;
@@ -2561,10 +2557,110 @@ label:before {
   margin-left: auto;
   margin-right: auto;
 }
-.call_back .Request_a_call_back {
+.gifting .call_back .Request_a_call_back {
   padding-top: 25px;
   text-align: center;
   font-size: 14px;
   font-family: 'Muli', sans-serif;
   color: black !important;
+}
+/********Gift card******/
+.gifting_card .card_graphics{
+  margin-top:20px;
+}
+.gifting_card .text_and_form .text{
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gifting_card .text_and_form .text .bold{
+  font-size: 14px;
+  color: #151414 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin-bottom: 0px;
+  font-family: 'Muli', sans-serif;
+}
+.gifting_card .text_and_form .text >h1{
+  font-size: 28px;
+  color: #151414;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.607;
+  margin-top: 5px;
+  font-family: Cormorant !important;
+}
+.gifting_card .text_and_form .text .normal{
+  font-size: 16px;
+  color: #878787;
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5;
+}
+.gifting_card .text_and_form form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.gifting_card .text_and_form form h2{
+  font-size: 14px;
+  color: #151414;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.gifting_card form .jj{
+  display: flex;
+}
+.gifting_card form .jj .box p{
+  font-size: 14px;
+  color: #878787;
+  line-height: 1.5;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+.gifting_card form .jj .box{
+  width: 50%;
+}
+.gifting_card form .jj .full-width{
+  width:100% !important;
+}
+.gifting_card .adjust_top{
+  margin-top:15px;
+}
+.gifting_card form .jj .full-width input{
+  width: 99% !important;
+}
+.gifting_card form .jj .box input{
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(202, 202, 202);
+  background-color: rgba(0, 0, 0, 0);
+  width: 97%;
+  height: 54px;
+  font-size: 13px;
+  color: #878787;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Muli', sans-serif;
+}
+.gifting_card form button{
+  background-color: rgb(40, 40, 40);
+  width: 99% !important;
+  height: 74px;
+  font-size: 14px;
+  font-family: 'Muli', sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.5;
+  border-color:#151414;
+}
+.gifting_card button:active,button:focus{
+  outline:none;
 }

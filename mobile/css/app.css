@@ -299,6 +299,9 @@
   text-transform: uppercase;
   font-family:  'Muli', sans-serif;
 }
+.category .category_list{
+  margin-bottom: 60px;
+}
 .category_card{
   margin:0px !important;
   border-radius: 0px;
@@ -307,6 +310,8 @@
   position: static;
   display:block;
   text-transform: capitalize;
+  min-height: 120px;
+  max-height: 130px;
 }
 .category_card >.card-footer>/*.name_container*//*used for wishlist icon*/{
   display: flex;
@@ -676,6 +681,7 @@
   background-color: #151414;
   color: #fff;
   font-size: 15px;
+  height: 100%;
 }
 .product .cart_wishlist button{
   background: #151414 !important;

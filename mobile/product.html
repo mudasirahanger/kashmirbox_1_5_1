@@ -814,7 +814,7 @@
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-      <div class="page product" data-name="product">
+      <div class="page" data-name="product">
         <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
@@ -834,7 +834,7 @@
               
                <i class="f7-icons">heart_fill</i>
               </a>
-               <a href="empty_cart.html" class="link icon-only material:favorite external" data-panel="right">
+              <a href="empty_cart.html" class="link icon-only material:favorite external" data-panel="right">
               <i class="icon material-icons">shopping_cart</i> 
               </a>
             </div>
@@ -920,7 +920,7 @@
              <div class="row type_size">
               <div class="col">
                  <div class="choose_type">              
-                   <h3>choosetype</h3>
+                   <h3>choose type</h3>
                    <div class="item-input-wrap input-dropdown-wrap type_drpdwn">
                      <select placeholder="Please choose...">
                       <option value="Male">Male</option>
@@ -938,6 +938,12 @@
                      <button class="col button button-outline">L</button>
                    </div>
                  </div>
+              </div>
+            </div>
+            <div class="row choose_qty">
+              <div class="col-30 qty">
+                <h3>qty:-</h3>
+                 <input class="form-control" type="text" name="quantity[234863]" value="1" size="10">
               </div>
             </div>
             <div class="block">
@@ -1132,6 +1138,7 @@
             <div class="toolbar-inner cart_wishlist">
                 <button class="col button button-fill wishlist"><!--<i class="f7-icons">heart_fill</i>-->wishlist</button>
                 <button class="col button button-fill cart"><!--<i class="icon material-icons">shopping_cart</i>-->add to cart</button>
+                <button class="col button button-fill cart hidden go_to_cart"><a href="" class="external">Go to cart</a></button>
             </div>
           </div>
         </div>

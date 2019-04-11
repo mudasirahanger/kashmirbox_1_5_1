@@ -13,6 +13,24 @@
   font-size: 21px;
   color: #151414;
 }
+.header_icons .cart_icon{
+  position: relative;
+}
+.header_icons .cart{
+    border-radius: 50%;
+    background-color: #ed143d;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+    font-family:  'Muli', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2;
+    position: absolute;
+    top:9%;
+    font-size: 13px;
+}
 .top_nav .logo{
   color: #151414;
 }
@@ -1914,10 +1932,39 @@ label:before {
 }
 .search-page .chip_row
 {
-    margin:13px 4px !important;
-    text-align:center !important;
+  margin:13px 4px !important;
+  text-align:center !important;
 }
-/* End Search*/
+.search-page .search_field{
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.search-page .search_field .input_field {
+  border: 1px solid #e3e3e3;
+  font-family: 'Muli', sans-serif;
+  font-size: 13px;
+  margin-left: auto;
+  height: 40px;
+  width: 70%;
+  padding:6px;
+  color: #878787;
+  font-style: italic;
+}
+.search-page .search_field .submit{
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  margin-right: auto;
+  height: 40px;
+  width: 30%;
+  color: #fff;
+  background-color: #151414;
+  border-radius:0px;
+}
+.search-page .search_field > .col-90{
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+}
 /* Brand page*/
 .brand-page .brand-content .headings{
   margin: 0 !important;

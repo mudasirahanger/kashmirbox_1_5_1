@@ -17,19 +17,19 @@
   position: relative;
 }
 .header_icons .cart{
-    border-radius: 50%;
-    background-color: #ed143d;
-    width: 15px;
-    height: 15px;
-    text-align: center;
-    color: #fff;
-    font-family:  'Muli', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1.2;
-    position: absolute;
-    top:15%;
-    font-size: 13px;
+  border-radius: 50%;
+  background-color: #ed143d;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  color: #fff;
+  font-family:  'Muli', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.2;
+  position: absolute;
+  top:15%;
+  font-size: 13px;
 }
 .top_nav .logo{
   color: #151414;
@@ -419,6 +419,68 @@
 .category .sort_links a{
   font-size:13px !important;
   font-family:  'Muli', sans-serif;
+}
+.md .filter_tabber a{
+  color:black !important;
+  text-transform: uppercase;
+}
+.md .filter_tabber .apply{
+  font-weight: bold !important;
+}
+.filter_popup h3{
+  border-bottom: 1px solid #e3e3e3;
+  padding-left: 12px;
+  padding-bottom: 10px;
+  font-size: 14px !important;
+}
+.filter_popup .category_list{
+  padding: 0;
+  height: 100%;
+  border-right: 1px solid #e3e3e3;
+  overflow-y: scroll;
+  height: calc(112vh - 150px);
+}
+.filter_popup .category_list ul,
+.filter_popup .filter_list ul{
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.filter_popup .category_list ul  li{
+  background: #f7f7f7;
+  font-size: 13px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 15px;
+  padding-left: 15px;
+  min-height: 35px;
+  font-family:  'Muli', sans-serif;
+  text-transform: capitalize;
+}
+.filter_popup .category_list a{
+  color: #151414;
+}
+.filter_popup .category_list ul .selectedFilter{
+  border-left: 2px solid #151414;
+  background: #fff;
+  font-weight: 700;
+}
+.filter_popup .filter_list ul li{
+  font-size: 13px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 15px;
+  padding-left: 15px;
+  min-height: 35px;
+  font-family:  'Muli', sans-serif;
+  text-transform: capitalize;
+}
+.filter_popup .filter_list{
+  padding-right: 16px;
+  overflow-y: scroll;
+  height: calc(112vh - 150px);
+}
+.filter_popup .filter_list input{
+  margin: 0 15px 0 0;
 }
 /*signin popup*/
 .signin_popup{
@@ -899,7 +961,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.order_items h3{
+.order_items h3,
+.filter_popup h3{
   font-family:  'Muli', sans-serif;;
   font-size: 16px;
   font-weight: bold;

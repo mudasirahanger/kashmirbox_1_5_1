@@ -117,31 +117,31 @@
   margin-top: rem(20px);
   margin-bottom: rem(20px);
 }
-.product_details_incart>.product_wrapper>div{
+.product_details_incart>.product_wrapper .image_div{
   margin-top: rem(20px);
   margin-bottom: rem(20px);
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate,
-.product_details_incart>.product_wrapper>div>.type
+.product_details_incart .product_wrapper .name_and_rate,
+.product_details_incart .product_wrapper .type
 {
   display: flex;
   margin-bottom: rem(5px);
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate>p,div>.type>p,
-.product_details_incart>.product_wrapper>div>.name_and_price>p{
+.product_details_incart .product_wrapper .name_and_rate p,
+.product_details_incart .product_wrapper .name_and_price p{
   color: $brand-color;
   font-weight: bold;
   font-size: rem(15px);
   font-family: $ff-open-sans;
 }
-.product_details_incart>.product_wrapper>div>.name_and_price{
+.product_details_incart .product_wrapper .name_and_price{
   margin-top: rem(10px);
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate>.rate{
+.product_details_incart .product_wrapper .name_and_rate .rate{
   margin-left: auto;
   display: flex;
 }
-.product_details_incart>.product_wrapper>div>.sold_by>.rate>p{
+.product_details_incart .product_wrapper .sold_by .rate p{
   margin-left: rem(5px);
   border-left: 1px solid $grey;
   padding-left: rem(5px);
@@ -149,27 +149,29 @@
   font-size: rem(14px);
   font-family: $ff-open-sans;
 }
-.product_details_incart>.product_wrapper>div>.name_and_rate>.rate>s{
+.product_details_incart .product_wrapper .name_and_rate .rate s{
   color: $brand-color;
   font-size: rem(14px);
   font-family: $ff-open-sans;
 }
-.product_details_incart>.product_wrapper>div>.sold_by>p,div>.type>p{
+.product_details_incart .product_wrapper .sold_by p,
+.product_wrapper .type  p{
   font-weight: normal;
   margin-bottom: rem(5px);
   color:$grey;
   font-size: rem(13px);
+  font-family: $ff-open-sans;
 }
 .divider{
   margin-top: rem(50px);
 }
-.product_wrapper>div>.remove_and_wishlist a{
+.product_wrapper .remove_and_wishlist > a{
   text-decoration: none;
 }
-.product_wrapper>div>.remove_and_wishlist a:nth-of-type(2){
+.product_wrapper .remove_and_wishlist > a:nth-of-type(2){
   margin-left: auto;
 }
-.product_details_incart>.product_wrapper>div>.remove_and_wishlist a p{
+.product_details_incart .product_wrapper .remove_and_wishlist > a > p{
   color: $grey;
   font-size: rem(14px);
   font-family: $ff-open-sans;
@@ -178,7 +180,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.product_details_incart>.product_wrapper>div>.remove_and_wishlist a span{
+.product_details_incart .product_wrapper .remove_and_wishlist > a > span{
   color: $orange;
   font-size: rem(14px);
   font-family: $ff-open-sans;
@@ -187,10 +189,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-.product_details_incart>.product_wrapper>div>.size_and_quantity>p:nth-of-type(2){
+.product_details_incart .product_wrapper .size_and_quantity p:nth-of-type(2){
   margin-left: rem(20px);
 }
-.product_details_incart>.product_wrapper>div>.size_and_quantity>input{
+.product_details_incart .product_wrapper .size_and_quantity input{
   width:rem(50px);
   margin-left: rem(10px);
   font-family: $ff-open-sans;
@@ -244,6 +246,9 @@
 .rate_details>.apply_coupon>p>a{
   color: $red-color;
 }
+.rate_details>.apply_coupon>p>a:hover{
+  text-decoration:none;
+}
 .rate_details>.total{
   font-weight: bold;
   margin-bottom: rem(10px);
@@ -252,7 +257,7 @@
   font-size: rem(18px);
 }
 /*checkout*/
-.rate_details>.checkout{
+.rate_details .checkout{
   background: $brand-color;
   width: 100% !important;
   border:none;
@@ -290,23 +295,10 @@
   font-weight: bold;
   margin-top: rem(20px);
 }
-.modal-footer .button_form{
-  display:flex;
-  justify-content: center;
+.applyModal .button_form{
+  text-align:center;
 }
-.button_form > a{
-  text-decoration: none;
-}
-.button_form > a > p{
-  font-size: rem(16px);
-  font-family: $ff-open-sans;
-  color:$orange;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-right: rem(20px);
-  margin-top: rem(5px);
-}
-.button_form > input{
+.button_form  button{
   width: rem(130px);
   height: rem(40px);
   background-color: $brand-color;

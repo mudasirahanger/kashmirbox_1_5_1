@@ -50,7 +50,7 @@ center{
   font-size: rem(14px);
   color: $brand-color;
   font-family: $ff-open-sans;
-  font-weight:bold;
+  font-weight: normal !important;
   margin-right: rem(5px);
 }
 .column>a>center strike{
@@ -78,9 +78,9 @@ center{
   text-align: left;
 }
 #accordion .panel, #accordionFilter .panel{
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
 }
 .panel-heading {
     font-family: $ff-open-sans;
@@ -171,6 +171,9 @@ input {
 }
 .colour-colorDisplay[data-colorhex='white'], .colour-colorDisplay[data-colorhex='off white'] {
     border: 1px solid #d6d6d6;
+}
+.filter_list .search{
+  width:100%;
 }
 .btn-black{
   background-color:$brand-color;

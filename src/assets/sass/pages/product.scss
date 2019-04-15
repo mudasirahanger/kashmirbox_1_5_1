@@ -1,3 +1,15 @@
+.product .alert_container{
+  font-family: $ff-open-sans;
+  font-size: rem(14px);
+}
+.alert_container .btn-black:hover,
+.alert_container .btn-black:active{
+  color:$white-color;
+  text-decoration:none;
+}
+.alert_container .btn-black{
+  margin-left:rem(10px);
+}
 .product_images{
     margin-top: rem(10px);
     margin-bottom: rem(20px);
@@ -10,9 +22,9 @@
 }
 .product_image{
   flex-flow: column;
-    position: sticky;
-    top: 50px;
-    bottom: 0;
+  position: sticky;
+  top: 50px;
+  bottom: 0;
 }
 .product_image>div{
     padding-left: 0px;
@@ -38,16 +50,16 @@
 }
 .product_info>a> h3{
 	font-family: $ff-open-sans;
-  font-size: rem(21px);
+  font-size: rem(25px);
   color: $brand-color;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
 }
 .product_info> .product_name{
    font-family: $brand-font;
    color: #a8a1a1;
    font-size: rem(28px);
-   margin-top: rem(30px);
+   margin-top: rem(35px);
    margin-bottom: rem(5px);
 }
 .product_info>.share>.share_popover{
@@ -92,10 +104,10 @@
 }
 .product_info>.product_price>strong{
 	font-size: rem(23px);
-    color: $brand-color;
-    font-family: $ff-open-sans;
-    font-weight: bold;
-    margin-right: rem(10px);
+  color: $brand-color;
+  font-family: $ff-open-sans;
+  font-weight: normal;
+  margin-right: rem(10px);
 }
 .product_info>.product_price>s{
     font-size: rem(18px);
@@ -195,7 +207,8 @@
 }
 .product_info>.size>.quantity input{
   font-family:$ff-open-sans;
-  width: 50%;
+  width: 10%;
+  padding: 3px 8px;
 }
 .product_info>.size>.quantity input:hover,
 .product_info>.size>.quantity input:active,

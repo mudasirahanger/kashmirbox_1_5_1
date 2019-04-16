@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant|Open+Sans');
-@import url('https://fonts.googleapis.com/css?family= 'Muli', sans-serif;');
-@import url('https://fonts.googleapis.com/css?family= 'Muli', sans-serif;:200,300,900');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600i');
 /* Your app styles here */
 /*menu*/
 .top_nav{
@@ -43,6 +42,7 @@
  font-size: 10px;
  color: #151414 !important;
  font-weight: bold;
+ font-family:  'Muli', sans-serif;
 }
 .item-inner>.menu_item{
   text-transform: uppercase;	
@@ -51,11 +51,14 @@
   font-family:  'Muli', sans-serif;
 }
 /*sub menu*/
+.item-inner>.submenu_item{
+  text-transform: capitalize;
+}
 .item-inner>.submenu_item,
 .accordion-item-content>.particular_item>a>p{
   font-size: 13px;
-  text-transform: capitalize;
   color: #151414;
+  font-family:  'Muli', sans-serif;
 }
 .home_footer{
  background-color: #fff !important; 

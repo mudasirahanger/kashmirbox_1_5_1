@@ -48,6 +48,7 @@
   font-size: rem(25px);
   color: $brand-color;
   position: absolute;
+  font-weight:bold;
 }
 .product_info> .product_name{
   font-family: $brand-font;
@@ -100,7 +101,6 @@
 	font-size: rem(23px);
   color: $brand-color;
   font-family: $ff-open-sans;
-  font-weight: normal;
   margin-right: rem(10px);
 }
 .product_info>.product_price>s{

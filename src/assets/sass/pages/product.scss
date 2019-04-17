@@ -31,7 +31,7 @@
 }
 .features> p{
   font-family: $ff-open-sans;
-  font-size: rem(16px);
+  font-size: rem(13px);
   color: $brand-color;
   text-align: center;
   padding-top: rem(10px);
@@ -410,9 +410,9 @@ center{
     justify-content: center;
 }
 .product-img >.three_features >.features{
-    width: rem(147px);
-    margin-right: rem(4px);
-    margin-left: rem(4px);
+    margin-right: auto;
+    width: 28%;
+    margin-left: auto;
 }
 /*slider*/
 .left-col {

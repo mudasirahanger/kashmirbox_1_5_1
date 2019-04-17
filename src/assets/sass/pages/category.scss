@@ -51,7 +51,6 @@ center{
   font-size: rem(14px);
   color: $brand-color;
   font-family: $ff-open-sans;
-  font-weight: normal !important;
   margin-right: rem(5px);
 }
 .column>a>center strike{
@@ -186,4 +185,8 @@ input {
   padding: rem(10px);
   font-family: $ff-open-sans;
   text-transform: uppercase;
+}
+.btn-black:hover,.btn-black:active {
+  color: #fff;
+  text-decoration: none;
 }

@@ -320,8 +320,10 @@
   text-transform: uppercase;
   font-family:  'Muli', sans-serif;
 }
-.category .category_list{
-  margin-bottom: 60px;
+.category .category_list,
+.search-page .category_list
+{
+  margin-bottom: 56px;
 }
 .category_card{
   margin:0px !important;
@@ -767,30 +769,31 @@
   font-weight: bold;
   font-size: 14px;
   width:40%;
-}
-.cart_wishlist .cart{
-  background-color: #151414;
-  color: #fff;
-  font-size: 15px;
-  height: 100%;
-  width: 60%;
-}
-.cart_wishlist button{
-  background: #151414 !important;
-  color: #fff;
   text-transform: uppercase;
   border-radius: 0px;
   font-family:  'Muli', sans-serif;
 }
-.cart_wishlist button{
-  width: 95%;
-  border-radius: 0px !important;
-}
-.cart_wishlist .add_to_wishlist{
-  width: 70%;
+.cart_wishlist .cart{
+  background-color: #151414 !important;
+  color: #fff;
+  font-size: 15px;
+  height: 100%;
+  width: 60%;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-family:  'Muli', sans-serif;
 }
 .go_to_cart{
   display: none;
+  background-color: orange !important;
+  font-size: 15px;
+  height: 100% !important;
+  width: 60%;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  font-family:  'Muli', sans-serif;
+  text-align: center;
+  line-height: 3.5;
 }
 /*more colors and delivery options*/
 .product_page .more_colors{
@@ -901,9 +904,12 @@
   margin-bottom: 0px;
 }
 .cart_page .checkout,
-.cart_page .checkout a,
-.cart_page .checkout button{
+.cart_page .checkout a
+{
   background-color: #151414 !important;
+  line-height: 2.5;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 }
 .cart_page .tagline,
@@ -1990,7 +1996,6 @@ label:before {
   padding: 8px 17px;
   margin-right: 5px;
 }
-/*css files of sameer*/
 /* Search*/
 .search-page.chip_btns{
   margin:none !important;

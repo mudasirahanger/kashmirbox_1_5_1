@@ -814,7 +814,7 @@
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div class="page search-page" data-name="search-page">
+        <div class="page" data-name="search-page">
         <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
@@ -841,14 +841,14 @@
           </div>
         </div>
           <!-- Scrollable page content -->
-          <div class="page-content">
+          <div class="page-content search-page">
             <div class="row search_field">
               <div class="col-90">
                 <input type="text" name="name" placeholder="What can Kashmir Offer You Today?" class="input_field">
                 <input type="submit" class="button submit" value="Search">
               </div>
             </div>
-            <div class="row no-gap">
+            <div class="row no-gap category_list">
              <!-- Each "cell" has col-[width in percents] class -->
              <div class="col-50">
                <div class="card category_card">
@@ -1079,7 +1079,6 @@
               </div>
              </div>
           </div>
-          <div class="preloader infinite-scroll-preloader"></div>
           </div>
           <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
             <div class="toolbar-inner sort_filter_icons">

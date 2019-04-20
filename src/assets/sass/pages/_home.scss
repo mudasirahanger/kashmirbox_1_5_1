@@ -38,6 +38,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.recently_viewed_container > p{
+  margin-bottom: rem(-15px);
+}
 p.Heading{
   font-size: rem(30px);
   font-family: $brand-font;

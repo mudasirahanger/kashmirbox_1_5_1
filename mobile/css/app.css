@@ -32,6 +32,8 @@
 }
 .top_nav .logo{
   color: #151414;
+  font-weight: bold;
+  font-family: Cormorant;
 }
 .page img{
   width: 100%;
@@ -44,11 +46,22 @@
  font-weight: bold;
  font-family:  'Muli', sans-serif;
 }
+.menu-close{
+ position: fixed;
+ top: 5px;
+ right: 27px;
+ font-size: 17px;
+ font-weight: lighter;
+ color: #878787 !important;
+}
 .item-inner>.menu_item{
   text-transform: uppercase;	
   font-size: 13px;
   color:#151414;
   font-family:  'Muli', sans-serif;
+}
+.item-inner > .sale{
+  color:red !important;
 }
 /*sub menu*/
 .item-inner>.submenu_item{
@@ -333,8 +346,8 @@
   position: static;
   display:block;
   text-transform: capitalize;
-  min-height: 120px;
-  max-height: 130px;
+  min-height: 110px;
+  padding: 4px 8px;
 }
 .category_card >.card-footer>/*.name_container*//*used for wishlist icon*/{
   display: flex;
@@ -366,15 +379,6 @@
   font-size: 11px;
   color: red;
 }
-/*.name_container >a> .wishlist_icon {
-  color: #151414 !important;
-  display: inline-block;
-  position: absolute;
-  bottom: 43px;
-  right: 4px;
-  top: 1px;
-  font-size: 18px;
-}*/
 .md .card-footer a.link, .md .card-header a.link{
   height: auto;
 }
@@ -410,22 +414,23 @@
 .account .account-address-view .ratings{
   display: flex;
   justify-content: center;
+  margin-top: 5px;
 }
 .category_card .f7-icons,
 .account .account-address-view .ratings .f7-icons{
     color: #878787;
-    font-size: 16px;
+    font-size: 13px;
 }
 .category_card .active,
 .account .account-address-view .ratings .active
  {
-    color: rgb(255, 165, 0) !important;
+    color:#151414 !important;
 }
 .category .sort_links a{
   font-size:13px !important;
   font-family:  'Muli', sans-serif;
 }
-.md .filter_tabber a{
+.md .filter_tabber .apply{
   color:black !important;
   text-transform: uppercase;
 }
@@ -486,6 +491,10 @@
 }
 .filter_popup .filter_list input{
   margin: 0 15px 0 0;
+}
+.filter_popup  .cancel{
+  color: #878787 !important;
+  text-transform: uppercase;
 }
 /*signin popup*/
 .signin_popup{
@@ -637,10 +646,10 @@
 }
 .product_name_container h5{
  text-transform: capitalize;
- font-family:  'Muli', sans-serif;
+ font-family: Cormorant !important;
  margin: 0px;
- font-size: 18px;
- color: #878787;
+ font-size: 22px;
+ color: #494949;
  font-weight: normal;
 }
 .product_name_container h3{
@@ -687,9 +696,10 @@
 }
 .product_name_container .ratings{
   display: flex;
+  margin-top: 5px;
 }
 .product_name_container .active{
-  color: rgb(255, 165, 0) !important;
+  color: #151414 !important;
 }
 .product_name_container .f7-icons{
   color: #878787;
@@ -849,15 +859,15 @@
 }
 .goes_with_this h2,.similar_products h2{
     margin-bottom: 20px;
-    font-family:  'Muli', sans-serif;;
+    font-family: Cormorant !important;
     font-size: 1.25rem;
     color: #151414;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
-.similar_products{
-  margin-top: 50px !important;
+.goes_with_this .category_card{
+  margin-bottom:10px !important;
 }
 .similar_products .swiper-pagination-bullets{
   bottom: 0px;

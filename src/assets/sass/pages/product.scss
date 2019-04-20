@@ -52,7 +52,7 @@
 }
 .product_info> .product_name{
   font-family: $brand-font;
-  color: #a8a1a1;
+  color: #494949;
   font-size: rem(28px);
   margin-top: rem(35px);
   margin-bottom: rem(5px);
@@ -180,7 +180,7 @@
   word-spacing: rem(2px);
 }
 .product_info>.more_colors>img{
-	width: 20%;
+	width: 19%;
   height: auto;
   padding: 15px 0px 15px 0px;
   margin-right: rem(15px);
@@ -307,6 +307,7 @@
 /*moreinfo*/
 .product_info>.description>.product_details{
   margin-top:rem(10px);
+  margin-bottom:rem(20px);
 }
 .product_info>.description>.product_details>h6{
     font-family:$ff-open-sans;
@@ -330,7 +331,7 @@
 .description>.product_description{
   margin-top:0px !important;
   padding:0px;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 .description>.heading>h5{
   margin-bottom:0px;
@@ -387,13 +388,16 @@ center{
   color:$red-color;
 }
 /*view similar products*/
+.similar_products{
+  margin-bottom: rem(35px);
+}
 .similar_products,.goes_with{
-    margin-top: rem(50px);
+  margin-top: rem(50px);
 }
 .similar_products h3,.goes_with h3{
     margin-bottom: rem(30px);
     margin-left: rem(15px);
-    font-family: $ff-open-sans;
+    font-family: $brand-color;
     font-size: rem(20px);
     color: $brand-color;
     font-weight: bold;

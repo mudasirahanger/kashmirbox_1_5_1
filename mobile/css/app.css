@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant|Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600i');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i');
 /* Your app styles here */
+/*font-family: 'Muli', sans-serif;*/
 /*menu*/
 .top_nav{
 	background-color: #fff !important;
@@ -22,7 +25,7 @@
   height: 15px;
   text-align: center;
   color: #fff;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   line-height: 1.2;
@@ -30,10 +33,18 @@
   top:15%;
   font-size: 13px;
 }
-.top_nav .logo{
-  color: #151414;
+.ios .navbar a.link{
+  color: #151414 !important;
   font-weight: bold;
-  font-family: Cormorant;
+  font-family: Cormorant !important;
+}
+.top_nav .logo{
+ color: #151414;
+ font-weight: bold;
+ font-family: Cormorant; 
+}
+.ios .navbar .title{
+  left: -30px !important;
 }
 .page img{
   width: 100%;
@@ -44,7 +55,7 @@
  font-size: 10px;
  color: #151414 !important;
  font-weight: bold;
- font-family:  'Muli', sans-serif;
+ font-family:  'Montserrat', sans-serif;
 }
 .menu-close{
  position: fixed;
@@ -58,7 +69,7 @@
   text-transform: uppercase;	
   font-size: 13px;
   color:#151414;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .item-inner > .sale{
   color:red !important;
@@ -71,7 +82,7 @@
 .accordion-item-content>.particular_item>a>p{
   font-size: 13px;
   color: #151414;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .home_footer{
  background-color: #fff !important; 
@@ -84,7 +95,7 @@
   margin-left: 13px !important;
 }
 .sign_in_up>p{
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .sign_in_up>p>a{
    color: #151414;
@@ -105,7 +116,7 @@
 }
 .subtitle{
   font-size: 16px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: #878787 !important;
   line-height: 1;
   text-align: center;
@@ -134,7 +145,7 @@
   width: 100%;
   padding: 20px;
   height: 55px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-size: 13px;
   color: #878787;
   font-style: italic;
@@ -145,7 +156,7 @@
   color:#fff;
   font-size: 13px;
   border-color: #151414;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   height: 55px;
   border-color:#151414 !important;
   text-transform:uppercase;
@@ -185,7 +196,7 @@
   height: 0px !important;
 }
 .more_about .accordion-item .item-title{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   font-size: 14px;
   margin-left: auto;
@@ -196,7 +207,7 @@
 }
 .more_about .accordion-item-content .headings{
   color: #151414;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 14px;
   font-weight: bold;
 }
@@ -241,13 +252,13 @@
 }
 .more_about .first_image .text > .heading{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: bold;
   color: #151414;
 }
 .more_about .first_image .text > p{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color:#878787;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -265,7 +276,7 @@
   margin-left: auto;
 }
 .more_about .need_help .text{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   color: #151414;
 }
@@ -282,7 +293,7 @@
   text-align: justify;
   line-height: 21px;
   color: #878787;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size:13px;
 }
  .more_about .convenient_connection .gstin{
@@ -299,7 +310,7 @@
 .more_about .payment_partners h2{
   font-size: 14px;
   color: #151414;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin: 0px 0px 25px 0px;
 }
 .more_about .payment_partners img{
@@ -316,7 +327,7 @@
 }
 .more_about .copyright p{
   color: #fff;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   margin: 5px;
 }
@@ -331,7 +342,7 @@
   color: #151414;
   font-size: 12px;
   text-transform: uppercase;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .category .category_list,
 .search-page .category_list
@@ -346,7 +357,7 @@
   position: static;
   display:block;
   text-transform: capitalize;
-  min-height: 110px;
+  min-height: 100px;
   padding: 4px 8px;
 }
 .category_card >.card-footer>/*.name_container*//*used for wishlist icon*/{
@@ -358,12 +369,12 @@
 .name_container> h3{
   margin: 0px;
   font-size:13px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color:#151414;
   max-width: 100%;
 }
 .price-container span{
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .price-container .price{
   font-weight: bold;
@@ -400,7 +411,7 @@
 }
 .sort_filter_icons .f7-demo-icon-label{
   margin-left: 10px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   font-weight: bold;
 }
@@ -428,7 +439,7 @@
 }
 .category .sort_links a{
   font-size:13px !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .md .filter_tabber .apply{
   color:black !important;
@@ -464,7 +475,7 @@
   padding-top: 15px;
   padding-left: 15px;
   min-height: 35px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   text-transform: capitalize;
 }
 .filter_popup .category_list a{
@@ -481,7 +492,7 @@
   padding-top: 15px;
   padding-left: 15px;
   min-height: 35px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   text-transform: capitalize;
 }
 .filter_popup .filter_list{
@@ -519,7 +530,7 @@
   font-size: 18px;
   margin-top: 15px;
   color: #151414;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   letter-spacing: -1px;
 }
 .signin_popup .card .textboxHead{
@@ -533,7 +544,7 @@
   width:75% !important;
 }
 .signin_popup .textboxHead input{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size:12px;
   padding: 10px;  
   width: 100%;
@@ -541,7 +552,7 @@
 .signin_popup .textboxHead > a {
   float: right;
   margin-right:5px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: red;
   position: absolute;
   top: 10px;
@@ -558,7 +569,7 @@
   border: 1px solid #151414 !important;
   margin-bottom: 20px;
   border-radius: 0px !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: #fff;
   height: 52px;
   font-size: 13px;
@@ -578,7 +589,7 @@
   font-size: 13px;
   display: inline-block;
   text-decoration: none;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   width: 67%;
 }
 /*Product page*/
@@ -592,7 +603,7 @@
   color: #151414;
   font-size: 12px;
   text-transform: uppercase;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   display:flex;
 }
 .second_nav .product_block >p:nth-of-type(2){
@@ -602,19 +613,69 @@
    float:right;
    margin-right:5px;
 }
+/*slider arrows*/
+.md .next_slider_mainhome,
+.md .previous_slider_mainhome{
+  margin-top: 0px !important;
+  background-size: 36px 36px !important;
+  top: 45% !important;
+}
+.md .next_slider_main,
+.md .previous_slider_main{
+  margin-top: 0px !important;
+  background-size: 26px 26px !important;
+  top: 80% !important;
+}
+.md .previous_slider_goeswith{
+  left: 0px;
+}
+.md .next_slider_goeswith
+{
+  right: 0px;
+}
+.md .previous_slider_otheroptions{
+  left: -4px;
+}
+.md .next_slider_otheroptions{
+  right:-4px;
+}
+.md .previous_slider_goeswith,
+.md .next_slider_goeswith{
+  background-size: 26px 26px !important;
+  top: 50% !important;
+}
+.md .previous_slider_otheroptions,
+.md .next_slider_otheroptions{
+  background-size: 20px 20px !important;
+  top: 50% !important;
+}
+.md .next_slider_main,.md .next_slider_goeswith,
+.md .next_slider_otheroptions,.md .next_slider_mainhome
+{
+  background-image: url("../images/icons8-chevron-right-26.png");
+}
+.md .previous_slider_main,.md .previous_slider_otheroptions,
+.md .previous_slider_goeswith,.md .previous_slider_mainhome{
+  background-image: url("../images/icons8-chevron-left-26.png");
+}
 .view_similar .chip-label{
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
+}
+.product_features{
+  border-bottom: 3px solid #f5f5f5;
+  background: #f5f5f5;
+  border-top: 3px solid #f5f5f5;
+  margin-top: -3px !important;
 }
 .product_features .col{
-  background: #f7f7f7;
-  height: 64px;
+  background: #fff;
+  height: 60px;
   text-align: center;
-  padding-top: 10px;
 }
 .product_features p{
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: #151414;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 .social_share{
@@ -629,7 +690,7 @@
 }
 .product_name_container .share >a{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   text-decoration: none;
   color: #151414;
   text-transform: capitalize;
@@ -644,59 +705,80 @@
   margin-left: auto;
   margin-right: auto;
 }
+.product_page .product_name_container,.product_price-container,
+.product_page .type_size,.product_page .cod,
+.product_page .more_colors,.product_page .more_info,
+.product_page .seller_details, .product_page .about_the_craft  
+{
+  border-top: 3px solid #f5f5f5;
+  border-bottom: 3px solid #f5f5f5;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.product_page .product_name_container,.product_price-container{
+  text-align: center;
+}
 .product_name_container h5{
- text-transform: capitalize;
  font-family: Cormorant !important;
  margin: 0px;
- font-size: 22px;
- color: #494949;
+ font-size: 35px;
+ color: #151414;
  font-weight: normal;
+ text-align: center;
+ font-weight: bold;
+ margin-bottom: 10px;
+ padding-left: 5px;
+ padding-right: 5px;
 }
 .product_name_container h3{
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-size: 18px;
   color: #151414;
   font-weight: bold;
   margin-bottom: 0px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 45px;
 }
-.product_name_container,.product_price-container
-{
-  margin-left: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.product_page .type_size, .choose_qty{
-   margin-left: 10px;
+.product_name_container .rating_field{
+  display: flex;
+  justify-content: center;
 }
 .product_price-container span,.product_price-container strike{
- text-transform: capitalize;
- font-family:  'Muli', sans-serif;
- color: #151414;
- font-size: 13px;
+ font-family:  'Montserrat', sans-serif;
+ font-size: 24px;
  font-weight: normal;
 }
-.product_price-container .price{
+.product_price-container span{
+  color: #151414;
   font-weight: bold;
-  color:#151414;
-  font-size: 18px;
-  font-family:  'Muli', sans-serif;
-  margin-right: 10px;
 }
 .product_price-container strike{
   margin-right: 10px;
-  font-size: 18px;
   color: #878787;
-  font-family:  'Muli', sans-serif;
 }
-.product_price-container .discount{
+/**.product_price-container .discount{
   font-size: 18px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: red;
   font-weight: bold;
-}
+  text-align: center;
+}**/
 .product_name_container .ratings{
-  display: flex;
   margin-top: 5px;
+  display:flex;
+}
+.product_name_container .ratings:nth-of-type(2){
+  margin-top: 3px;
+  margin-left: 8px;
+}
+.product_name_container .ratings > p{
+  margin-top: 0px;
+  font-size: 16.489px;
+  font-family:  'Montserrat', sans-serif;
+  color: #878787;
+  font-weight: bold;
 }
 .product_name_container .active{
   color: #151414 !important;
@@ -704,11 +786,6 @@
 .product_name_container .f7-icons{
   color: #878787;
   font-size: 18px;
-}
-.product_border{
-  border: 0.5px solid #e3e3e3;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .product_page .choose_type{
   max-width: 125px;
@@ -718,34 +795,44 @@
 .product_page .more_info h3{
   font-size: 15px;
   color: #151414 !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   word-spacing: 2px;
 }
 .product_page .choose_type select{
-  width: 125px;
+  margin-left: 5px;
+  font-family:  'Montserrat', sans-serif;
+}
+.product_page .type_size .qty{
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 .product_page .qty input{
-  font-family: "Muli",sans-serif;
+  font-family:  'Montserrat', sans-serif;
   display: block;
-  width: 100%;
+  width: 50%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
   color: #555;
   background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+.product_page .details{
+  margin-top: 0px !important;
 }
 .product_page .choose_type .input-dropdown-wrap{
   min-height: 26px;
+  margin-top: 22px;
 }
 .product_page .choose_type option{
   color: #151414;
   font-size: 13px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   /*background: #f7f7f7;*/
 }
 .product_page .choose_size > .size_buttons{
@@ -756,18 +843,29 @@
   min-width: 40px !important;
   border-radius: 50% !important;
   background-color: #fdfdfd !important;
-  border: 1px solid #878787 !important;
+  border: 1px solid #151414 !important;
   margin-right: 5px;
   color:#151414 !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .product_page .size_buttons > .button-outline:hover{
-  border: 1px solid #151414 !important;
+  border: 1px solid #878787 !important;
 }
 /*buttons*/
-.more_colors,.cod,
-.product_details,.more_info{
+.product_page .product_details,.product_page .more_info{
   margin-bottom: 20px;
+}
+.product_page .product_details h3,
+.product_page .product_details p,
+.product_page .more_info h3,
+.product_page .more_info p
+{
+  margin-left:20px;
+  margin-right: 20px;
+}
+.product_page .about_the_craft{
+  border-top: none;
+  padding-top: 0px;
 }
 .ios .cart_wishlist{
   padding: 0px !important;
@@ -781,7 +879,7 @@
   width:40%;
   text-transform: uppercase;
   border-radius: 0px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .cart_wishlist .cart{
   background-color: #151414 !important;
@@ -791,7 +889,7 @@
   width: 60%;
   text-transform: uppercase;
   border-radius: 0px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 .go_to_cart{
   display: none;
@@ -801,34 +899,41 @@
   width: 60%;
   text-transform: uppercase;
   border-radius: 0px !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   text-align: center;
   line-height: 3.5;
 }
 /*more colors and delivery options*/
-.product_page .more_colors{
-  margin-top: 40px;
-}
-.product_page .cod{
-  margin-top:20px;
+.product_page .cod .check_pincode
+{
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 .product_page .more_colors h3,.cod h3,.product_details h3,.more_info h3{
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.more_colors img{
-  width: 20%;
-  height: auto;
-  padding: 15px 0px 15px 0px;
-  margin-right: .9375rem;
+.product_page .more_colors h3{
+  margin-left: 20px;
 }
-.cod input{
-  border-bottom: 1px solid #878787;
-  width: 170px;
+.more_colors img{
+  height: auto;
+}
+.cod .check_pincode{
+  border-bottom: 1px solid #e3e3e3;
+  width: 65%;
   padding: 15px 0px 15px 0px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-size: 14px;
+}
+.cod .submit_type{
+  font-family:  'Montserrat', sans-serif;
+  font-size: 14px;
+  border: 1px solid #151414;
+  background: #fff;
+  width: 25%;
+  margin-bottom: 20px;
+  margin-left: 8px;
 }
 .cod .col{
   display: flex;
@@ -843,28 +948,33 @@
 .more_info p{
   font-weight: bold;
 }
+.more_info p{
+  text-transform: uppercase;
+}
 .more_info p,.more_info li{
   font-size: 13px;
   color: #878787 !important;
-  font-family:  'Muli', sans-serif;
-  text-transform: uppercase;
+  font-family:  'Montserrat', sans-serif;
   word-spacing: 2px;
+}
+.more_info li{
+  text-transform: initial;
 }
 /*product_details*/
 .product_details p{
   text-align: justify;
   color: #878787;
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .goes_with_this h2,.similar_products h2{
-    margin-bottom: 20px;
-    font-family: Cormorant !important;
-    font-size: 1.25rem;
-    color: #151414;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Cormorant !important;
+  font-size: 1.25rem;
+  color: #151414;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 .goes_with_this .category_card{
   margin-bottom:10px !important;
@@ -897,7 +1007,7 @@
 .checkout_1_page .checkout_footer p,
 .checkout_2_page .checkout_footer p,
 .checkout_3_page .checkout_footer p {
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   text-align: center;
   margin-top: 10px;
@@ -907,7 +1017,7 @@
 .checkout_1_page .cart_heading p,
 .checkout_2_page .cart_heading p,
 .checkout_3_page .cart_heading p{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787;
   text-align: center;
   margin-top: 10px;
@@ -951,7 +1061,7 @@
   padding-bottom: 2px;
 }
 .offers_card li{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   line-height: 1.7;
   font-size: 13px;
   color: #878787 !important;
@@ -961,7 +1071,7 @@
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: .9375rem;
   background-color: #fdfdfd !important;
   border:1px solid #151414 !important;
@@ -982,7 +1092,7 @@
 }
 .order_items h3,
 .filter_popup h3{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
@@ -1001,7 +1111,7 @@
   color: #151414;
   font-weight: bold;
   font-size: 13.5px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .order_items .order_details >.type{
   font-weight: normal;
@@ -1054,7 +1164,7 @@
   margin-right: auto;
   margin-left: auto;
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -1076,7 +1186,7 @@
   padding: 18px 20px 10px 20px;
 }
 .cart_page .rate_items .heading{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
   text-transform: uppercase;
   color:#151414;
@@ -1087,7 +1197,7 @@
 .cart_page .rate_items .details >.left_side{
   color: #151414;
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin-top:5px;
   margin-bottom:5px;
 }
@@ -1104,7 +1214,7 @@
   margin-left: auto;
   color: #878787;
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin-top:5px;
   margin-bottom:5px;
 } 
@@ -1114,7 +1224,7 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 0px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   border:none;
   margin-top: 8px;
 }
@@ -1125,7 +1235,7 @@
 .cart_page .rate_items .footer_section > p{
   text-align: center;
   margin-bottom: 20px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   color: #878787;
 }
@@ -1140,7 +1250,7 @@
 }
 /*cart popup*/
 .cart_page .applycoupon .card-header{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: uppercase;
@@ -1150,7 +1260,7 @@
   padding: 15px;
 }
 .cart_page .card-content h3{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: capitalize;
@@ -1164,7 +1274,7 @@
 }
 .cart_page .applycoupon .coupon-code{
   font-style: italic;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   padding: 8px 10px;
   font-size: 13px;
   font-weight: 500;
@@ -1173,7 +1283,7 @@
   width: 100%;
 }
 .cart_page .applycoupon .or{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
@@ -1182,7 +1292,7 @@
   font-size: 13px;
 }
 .cart_page .applycoupon h4{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   font-weight: bold;
   text-transform: capitalize;
@@ -1212,7 +1322,7 @@
   text-align: center;
   display: inline-block;
   margin-right: 10px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787;
   margin-left: 5px;
   max-width: 58px;
@@ -1220,7 +1330,7 @@
   height:20px;
 }
 .cart_page .couponcode p{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 11.5px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1232,7 +1342,7 @@
   margin-left: 3px;
 }
 .cart_page .applycoupon .info{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   margin-left: 15px;
   margin-top: 10px;
@@ -1243,7 +1353,7 @@
 }
 .applycoupon .card-footer p{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: orange;
   text-transform: uppercase;
   font-weight: bold;
@@ -1279,7 +1389,7 @@
 .checkout_2_page .login_details h3,
 .checkout_3_page .login_details h3
  {
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
@@ -1297,7 +1407,7 @@
 .checkout_1_page .login_details input{
   border-bottom: 1px solid #e3e3e3;
   width: 100%;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
 }
 .checkout_1_page .login_details input{
@@ -1313,7 +1423,7 @@
   font-size: 13px;
   display: inline-block;
   text-decoration: none;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   width: 100%;
   text-align: center;
   padding-top: 15px;
@@ -1330,7 +1440,7 @@
 .login_details .heading
 {
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787;
   line-height: 1.733;
   text-align: left;
@@ -1338,7 +1448,7 @@
 }
 .login_details .text_with_icons p{
   font-size: 12.5px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   line-height: 2;
   text-align: left;
@@ -1367,7 +1477,7 @@
   margin-bottom: 12px;
   text-transform: uppercase;
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   line-height: 1.7;
 }
 .checkout_wrapper .addressbox .number{
@@ -1381,7 +1491,7 @@
 .checkout_wrapper .addressbox p,
 .checkout_wrapper .plus_address a{
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   color: #878787;
   line-height: 1.7;
@@ -1460,14 +1570,14 @@
 .popup-editAddress .block-title > label{
   font-weight: bold;
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
 }
 .popup-addAddress .block-heading,
 .popup-editAddress .block-heading{
   font-weight: bold;
   font-size: 15px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   text-transform: uppercase;
   margin-top: -20px;
@@ -1481,7 +1591,7 @@
 .popup-addAddress .item-input-wrap input,
 .popup-editAddress .item-input-wrap input{
   font-size: .875rem;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   max-width: 80%;
 }
 .popup-addAddress .item-floating-label,
@@ -1497,7 +1607,7 @@
   text-transform: uppercase;
   font-size: 14px;
   border: none !important;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   border-radius: 0px !important;
   border-color: #151414 !important;
   margin-left: auto;
@@ -1529,7 +1639,7 @@
 }
 .login_details .final_amount > p{
   font-size: 15px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   line-height: 2.059;
   text-align: left;
@@ -1538,7 +1648,7 @@
 }
 .login_details .final_amount > p:nth-of-type(2){
   font-size: 15px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787;
   line-height: 2.059;
   margin-left:8px;
@@ -1609,7 +1719,7 @@ label:before {
   margin-bottom: 30px;
 }
 .contact .location_div .heading{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
   text-transform: uppercase;
   color: #151414;
@@ -1621,7 +1731,7 @@ label:before {
 }
 .contact .location_div .address,
 .contact .location_div .address2{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
   color: #878787;
   max-width: 325px;
@@ -1679,10 +1789,10 @@ label:before {
   color: #878787;
   font-weight: 500;
   font-size: 15px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .account .personal_information .as-hero  h3{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: 600;
   color: #151414;
   font-size:15px;
@@ -1707,7 +1817,7 @@ label:before {
 .account .change_password .textboxHead > input,
 .account .change_password .drpdwn select
 {
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   padding: 10px;
   width: 100%;
@@ -1756,7 +1866,7 @@ label:before {
 .account .account-address .aa-box h3{
   font-size: 13px;
   margin-bottom: 10px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   text-transform: capitalize;
   text-align: center;
 }
@@ -1767,11 +1877,11 @@ label:before {
   color: #151414;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 14px;
 }
 .account .account-address .aa-box h5{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
   color: #878787;
   text-transform: capitalize;
@@ -1793,13 +1903,13 @@ label:before {
   color: orange;
   text-decoration: none;
   margin-right:5px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
 }
 .account .account-address .aa-links-wrap .aal-delete {
   color:red;
   float: right;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px;
 }
 .account .account-address .add_address button,
@@ -1807,7 +1917,7 @@ label:before {
 .account .account-orders .load_more button,
 .account .change_password .update_password button{
   border-radius: 0px !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: #fff;
   height: 52px;
   background: #151414 !important;
@@ -1819,7 +1929,7 @@ label:before {
   margin-bottom: 10px;
 } 
 .popover-verifyotp .verify_block p{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   font-weight: bold;
   font-size: 14px;
@@ -1827,7 +1937,7 @@ label:before {
   padding: 10px;
 }
 .popover-verifyotp .center p{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin-bottom: 10px;
   font-size:13px;
   max-width: 250px;
@@ -1857,7 +1967,7 @@ label:before {
   background-color: #151414 !important;
   border-radius: 0px !important;
   color:#fff !important;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 /*account-orders*/
 .account .account-orders .ao-box-pick{
@@ -1867,7 +1977,7 @@ label:before {
   width: 100% !important;
 }
 .account .account-orders .aa-box h5{
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 14px;
   color: #151414;
   margin-bottom: 15px;
@@ -1884,7 +1994,7 @@ label:before {
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .account .account-orders .ao-link:after
 {
@@ -1922,7 +2032,7 @@ label:before {
   text-transform: capitalize;
   line-height: normal;
   margin-bottom: 6px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .account .account-orders .aof-value{
   font-weight: bold;
@@ -1954,7 +2064,7 @@ label:before {
   margin-top: 10px;
 }
 .account .account-address-view .aw-d-title {
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: 500;
   font-size: 13px;
   color: #151414;
@@ -1978,7 +2088,7 @@ label:before {
   font-weight: 400;
   color: #878787;
   text-decoration: none;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin-left: 5px;
 }
 .account .account-address-view .aw-d-price {
@@ -1986,7 +2096,7 @@ label:before {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .account .account-address-view .aw-d-btns a {
   color: #fff;
@@ -1994,7 +2104,7 @@ label:before {
   font-size: .75rem;
   display: inline-block;
   text-decoration: none;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
 }
 .account .account-address-view .aw-d-btn-add{
   background-color: #151414;
@@ -2017,7 +2127,7 @@ label:before {
 }
 .search-page .search_field .input_field {
   border: 1px solid #e3e3e3;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   margin-left: auto;
   height: 40px;
@@ -2027,7 +2137,7 @@ label:before {
   font-style: italic;
 }
 .search-page .search_field .submit{
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   margin-right: auto;
   height: 40px;
@@ -2046,13 +2156,13 @@ label:before {
   margin: 0 !important;
   font-size: 14px  !important;
   font-weight: bold !important;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   text-transform: uppercase;
   color: #151414;
 }
 .brand-page .brand-content p{
   margin-top: 5px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 13px  !important;
   color: #878787;
   line-height: 1.706;
@@ -2078,7 +2188,7 @@ label:before {
   float: right;
   font-size: 13px !important;
   color: #878787;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787;
   text-align: center;
   margin-top: 30px;
@@ -2088,7 +2198,7 @@ label:before {
 }
 .empty-cart-page .empty_image{
   text-align:center !important;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   margin:0px;
 }
 .empty-cart-page .empty_image {
@@ -2153,7 +2263,7 @@ label:before {
 }
 .new_arrivals .firstpart .col-70 .text2{
   font-size: 16px;
-  font-family:  'Muli', sans-serif;
+  font-family:  'Montserrat', sans-serif;
   color: #151414 !important;
   line-height: 1;
   text-align: center;
@@ -2169,7 +2279,7 @@ label:before {
 }
 .new_arrivals .firstpart .View_Complete_Collection{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #fff;
   line-height: 2.647;
   text-align: center;
@@ -2185,7 +2295,7 @@ label:before {
 }
 .new_arrivals .secondpart .col-50 .text1{
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   text-align: center;
   margin-top: 10px;
@@ -2193,7 +2303,7 @@ label:before {
 }
 .new_arrivals .secondpart .col-50 .text2{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #878787 !important;
   text-align: center;
   margin-top: 5px;
@@ -2255,7 +2365,7 @@ label:before {
 {
   color: #878787;
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   word-spacing: 4px;
   margin-left: auto;
   margin-right: auto;
@@ -2283,7 +2393,7 @@ label:before {
 }
 .aboutus .join_us .Rectangle_633 .View_openings{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #fff;
   line-height: 2.647;
   text-align: center;
@@ -2318,7 +2428,7 @@ label:before {
 }
 .single_item p{
   font-size: 14px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: #151414;
   line-height: 1.333;
   font-weight: bold;
@@ -2426,7 +2536,7 @@ label:before {
 }
 .account-tracking .status_text p{
   font-size: 13px;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   color: black !important;
   font-weight: bold;
   margin-top: 0px;
@@ -2435,7 +2545,7 @@ label:before {
 .account-tracking .status_text p:nth-of-type(2){
   font-size: 12px;
   color:grey !important;
-  font-family:  'Muli', sans-serif;;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: normal;
 }
 /**404 page**/
@@ -2444,7 +2554,7 @@ label:before {
   margin-top:20px;
 }
 .four_O_four .top_image .heading{
-  font-family: 'Muli', sans-serif;",sans-serif;
+  font-family: 'Montserrat', sans-serif;",sans-serif;
   color: #151414;
   font-size: 16px;
   text-align: center;
@@ -2503,7 +2613,7 @@ label:before {
 }
 .gifting .decrptn p{
   font-size: 13px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black !important;
   text-align: center;
   margin-left: auto;
@@ -2511,7 +2621,7 @@ label:before {
 }
 /*range of gifts*/
 .gifting .Awesome_gifting_options {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size:13px;
   color: #878787;
   font-weight: bold;
@@ -2562,19 +2672,19 @@ label:before {
 }
 .gifting .testimonails .testimonail_text p{
   font-size: 13px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #878787 !important;
 }
 .gifting .Mr__Prakash_Jha {
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black !important;
   font-weight: bold;
   text-transform: uppercase;
 }
 .gifting .MD___ITC {
   font-size: 18px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -2584,7 +2694,7 @@ label:before {
   bottom: 235px;
 }
 .gifting .prsnlzd_gifts .Personalised_gifting {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size:13px;
   color: #878787;
   font-weight: bold;
@@ -2607,7 +2717,7 @@ label:before {
 }
 .prsnlzd_gifts .Corporates {
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #151414;
   font-weight: bold;
   text-transform: uppercase;
@@ -2616,7 +2726,7 @@ label:before {
 }
 .gifting .prsnlzd_gifts .Gift_your_employees_lorem_ipsum_dolor_sit_amet_ {
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #151414;
   font-weight: bold;
   text-align: center;
@@ -2624,7 +2734,7 @@ label:before {
 }
 .gifting .prsnlzd_gifts .Starts_at_just_399 {
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(196, 57, 75);
   font-weight: bold;
   text-transform: uppercase;
@@ -2642,7 +2752,7 @@ label:before {
   padding-top: 20px;
   text-align: center;
   font-size: 15px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white !important;
 }
 /*Social Impact*/
@@ -2651,7 +2761,7 @@ label:before {
 }
 .gifting .socialimpact .Social_impact {
   font-size: 12px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #151414 !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -2675,7 +2785,7 @@ label:before {
 .gifting .socialimpact .Lorem_ipsum_dolor_sit_amet__consectetur_adipisc {
   margin-top: 20px;
   font-size: 13px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color:#878787;
   line-height: 1.563;
   max-width: 100%;
@@ -2697,7 +2807,7 @@ label:before {
 .gifting .call_back .WANT_US_TO_CALL_YOU_BACK_ {
   margin-top:0px;
   font-size: 18px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -2722,7 +2832,7 @@ label:before {
   padding-top: 25px;
   text-align: center;
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black !important;
 }
 /********Gift card******/
@@ -2742,7 +2852,7 @@ label:before {
   text-transform: uppercase;
   line-height: 1.714;
   margin-bottom: 0px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .gifting_card .text_and_form .text >h1{
   font-size: 28px;
@@ -2756,7 +2866,7 @@ label:before {
 .gifting_card .text_and_form .text .normal{
   font-size: 16px;
   color: #878787;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 .gifting_card .text_and_form form{
@@ -2771,7 +2881,7 @@ label:before {
   text-transform: uppercase;
   line-height: 1.714;
   text-align: center;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -2782,7 +2892,7 @@ label:before {
   font-size: 14px;
   color: #878787;
   line-height: 1.5;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px;
   max-width: 70%;
 }
@@ -2809,14 +2919,14 @@ label:before {
   color: #878787;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .gifting_card form button{
   background-color: rgb(40, 40, 40);
   width: 99% !important;
   height: 74px;
   font-size: 14px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.5;

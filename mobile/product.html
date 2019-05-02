@@ -1227,7 +1227,7 @@
             <div class="toolbar-inner cart_wishlist">
                 <button class="col button button-fill wishlist"><!--<i class="f7-icons">heart_fill</i>-->wishlist</button>
                 <button class="col button button-fill cart"><!--<i class="icon material-icons">shopping_cart</i>-->add to cart</button>
-                <a href="#" class="go_to_cart external">Go to cart</a>
+                <a href="#" class="button_orange external">Go to cart</a>
             </div>
           </div>
         </div>
@@ -1239,5 +1239,13 @@
   <script src="js/routes.js"></script>
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+  <script>
+   var swiper = new Swiper('.swiper-container', {
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+   });
+ </script>
 </body>
 </html>

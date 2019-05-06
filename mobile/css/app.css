@@ -135,7 +135,6 @@
   filter: grayscale(1);
 }
 .home .kashmirtales .imageborder {
-  display: inline-block;
   position: relative;
 }
 .home .kashmirtales .imageborder::after {
@@ -155,7 +154,7 @@
   background: black !important;
 }
 .md .swiper-pagination-bullet{
-  background: white !important;
+  background: grey;
 }
 .subscribe{
   display: flex;
@@ -705,8 +704,9 @@
 .product_features p{
   font-family:  'Montserrat', sans-serif;
   color: #151414;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: capitalize;
+  margin-top: 20px;
 }
 .social_share{
   top: 205.094px !important;
@@ -745,13 +745,16 @@
   padding-top: 15px;
   padding-bottom: 10px;
 }
+.product_page .more_colors{
+  padding-bottom: 0px !important;
+}
 .product_page .product_name_container,.product_price-container{
   text-align: center;
 }
 .product_name_container h5{
  font-family: Cormorant !important;
  margin: 0px;
- font-size: 35px;
+ font-size: 22px;
  color: #151414;
  font-weight: normal;
  text-align: center;
@@ -762,7 +765,7 @@
 }
 .product_name_container h3{
   font-family:  'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #151414;
   font-weight: bold;
   margin-bottom: 0px;
@@ -777,7 +780,7 @@
 }
 .product_price-container span,.product_price-container strike{
  font-family:  'Montserrat', sans-serif;
- font-size: 24px;
+ font-size: 18px;
  font-weight: normal;
 }
 .product_price-container span{
@@ -818,7 +821,7 @@
   font-size: 18px;
 }
 .product_page .choose_type{
-  max-width: 125px;
+  max-width: 90%;
 }
 .product_page .choose_type h3,.choose_size h3,.product_page .qty h3,
 .product_page .more_colors h3,.cod h3,.product_page .product_details h3,
@@ -956,7 +959,7 @@
   width: 65%;
   padding: 15px 0px 15px 0px;
   font-family:  'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 .cod .submit_type{
   font-family:  'Montserrat', sans-serif;
@@ -996,7 +999,7 @@
 .product_details p{
   text-align: justify;
   color: #878787;
-  font-size: 14px;
+  font-size: 13px;
   font-family:  'Montserrat', sans-serif;;
 }
 .goes_with_this h2,.similar_products h2{
@@ -2966,4 +2969,45 @@ label:before {
 }
 .gifting_card button:active,button:focus{
   outline:none;
+}
+/*slider with fixed width*/
+.trending_in_beauty .swiper-slide,
+.trending_in_food .swiper-container,
+.trending_in_craft .swiper-container,
+.featured_craft .swiper-container,
+.new_arrivals .swiper-slide,
+.more_colors .swiper-container,
+.goes_with_this .swiper-container,
+.similar_products .swiper-container
+ {
+    width: 100%;
+    height: 100%;
+ }
+.trending_in_craft .swiper-slide,
+.trending_in_food .swiper-slide,
+.trending_in_beauty .swiper-slide
+ {
+  width: auto !important;
+ }
+.more_colors .swiper-slide,
+.goes_with_this .swiper-slide,
+.similar_products .swiper-slide,
+.featured_craft .swiper-slide,
+.new_arrivals .swiper-slide
+ {
+    width: 67% !important;
+  }
+.more_colors .swiper-slide,
+.trending_in_craft .swiper-slide,
+.trending_in_food .swiper-slide,
+.trending_in_beauty .swiper-slide
+{
+  margin-right: 0px !important;
+}
+.similar_products .swiper-slide,
+.goes_with_this .swiper-slide,
+.featured_craft .swiper-slide,
+.new_arrivals .swiper-slide
+{
+  margin-right: 30px !important;
 }

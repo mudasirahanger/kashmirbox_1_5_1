@@ -854,7 +854,8 @@
             <!-- Each "cell" has col-[width in percents] class -->
             <div class="row no-gap product_image">
               <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" id="product_slider" class="swiper-container swiper-init demo-swiper demo-swiper-auto">
+                <div  data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" id="product_slider" class="swiper-container swiper-init demo-swiper demo-swiper-auto">
+                  <div class="swiper-pagination"></div>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
@@ -866,8 +867,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev previous_slider_main"></div>
-                <div class="swiper-button-next next_slider_main"></div>
               </div>
             </div>
             <div class="row product_features">
@@ -950,7 +949,7 @@
               <div class="row more_colors">
                 <h3>other options</h3>
                 <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="4" class="swiper-container swiper-init demo-swiper" id="other_options_slider">
+                <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init demo-swiper fixed_width_slider" id="other_options_slider">
                  <div class="swiper-wrapper"> 
                   <div class="swiper-slide">
                     <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4099(1)-786x1000.jpg" alt="product_image">
@@ -971,8 +970,6 @@
                     <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4015(4)-786x1000.jpg" alt="product_image">
                   </div>
                 </div>
-                <div class="swiper-button-prev previous_slider_otheroptions"></div>
-                <div class="swiper-button-next next_slider_otheroptions"></div>
                </div>
               </div>
               </div>
@@ -1015,7 +1012,7 @@
               <h2>goes with this</h2>
               <div class="row">
                <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="2" class="swiper-container swiper-init demo-swiper" id="goes_with_slider">
+                <div data-pagination='{"el": ".swiper-pagination"}' class="fixed_width_slider swiper-container swiper-init demo-swiper" id="goes_with_slider">
                  <div class="swiper-wrapper"> 
                  <div class="swiper-slide">
                  <div class="category_card">
@@ -1111,8 +1108,6 @@
                   </div>
                  </div>
                 </div>
-                <div class="swiper-button-prev previous_slider_goeswith"></div>
-                <div class="swiper-button-next next_slider_goeswith"></div>
                </div>
               </div>
            </div>
@@ -1121,7 +1116,7 @@
               <h2>you may also like</h2>
               <div class="row">
               <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="2" class="swiper-container swiper-init demo-swiper" id="you_may_like_slider">
+                <div data-pagination='{"el": ".swiper-pagination"}' class="fixed_width_slider swiper-container swiper-init demo-swiper" id="you_may_like_slider">
                  <div class="swiper-wrapper"> 
                  <div class="swiper-slide">
                  <div class="category_card">
@@ -1217,8 +1212,6 @@
                   </div>
                  </div>
                 </div>
-                <div class="swiper-button-prev previous_slider_goeswith"></div>
-                <div class="swiper-button-next next_slider_goeswith"></div>
                </div>
              </div>
             </div>
@@ -1246,6 +1239,14 @@
        prevEl: '.swiper-button-prev',
      },
    });
+     var swiper = new Swiper('.fixed_width_slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
  </script>
 </body>
 </html>

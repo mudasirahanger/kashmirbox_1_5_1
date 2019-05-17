@@ -1,11 +1,11 @@
 @include respond-to(large-2){
  .careertext{
-   top:35%;
+   top:33%;
    left: 0px;
    position: absolute;
  }
  .c_text1{
-  line-height: 3;
+  line-height: 4;
  }
 }
 @include respond-to(large-1-1){
@@ -18,7 +18,11 @@
   line-height: 2;
  }
 }
-.banner {  
+.career .banner img{
+  width:rem(1349px);
+  height:rem(505px);
+}
+.banner{  
   position:relative;
   text-align:center;
 }
@@ -29,38 +33,40 @@
   text-decoration: none;
 }
 .c_text2{
-  font-size: rem(35px);
+  font-size: rem(30px);
   left: 0px;
-  text-transform: capitalize;
   font-family: $brand-font;
   line-height: 1;
   font-weight: bold;
 }
-.c_text2,.c_text1{
+.c_text2{
   color: $white-color;
   text-decoration: none;
 }
 .c_text1{
-  font-size: rem(15px);
+  color: $grey;
+  font-size: rem(14px);
   text-transform: uppercase;
   font-family: $ff-open-sans;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 .careertext > button{
-  padding: 15px 30px;
+  padding: 15px 40px;
   color: $white-color;
   background: $red-color;
   text-transform: uppercase;
   font-family: $ff-open-sans;
   font-size: rem(15px);
   border:none;
-  margin-top: rem(20px);
+  margin-top: rem(30px);
 }
  .careertext > button > a{
   color:$white-color;
   text-decoration: none;
 }
  /*why work at kashmirbox*/
- .why-us,.co{
+ .why-us,.co,.members{
   text-align: center;
   margin-top: rem(50px);
 }
@@ -102,6 +108,10 @@
 .co{
   background-color: $light-shade;
 }
+.co .container{
+  padding-top: rem(30px);
+  padding-bottom: rem(30px);
+}
 .current_opening{
   margin-bottom: rem(20px);
 }
@@ -111,8 +121,8 @@
   color: $brand-color;
   font-weight: 900;
   text-transform:uppercase;
-  margin-top: rem(20px);
-  margin-bottom: rem(20px);
+  margin-top: rem(10px);
+  margin-bottom: rem(40px);
 }
 .cp_sections{
   border: 1px solid $grey;
@@ -122,7 +132,7 @@
 .cp_sections:hover{
   background-color: $brand-color;
 }
-.cp_sections > h4:hover{
+.cp_sections:hover h4{
   color: $white-color;
 }
 .cp_sections >p:nth-of-type(1){
@@ -146,10 +156,6 @@
   margin-top: rem(10px);
 }
 /*members*/
-.members{
-  text-align: center;
-  margin-top: rem(20px);
-}
 .members h2{
   font-family: $ff-open-sans;
   font-size: rem(26px);
@@ -185,12 +191,13 @@
 /*apply now*/
 .applynow{
   background-color: $brand-color;
-  margin-top: rem(40px);
+  margin-top: rem(50px);
+  margin-bottom: rem(30px);
 }
 .apply_now{
   text-align: left;
-  margin-top: rem(20px);
-  margin-bottom: rem(20px);
+  margin-top: rem(50px);
+  margin-bottom: rem(50px);
 }
 .leftside >h2{
   font-family: $brand-font;

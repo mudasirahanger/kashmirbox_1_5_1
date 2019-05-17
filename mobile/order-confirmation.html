@@ -10,11 +10,9 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <title>KB</title>
-
   <link rel="stylesheet" href="framework7/css/framework7.min.css">
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" type="text/css" href="catalog/view/theme/kashmirbox_1_5/css/custom.css">
 </head>
 <body>
   <div id="app">
@@ -742,7 +740,7 @@
                   </div><!--block-->
                  </div><!--accordian-->
                 </li><!--menu list-->
-                <li class="accordion-item"><a href="new_arrivals.html" class="item-content single-item external">
+                <li class="accordion-item"><a href="#" class="item-content single-item">
                  <div class="item-inner">
                   <div class="item-title menu_item">new</div>
                  </div></a>
@@ -752,9 +750,9 @@
                   <div class="item-title menu_item">blog</div>
                  </div></a>
                 </li>
-                <li class="accordion-item"><a href="sale.html" class="item-content single-item external">
+                <li class="accordion-item"><a href="#" class="item-content single-item">
                  <div class="item-inner">
-                  <div class="item-title menu_item sale">sale!</div>
+                  <div class="item-title menu_item">sale</div>
                  </div></a>
                 </li> 
               </ul>
@@ -763,58 +761,17 @@
            <hr>
            <div class="block sign_in_up">
              <!-- OpenPopup -->
-            <p><a class="link popup-open" href="" data-popup=".signin_popup">Login & Signup</a></p>
-            <p><a class="link external" href="contact_us.html">Contact us</a></p>
-           </div>
-           <div class="popup popup-tablet-fullscreen signin_popup"> 
-            <div class="row no-gap">
-              <!-- Close Popup -->
-              <a class="link popup-close" href="#">x</a>
-              <div class="card col-75">
-                <div class="card-content">
-                  <!-- Card content -->
-                  <p class="login-title">Login to Kashmirbox</p>
-                  <div class="textboxHead col-80">
-                    <input class="textboxes" type="email" placeholder="Enter your First Name">
-                  </div>
-                  <div class="textboxHead col-80">
-                    <input class="textboxes" type="text" placeholder="Enter your Last Name">
-                  </div>
-                  <div class="textboxHead col-80">
-                    <input class="textboxes" type="text" placeholder="Enter your email address">
-                  </div>
-                  <div class="textboxHead col-80">
-                    <input class="textboxes password" type="password" placeholder="Enter Password">
-                    <a class="hyperlink" href="#" id="lnkforget">Forgot?</a>
-                  </div>
-                  <div class="textboxHead col-80">
-                    <input class="textboxes" type="password" placeholder="Confirm Password">
-                  </div>
-                  <div class="buttons">
-                    <a href="#">
-                      <button class="col button button-outline login">login</button>  
-                    </a>
-                    <a href="#">
-                      <button class="col button button-outline register">register</button>
-                    </a>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="connectfb">
-                      Connect with Facebook  
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p><a class="link" href="">Profile</a></p>
+            <p><a class="link" href="#">Logout</a></p>
+            <p><a class="link" href="#" >Contact us</a></p>
            </div>
           </div>
         </div>
       </div>
-    </div><!--panel-->
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-      <div class="page" data-name="product">
+    </div>
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main ios-edges">
+      <div class="page account" data-name="account">
         <!-- Top Navbar -->
         <div class="navbar top_nav">
           <div class="navbar-inner">
@@ -823,408 +780,99 @@
                 <i class="icon material-icons material:favorite">menu</i>
               </a>
             </div>
-            <div class="title sliding logo"><a href="#" class="link external">KB</a></div>
-             <div class="right header_icons">
+            <div class="title sliding logo">KB</div>
+            <div class="right header_icons">
               
               <a href="#" class="link icon-only material:favorite " data-panel="right">
               <i class="f7-icons">search</i>
               
               </a>
-              <a href="#" class="link icon-only material:favorite popup-open" data-panel="right" data-popup=".signin_popup">
+              <a href="#" class="link icon-only material:favorite " data-panel="right">
+              
                <i class="f7-icons">heart_fill</i>
               </a>
-               <a href="empty_cart.html" class="link icon-only material:favorite external" data-panel="right">
-               <div id="cart-total" class="cart">0</div>
-              <i class="icon material-icons cart_icon">shopping_cart</i> 
+               <a href="#" class="link icon-only material:favorite " data-panel="right">
+              <i class="icon material-icons">shopping_cart</i> 
               </a>
             </div>
           </div>
         </div>
-          <!-- Subnavbar 
-          <div class="subnavbar second_nav">
-            <div class="subnavbar-inner">-->
-            <!-- Subnavbar content, for example tabs buttons 
-              <div class="block product_block">
-                <p>Breadcrumb</p>
-              </div>
+        <!-- Page, data-name contains page name which can be used in callbacks -->
+        <div class="page-content order_confirmation">
+          <div class="row">
+            <div class="col-90 first_section">
+              <h3>Your order was successfully processed!</h3>
+              <p>we appreciate your business and will get you items carefully packed and shipped to you.</p>
             </div>
-          </div>-->
-          <!-- Scrollable page content -->
-          <div class="page-content product_page">
-            <!-- Each "cell" has col-[width in percents] class -->
-            <div class="row no-gap product_image">
-              <div class="col-100">
-                <div  data-speed="900" data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" id="product_slider" class="swiper-container swiper-init demo-swiper demo-swiper-auto">
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                    <div class="swiper-slide"><img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                  </div>
+            <div class="col-90 second_row">
+              <h4>Order Summary</h4>
+              <div class="inner_box">
+                <div class="single_line">
+                  <p class="left_side">Order number</p>
+                  <p class="right_side">290903</p>
+                </div>
+                <div class="single_line">
+                  <p class="left_side">Order date</p>
+                  <p class="right_side">07 July 2017</p>
+                </div>
+                <div class="single_line bold">
+                  <p class="left_side">Total Amount Paid</p>
+                  <p class="right_side">989</p>
                 </div>
               </div>
             </div>
-            <div class="row product_features">
-              <div class="col">
-                <p>features</p>
-              </div>
-              <div class="col">
-                <p>features</p>
-              </div>
-              <div class="col">
-                <p>features</p>
+            <div class="col-90 second_row">
+              <h4>Address</h4>
+              <div class="inner_box">
+                <div class="single_line">
+                  <p class="left_side">Muheet Mehraj</p>
+                </div>
+                <div class="single_line">
+                  <p class="left_side">KashmirBox, Indo Kashmir Carpet Factory, Nawab Bazar, Srinagar,190001</p>
+                </div>
+                <div class="single_line">
+                  <p class="left_side">Phone number: +91 9906699066</p>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-100">
-                 <div class="product_name_container">
-                   <div class="share">
-                      <i class="f7-icons">share</i>
-                      <a class="link popover-open" href="#" data-popover=".popover-links">share</a>
-                   </div>
-                   <div class="popover popover-links social_share">
-                    <div class="popover-inner">
-                      <div class="list">
-                        <ul class="share_links">
-                          <li><a href="#"><img src="images/facebook.png"></a></li>
-                          <li><a href="#"><img src="images/google+.png"></a></li>
-                          <li><a href="#"><img src="images/instagram.png"></a></li>
-                          <li><a href="#"><img src="images/linkedin.png"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                   </div>
-                   <a href="category.html" class="external"><h3>Amma</h3></a>
-                   <h5>product name</h5>
-                   <div class="rating_field">
-                     <div class="ratings">
-                       <i class="f7-icons active">star_fill</i>
-                       <i class="f7-icons active">star_fill</i>
-                       <i class="f7-icons active">star_fill</i>
-                       <i class="f7-icons">star_fill</i>
-                       <i class="f7-icons">star_fill</i>
-                     </div>
-                     <div class="ratings"><p>(17 Reviews)</p></div>
-                   </div>
-                 </div>
-                 <div class="product_price-container">
-                    <strike>Rs. 4,500</strike>
-                    <span class="price">Rs. 3,344</span>
-                    <!--<span class="discount">(10% OFF)</span>-->
-                 </div>
-               </div>
-             </div>
-             <div class="row type_size">
-              <div class="col-30 qty">
-                  <h3>Quantity:-</h3>
-                    <input class="form-control" type="text" name="quantity[234863]" value="1" size="10">
-              </div>
-              <div class="col-50">
-                 <div class="choose_type">              
-                   <h3>choose type</h3>
-                   <div class="item-input-wrap input-dropdown-wrap type_drpdwn">
-                     <select placeholder="Please choose...">
-                      <option value="Male">stiched</option>
-                      <option value="Female">unstiched</option>
-                     </select>
-                   </div>
-                 </div>
-              </div>
-              <!--<div class="col-50">   
-                 <div class="choose_size">
-                   <h3>choose size</h3>
-                   <div class="size_buttons">
-                     <button class="col button button-outline">S</button>
-                     <button class="col button button-outline">M</button>
-                     <button class="col button button-outline">L</button>
-                   </div>
-                 </div>
-              </div>-->
-            </div>
-              <div class="row more_colors">
-                <h3>other options</h3>
-                <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init demo-swiper fixed_width_slider" id="other_options_slider">
-                 <div class="swiper-wrapper"> 
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4099(1)-786x1000.jpg" alt="product_image">
-                  </div> 
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4015(4)-786x1000.jpg" alt="product_image">
-                  </div>  
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4102(3)-786x1000.jpg" alt="product_image">
-                  </div> 
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4099(1)-786x1000.jpg" alt="product_image">
-                  </div> 
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4099(1)-786x1000.jpg" alt="product_image">
-                  </div> 
-                  <div class="swiper-slide">
-                    <img src="https://www.kashmirbox.com/image/cache/catalog/Kb_Images/women/clothing/phiran/KB4015(4)-786x1000.jpg" alt="product_image">
-                  </div>
+            <div class="col-90 second_row queries">
+              <h4>For order related queries</h4>
+              <div class="inner_box">
+                <div class="single_line">
+                  <img src="images/phone.png" alt="image" class="left_side">
+                  <p class="right_side">0194-245 2452</p>
                 </div>
-               </div>
-              </div>
-              </div>
-              <div class="row cod">
-                <div class="col">
-                  <input type="text" placeholder="enter pincode to check delivery options" class="check_pincode">
-                  <input class="form-control submit_type" type="submit" value="CHECK">
+                <div class="single_line">
+                  <img src="images/message.png" alt="image" class="left_side">
+                  <p class="right_side">care@kashmirbox.com</p>
                 </div>
-              </div>
-            <div class="details">
-              <div class="row more_info">
-                <h3>product info</h3>
-                <div class="col">
-                  <p>KBCODE:- KB0001</p>
-                  <ul>
-                    <li>Material: Cotton</li>
-                    <li>Color: Black</li>
-                    <li>Size: Custom made</li>
-                    <li>Care: Dry Clean</li>
-                    <li>Embriodery: Hand Aari</li>
-                    <li>Estimated Arrival: Between 20-30 days in India</li>
-                    <li>Availability: Ships Internationally</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row product_details why_we_love_it">
-                <h3>why we love it</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-              </div>
-              <div class="row product_details seller_details">
-                <h3>Brand</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-              </div>
-              <div class="row product_details about_the_craft">
-                <h3>about the craft</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
               </div>
             </div>
-            <div class="block goes_with_this">
-              <h2>goes with this</h2>
-              <div class="row">
-               <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' class="fixed_width_slider swiper-container swiper-init demo-swiper" id="goes_with_slider">
-                 <div class="swiper-wrapper"> 
-                 <div class="swiper-slide">
-                 <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>product name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
+            <div class="col-90 order_details">
+              <h4>Order details</h4>
+              <div class="inner_box">
+                <div class="single_line">
+                  <img src="images/Layer 14.png" alt="image" class="left_side">
+                  <div class="text"><p>Koshur Dried Fig 400 Grams (Anjeer)</p>
+                    <p class="grey_color">KB0017</p></div>  
                 </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                  </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
+                <p>Estimated delivery by 13th July 2017</p>
+                <p>Rs.423</p>
               </div>
-           </div>
-           <!--Similar products-->
-           <div class="block similar_products">
-              <h2>you may also like</h2>
-              <div class="row">
-              <div class="col-100">
-                <div data-pagination='{"el": ".swiper-pagination"}' class="fixed_width_slider swiper-container swiper-init demo-swiper" id="you_may_like_slider">
-                 <div class="swiper-wrapper"> 
-                 <div class="swiper-slide">
-                 <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>product name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
+              <div class="inner_box">
+                <div class="single_line">
+                  <img src="images/Layer 14.png" alt="image" class="left_side">
+                  <div class="text"><p>Koshur Dried Fig 400 Grams (Anjeer)</p>
+                    <p class="grey_color">KB0017</p></div>  
                 </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                <div class="category_card">
-                   <a href="#">
-                    <div class="content">
-                    <!-- Card content -->      
-                      <img src="https://www.kashmirbox.com/image/cache//catalog/Kb_Images/women/clothing/phiran/kb10520(1)-786x1000.jpg" alt="Bottle Green Aari Embroidered Cashmilon Phiran">
-                    </div>
-                   </a>
-                   <div class="goes-footer">
-                    <div class="name_container">
-                      <h3>Product Name</h3>
-                      <!-- <a href="#" class="link icon-only material:favorite wishlist_icon" data-panel="right" style="margin-left: auto">
-                      <i class="f7-icons wishlist_icon">heart_fill</i>
-                    </a>-->
-                    </div>
-                    <div class="price-container">
-                     <span class="price">Rs. 3,344</span>
-                     <strike>Rs. 4,500</strike>
-                     <span class="discount">(10% OFF)</span>
-                    </div>
-                   </div>
-                  </div>
-                  </div>
-                 </div>
-                </div>
-               </div>
-             </div>
-            </div>
-          </div>     
-          <div class="toolbar tabbar tabbar-labels toolbar-bottom-md footer">
-            <div class="toolbar-inner cart_wishlist">
-                <button class="col button button-fill wishlist"><!--<i class="f7-icons">heart_fill</i>-->wishlist</button>
-                <button class="col button button-fill cart"><!--<i class="icon material-icons">shopping_cart</i>-->add to cart</button>
-                <a href="#" class="go_to_cart button_orange external">Go to cart</a>
+                <p>Estimated delivery by 13th July 2017</p>
+                <p>Rs.423</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div><!--page content close-->
+      </div> <!--page-->
+    </div>
   </div>
   <!-- Framework7 library -->
   <script src="framework7/js/framework7.min.js"></script>
@@ -1232,21 +880,5 @@
   <script src="js/routes.js"></script>
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
-  <script>
-   /*var swiper = new Swiper('.swiper-container', {
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-     },
-   });*/
-     var swiper = new Swiper('.fixed_width_slider', {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
- </script>
 </body>
 </html>

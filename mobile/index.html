@@ -710,7 +710,7 @@
                  <div class="item-inner">
                   <div class="item-title menu_item sale">sale!</div>
                  </div></a>
-                </li> 
+                </li>   
               </ul>
             </div><!--list-->
            </div>
@@ -719,11 +719,10 @@
              <!-- OpenPopup -->
             <p><a class="link popup-open" href="" data-popup=".signin_popup">Login & Signup</a></p>
             <p><a class="link popup-open external" href="contact_us.html">Contact us</a></p>
+            <p><a class="link popover-open" href="#" data-popover=".popover-currency">Currency</a></p>
            </div>
            <div class="popup popup-tablet-fullscreen signin_popup"> 
             <div class="row no-gap">
-              <!-- Close Popup -->
-              <a class="link popup-close" href="#">x</a>
               <div class="card col-75">
                 <div class="card-content">
                   <!-- Card content -->
@@ -757,9 +756,28 @@
                       Connect with Facebook  
                     </a>
                   </div>
+                  <!-- Close Popup -->
+                  <a class="link popup-close" href="#">Close</a>
                 </div>
               </div>
             </div>
+           </div>
+           <div class="popover popover-currency">
+             <div class="popover-inner">
+               <div class="list">
+                <ul>
+                  <li><a class="list-button item-link" href="#">AU$</a></li>
+                  <li><a class="list-button item-link" href="#">د.إ</a></li>
+                  <li><a class="list-button item-link" href="#">€</a></li>
+                  <li><a class="list-button item-link" href="#">¥</a></li>
+                  <li><a class="list-button item-link" href="#">ر.ع</a></li>
+                  <li><a class="list-button item-link" href="#">£</a></li>
+                  <li><a class="list-button item-link" href="#">ر.ع</a></li>
+                  <li><a class="list-button item-link" href="#">S$</a></li>
+                  <li><a class="list-button item-link" href="#">$</a></li>
+                </ul>
+               </div>
+             </div>
            </div>
           </div>
         </div>
@@ -796,10 +814,10 @@
         <!-- Page, data-name contains page name which can be used in callbacks -->
         <div class="page-content">
           <div class="row">
-            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="auto" class="swiper-container swiper-init demo-swiper demo-swiper-auto" id="home_slider">
+            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="10" data-slides-per-view="auto" class="swiper-container swiper-init demo-swiper demo-swiper-auto main_slider" id="home_slider">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide col-100">
+                  <div class="swiper-slide">
                     <a href="category.html" class="external" target="_blank">
                       <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/slideshow/Saffronr-(Mob).jpg" alt="Sourced directly from the lush fields of Pampore, here is Kashmiri saffron in its purest form"/>
                     </a>
@@ -847,8 +865,7 @@
               <p class="subtitle">Apparel, Decor and Accessories</p>
               <div class="row">
               <div class="col-100">
-              <div data-pagination='{"el": ".swiper-pagination"}'  
-                  class="fixed_width_slider swiper-container swiper-init demo-swiper" id="food_slider">
+              <div class="swiper-container demoslider">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#" target="_blank" class="external">
@@ -889,10 +906,9 @@
           <div class="block trending_in_food">
                 <p class="block_heading">Trending in food</p>
                 <p class="subtitle">Natural, Pure and Organic Delicacies</p>
-                <div class="row">
+                <div class="row"> 
                   <div class="col-100">
-                  <div data-pagination='{"el": ".swiper-pagination"}'  
-                  class="fixed_width_slider swiper-container swiper-init demo-swiper" id="food_slider">
+                  <div class="swiper-container demoslider">
                      <div class="swiper-wrapper">
                        <div class="swiper-slide">
                           <a href="#" target="_blank" class="external">
@@ -925,8 +941,7 @@
                 <p class="subtitle">Luxury Handmade Apparel, Accents & Home Decor</p>
                 <div class="row">
                   <div class="col-100">
-                    <div data-pagination='{"el": ".swiper-pagination"}' 
-                    class="fixed_width_slider swiper-container swiper-init demo-swiper" id="craft_slider">
+                    <div class="swiper-container demoslider">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><a href="https://www.kashmirbox.com/lifestyle/antique-silver" target="_blank" class="external">
                             <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/Trending_in_craft/Shop-by-Silver.jpg">
@@ -954,8 +969,7 @@
                 <p class="subtitle">Organic Winter Essentials For Skin & Hair Health</p>
                 <div class="row">
                   <div class="col-100">
-                  <div data-pagination='{"el": ".swiper-pagination"}' 
-                    class="fixed_width_slider swiper-container swiper-init demo-swiper" id="beauty_slider">
+                  <div class="swiper-container demoslider">
                   <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="https://www.kashmirbox.com/healthy-living-go-natural/natural-beauty&filter=781" target="_blank" class="external">
@@ -988,8 +1002,7 @@
                   <p class="subtitle">Revive and Sustain Orginal Artisan Made Crafts</p>
                   <div class="row">
                   <div class="col-100">
-                  <div data-pagination='{"el": ".swiper-pagination"}' 
-                    class="fixed_width_slider swiper-container swiper-init demo-swiper" id="featured_craft">
+                  <div class="swiper-container demoslider">
                    <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <a href="https://www.kashmirbox.com/lifestyle/paper-mache-art" target="_blank" class="external">
@@ -1056,6 +1069,21 @@
                               </a>
                             </div>
                             <div class="swiper-slide">
+                              <a href="/gi-midnight-black-solid-pashmina-shawl-kb5304" target="_blank" class="external">
+                                <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/customer_diaries/kanchan.jpg" alt="image"/>
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
+                              <a href="/gi-midnight-black-solid-pashmina-shawl-kb5304" target="_blank" class="external">
+                                <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/customer_diaries/kanchan.jpg" alt="image"/>
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
+                              <a href="/gi-midnight-black-solid-pashmina-shawl-kb5304" target="_blank" class="external">
+                                <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/customer_diaries/kanchan.jpg" alt="image"/>
+                              </a>
+                           </div>
+                           <div class="swiper-slide">
                               <a href="/gi-midnight-black-solid-pashmina-shawl-kb5304" target="_blank" class="external">
                                 <img src="https://www.kashmirbox.com/image/catalog/kb1/homepage/customer_diaries/kanchan.jpg" alt="image"/>
                               </a>
@@ -1178,20 +1206,29 @@
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
   <script>
-   var swiper = new Swiper('.swiper-container', {
+   /*var swiper = new Swiper('.main_slider', {
      navigation: {
        nextEl: '.swiper-button-next',
        prevEl: '.swiper-button-prev',
      },
-   });
-   var swiper = new Swiper('.fixed_width_slider', {
+   });*/
+   /*var swiper = new Swiper('.fixed_width_slider', {
       slidesPerView: 'auto',
       spaceBetween: 30,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-    });  
+    });*/
+   var swiper = new Swiper('.demoslider', {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })  
  </script>
 </body>
 </html>

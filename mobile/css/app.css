@@ -541,12 +541,9 @@
   overflow: auto;
 }
 .signin_popup .popup-close{
-  position: fixed;
-  top: 5px;
-  right: 10px;
   font-size: 17px;
-  font-weight: lighter;
-  color: #878787;
+  color: #151414;
+  padding-top: 20px;
 }
 .signin_popup .card{
   padding: 20px 10px;
@@ -915,7 +912,7 @@
   font-family:  'Montserrat', sans-serif;
 }
 .cart_wishlist .cart{
-  background-color: #151414 !important;
+  background-color: #ea5800 !important;
   color: #fff;
   font-size: 15px;
   height: 100%;
@@ -928,7 +925,7 @@
   display: none;
 }
 .button_orange{
-  background-color: orange !important;
+  background-color: #da4800 !important;
   font-size: 15px;
   height: 100% !important;
   width: 60%;
@@ -1061,7 +1058,7 @@
 .cart_page .checkout,
 .cart_page .checkout a
 {
-  background-color: #151414 !important;
+  background-color:#ea5800 !important;
   line-height: 2.5;
   margin-left: auto;
   margin-right: auto;
@@ -1207,7 +1204,7 @@
   color: #878787;
 }
 .product_wrapper .card-footer > a >.wishlist{
-  color: orange;
+  color: #ea5800;
 }
 /*rate deatils*/
 .cart_page .rate_items > .card{
@@ -2355,7 +2352,6 @@ label:before {
   position: relative;
   text-align: center;
 }
-
 .aboutus .abouttext,
 .aboutus .core_values,
 .aboutus .team,
@@ -3010,4 +3006,246 @@ label:before {
 .new_arrivals .swiper-slide
 {
   margin-right: 30px !important;
+}
+/*account confirmation*/
+.order_confirmation .first_section{
+  margin-bottom: 10px;
+  background-color: #fdfdfd;
+  padding: 40px 30px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.order_confirmation h3{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #151414;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 0px;
+}
+.order_confirmation .first_section p{
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: #878787;
+  line-height: 1.5;
+  text-align: left;
+}
+.order_confirmation .second_row,
+.order_confirmation .order_details {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.second_row h4,.order_details h4{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #151414;
+  line-height: 1.647;
+}
+.order_confirmation .inner_box, 
+.order_confirmation .order_details .inner_box{
+  background-color: #fdfdfd;
+  padding: 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 220, 220);
+}
+.order_confirmation .order_details .inner_box{
+  margin-bottom: 10px;
+}
+.order_confirmation .inner_box .single_line{
+  display: flex;
+}
+.order_confirmation .queries .single_line{
+  margin-bottom: 10px;
+}
+.order_confirmation .inner_box .left_side,
+.order_confirmation .inner_box .right_side,
+.order_confirmation .inner_box .text p,
+.order_confirmation .inner_box > p
+{
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #151414;
+  line-height: 2.357;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.order_confirmation .inner_box .right_side{
+  margin-left: auto;
+}
+.order_confirmation .inner_box .bold > p{
+  font-weight: bold;
+}
+.order_confirmation .queries img{
+ width:30px;
+}
+.order_confirmation .queries .right_side
+{
+  margin-left:10px;
+}
+.order_confirmation .inner_box .text{
+  margin-left: 15px;
+}
+.order_confirmation .inner_box  .grey_color{
+  color:#878787 !important;
+}
+.order_confirmation .order_details img
+{
+  width:auto;
+}
+.order_confirmation .order_details .inner_box > p{
+ text-align: center;
+}
+.order_confirmation .order_details .single_line{
+  margin-bottom: 5px;
+}
+/*popover for currency*/
+.popover-currency{
+  width: 150px !important;
+}
+.popover-currency li .item-link{
+  font-size: 20px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #151414 !important;
+}
+.popover-currency li{
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+/*careers*/
+.careers .careertext,
+.careers .points
+{
+  line-height: 1.596;
+}
+.careers .careertext .text1,
+.careers .co .text1,
+.careers .members .text1
+{
+  color: #151414;
+  font-family: Cormorant;
+  font-weight: bold;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.careers .careertext .text2,
+.careers .points .text2,
+.careers .join_us p
+{
+  color: #878787;
+  font-size: 13px;
+  font-family:  'Montserrat', sans-serif;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.careers .points .text1{
+  color: #151414;
+  font-size: 16px;
+  font-family: Cormorant;
+  font-weight: bold;
+  word-spacing: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.careers .points .text1 p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.careers .careertext .text2 p{
+  margin-top: 0px;
+}
+.careers .co{
+  background-color: #fdfdfd;
+}
+.careers .co .cp_sections{
+  border: 1px solid #878787;
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+}
+.cp_sections.active-state {
+  background-color: #151414 !important;
+}
+.cp_sections.active-state h4 {
+    color: #fff;
+}
+.careers .cp_sections>p:nth-of-type(1) {
+  text-align: left;
+  font-size:40px;
+  color: #878787;
+  font-family:  'Montserrat', sans-serif;
+  margin-bottom: 5px;
+} 
+.careers .cp_sections > h4 {
+  text-align: left;
+  font-size: 25px;
+  color: #151414;
+  font-family:  'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px; 
+}
+.cp_sections > p ,.members p{
+  font-size: 15px;
+  color: #878787;
+  font-family:  'Montserrat', sans-serif;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.members .images_div{
+  display: flex;
+  margin-left: auto;
+  margin-right:auto;
+  justify-content: center;
+}
+.members .image-wrapper{
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+.members .image-wrapper .person-nice-name{
+  font-weight: bold;
+}
+.careers .join_us{
+  background-color: #151414;
+  padding: 20px 0px;
+}
+.careers .join_us .col-90{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.careers .join_us h2{
+  color: #fff;
+  font-family: Cormorant;
+  font-weight: bold;
+  word-spacing: 4px;
+  text-align: center;
+}
+.careers .join_us p,
+.careers .join_us h2{
+  margin: 5px 0px;
+}
+.careers .join_us button{
+  padding: 10px 30px;
+  background: red;
+  text-transform: uppercase;
+  font-family:  'Montserrat', sans-serif;
+  font-size: 15px;
+  border: none;
+  margin-top: 10px;
+}
+.careers .join_us button a{
+  color: #fff;
 }
